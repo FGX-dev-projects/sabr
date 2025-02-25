@@ -68,7 +68,8 @@ body {
     align-items: center;
     justify-content: center;
     padding: 12px 16px;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.25);
+    ;
     transition: background-color 0.5s ease-in-out, color 0.3s ease-in-out;
 }
 
@@ -128,6 +129,13 @@ body {
 .button7 {
     position: relative;
     z-index: 0;
+}
+
+.button-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-button-child {
@@ -250,6 +258,7 @@ body {
     margin-top: 0;
     box-shadow: none;
     border: none;
+    color: #868480;
 }
 
 .mobile-menu .nav-button {
@@ -614,6 +623,34 @@ body {
     font-family: Inter;
 }
 
+.paragraph {
+    width: 100%;
+    position: relative;
+    font-family: 'Work Sans';
+    color: #535353;
+    text-align: left;
+    display: inline-block;
+}
+
+
+.span {
+    color: #868480;
+}
+
+.sosafe {
+    color: #b2cb14;
+}
+
+.introducing-sosafe {
+    width: 100%;
+    position: relative;
+    font-size: 96px;
+    text-align: left;
+    display: inline-block;
+    color: #adaaa5;
+    font-family: 'Work Sans';
+}
+
 .frame-group {
     align-self: stretch;
     width: 366px;
@@ -655,14 +692,295 @@ body {
 
 
 
+.breastmilk-bank {
+    color: #868480;
+}
+
+.we-are-more-container {
+    align-self: stretch;
+    position: relative;
+}
+
+.for-18-years-the-south-afric-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.milk-banking-facilities-nation {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    padding-left: 32px;
+    list-style: disc;
+}
+
+.milk-banking-facilities-nation-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 32px;
+    font-size: 24px;
+}
+
+.button {
+    position: relative;
+    z-index: 0;
+}
+
+.make-your-hospital-container {
+    width: 100%;
+    position: relative;
+    font-size: 64px;
+    color: #adaaa5;
+    text-align: left;
+    display: inline-block;
+    font-family: 'Work Sans';
+}
+
+
+
+.home-sec-1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+    font-size: 18px;
+    color: #666562;
+    font-family: Inter;
+}
+
+.home-sec-2 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    font-size: 18px;
+    color: #666562;
+    font-family: Inter;
+}
+
+.we-are-more-than-just-a-breast-parent {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 64px;
+    color: #adaaa5;
+    font-family: 'Work Sans';
+}
+
+
+
+
+/* .image-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+} */
+
+.image-container img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 2s ease-in-out, transform 1s ease-in-out, top 1s ease-in-out, left 1s ease-in-out;
+}
+
+/* Positions before animation */
+.top-left {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-right {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-left {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-right {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Positions after animation */
+.image-container.show .top-left {
+    top: -85%;
+    left: 20%;
+    transform: rotate(322deg) scale(2);
+    opacity: 1;
+}
+
+.image-container.show .top-right {
+    top: -10%;
+    left: 80%;
+    transform: rotate(38deg) scale(2);
+    opacity: 1;
+}
+
+.image-container.show .center {
+    top: 140%;
+    left: 35%;
+    transform: rotate(322deg) scale(2);
+    opacity: 1;
+}
+
+.image-container.show .bottom-left {
+    top: 50%;
+    left: 15%;
+    transform: rotate(322deg) scale(2);
+    opacity: 1;
+}
+
+.image-container.show .bottom-right {
+    top: 120%;
+    left: 75%;
+    transform: rotate(38deg) scale(2);
+    opacity: 1;
+}
+
+
+.sec3-title {
+    font-size: 36px;
+    color: #107ba2;
+}
+
+.stats3 {
+    width: 100%;
+    position: relative;
+    font-size: 118.76px;
+    display: inline-block;
+    font-family: inherit;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.stat-desc {
+    font-size: 24px;
+    font-family: 'Work Sans';
+    color: #4d4d4d;
+    text-align: center;
+    display: inline-block;
+
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.stats3.show,
+.stat-desc.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.stats-container {
+
+    position: relative;
+    height: 210px;
+    /* Prevent layout shift */
+    overflow: hidden;
+}
+
+.green-btn {
+    background-color: #c4df16;
+
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Inter;
+    border: none;
+    border-radius: 16px;
+}
+
+.ellipse-div {
+    width: 100%;
+    clip-path: ellipse(50%);
+    border-radius: 10% 10%  0 0 ;
+    background: linear-gradient(180deg, #23b4e9, #fcfaf8);
+    height: 900px;
+    }
+
+    .help-us-or {
+
+       
+        }
+        .get-in-touch {
+        align-self: stretch;
+        position: relative;
+        font-size: 32px;
+        
+        }
+        .help-us-or-let-us-help-you-parent {
+    
+        position: relative;
+        display: flex;
+       
+        flex-direction: column;
+        padding-top: 250px;
+        gap: 28px;
+        text-align: right;
+        font-size: 74px;
+        color: #fff;
+        font-weight: bold;
+        }
+        
 
 
 @media only screen and (max-width: 480px) {
-    .sm-icon01-parent{
+    .sm-icon01-parent {
         top: 30%;
         left: 45%;
 
     }
+
+    .image-container {
+        display: none
+    }
+
+    .stats3 {
+        font-size: 56px;
+    }
+
+    .sec3-title {
+        font-size: 32px;
+    }
+
+    .make-your-hospital-container {
+        font-size: 48px;
+    }
+
     .wrapper {
         padding-left: 32px;
         padding-right: 32px;
@@ -678,27 +996,34 @@ body {
         text-align: start;
     }
 
-    .find-a-milk-container{
+    .find-a-milk-container {
         text-align: start;
     }
 
-    .frame-container{
+    .frame-container {
         align-items: start;
         justify-content: start;
     }
-    .frame-parent{
+
+    .frame-parent {
         text-align: start;
     }
 
-    .content{
+    .content {
         flex-direction: column;
     }
 
-    
+    .h-screen {
+        min-height: 1100px;
+    }
 
     .frame-group {
         width: 100%;
         flex-direction: column;
+    }
+
+    .introducing-sosafe {
+        font-size: 48px;
     }
 
     .component-2-parent {
