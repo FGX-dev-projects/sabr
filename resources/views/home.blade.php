@@ -401,17 +401,19 @@
                 <div class="">
                     <div class="make-your-hospital-container">
                         <span>Feed for Life Initiative </span>
-                      
+
                     </div>
                     <div class="home-sec-1">
                         <div class="for-18-years-the-south-afric-wrapper">
-                            <div class="">SABR’s Feed for Life Initiative bridges critical gaps in neonatal care, ensuring life-saving donor breastmilk reaches South Africa’s most vulnerable infants. </div>
+                            <div class="">SABR’s Feed for Life Initiative bridges critical gaps in neonatal care, ensuring
+                                life-saving donor breastmilk reaches South Africa’s most vulnerable infants. </div>
                         </div>
                         <div class="milk-banking-facilities-nation-parent">
                             <div class="we-are-more-container">
                                 <b class="cutting-edge-solutions font-[Inter] text-[#666562]">Equitable Access</b>
                                 <ul class="featuring-sosafes-innovative-container pl-8 " style="list-style: disc;">
-                                    <li class="font-normal text-[18px] font-medium">Delivering pasteurised donor breastmilk to infants in NICUs nationwide.
+                                    <li class="font-normal text-[18px] font-medium">Delivering pasteurised donor breastmilk
+                                        to infants in NICUs nationwide.
                                     </li>
                                 </ul>
                             </div>
@@ -419,14 +421,17 @@
                             <div class="we-are-more-container">
                                 <b class="cutting-edge-solutions font-[Inter] text-[#666562]">Priority Care</b>
                                 <ul class="featuring-sosafes-innovative-container pl-8 " style="list-style: disc;">
-                                    <li class="font-normal text-[18px] font-medium">Focused on babies born before 37 weeks, ensuring vital early nutrition.</li>
+                                    <li class="font-normal text-[18px] font-medium">Focused on babies born before 37 weeks,
+                                        ensuring vital early nutrition.</li>
                                 </ul>
                             </div>
 
                             <div class="we-are-more-container">
                                 <b class="cutting-edge-solutions  text-[#666562]">Sustainable Impact</b>
                                 <ul class="featuring-sosafes-innovative-container pl-8 " style="list-style: disc;">
-                                    <li class="font-normal text-[18px] font-medium">Strengthening neonatal care in underserved rural areas through partnerships with Provincial Departments of Health.</li>
+                                    <li class="font-normal text-[18px] font-medium">Strengthening neonatal care in
+                                        underserved rural areas through partnerships with Provincial Departments of Health.
+                                    </li>
                                 </ul>
                             </div>
 
@@ -467,32 +472,332 @@
                 <span>Making it Possible </span>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 place-items-center mt-10 mb:mt-20">
-                <img src="{{asset('images/discovery_logo.png')}}" alt="Discovery logo" 
-                     class="w-[298px] h-[60px] object-cover">
-            
-                <img src="{{asset('images/sosafe_logo.png')}}" alt="So safe" 
-                     class="w-[192px] h-[111px] object-cover">
-            
-                <img src="{{asset('images/Manufact.png')}}" alt="Manufact" 
-                     class="w-[205px] h-[81px] object-cover">
-            
-                <img src="{{asset('images/fgx_logo.png')}}" alt="FGX Logo" 
-                     class="w-[140px] h-[50px] object-cover">
+                <img src="{{asset('images/discovery_logo.png')}}" alt="Discovery logo"
+                    class="w-[298px] h-[60px] object-cover">
+
+                <img src="{{asset('images/sosafe_logo.png')}}" alt="So safe" class="w-[192px] h-[111px] object-cover">
+
+                <img src="{{asset('images/Manufact.png')}}" alt="Manufact" class="w-[205px] h-[81px] object-cover">
+
+                <img src="{{asset('images/fgx_logo.png')}}" alt="FGX Logo" class="w-[140px] h-[50px] object-cover">
             </div>
-            
+
         </div>
     </section>
 
     <section class="py-20">
-            <div class="ellipse-div">
-                <div class="wrapper">
-                    <div class="help-us-or-let-us-help-you-parent">
-                        <h1 class="help-us-or">Help Us, Or Let Us Help You</h1>
-                        <h3 class="get-in-touch ">Get In Touch</h3>
-                        </div>
+        <div class="ellipse-div">
+            <div class="wrapper">
+                <div class="help-us-or-let-us-help-you-parent pb-10">
+                    <h1 class="help-us-or">Help Us, Or Let Us Help You</h1>
+                    <h3 class="get-in-touch ">Get In Touch</h3>
                 </div>
-               
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                    <div class="details-4">
+                        <div class="info gap-3">
+                            <div class="tags">
+                                <div class="pills">
+                                    <div class="start-searching">Register</div>
+                                </div>
+                                <img class="healthiconschild-program-outl" alt=""
+                                    src="{{asset('images/doctor-icon2.svg')}}">
+                            </div>
+                            <div class="copy">
+                                <div class="saving-lives-one-container">Donate Breastmilk</div>
+                                <div class="help-save-lives">Your milk can provide vital nourishment for babies in need.
+                                </div>
+                            </div>
+                            <div class="flex items-end justify-end w-full mt-4">
+                                <div class="card-button flex gap-1 row justify-end">
+                                    <div class="start-today">Start Today</div>
+                                    <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="details-4">
+                        <div class="info">
+                            <div class="tags">
+                                <div class="pills">
+                                    <div class="start-searching">Register</div>
+                                </div>
+                                <img class="healthiconschild-program-outl" alt=""
+                                    src="{{asset('images/doctor-icon2.svg')}}">
+                            </div>
+                            <div class="copy">
+                                <div class="saving-lives-one-container">Volunteer Your Time</div>
+                                <div class="help-save-lives">From collections and deliveries to assisting the SABR team,
+                                    volunteers help us make it all happen. </div>
+                            </div>
+                            <div class="flex items-end justify-end w-full mt-4">
+                                <div class="card-button flex gap-1 row justify-end">
+                                    <div class="start-today">Start Today</div>
+                                    <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="details-4">
+                        <div class="info">
+                            <div class="tags">
+                                <div class="pills">
+                                    <div class="start-searching">Register</div>
+                                </div>
+                                <img class="healthiconschild-program-outl" alt=""
+                                    src="{{asset('images/doctor-icon2.svg')}}">
+                            </div>
+                            <div class="copy">
+                                <div class="saving-lives-one-container">Donate</div>
+                                <div class="help-save-lives">Help us save lives. Your financial contribution supports SABR’s
+                                    programmes, bringing life-saving donor breastmilk and care to vulnerable infants across
+                                    South Africa.</div>
+                            </div>
+                            <div class="flex items-end justify-end w-full mt-4">
+                                <div class="card-button flex gap-1 row justify-end">
+                                    <div class="start-today">Start Today</div>
+                                    <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-8">
+                    <div class="details-4 !bg-[#107BA226] !text-[#107BA2]">
+                        <div class="info gap-3">
+                            <div class="tags">
+                                <div class="pills !bg-[#107BA226]">
+                                    <div class="start-searching">Register</div>
+                                </div>
+                                <img class="healthiconschild-program-outl" alt=""
+                                    src="{{asset('images/doctor-icon2.svg')}}">
+                            </div>
+                            <div class="copy">
+                                <div class="saving-lives-one-container">I am a Parent</div>
+                                <div class="help-save-lives">If your baby needs donor breastmilk, we’re here to help. Access
+                                    safe, pasteurised breastmilk for your little one and learn how SABR supports families in
+                                    need.</div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="details-4 !bg-[#FFFFFF80]">
+                        <div class="info gap-3">
+                            <div class="tags">
+                                <div class="pills">
+                                    <div class="start-searching">Register</div>
+                                </div>
+                                <img class="healthiconschild-program-outl" alt=""
+                                    src="{{asset('images/doctor-icon2.svg')}}">
+                            </div>
+                            <div class="copy">
+                                <div class="saving-lives-one-container">I am a Doctor</div>
+                                <div class="help-save-lives">Bring life-saving breastmilk services to your facility. Partner
+                                    with SABR to access donor breastmilk and establish human milk-banking infrastructure in
+                                    your practice.</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="details-4 !bg-[#107BA280]">
+                        <div class="info gap-3 !text-[#ffff]">
+                            <div class="tags">
+                                <div class="pills !bg-[#107BA280] text-[#ffff]">
+                                    <div class="start-searching">Register</div>
+                                </div>
+                                <img class="healthiconschild-program-outl" alt="" src="{{asset('images/doc-white.svg')}}">
+                            </div>
+                            <div class="copy ">
+                                <div class="saving-lives-one-container">I am a Clinician</div>
+                                <div class="help-save-lives">Help save lives by donating your excess breastmilk to babies in
+                                    need. Your gift can make all the difference.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="ellipse-div2">
+            <div class="wrapper">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4  ">
+                    <!-- Left Container -->
+                    <div class="make-your-hospital-container !text-[#fff] !font-normal !text-[64x] mt-20">
+                        <span class="">SOStainer: Mobile Healthcare</span>
+                    </div>
+
+
+                    <!-- Right Container -->
+                    <div class="flex items-center justify-end h-full">
+                        <img src="{{asset('images/sosafe_logo.png')}}" class=" h-[140px]" />
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-4 p-4">
+                    <!-- Left Container (Smaller) -->
+                    <div>
+                        <div class="text-slate-50 font-normal !text-[18px]">
+                            The SOStainer Mobile Clinic delivers essential healthcare services, including breastfeeding
+                            support, immunisations, and breastmilk pasteurisation, directly to underserved communities.
+                            <br><br>
+                            Solar-powered and versatile, it’s a vital resource for supporting mothers and young children.
+                        </div>
+                        <div class="button-prim-wrapper !border-none mt-10">
+                            <div class="button-prim !border-[#FDC5C8]">
+                                <a class="nav-button7 !bg-[#FDC5C8] cursor-pointer ">
+                                    <div class="button7 pt-1 !text-[#F8444F]">Learn More</div>
+                                    <div class="nav-button-child">
+                                    </div>
+                                </a>
+                                <div class="pharrow-up-wrapper !bg-[#FDC5C8]  cursor-pointer">
+                                    <img class="pharrow-up-icon " alt="" src="{{asset('images/arrow-red.svg')}}">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <!-- Right Container (Larger) -->
+                    <div class="flex items-start justify-end  w-full">
+                        <img src="{{ asset('images/container.png') }}"
+                            class="w-auto max-w-[400px] h-[200px] md:h-[500px] md:max-w-[800px]" />
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="wrapper">
+            <div class="home-sec5">
+                <div class=" flex flex-col lg:flex-row r gap-6 ">
+                    <div class="flex-1 flex flex-col justify-center  gap-6">
+                        <div class="text-[#107BA2] text-4xl md:text-6xl font-bold">News</div>
+                        <div class="text-[#107BA2] text-xl md:text-2xl font-bold">News</div>
+                    </div>
+                    <div id="scrollContainer" class=" max-w-[730px]  overflow-x-auto whitespace-nowrap py-4 px-4 ">
+                        <div class="flex gap-6">
+                            <div class="w-80 h-[440px] relative shrink-0">
+                                <img class="h-full object-cover rounded-lg" src="{{asset('images/baby2.jpg')}}" />
+                                <div
+                                    class="absolute bottom-2 left-2 right-2 p-4 bg-[#FAF8F5] border border-[#DEDAD4] rounded-lg">
+                                    <div class="text-[#868480] text-lg font-bold">News</div>
+                                    <div class="text-[#868480] text-sm">Heading</div>
+                                    <div class="mt-2 flex justify-end">
+                                        <div class="px-2 py-1 bg-[#F4F0E9] rounded text-xs text-[#ADAAA5]">12 Aug</div>
+                                    </div>
+                                </div>
+                                <div class="absolute top-4 left-4 px-2 py-1 bg-[#F4F0E9] rounded text-xs text-[#ADAAA5]">
+                                    News</div>
+                            </div>
+                            <div class="w-80 h-[440px] relative shrink-0">
+                                <img class="h-full object-cover rounded-lg" src="{{asset('images/baby2.jpg')}}" />
+                                <div
+                                    class="absolute bottom-2 left-2 right-2 p-4 bg-[#FAF8F5] border border-[#DEDAD4] rounded-lg">
+                                    <div class="text-[#868480] text-lg font-bold">News</div>
+                                    <div class="text-[#868480] text-sm">Heading</div>
+                                    <div class="mt-2 flex justify-end">
+                                        <div class="px-2 py-1 bg-[#F4F0E9] rounded text-xs text-[#ADAAA5]">12 Aug</div>
+                                    </div>
+                                </div>
+                                <div class="absolute top-4 left-4 px-2 py-1 bg-[#F4F0E9] rounded text-xs text-[#ADAAA5]">
+                                    News</div>
+                            </div>
+                            <div class="w-80 h-[440px] relative shrink-0">
+                                <img class="h-full object-cover rounded-lg" src="{{asset('images/baby2.jpg')}}" />
+                                <div
+                                    class="absolute bottom-2 left-2 right-2 p-4 bg-[#FAF8F5] border border-[#DEDAD4] rounded-lg">
+                                    <div class="text-[#868480] text-lg font-bold">News</div>
+                                    <div class="text-[#868480] text-sm">Heading</div>
+                                    <div class="mt-2 flex justify-end">
+                                        <div class="px-2 py-1 bg-[#F4F0E9] rounded text-xs text-[#ADAAA5]">12 Aug</div>
+                                    </div>
+                                </div>
+                                <div class="absolute top-4 left-4 px-2 py-1 bg-[#F4F0E9] rounded text-xs text-[#ADAAA5]">
+                                    News</div>
+                            </div>
+                            <div class="w-80 h-[440px] relative shrink-0">
+                                <img class="h-full object-cover rounded-lg" src="{{asset('images/baby2.jpg')}}" />
+                                <div
+                                    class="absolute bottom-2 left-2 right-2 p-4 bg-[#FAF8F5] border border-[#DEDAD4] rounded-lg">
+                                    <div class="text-[#868480] text-lg font-bold">News</div>
+                                    <div class="text-[#868480] text-sm">Heading</div>
+                                    <div class="mt-2 flex justify-end">
+                                        <div class="px-2 py-1 bg-[#F4F0E9] rounded text-xs text-[#ADAAA5]">12 Aug</div>
+                                    </div>
+                                </div>
+                                <div class="absolute top-4 left-4 px-2 py-1 bg-[#F4F0E9] rounded text-xs text-[#ADAAA5]">
+                                    News</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pt-[128px]  bg-[#107BA2]">
+        <div class="wrapper ">
+            <div class=" bg-[#107BA2] inline-flex justify-center items-start gap-[98px]">
+                <div class="flex-1 self-stretch flex flex-col justify-start items-center gap-8">
+                    <div class="self-stretch flex flex-col lg:flex-row justify-start items-start gap-6">
+                        <!-- Left Section -->
+                        <div class="flex-1 flex flex-col justify-center items-start gap-3">
+                            <div class="self-stretch text-[#F9FCE8] text-6xl font-normal leading-tight">
+                                Take the <span class="font-bold">Next<br> Step</span>
+                            </div>
+                            <div class="self-stretch h-auto flex flex-col justify-start items-start gap-6">
+                                <p class="self-stretch text-[#FEFEFD] text-2xl font-normal">
+                                    Bring SoSAFE to your facility and set a new standard in breastmilk safety.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Right Section -->
+                        <div class="flex-1 flex flex-col justify-center items-start gap-3">
+                            <div class="self-stretch h-auto flex flex-col justify-start items-start gap-6">
+                                <p class="self-stretch text-[#FEFEFD] text-3xl font-bold">
+                                    Ready to Learn More?
+                                </p>
+                            </div>
+                            <div class="self-stretch h-auto flex flex-col justify-start items-start gap-6">
+                                <p class="self-stretch text-[#FEFEFD] text-2xl font-normal">
+                                    Email us at <a href="mailto:SoSafe@sabr.org.za" class="underline">SoSafe@sabr.org.za</a>
+                                    to explore implementation options, pricing details, and how SoSAFE fits into your
+                                    existing infrastructure.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
 
@@ -579,4 +884,38 @@
             updateStats(); // Start the animation immediately
         });
     </script>
+
+    <script>
+        const container = document.getElementById("scrollContainer");
+
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        container.addEventListener("mousedown", (e) => {
+            isDown = true;
+            container.classList.add("active");
+            startX = e.pageX - container.offsetLeft;
+            scrollLeft = container.scrollLeft;
+        });
+
+        container.addEventListener("mouseleave", () => {
+            isDown = false;
+            container.classList.remove("active");
+        });
+
+        container.addEventListener("mouseup", () => {
+            isDown = false;
+            container.classList.remove("active");
+        });
+
+        container.addEventListener("mousemove", (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - container.offsetLeft;
+            const walk = (x - startX) * 2; // Adjust scrolling speed
+            container.scrollLeft = scrollLeft - walk;
+        });
+    </script>
+
 @endsection

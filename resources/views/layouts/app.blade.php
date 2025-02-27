@@ -30,7 +30,7 @@
         <div class="frame-child">
         </div>
     </div>
-    <div class="navigation wrapper sticky   py-[28px]">
+    <div class="navigation wrapper  !fixed   py-[28px]">
         <img src="{{ asset('images/logo.png') }}" class="h-[112px] rounded-lg" alt="Logo">
 
         <div class="md:hidden cursor-pointer" id="mobile-menu-button">
@@ -276,7 +276,69 @@
     <main>
         @yield('content')
     </main>
+    
+    <footer class="pt-[128px] pb-[50px] md:pb-[80px] px-[20px] md:px-[40px]  bg-[#107BA2]">
+       
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center ">
+                <!-- Logo -->
+                <div class="flex flex-col md:flex-row gap-[100px]">
+                    <img class="w-[87.15px] h-[118.99px] bg-white rounded-[12px]" src="{{asset('images/logo.png')}}" alt="Logo" />
+            
+                <!-- Navigation Links -->
+                <div class="flex flex-col md:flex-row items-start gap-6 mt-4 md:mt-0">
+                    <div class="flex flex-col items-start gap-3 md:gap-6 text-white text-[18px] font-inter">
+                        <a>Home</a>
+                        <a>Media</a>
+                    </div>
+                    <div class="flex flex-col items-start gap-3 md:gap-6 text-white text-[18px] font-inter">
+                        <a>About</a>
+                        <a>Projects</a>
+                    </div>
+                    <div class="flex flex-col items-start gap-3 md:gap-6 text-white  text-[18px] font-inter">
+                        <a >Breast is Best</a>
+                        <a class="items-start">Toolkit</a>
+                    </div>
+                </div>
+                </div>
+                
+            
+                <!-- Newsletter Signup -->
+                <div class="flex flex-col md:flex-row items-center gap-4 mt-4 md:mt-0 bg-[#107BA2] wifull border border-[#C4DF16] rounded-[12px] p-3 mb-5">
+                    <div class="text-[#C4DF16] text-[18px] font-inter">Sign up for our Newsletter</div>
+                    <button class="px-4 py-2 bg-[#107BA2] rounded-[6px] text-[#E7F2F6] text-[18px] font-inter border border-white">
+                        Sign up
+                    </button>
+                </div>
 
+                
+            </div>
+            <div class="flex justify-center items-center md:mt-10 mt-5 ">
+                <div class="grid grid-cols-6 gap-4">
+                  <div class="w-[32px] h-[32px] flex justify-center items-center border border-[#BBE8F8] rounded-lg">
+                    <img src="{{asset('images/favebook-icon.svg')}}"/>
+                  </div>
+                  <div class="w-[32px] h-[32px] flex justify-center items-center border border-[#BBE8F8] rounded-lg">
+                    <img src="{{asset('images/linkedin-icon.svg')}}"/>
+                  </div>
+                  <div class="w-[32px] h-[32px] flex justify-center items-center border border-[#BBE8F8] rounded-lg">
+                    <img src="{{asset('images/youtube-icon.svg')}}"/>
+                  </div>
+                  <div class="w-[32px] h-[32px] flex justify-center items-center border border-[#BBE8F8] rounded-lg">
+                    <img src="{{asset('images/twitter-icon.svg')}}"/>
+                  </div>
+                  <div class="w-[32px] h-[32px] flex justify-center items-center border border-[#BBE8F8] rounded-lg">
+                    <img src="{{asset('images/tiktik-icon.svg')}}"/>
+                  </div>
+                 
+                </div>
+              </div>
+
+
+              <div class="flex justify-center text-center items-center md:mt-10 mt-5 text-[#BBE8F8] text-[16px] font-open-sans font-normal leading-4 break-words">
+                <a href="#">Privacy Policy </a> <span class="m-2"> | </span> <a href="#">Terms & Conditions</a> <span class="m-2"> | </span> <a href="#">PAIA Manual </a>
+              </div>
+            </div>
+    </footer>
 </body>
 
 </html>
