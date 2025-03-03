@@ -18,7 +18,7 @@
                     <div class="content-inner">
                         <div class="frame-parent">
                             <div class="frame-parent ">
-                                <div class="saving-lives-one-container saving-lives-mobile">
+                                <div cc>
                                     <span>Saving Lives,</span>
                                     <span class="one-drop-at"> One Drop At A Time</span>
                                 </div>
