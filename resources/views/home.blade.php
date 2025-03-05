@@ -692,7 +692,7 @@
 
     <section class="py-20">
         <div class="wrapper">
-            <div class="home-sec5">
+            <div class="home-sec5 !p-0">
                 <div class=" flex flex-col lg:flex-row r gap-6 ">
                     <div class="flex-1 flex flex-col justify-center  gap-6">
                         <div class="text-[#107BA2] text-4xl md:text-6xl font-bold">News</div>

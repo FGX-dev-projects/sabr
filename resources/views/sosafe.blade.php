@@ -29,7 +29,7 @@
         </div>
     </section>
 
-    <section class="py-20">
+    <section class="py-[128px]">
         <div class="wrapper ">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-[68px] items-center">
                 <!-- Left Container (Image) -->

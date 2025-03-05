@@ -13,6 +13,7 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Work Sans', 'sans-serif'],
+                inter: ["Inter", "sans-serif"],
               },
         },
     },

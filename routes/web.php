@@ -9,3 +9,7 @@ Route::get('/', function () {
 Route::get('/sosafe', function () {
     return view('sosafe');
 })->name('sosafe');
+
+Route::get('/about-us', function () {
+    return view('about-us');
+})->name('about-us');
