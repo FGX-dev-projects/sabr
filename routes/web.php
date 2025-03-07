@@ -13,3 +13,11 @@ Route::get('/sosafe', function () {
 Route::get('/about-us', function () {
     return view('about-us');
 })->name('about-us');
+
+Route::get('/feed-for-life', function () {
+    return view('feed-for-life');
+})->name('feed-for-life');
+
+Route::get('/sostainer', function () {
+    return view('sostainer');
+})->name('sostainer');

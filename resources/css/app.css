@@ -8,6 +8,14 @@ body {
     font-family: Work Sans, sans-serif;
     background-color: #FCFAF8;
 }
+h4{
+color:#666562;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
 
 .rifacebook-fill-icon {
     width: 24px;
@@ -1015,6 +1023,10 @@ flex-direction: column;
 gap: 98px;
 }
 
+.sostainer{
+    color: #E23E48;
+}
+
 @media only screen and (max-width: 768px) {
     .sm-icon01-parent {
         top: 30%;
@@ -1060,7 +1072,7 @@ gap: 98px;
     }
 
     .saving-lives-mobile {
-        font-size: 40px;
+        font-size: 48px;
         text-align: start;
     }
 
