@@ -71,7 +71,7 @@
                 <div
                     class="max-w-[377px] max-h-[431px] relative backdrop-blur-lg rounded-2xl bg-[#20A4D4] border border-[#6CCDF0]  flex flex-col items-end justify-start p-8 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
                     <div class="flex flex-col items-end justify-between flex-1 w-full">
-                        <b class="w-full relative text-[#FEFEFD]">Affordable and<br> Accessible</b>
+                        <b class="w-full relative text-[#FEFEFD] text-[32px]">Affordable and<br> Accessible</b>
                         <div class="w-full text-left relative text-xl text-[#FEFEFD]">
                             SoSAFE is designed with affordability and scalability in mind, making it an ideal option for
                             hospitals and milk banks globally. Its accessible design ensures it can be easily adopted in
@@ -83,7 +83,7 @@
                 <div
                     class="max-w-[377px] max-h-[431px] relative backdrop-blur-lg rounded-2xl bg-[#20A4D4] border border-[#6CCDF0]  flex flex-col items-end justify-start p-8 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
                     <div class="flex flex-col items-end justify-between flex-1 w-full gap-8">
-                        <b class="w-full relative text-[#FEFEFD]">High Safety <br>Standards</b>
+                        <b class="w-full relative text-[#FEFEFD] text-[32px]">High Safety <br>Standards</b>
                         <div class="w-full text-left flex justify-start relative text-xl text-[#FEFEFD]">
                             Certified for IEC laboratory equipment safety, SoSAFE eliminates pathogens while retaining the
                             essential nutrients and bioactive components in breastmilk, providing infants with the best
@@ -95,7 +95,7 @@
                 <div
                     class="max-w-[377px] max-h-[431px] relative backdrop-blur-lg rounded-2xl bg-[#20A4D4] border border-[#6CCDF0]  flex flex-col items-end justify-start p-8 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
                     <div class="flex flex-col items-end justify-between flex-1 w-full ">
-                        <b class="w-full relative text-[#FEFEFD] ">Efficient <br>Processing</b>
+                        <b class="w-full relative text-[#FEFEFD] text-[32px]">Efficient <br>Processing</b>
                         <div class="w-full relative text-left text-xl text-[#FEFEFD]">
                             The SoSAFE Pasteuriser streamlines the pasteurisation process, reducing time and costs for
                             facilities without compromising safety or quality.

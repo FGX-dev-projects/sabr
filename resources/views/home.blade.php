@@ -18,7 +18,7 @@
                     <div class="content-inner">
                         <div class="frame-parent">
                             <div class="frame-parent ">
-                                <div cc>
+                                <div >
                                     <span>Saving Lives,</span>
                                     <span class="one-drop-at"> One Drop At A Time</span>
                                 </div>
@@ -291,7 +291,7 @@
                         </div>
                         <div class="milk-banking-facilities-nation-parent">
                             <div class="we-are-more-container">
-                                <b class="cutting-edge-solutions font-[Inter] text-[#666562]">Cutting-Edge Solutions</b>
+                                <b class="cutting-edge-solutions  text-[#666562]">Cutting-Edge Solutions</b>
                                 <ul class="featuring-sosafes-innovative-container pl-8 " style="list-style: disc;">
                                     <li class="font-normal text-[18px] font-medium">Featuring SoSAFE’s innovative
                                         “Breastmilk-in-a-Box” with affordable pasteurisers and rapid testing technology.
@@ -300,7 +300,7 @@
                             </div>
 
                             <div class="we-are-more-container">
-                                <b class="cutting-edge-solutions font-[Inter] text-[#666562]">Comprehensive Care</b>
+                                <b class="cutting-edge-solutions  text-[#666562]">Comprehensive Care</b>
                                 <ul class="featuring-sosafes-innovative-container pl-8 " style="list-style: disc;">
                                     <li class="font-normal text-[18px] font-medium">From milk processing to maternal health
                                         services, we equip hospitals to meet critical neonatal care needs.</li>

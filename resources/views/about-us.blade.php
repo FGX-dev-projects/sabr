@@ -69,29 +69,27 @@
                             <div class="self-stretch text-[#F9FCE8] text-4xl md:text-7xl font-normal ">
                                 Programme <b>Mission</b> and <b>Goals</b>
                             </div>
-
+    
                             <div class="flex flex-col md:flex-row gap-4 text-[#FEFEFD] mt-10">
                                 <div class="flex-1 gap: 24px;">
                                     <h2 class="text-[24px] font-bold mb-3">Mission Statement</h2>
-                                    <p class="text-[24px] font-inter">Deliver pasteurised, donated breastmilk to in-hospital
-                                        patients and equitably redistribute DBM to infants in public healthcare facilities.
+                                    <p class="text-[24px] font-inter">Deliver pasteurised, donated breastmilk to in-hospital patients and equitably redistribute DBM to infants in public healthcare facilities. 
                                     </p>
                                 </div>
                                 <div class="flex-1 gap: 24px;">
-                                    <h2 class="text-[24px] font-bold mb-3">Mission Statement</h2>
-                                    <p class="text-[24px] font-inter">Deliver pasteurised, donated breastmilk to in-hospital
-                                        patients and equitably redistribute DBM to infants in public healthcare facilities.
+                                    <h2 class="text-[24px] font-bold mb-3">Programme Goal</h2>
+                                    <p class="text-[24px] font-inter">Provide fair and reliable access to donor breastmilk for both private and public-sector patients, ensuring critical early nutrition for pre-term and at-risk infants. 
                                     </p>
                                 </div>
                             </div>
                         </div>
-
-
-
+    
+    
+    
                     </div>
                 </div>
             </div>
-
+    
         </div>
     </section>
 

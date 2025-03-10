@@ -21,3 +21,7 @@ Route::get('/feed-for-life', function () {
 Route::get('/sostainer', function () {
     return view('sostainer');
 })->name('sostainer');
+
+Route::get('/breastmilk-smart', function () {
+    return view('breastmilk-smart');
+})->name('breastmilk-smart');
