@@ -14,7 +14,7 @@
         <div class="wrapper">
             <div class="w-full h-full flex flex-col     gap-6">
                 <div class="w-full h-full flex flex-col text-[#FEFEFD]   gap-6">
-                    <div class="w-full text-[#FEFEFD] text-[48px] md:text-[64px] font-normal break-words pt-[180px]  md:pt-[195px]">
+                    <div class="w-full text-[#FEFEFD] text-[48px] md:text-[64px] font-normal break-words pt-[180px]  md:pt-[120px]">
                         Feed For Life
                     </div>
                     

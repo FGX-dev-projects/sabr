@@ -668,8 +668,6 @@
                                     <img class="pharrow-up-icon " alt="" src="{{asset('images/arrow-red.svg')}}">
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
 

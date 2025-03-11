@@ -25,3 +25,15 @@ Route::get('/sostainer', function () {
 Route::get('/breastmilk-smart', function () {
     return view('breastmilk-smart');
 })->name('breastmilk-smart');
+
+Route::get('/impact', function () {
+    return view('impact');
+})->name('impact');
+
+Route::get('/research', function(){
+    return view('research');
+})->name('research');
+
+Route::get('/breast-is-best', function(){
+    return view('breast-is-best');
+})->name('breast-is-best');
