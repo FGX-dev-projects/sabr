@@ -50,4 +50,26 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.querySelectorAll(".question-wrapper").forEach((question) => {
+    question.addEventListener("click", function () {
+      let container = this.closest(".accordion");
+      let answer = container.querySelector(".answer-wrapper");
+      let trigger = container.querySelector(".material-icons.drop");
+  
+      // Toggle answer visibility
+      if (answer.style.display === "block" || answer.style.display === "") {
+        answer.style.display = "none";
+      } else {
+        answer.style.display = "block";
+      }
+  
+      // Toggle icon class
+      trigger.classList.toggle("icon-expend");
+  
+      // Toggle expanded class on container
+      container.classList.toggle("expanded");
+    });
+  });
+  
+
 
