@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="relative w-full h-[80px] md:h-[40px]  overflow-hidden">
+    <section class="relative w-full h-300px] md:h-[350px]  overflow-hidden">
         <!-- Background Video -->
 
 
@@ -23,7 +23,7 @@
         </div>
     </section>
 
-    <section class="pt-[128px]">
+    <section class="pt-[50px]">
         <div class="wrapper flex flex-col gap-6">
             <p class="text-[#868480] text-[24px] font-bold font-inter">Understanding Breastmilk Banking</p>
             <div class="w-full flex flex-col md:flex-row justify-start items-stretch gap-6">

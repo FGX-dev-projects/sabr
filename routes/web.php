@@ -37,3 +37,7 @@ Route::get('/research', function(){
 Route::get('/breast-is-best', function(){
     return view('breast-is-best');
 })->name('breast-is-best');
+
+Route::get('/news', function(){
+    return view('news');
+})->name('news');
