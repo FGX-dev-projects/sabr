@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="relative w-full h-300px] md:h-[350px]  overflow-hidden">
+    <section class="relative w-full h-[300px] md:h-[350px]  overflow-hidden">
         <!-- Background Video -->
 
 

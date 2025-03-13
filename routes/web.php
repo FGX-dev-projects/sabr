@@ -41,3 +41,7 @@ Route::get('/breast-is-best', function(){
 Route::get('/news', function(){
     return view('news');
 })->name('news');
+
+Route::get('/safe-user-of-dbm', function(){
+    return view('safe-user-of-dbm');
+})->name('safe-user-of-dbm');
