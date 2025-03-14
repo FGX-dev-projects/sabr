@@ -45,3 +45,7 @@ Route::get('/news', function(){
 Route::get('/safe-user-of-dbm', function(){
     return view('safe-user-of-dbm');
 })->name('safe-user-of-dbm');
+
+Route::get('/why-the-cost', function(){
+    return view('why-the-cost');
+})->name('why-the-cost');
