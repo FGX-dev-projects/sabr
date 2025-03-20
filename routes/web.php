@@ -49,3 +49,7 @@ Route::get('/safe-user-of-dbm', function(){
 Route::get('/why-the-cost', function(){
     return view('why-the-cost');
 })->name('why-the-cost');
+
+Route::get('/donate', function(){
+    return view('donate');
+})->name('donate');

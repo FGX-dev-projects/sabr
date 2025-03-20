@@ -70,6 +70,52 @@ document.querySelectorAll(".question-wrapper").forEach((question) => {
       container.classList.toggle("expanded");
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    function populateDOBFields() {
+        // Populate Dates (1-31)
+        document.querySelectorAll(".dob-date").forEach(select => {
+            select.innerHTML = '<option value="">Date</option>'; // Clear old options
+            for (let i = 1; i <= 31; i++) {
+                let option = document.createElement("option");
+                option.value = i;
+                option.textContent = i;
+                select.appendChild(option);
+            }
+        });
+
+        // Populate Months (Jan - Dec)
+        const months = [
+            "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+        ];
+        document.querySelectorAll(".dob-month").forEach(select => {
+            select.innerHTML = '<option value="">Month</option>';
+            months.forEach((month, index) => {
+                let option = document.createElement("option");
+                option.value = index + 1;
+                option.textContent = month;
+                select.appendChild(option);
+            });
+        });
+
+        // Populate Years (1900 - Current Year)
+        const currentYear = new Date().getFullYear();
+        document.querySelectorAll(".dob-year").forEach(select => {
+            select.innerHTML = '<option value="">Year</option>';
+            for (let i = currentYear; i >= 1900; i--) {
+                let option = document.createElement("option");
+                option.value = i;
+                option.textContent = i;
+                select.appendChild(option);
+            }
+        });
+    }
+
+    // Call the function to populate the fields
+    populateDOBFields();
+});
+
   
 
 

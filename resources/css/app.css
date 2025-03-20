@@ -8,6 +8,17 @@ body {
     font-family: Work Sans, sans-serif;
     background-color: #FCFAF8;
 }
+input{
+    border-radius: 12px !important;
+}
+label{
+    padding-bottom: 5px;
+    font-size: 20px;
+line-height: 120%;
+
+color: #636061;
+
+}
 h4{
 color:#666562;
 font-family: Inter;
@@ -1085,6 +1096,13 @@ gap: 98px;
   }
   .answer-wrapper{
    
+  }
+  .label{
+    font-size: 13px !important;
+line-height: 120% !important;
+font-family: Helvetica, Arial, sans-serif !important;
+color: #636061;
+text-align: left !important;
   }
   @media only screen and (max-width: 768px) {
     .accordion {
