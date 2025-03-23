@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DonateController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -53,3 +54,5 @@ Route::get('/why-the-cost', function(){
 Route::get('/donate', function(){
     return view('donate');
 })->name('donate');
+
+Route::post('/donate-submit', [DonateController::class, 'submit'])->name('donate.submit');
