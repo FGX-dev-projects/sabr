@@ -27,7 +27,7 @@
     <div class="wrapper">
         <div class="w-full p- ">
             <h2 class="text-[32px] font-inter font-bold text-[#adaaa5]">Mother’s Details</h2>
-            <form action="{{ route('donate.submit') }}" class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-12" method="POST">
+            <form action="{{ route('donate.submit') }}"  class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-12" method="POST" onsubmit="updateDOB();">
                 @csrf
                 <!-- Name -->
                 <div>
