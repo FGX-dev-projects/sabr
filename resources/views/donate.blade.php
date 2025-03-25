@@ -307,9 +307,9 @@
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
                     const day = document.getElementById('baby_dob_day');
-                    const month = document.getElementById('baby_mother_dob_month');
+                    const month = document.getElementById('baby_dob_month');
                     const year = document.getElementById('baby_dob_year');
-                    const dobInput = document.getElementById('baby_mother_date_of_birth');
+                    const dobInput = document.getElementById('baby_date_of_birth');
             
                     function updateDOB() {
                         if (day.value && month.value && year.value) {
@@ -322,7 +322,7 @@
             </script>
                 <div>
                     <label for="family_doctor_name" class="block text-gray-600">Name of Family Doctor</label>
-                    <input name="family_doctor_name" type="email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <input name="family_doctor_name" type="text" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
                 <div>
                     <label for="family_doctor_number" class="block text-gray-600">Contact Number of Family Doctor</label>
@@ -877,7 +877,7 @@
                     <label class="block text-gray-600">16. Have you ever been diagnosed with:</label>
                    
                 </div>
-                <div class="flex flex-col gap-3">
+                {{-- <div class="flex flex-col gap-3">
                     <label class="block text-gray-600">Have you ever had hepatitis B, HIV, or TB? *</label>
                     <div class="flex gap-4">
                         <label class="flex items-center gap-2" for="hepatitis_hiv_tb_yes">
@@ -889,7 +889,7 @@
                             No
                         </label>
                     </div>
-                </div>
+                </div> --}}
                 <div class="flex flex-col gap-3">
                     <label class="block text-gray-600">Have you ever been diagnosed with Hepatitis B? *</label>
                     <div class="flex gap-4">
@@ -957,25 +957,13 @@
                     </div>
                 </div>
                 
-                <div class="flex flex-col col-span-1 md:col-span-2 gap-3">
-                    <label class="block text-gray-600" for="hepatitis_hiv_tb">Have you ever had hepatitis B, HIV, or TB? *</label>
-                    <div class="flex gap-4">
-                        <label class="flex items-center gap-2" for="hepatitis_hiv_tb_yes">
-                            <input type="radio" id="hepatitis_hiv_tb_yes" name="hepatitis_hiv_tb" value="Yes" class="form-radio scale-150 text-blue-500">
-                            Yes
-                        </label>
-                        <label class="flex items-center gap-2" for="hepatitis_hiv_tb_no">
-                            <input type="radio" id="hepatitis_hiv_tb_no" name="hepatitis_hiv_tb" value="No" class="form-radio scale-150 text-blue-500">
-                            No
-                        </label>
-                    </div>
-                </div>
+               
                 
 
                 <div class="flex flex-col col-span-1 md:col-span-2 gap-3">
                     <label class="block text-gray-600">17. Do you or have you ever had a sexual partner who:*</label>
                 </div>
-                <div class="flex flex-col gap-3">
+                {{-- <div class="flex flex-col gap-3">
                     <label class="block text-gray-600" for="partner_risk_hiv">
                         Have you ever had a sexual partner who is at risk for HIV, takes habit-forming drugs, or is a hemophiliac? *
                     </label>
@@ -989,7 +977,7 @@
                             No
                         </label>
                     </div>
-                </div>
+                </div> --}}
                 <div class="flex flex-col gap-3">
                     <label class="block text-gray-600" for="partner_hiv_risk">
                         Do you currently have, or have you ever had, a sexual partner who has or is at risk for HIV? *
@@ -1045,17 +1033,17 @@
                 </div>
                 
                 <div class="flex flex-col gap-3">
-                    <label class="block text-gray-600" for="partner_haemophiliac">
+                    <label class="block text-gray-600" for="persistent_cough">
                         19. Have you been coughing persistently (2 weeks or longer)? *
                     </label>
                     <div class="flex gap-4">
-                        <label class="flex items-center gap-2" for="partner_haemophiliac_yes">
-                            <input type="radio" id="partner_haemophiliac_yes" name="partner_haemophiliac" value="Yes"
+                        <label class="flex items-center gap-2" for="persistent_cough_yes">
+                            <input type="radio" id="persistent_cough_yes" name="persistent_cough" value="Yes"
                                 class="form-radio scale-150 text-blue-500">
                             Yes
                         </label>
-                        <label class="flex items-center gap-2" for="partner_haemophiliac_no">
-                            <input type="radio" id="partner_haemophiliac_no" name="partner_haemophiliac" value="No"
+                        <label class="flex items-center gap-2" for="persistent_cough_no">
+                            <input type="radio" id="persistent_cough_no" name="persistent_cough" value="No"
                                 class="form-radio scale-150 text-blue-500">
                             No
                         </label>
@@ -1183,7 +1171,7 @@
         If you are a once-off donor, when was the milk you are donating expressed?
     </label>
     <div class="flex gap-4">
-        <input type="date" id="milk_expression_date" name="milk_expression_date"
+        <input type="text" id="milk_expression_date" name="milk_expression_date"
             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
     </div>
 </div>
@@ -1253,7 +1241,7 @@
                     <label class="block text-[#107ba2] font-bold">Please note</label>
                     <div class="flex flex-wrap  gap-2">
                         <label class="flex flex-row items-center gap-2 ">
-                            <input id="popia-consent" name="popia_consent" type="checkbox" class="form-checkbox checked:text-blue-500 scale-150 !w-3 !h-3 text-[#636061] required">
+                            <input id="popia-consent" name="popia_consent" value="yes" type="checkbox" class="form-checkbox checked:text-blue-500 scale-150 !w-3 !h-3 text-[#636061] required">
                             Yes, I HAVE READ AND UNDERSTAND WHAT I AM CONSENTING TO AS OUTLINED ON THE POPIA CONSENT TERMS AND CONDITIONS AND IN THE INFORMATION PRIVACY POLICY AND CONSENT TO THE PROCESSING OF MY PERSONAL INFORMATION. I understand that the outcome OF MY APPLICATION is at the sole discretion of the SABR and I will abide by it.
                         </label>
                           
