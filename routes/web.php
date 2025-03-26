@@ -56,6 +56,11 @@ Route::get('/donate', function(){
     return view('donate');
 })->name('donate');
 
+Route::get('board-of-directors', function(){
+    return view('board-of-directors');
+})->name('board-of-directors');
+
+
 Route::get('/stats', function() {
     return view('stats');
 })->name('stats');
