@@ -13,7 +13,7 @@
         {{ session('error') }}
     </div>
 @endif
-<section class="relative w-full h-[650px] md:h-[450px]  overflow-hidden">
+<section class="relative w-full h-[550px] md:h-[450px]  overflow-hidden">
     <!-- Background Video -->
 
 

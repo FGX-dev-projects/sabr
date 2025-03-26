@@ -56,9 +56,16 @@ Route::get('/donate', function(){
     return view('donate');
 })->name('donate');
 
+Route::get('/stats', function() {
+    return view('stats');
+})->name('stats');
+
 Route::get('/volunteer', function(){
     return view('volunteer');
 })->name('volunteer');
+
+
+
 
 Route::post('/donate-submit', [DonateController::class, 'submit'])->name('donate.submit');
 Route::post('/volunteer-submit', [VolunteerController::class, 'submit'])->name('volunteer.submit');
