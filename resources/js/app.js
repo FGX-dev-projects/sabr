@@ -1,4 +1,8 @@
 import './bootstrap';
+import toastr from 'toastr';
+import 'toastr/build/toastr.min.css';
+
+window.toastr = toastr;
 function toggleDropdown() {
     document.getElementById('dropdown-menu').classList.toggle('hidden');
 }
