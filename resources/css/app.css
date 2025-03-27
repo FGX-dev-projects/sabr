@@ -823,6 +823,7 @@ line-height: normal;
 
 
 
+
 /* .image-container {
     position: relative;
     width: 100%;
@@ -1093,6 +1094,10 @@ gap: 98px;
     transition: 0.4s;
     border: 1px solid #DEDAD4;
     border-radius: 12px;
+  }
+
+  .contact-us{
+    margin-top: 90px;
   }
   .answer-wrapper{
    
