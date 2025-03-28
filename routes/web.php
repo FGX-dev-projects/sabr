@@ -73,6 +73,9 @@ Route::get('/volunteer', function(){
     return view('volunteer');
 })->name('volunteer');
 
+Route::get('/get-involved', function() {
+    return view('get-involved');
+})->name('get-involved');
 
 
 

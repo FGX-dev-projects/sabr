@@ -504,13 +504,13 @@
                                     src="{{asset('images/doctor-icon2.svg')}}">
                             </div>
                             <div class="copy">
-                                <div class="saving-lives-one-container">Donate Breastmilk</div>
-                                <div class="help-save-lives">Your milk can provide vital nourishment for babies in need.
+                                <div class="saving-lives-one-container font-sans">Donate Breastmilk</div>
+                                <div class="help-save-lives !font-inter !text-[14px] !font-[300]">Your milk can provide vital nourishment for babies in need.
                                 </div>
                             </div>
                             <div class="flex items-end justify-end w-full mt-4">
                                 <div class="card-button flex gap-1 row justify-end">
-                                    <div class="start-today">Start Today</div>
+                                    <div class="start-today !font-inter">Start Today</div>
                                     <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
                                 </div>
                             </div>
@@ -529,13 +529,13 @@
                                     src="{{asset('images/doctor-icon2.svg')}}">
                             </div>
                             <div class="copy">
-                                <div class="saving-lives-one-container">Volunteer Your Time</div>
-                                <div class="help-save-lives">From collections and deliveries to assisting the SABR team,
+                                <div class="saving-lives-one-container font-sans">Volunteer Your Time</div>
+                                <div class="help-save-lives !font-inter !text-[14px] !font-[300]">From collections and deliveries to assisting the SABR team,
                                     volunteers help us make it all happen. </div>
                             </div>
                             <div class="flex items-end justify-end w-full mt-4">
                                 <div class="card-button flex gap-1 row justify-end">
-                                    <div class="start-today">Start Today</div>
+                                    <div class="start-today !font-inter">Start Today</div>
                                     <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
                                 </div>
                             </div>
@@ -555,13 +555,13 @@
                             </div>
                             <div class="copy">
                                 <div class="saving-lives-one-container">Donate</div>
-                                <div class="help-save-lives">Help us save lives. Your financial contribution supports SABR’s
+                                <div class="help-save-lives !font-inter !text-[14px] !font-[300]">Help us save lives. Your financial contribution supports SABR’s
                                     programmes, bringing life-saving donor breastmilk and care to vulnerable infants across
                                     South Africa.</div>
                             </div>
                             <div class="flex items-end justify-end w-full mt-4">
                                 <div class="card-button flex gap-1 row justify-end">
-                                    <div class="start-today">Start Today</div>
+                                    <div class="start-today !font-inter">Start Today</div>
                                     <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
                                 </div>
                             </div>
@@ -583,7 +583,7 @@
                             </div>
                             <div class="copy">
                                 <div class="saving-lives-one-container">I am a Parent</div>
-                                <div class="help-save-lives">If your baby needs donor breastmilk, we’re here to help. Access
+                                <div class="help-save-lives !font-inter !text-[14px] !font-[300]">If your baby needs donor breastmilk, we’re here to help. Access
                                     safe, pasteurised breastmilk for your little one and learn how SABR supports families in
                                     need.</div>
                             </div>
@@ -604,7 +604,7 @@
                             </div>
                             <div class="copy">
                                 <div class="saving-lives-one-container">I am a Doctor</div>
-                                <div class="help-save-lives">Bring life-saving breastmilk services to your facility. Partner
+                                <div class="help-save-lives !font-inter !text-[14px] !font-[300]">Bring life-saving breastmilk services to your facility. Partner
                                     with SABR to access donor breastmilk and establish human milk-banking infrastructure in
                                     your practice.</div>
                             </div>
@@ -622,7 +622,7 @@
                             </div>
                             <div class="copy ">
                                 <div class="saving-lives-one-container">I am a Clinician</div>
-                                <div class="help-save-lives">Help save lives by donating your excess breastmilk to babies in
+                                <div class="help-save-lives !font-inter !text-[14px] !font-[300]">Help save lives by donating your excess breastmilk to babies in
                                     need. Your gift can make all the difference.</div>
                             </div>
                         </div>
