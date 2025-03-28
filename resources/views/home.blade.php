@@ -26,16 +26,16 @@
                                     premature babies worldwide</div>
                             </div>
                             <div class="button-prim-wrapper">
-                                <div class="button-prim">
-                                    <a class="nav-button7 cursor-pointer">
+                                <a href="{{route('volunteer')}}" class="button-prim">
+                                    <div class="nav-button7 cursor-pointer">
                                         <div class="button7 pt-1">Start Contributing</div>
                                         <div class="nav-button-child">
                                         </div>
-                                    </a>
+                                    </div>
                                     <div class="pharrow-up-wrapper cursor-pointer">
                                         <img class="pharrow-up-icon" alt="" src="{{asset('images/arrow-up.svg')}}">
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -171,16 +171,16 @@
                             </div>
                         </div>
                         <div class="button-prim-wrapper">
-                            <div class="button-prim">
-                                <a class="nav-button7 cursor-pointer">
+                            <a href="{{route('about-us')}}" class="button-prim">
+                                <div class="nav-button7 cursor-pointer">
                                     <div class="button7 pt-1">Learn More About Us</div>
                                     <div class="nav-button-child">
                                     </div>
-                                </a>
+                                </div>
                                 <div class="pharrow-up-wrapper cursor-pointer">
                                     <img class="pharrow-up-icon" alt="" src="{{asset('images/arrow-up.svg')}}">
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -241,16 +241,16 @@
                         </div>
                         <div class="flex items-center  ">
                             <div class="button-prim-wrapper button-center">
-                                <div class="button-prim">
-                                    <a class="nav-button7 cursor-pointer">
+                                <a href="{{route('sosafe')}}" class="button-prim">
+                                    <div class="nav-button7 cursor-pointer">
                                         <div class="button7 pt-1">Learn More About Us</div>
                                         <div class="nav-button-child">
                                         </div>
-                                    </a>
+                                    </div>
                                     <div class="pharrow-up-wrapper cursor-pointer">
                                         <img class="pharrow-up-icon" alt="" src="{{asset('images/arrow-up.svg')}}">
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <div class="gap-0 items-center  ">
@@ -320,16 +320,16 @@
 
                         <div>Let’s transform infant care together.</div>
                         <div class="button-prim-wrapper">
-                            <div class="button-prim">
-                                <a class="nav-button7 cursor-pointer">
+                            <a href="{{route('breastmilk-smart')}}" class="button-prim">
+                                <div class="nav-button7 cursor-pointer">
                                     <div class="button7 pt-1">Learn More About Us</div>
                                     <div class="nav-button-child">
                                     </div>
-                                </a>
+                                </div>
                                 <div class="pharrow-up-wrapper cursor-pointer">
                                     <img class="pharrow-up-icon" alt="" src="{{asset('images/arrow-up.svg')}}">
                                 </div>
-                            </div>
+                            </a>
 
 
                         </div>
@@ -357,27 +357,26 @@
         </div>
 
         <div class="mt-6  gap-4">
-            <div class="button-prim-wrapper">
-                <div class="button-prim">
-                    <a class="nav-button7 cursor-pointer">
+            <div class="button-prim-wrapper cursor-pointer mt-3 relative z-50">
+                <a href="{{route('donate')}}" class="button-prim">
+                    <div class="nav-button7 cursor-pointer">
                         <div class="button7 pt-1 text-[18px]">Start Donating</div>
                         <div class="nav-button-child">
                         </div>
-                    </a>
+                    </div>
                     <div class="pharrow-up-wrapper cursor-pointer">
                         <img class="pharrow-up-icon" alt="" src="{{asset('images/arrow-up.svg')}}">
                     </div>
-                </div>
+                </a>
             </div>
 
             <div class="mt-4">
                 <div class="button-prim green-btn">
-                    <a class="nav-button7 green-btn cursor-pointer">
+                    <a href="payfast.co.za/donate/go/southafricanbreastmilkreserve" target="_blank" class="nav-button7 green-btn cursor-pointer">
                         <div class="button7 pt-1">Yes, I want to contribute</div>
                         <div class="nav-button-child">
                         </div>
                     </a>
-
                 </div>
             </div>
 
@@ -440,16 +439,16 @@
 
                         <div>Together, we can provide a healthier start for every baby.</div>
                         <div class="button-prim-wrapper">
-                            <div class="button-prim">
-                                <a class="nav-button7 cursor-pointer">
+                            <a href="{{route('feed-for-life')}}" class="button-prim">
+                                <div class="nav-button7 cursor-pointer">
                                     <div class="button7 pt-1">Learn More About Us</div>
                                     <div class="nav-button-child">
                                     </div>
-                                </a>
+                                </div>
                                 <div class="pharrow-up-wrapper cursor-pointer">
                                     <img class="pharrow-up-icon" alt="" src="{{asset('images/arrow-up.svg')}}">
                                 </div>
-                            </div>
+                            </a>
 
 
                         </div>
@@ -509,10 +508,10 @@
                                 </div>
                             </div>
                             <div class="flex items-end justify-end w-full mt-4">
-                                <div class="card-button flex gap-1 row justify-end">
+                                <a href="{{route('donate')}}" class="card-button flex gap-1 row justify-end">
                                     <div class="start-today !font-inter">Start Today</div>
                                     <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
-                                </div>
+                                </a>
                             </div>
 
 
@@ -534,10 +533,10 @@
                                     volunteers help us make it all happen. </div>
                             </div>
                             <div class="flex items-end justify-end w-full mt-4">
-                                <div class="card-button flex gap-1 row justify-end">
+                                <a href="{{route('volunteer')}}" class="card-button flex gap-1 row justify-end">
                                     <div class="start-today !font-inter">Start Today</div>
                                     <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
-                                </div>
+                                </a>
                             </div>
 
 
@@ -560,10 +559,10 @@
                                     South Africa.</div>
                             </div>
                             <div class="flex items-end justify-end w-full mt-4">
-                                <div class="card-button flex gap-1 row justify-end">
+                                <a href="payfast.co.za/donate/go/southafricanbreastmilkreserve" target="_blank" class="card-button flex gap-1 row justify-end">
                                     <div class="start-today !font-inter">Start Today</div>
                                     <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
-                                </div>
+                                </a>
                             </div>
 
 
@@ -658,16 +657,16 @@
                             Solar-powered and versatile, it’s a vital resource for supporting mothers and young children.
                         </div>
                         <div class="button-prim-wrapper !border-none mt-10">
-                            <div class="button-prim !border-[#FDC5C8]">
-                                <a class="nav-button7 !bg-[#FDC5C8] cursor-pointer ">
+                            <a href="{{route('sostainer')}}" class="button-prim !border-[#FDC5C8]">
+                                <div class="nav-button7 !bg-[#FDC5C8] cursor-pointer ">
                                     <div class="button7 pt-1 !text-[#F8444F]">Learn More</div>
                                     <div class="nav-button-child">
                                     </div>
-                                </a>
+                                </div>
                                 <div class="pharrow-up-wrapper !bg-[#FDC5C8]  cursor-pointer">
                                     <img class="pharrow-up-icon " alt="" src="{{asset('images/arrow-red.svg')}}">
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
 

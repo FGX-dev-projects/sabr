@@ -37,10 +37,10 @@
                         </div>
                     </div>
                     <div class="flex items-end justify-end w-full mt-4">
-                        <div class="card-button flex gap-1 row justify-end">
+                        <a href="{{route('donate')}}" class="card-button flex gap-1 row justify-end">
                             <div class="start-today !font-inter">Start Today</div>
                             <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
-                        </div>
+                        </a>
                     </div>
 
 
@@ -62,10 +62,10 @@
                             volunteers help us make it all happen. </div>
                     </div>
                     <div class="flex items-end justify-end w-full mt-4">
-                        <div class="card-button flex gap-1 row justify-end">
+                        <a href="{{route('volunteer')}}" class="card-button flex gap-1 row justify-end">
                             <div class="start-today !font-inter">Start Today</div>
                             <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
-                        </div>
+                        </a>
                     </div>
 
 
@@ -88,10 +88,10 @@
                             South Africa.</div>
                     </div>
                     <div class="flex items-end justify-end w-full mt-4">
-                        <div class="card-button flex gap-1 row justify-end">
+                        <a href="payfast.co.za/donate/go/southafricanbreastmilkreserve" target="_blank" class="card-button flex gap-1 row justify-end">
                             <div class="start-today !font-inter">Start Today</div>
                             <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
-                        </div>
+                        </a>
                     </div>
 
 

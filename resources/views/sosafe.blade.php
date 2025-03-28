@@ -173,9 +173,9 @@
 By making pasteurisation affordable and accessible, SoSAFE empowers hospitals and communities in underserved regions to bridge the gap in neonatal care. This innovation not only reduces disparities in infant health outcomes but also ensures that even the most vulnerable babies can benefit from the life-saving properties of breastmilk.
             </p>
 
-            <div class="flex items-center justify-center">
+            <a href="{{asset('images/SoSafe-1m30s-ONLINE_V004.mp4')}}" target="_blank" class="flex items-center justify-center">
                 <img src="{{asset('images/sosafe-video.png')}}"/>
-            </div>
+            </a>
             
         </div>
     </section>

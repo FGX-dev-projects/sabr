@@ -77,6 +77,10 @@ Route::get('/get-involved', function() {
     return view('get-involved');
 })->name('get-involved');
 
+Route::get('/financials', function(){
+    return view('financials');
+})->name('financials');
+
 
 
 Route::post('/donate-submit', [DonateController::class, 'submit'])->name('donate.submit');

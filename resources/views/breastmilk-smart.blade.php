@@ -67,7 +67,7 @@
             <div
                 class="relative backdrop-blur-lg rounded-2xl bg-[#20A4D4] border border-[#6CCDF0]  flex flex-col items-end justify-start p-8 gap-6 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
                 <div class="flex flex-col items-end justify-between gap-6 flex-1 w-full">
-                    <b class="w-full relative text-[#FEFEFD] text-[32px]">Mission Statement</b>
+                    <b class="w-full relative text-[24px] text-[#FEFEFD] font-inter font-[600]">Mission Statement</b>
                     <div class="w-full text-left relative text-xl text-[#FEFEFD]">
                         Ensure compliance of human milk-banking facilities with national regulations. 
                     </div>
@@ -78,7 +78,7 @@
             <div
                 class="relative  backdrop-blur-lg rounded-2xl bg-[#20A4D4] border border-[#6CCDF0]  flex flex-col items-end justify-start p-8 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
                 <div class="flex flex-col items-end justify-between gap-6 flex-1 w-full">
-                    <b class="w-full relative text-[32px] text-[#FEFEFD]">Programme Goal</b>
+                    <b class="w-full relative text-[32px] !text-[#FEFEFD]">Programme Goal</b>
                     <div class="w-full text-left relative text-xl text-[#FEFEFD]">
                         Re-establish and support in-hospital human milk banks while raising awareness of the importance of breastfeeding. 
                     </div>
@@ -245,12 +245,12 @@
 
                         <div class="flex flex-col md:flex-row gap-4 text-[#FEFEFD] mt-10">
                             <div class="flex-1 gap: 24px;">
-                                <h2 class="text-[24px] font-bold mb-3">Mission Statement</h2>
+                                <h2 class="text-[24px] text-[#FEFEFD] font-inter font-[600] mb-3">Mission Statement</h2>
                                 <p class="text-[24px] font-inter">Deliver pasteurised, donated breastmilk to in-hospital patients and equitably redistribute DBM to infants in public healthcare facilities. 
                                 </p>
                             </div>
                             <div class="flex-1 gap: 24px;">
-                                <h2 class="text-[24px] font-bold mb-3">Programme Goal</h2>
+                                <h2 class="text-[24px] text-[#FEFEFD] font-inter font-[600] mb-3">Programme Goal</h2>
                                 <p class="text-[24px] font-inter">Provide fair and reliable access to donor breastmilk for both private and public-sector patients, ensuring critical early nutrition for pre-term and at-risk infants. 
                                 </p>
                             </div>

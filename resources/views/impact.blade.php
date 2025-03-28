@@ -113,16 +113,16 @@
             </p>
 
             <div class="button-prim-wrapper">
-                <div class="button-prim">
-                    <a class="nav-button7 cursor-pointer !bg-[#107BA2]">
+                <a href="{{route('research')}}" class="button-prim">
+                    <div class="nav-button7 cursor-pointer !bg-[#107BA2]">
                         <div class="button7 pt-1">Learn More About Us</div>
                         <div class="nav-button-child">
                         </div>
-                    </a>
+                    </div>
                     <div class="pharrow-up-wrapper cursor-pointer !bg-[#107BA2]">
                         <img class="pharrow-up-icon" alt="" src="{{asset('images/arrow-up.svg')}}">
                     </div>
-                </div>
+                </a>
 
 
             </div>
@@ -214,13 +214,13 @@
 
                             <div class="flex flex-col md:flex-row gap-4 text-[#FEFEFD] mt-10">
                                 <div class="flex-1 gap: 24px;">
-                                    <h2 class="text-[24px] font-bold mb-3">Mission Statement</h2>
+                                    <h2 class="text-[24px] mb-3 text-[#FEFEFD] font-inter font-[600]">Mission Statement</h2>
                                     <p class="text-[24px] font-inter">Deliver pasteurised, donated breastmilk to in-hospital
                                         patients and equitably redistribute DBM to infants in public healthcare facilities. 
                                     </p>
                                 </div>
                                 <div class="flex-1 gap: 24px;">
-                                    <h2 class="text-[24px] font-bold mb-3">Programme Goal</h2>
+                                    <h2 class="text-[24px] mb-3 text-[#FEFEFD] font-inter font-[600]">Programme Goal</h2>
                                     <p class="text-[24px] font-inter">Provide fair and reliable access to donor breastmilk
                                         for both private and public-sector patients, ensuring critical early nutrition for
                                         pre-term and at-risk infants. 
