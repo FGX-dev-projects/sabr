@@ -20,7 +20,7 @@
     <!-- Content Overlay -->
     <div class="relative z-10 flex flex-col  h-full   pt-[10px] md:pt-[186px]">
         <div class="wrapper">
-            <div class="w-full h-full flex flex-col     gap-6">
+            <div class="w-full h-full flex flex-col gap-6">
                 <div class="w-full h-full flex flex-col text-[#107BA2]   gap-0">
                     <div
                         class="w-full text-[#107BA2] text-[48px] md:text-[64px] font-normal break-words pt-[180px]  md:pt-[20px]">

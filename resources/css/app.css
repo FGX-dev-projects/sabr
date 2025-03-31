@@ -81,6 +81,14 @@ line-height: normal;
     position: relative;
 }
 
+.nav-btn-colour{
+    color: rgba(0, 0, 0, 0.25); 
+}
+
+.nav-btn-colour:hover{
+    color: #adaaa5;
+}
+
 .nav-button {
     border-radius: 12px;
     display: flex;
@@ -95,7 +103,7 @@ line-height: normal;
 
 .nav-button:hover {
     background-color: #fff;
-    color: black;
+    color: #adaaa5;
 }
 
 .nav-button:focus {
@@ -278,7 +286,7 @@ line-height: normal;
     margin-top: 0;
     box-shadow: none;
     border: none;
-    color: #868480;
+    color: #868480 ;
 }
 
 .mobile-menu .nav-button {
@@ -503,7 +511,7 @@ line-height: normal;
     justify-content: flex-start;
     gap: 5px;
     font-size: 24px;
-    font-family: 'Work Sans';
+font-family: Work Sans, sans-serif;
 }
 
 .info {
@@ -640,7 +648,7 @@ line-height: normal;
     gap: 19px;
     font-size: 11px;
     color: #107ba2;
-    font-family: "Inter", sans-serif;
+    /* font-family: "Inter", sans-serif; */
 }
 
 .paragraph {
@@ -709,7 +717,7 @@ line-height: normal;
     color: #dfdcd8;
     font-family: 'Work Sans';
 }
-
+ 
 .text-light-2{
     color: rgba(0, 0, 0, 0.50);
 
@@ -944,6 +952,7 @@ line-height: normal;
 .stat-desc.show {
     opacity: 1;
     transform: translateY(0);
+    font-family: "Inter", sans-serif;
 }
 
 .stats-container {

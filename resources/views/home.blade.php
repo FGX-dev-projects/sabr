@@ -16,7 +16,7 @@
             <div class="hero-content wrapper">
                 <div class="content">
                     <div class="content-inner">
-                        <div class="frame-parent">
+                        <div class="frame-parent font-sans">
                             <div class="frame-parent ">
                                 <div >
                                     <span>Saving Lives,</span>
@@ -39,7 +39,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="frame-group">
+                    <div class="frame-group font-sans">
                         <div class="frame-container">
                             <div class="find-a-milk-bank-near-you-wrapper">
                                 <div class="find-a-milk-container">
@@ -63,7 +63,7 @@
                                     </div>
                                 </div>
                                 <div class="details">
-                                    <div class="info">
+                                    <div class="info font-sans">
                                         <div class="tags">
                                             <div class="pills">
                                                 <div class="start-searching">Register</div>

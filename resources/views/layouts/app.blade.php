@@ -48,7 +48,7 @@
             </svg>
         </div>
         <div class="buttons md:flex hidden">
-            <a href="{{ route('home') }}" class="nav-button {{ Route::is('home') ? 'bg-[#dedad4] text-[#00000080]' : '' }}">
+            <a href="{{ route('home') }}" class="nav-button {{ Route::is('home') ? 'bg-[#dedad4] ' : '' }}">
                 <div class="button">Home</div>
             </a>
             <div class="relative">
@@ -62,24 +62,24 @@
                 <!-- Dropdown Menu -->
                 <div
                     class="dropdown-menu absolute text-sm left-0 mt-2 w-[255px] bg-[#f8f5f0] border  border-gray-300 dropdown-shadow px-[12px] py-[6px] text-left rounded-3xl hidden">
-                    <a href="{{ route('about-us') }}" class="{{ Route::is('about-us') ? 'bg-[#dedad4] text-[#00000080]'  : '' }} text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl"
+                    <a href="{{ route('about-us') }}" class="{{ Route::is('about-us') ? 'bg-[#dedad4] '  : '' }} text-left block px-4 py-2 transition ease-in duration-[0.4s] nav-btn-colour hover:bg-white rounded-xl"
                         >About
                         Us</a>
-                    <a href="{{ route('stats') }}" class="{{ Route::is('stats') ? 'bg-[#dedad4] text-[#00000080]'  : '' }} text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl"
+                    <a href="{{ route('stats') }}" class="{{ Route::is('stats') ? 'bg-[#dedad4] '  : '' }} text-left block px-4 py-2 transition ease-in duration-[0.4s] nav-btn-colour hover:bg-white rounded-xl"
                         >Stats</a>
-                    <a href="{{ route('board-of-directors') }}" class="{{ Route::is('board-of-directors') ? 'bg-[#dedad4] text-[#00000080]'  : '' }} text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl" class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">Our
+                    <a href="{{ route('board-of-directors') }}" class="{{ Route::is('board-of-directors') ? 'bg-[#dedad4] '  : '' }} text-left block px-4 py-2 nav-btn-colour transition ease-in duration-[0.4s] hover:bg-white rounded-xl" class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">Our
                         Board of Directors</a>
                     <a href="{{asset('documents/SABR-Annual-Report-14-10-2020.pdf')}}" target="_blank"
-                        class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl"><span
+                        class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl nav-btn-colour"><span
                             class="px-2.5 py-1.5 text-[11px] text-[#adaaa5] !bg-[#f4f0e9] rounded-[6px]">2020/10</span>
                         Annual Report</a>
-                    <a href="{{ route('financials') }}" class="{{ Route::is('financials') ? 'bg-[#dedad4] text-[#00000080]'  : '' }} text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">Annual
+                    <a href="{{ route('financials') }}" class="{{ Route::is('financials') ? 'bg-[#dedad4] '  : '' }} text-left block px-4 py-2 transition nav-btn-colour ease-in duration-[0.4s] hover:bg-white rounded-xl">Annual
                         Financial Statements</a>
                 </div>
             </div>
 
             <div class="relative">
-                <a href="{{ route(name: 'impact') }}" class="nav-button {{ Route::is('impact') ? 'bg-[#dedad4] text-[#00000080]' : '' }}">
+                <a href="{{ route(name: 'impact') }}" class="nav-button {{ Route::is('impact') ? 'bg-[#dedad4] ' : '' }}">
                     <div class="button">Our Impact</div>
                 </a>
             </div>
@@ -92,20 +92,20 @@
 
                 <div
                     class="dropdown-menu absolute text-sm left-0 mt-2 w-[455px] bg-[#f8f5f0] border  border-gray-300 dropdown-shadow pl-[12px] pr-[5px] py-[6px] text-left rounded-3xl hidden">
-                    <a href="{{ route('feed-for-life') }}" class="{{ Route::is('feed-for-life') ? 'bg-[#dedad4] text-[#00000080]'  : '' }} text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl"><span
+                    <a href="{{ route('feed-for-life') }}" class="{{ Route::is('feed-for-life') ? 'bg-[#dedad4] text-[#00000080]'  : '' }} nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl"><span
                             class="px-2.5 py-1.5 text-[11px] text-[#adaaa5] !bg-[#f4f0e9] rounded-[6px]">Programme</span>
                         Feed for Life Initiative</a>
-                    <a href="{{ route('breastmilk-smart') }}" class="{{ Route::is('breastmilk-smart') ? 'bg-[#dedad4] text-[#00000080]'  : '' }} text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl"><span
+                    <a href="{{ route('breastmilk-smart') }}" class="{{ Route::is('breastmilk-smart') ? 'bg-[#dedad4] text-[#00000080]'  : '' }}nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl"><span
                         class="px-2.5 py-1.5 text-[11px] text-[#adaaa5] !bg-[#f4f0e9] rounded-[6px]">Programme</span>
                         Make Your Hospital Breastmilk Smart</a>
-                    <a href="{{ route('sostainer') }}" class="{{ Route::is('sostainer') ? 'bg-[#dedad4] text-[#00000080]'  : '' }} text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl"
+                    <a href="{{ route('sostainer') }}" class="{{ Route::is('sostainer') ? 'bg-[#dedad4] text-[#00000080]'  : '' }} nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl"
                         ><span
                             class="px-2.5 py-1.5 text-[11px] text-[#adaaa5] !bg-[#f4f0e9] rounded-[6px]">Programme</span>
                         SOStainer Mobile Container Clinics</a>
-                    <a href="{{ route('sosafe') }}" class="{{ Route::is('sosafe') ? 'bg-[#dedad4] text-[#00000080]'  : '' }} text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl"><span
+                    <a href="{{ route('sosafe') }}" class="{{ Route::is('sosafe') ? 'bg-[#dedad4] text-[#00000080]'  : '' }} nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl"><span
                             class="px-2.5 py-1.5 text-[11px] text-[#adaaa5] !bg-[#f4f0e9] rounded-[6px]">Programme</span>
                         SoSAFE Pasteuriser</a>
-                    <a href="{{ route('research') }}" class="{{ Route::is('research') ? 'bg-[#dedad4] text-[#00000080]'  : '' }} text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl"><span
+                    <a href="{{ route('research') }}" class="{{ Route::is('research') ? 'bg-[#dedad4] text-[#00000080]'  : '' }} nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl"><span
                             class="px-2.5 py-1.5 text-[11px] text-[#adaaa5] !bg-[#f4f0e9] rounded-[6px]">Programme</span>
                         Research at SABR</a>
                 </div>
@@ -125,13 +125,13 @@
 
                 <div
                     class="dropdown-menu absolute text-sm left-0 mt-2 w-[300px] bg-[#f8f5f0] border  border-gray-300 dropdown-shadow px-[12px] py-[6px] text-left rounded-3xl hidden">
-                    <a href="{{ route('breast-is-best') }}" class="{{ Route::is('breast-is-best') ? 'bg-[#dedad4] text-[#00000080]'  : '' }} text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">Best In
+                    <a href="{{ route('breast-is-best') }}" class="{{ Route::is('breast-is-best') ? 'bg-[#dedad4] text-[#00000080]'  : '' }} nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">Best In
                         Breast (FAQs)</a>
-                    <a href="{{ route('why-the-cost') }}" class="{{ Route::is('why-the-cost') ? 'bg-[#dedad4] text-[#00000080]'  : '' }} text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">Why
+                    <a href="{{ route('why-the-cost') }}" class="{{ Route::is('why-the-cost') ? 'bg-[#dedad4] text-[#00000080]'  : '' }} nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">Why
                         The Cost?</a>
-                    <a href="{{ route('safe-user-of-dbm') }}" class="{{ Route::is('safe-user-of-dbm') ? 'bg-[#dedad4] text-[#00000080]'  : '' }} text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl" class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">The
+                    <a href="{{ route('safe-user-of-dbm') }}" class="{{ Route::is('safe-user-of-dbm') ? 'bg-[#dedad4] text-[#00000080]'  : '' }} nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl" class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">The
                         Safe Use of DBM</a>
-                    <a href="#" class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">How
+                    <a href="#" class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl nav-btn-colour">How
                         to Access DBM / Value of DBM</a>
                 </div>
             </div>
