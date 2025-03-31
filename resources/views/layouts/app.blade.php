@@ -40,7 +40,10 @@
         </div>
     </div>
     <div class="navigation wrapper  !fixed   py-[28px]">
-        <img src="{{ asset('images/logo.png') }}" class="h-[112px] rounded-lg" alt="Logo">
+        <a href={{route('home')}}>
+            <img src="{{ asset('images/logo.png') }}" class="h-[112px] rounded-lg" alt="Logo">
+        </a>
+       
 
         <div class="md:hidden cursor-pointer" id="mobile-menu-button">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
