@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="relative w-full h-screen overflow-hidden">
+    <section class="relative w-full h-[1350px] md:h-[900px] overflow-hidden">
         <!-- Background Video -->
         <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay loop muted playsinline>
             <source src="{{asset('images/hero-video.mp4')}}" type="video/mp4">
