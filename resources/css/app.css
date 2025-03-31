@@ -578,7 +578,7 @@ font-family: Work Sans, sans-serif;
 }
 
 .component-1 {
-    width: 366px;
+    width: 100%;
     flex: 1;
     border-radius: 24px;
     border: 1px solid rgba(0, 0, 0, 0.1);
