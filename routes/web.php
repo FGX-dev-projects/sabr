@@ -3,6 +3,7 @@
 use App\Http\Controllers\DonateController;
 use App\Http\Controllers\VolunteerController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Mail;
 
 Route::get('/', function () {
     return view('home');
@@ -81,7 +82,13 @@ Route::get('/financials', function(){
     return view('financials');
 })->name('financials');
 
+// Route::get('/test-mail', function() {
+//     Mail::raw('This is a test email', function ($message) {
+//         $message->to('lesedi@fgx.co.za')->subject('Test Email');
+//     });
 
+//     return 'Mail sent 2 day';
+// });
 
 Route::post('/donate-submit', [DonateController::class, 'submit'])->name('donate.submit');
 Route::post('/volunteer-submit', [VolunteerController::class, 'submit'])->name('volunteer.submit');

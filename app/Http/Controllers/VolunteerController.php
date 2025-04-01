@@ -85,7 +85,7 @@ class VolunteerController extends Controller
 
         // Send the email with the updated data inside a try-catch block
         try {
-            Mail::to('admin@email.com')->send(new VolunteerFormMail($validatedData));
+            Mail::to('lesedi@fgx.co.za')->send(new VolunteerFormMail($validatedData));
             
             // Success message
             return redirect()->back()->with('success', 'Your form was successfully submitted!');
