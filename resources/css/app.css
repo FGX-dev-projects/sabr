@@ -884,8 +884,8 @@ line-height: normal;
 
 /* Positions after animation */
 .image-container.show .top-left {
-    top: -85%;
-    left: 20%;
+    top: -95%;
+    left: 10%;
     transform: rotate(322deg) scale(2);
     opacity: 1;
 }

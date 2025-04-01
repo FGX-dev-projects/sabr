@@ -150,7 +150,7 @@
 
 
         <!-- Mobile Menu -->
-        <div class="mobile-menu  hidden md:hidden absolute top-[140px] left-10 w-[350px] mx-auto bg-[#f8f5f0] border border-gray-300 dropdown-shadow px-[12px] py-[6px] text-left rounded-3xl z-50"
+        <div class="mobile-menu  hidden md:hidden absolute top-[140px] left-4 w-[350px] mx-auto bg-[#f8f5f0] border border-gray-300 dropdown-shadow px-[12px] py-[6px] text-left rounded-3xl z-50"
             id="mobile-menu">
             <a href="{{ route('home') }}"
             class="block px-4 py-2 text-mobile transition ease-in duration-[0.4s]  hover:bg-white rounded-xl">Home</a>
