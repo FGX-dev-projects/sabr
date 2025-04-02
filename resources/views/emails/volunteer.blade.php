@@ -2,6 +2,11 @@
 <html>
 <head>
     <title>New Volunteer Form Submission</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; }
+        h2 { color: #107BA2; }
+        .section { margin-top: 20px; }
+    </style>
 </head>
 <body>
     <h2>New Volunteer Submission</h2>
@@ -21,7 +26,7 @@
     <p><strong>Postal Code:</strong> {{ $formData['postal_code'] ?? 'N/A' }}</p>
     <p><strong>City:</strong> {{ $formData['city'] ?? 'N/A' }}</p>
     <p><strong>Province:</strong> {{ $formData['province'] }}</p>
-
+    <hr><br>
     <h3>Occupational Details</h3>
     <p><strong>Volunteer Work:</strong> {{ $formData['volunteer_work'] }}</p>
     <p><strong>Employment Type:</strong> {{ $formData['employment_type'] }}</p>
@@ -30,7 +35,7 @@
     <p><strong>Education:</strong> {{ $formData['education'] ?? 'N/A' }}</p>
     <p><strong>Involved in SABR Bank:</strong> {{ $formData['involved'] }}</p>
     <p><strong>Health Care Professional:</strong> {{ $formData['health_care_prof'] }}</p>
-
+    <hr><br>
     <h3>Transport & Availability</h3>
     <p><strong>Driver’s Licence:</strong> {{ $formData['drivers_license'] }}</p>
     <p><strong>Own Transport:</strong> {{ $formData['own_transport'] }}</p>
@@ -40,7 +45,7 @@
     <p><strong>Itinerary:</strong> {{ $formData['itinerary'] ?? 'N/A' }}</p>
     <p><strong>Hope to Gain from Volunteering:</strong> {{ $formData['hope_to_gain'] ?? 'N/A' }}</p>
     <p><strong>Current Employer Details:</strong> {{ $formData['current_employer_details'] ?? 'N/A' }}</p>
-
+    <hr><br>
     <h3>Consent & Communication</h3>
     <p><strong>Preferred Communication Method:</strong> {{ $formData['communication_method'] }}</p>
     <p><strong>Consent to Communication:</strong> {{ $formData['communication_consent'] }}</p>

@@ -40,6 +40,23 @@
             <h2 class="text-[32px] font-inter font-bold text-[#adaaa5]">Personal Details</h2>
             <form action="{{ route('volunteer.submit') }}"  class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-12" method="POST">
                 @csrf
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const requiredFields = [
+                            'name', 'surname', 'cell', 'email', 'date_of_birth', 'gender', 'country', 'addres_1', 'suburb', 'province',
+                            'volunteer_work', 'employment_type', 'involved', 'health_care_prof', 'drivers_license', 'own_transport',
+                            'vehicle_offering', 'location', 'communication_method', 'communication_consent', 'popia_consent'
+                        ];
+
+                        requiredFields.forEach(field => {
+                            const el = document.querySelector(`[name="${field}"]`);
+                            if (el) {
+                                el.setAttribute('required', 'required');
+                            }
+                        });
+                    });
+                </script>
                 <!-- Name -->
                 <div>
                     <label for="name" class="block  text-gray-600" >Name</label>

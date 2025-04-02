@@ -179,7 +179,7 @@ class DonateController extends Controller
         $contraceptives = $request->input('contraceptives_specify', []);
         $validatedData['contraceptives_specify'] = implode(', ', $contraceptives);
 
-        Mail::to('admin@email.com')->send(new DonateFormMail($validatedData));
+        Mail::to('lesedi@fgx.co.za')->send(new DonateFormMail($validatedData));
 
         Flasher::addSuccess('Thank you! Your form has been submitted successfully.');
 

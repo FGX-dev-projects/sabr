@@ -30,6 +30,24 @@
             <form action="{{ route('donate.submit') }}"  class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-12" method="POST" onsubmit="updateDOB();">
                 @csrf
                 <!-- Name -->
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const form = document.querySelector('form');
+                        const requiredInputs = form.querySelectorAll('input[type="text"], input[type="email"], input[type="radio"], select');
+                        const nameAttributesToExclude = ['other_medication', 'other_medicine', 'other_medicine_specify', 'herbal_medication_specify', 'herbal_medication_other', 'expressing_donate', 'milk_expression_date', 'referral_source'];
+                
+                        requiredInputs.forEach(input => {
+                            if (!input.hasAttribute('required') && !nameAttributesToExclude.includes(input.name) && !input.closest('.dob-container')) {
+                                input.required = true;
+                            }
+                        });
+                
+                        // Date of Birth dropdowns require all 3 selects to be filled, so set required on each
+                        document.querySelectorAll('.dob-container select').forEach(select => {
+                            select.required = true;
+                        });
+                    });
+                </script>
                 <div>
                     <label for="mother_name" class="block  text-gray-600">Name</label>
                     <input  type="text" name="mother_name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
