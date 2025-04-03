@@ -5,7 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>SABR: South African Breastmilk Reserve</title>
+<meta name="Author" content="SABR" />
+<meta name="Description" content="South African Breastmilk Reserve - Bringing milk to babies, safely." />
+<meta name="Keywords" content="Breast milk bank johannesburg, infant feeding, breastfeeding, breast feeding, breast is best, Feed for Life initiative, breast milk, breastmilk banking" />
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
