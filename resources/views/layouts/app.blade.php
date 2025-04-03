@@ -211,7 +211,7 @@
         <a href="{{ route('contact-us') }}" class="block px-4 py-2 transition ease-in duration-[0.4s] text-mobile hover:bg-white rounded-xl">Contact Us</a>
         
         <div class="nav-button7 cursor-pointer z-0">
-            <a href="http://payfast.co.za/donate/go/southafricanbreastmilkreserve" target="_blank" class="block px-4 py-2 transition ease-in duration-[0.4s] text-mobile hover:bg-white rounded-xl">Donate Today</a>
+            <a href="http://payfast.co.za/donate/go/southafricanbreastmilkreserve" target="_blank" class="block px-4 py-2 transition ease-in duration-[0.4s] text-center  !text-white rounded-xl">Donate Today</a>
         </div>
         </div>
     </div>

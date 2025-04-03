@@ -59,7 +59,7 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-[64px]">
                 <div
-                    class="max-w-[377px] max-h-[531px] relative backdrop-blur-lg rounded-2xl bg-[#20A4D4] border border-[#6CCDF0]  flex flex-col items-end justify-start p-8 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
+                    class="max-w-[377px] max-h-[610px] relative backdrop-blur-lg rounded-2xl bg-[#20A4D4] border border-[#6CCDF0]  flex flex-col items-end justify-start p-8 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
                     <div class="flex flex-col items-end gap-[13px] flex-1 w-full">
                         <b class="w-full relative text-[#FEFEFD] text-[32px]">Breastfeeding<br>Algorithm</b>
                         <div class="w-full text-left relative text-xl text-[#FEFEFD]">
@@ -72,7 +72,7 @@
                 </div>
 
                 <div
-                    class="max-w-[377px] max-h-[531px] relative backdrop-blur-lg rounded-2xl bg-[#20A4D4] border border-[#6CCDF0]  flex flex-col items-end justify-start p-8 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
+                    class="max-w-[377px] max-h-[610px] relative backdrop-blur-lg rounded-2xl bg-[#20A4D4] border border-[#6CCDF0]  flex flex-col items-end justify-start p-8 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
                     <div class="flex flex-col items-end gap-[13px] flex-1 w-full ">
                         <b class="w-full relative text-[#FEFEFD] text-[32px]">Health <br>Economics</b>
                         <div class="w-full text-left flex justify-start relative text-xl text-[#FEFEFD]">
@@ -85,7 +85,7 @@
                 </div>
 
                 <div
-                    class="max-w-[377px] max-h-[531px] relative backdrop-blur-lg rounded-2xl bg-[#20A4D4] border border-[#6CCDF0]  flex flex-col items-end justify-start p-8 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
+                    class="max-w-[377px] max-h-[610px] relative backdrop-blur-lg rounded-2xl bg-[#20A4D4] border border-[#6CCDF0]  flex flex-col items-end justify-start p-8 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
                     <div class="flex flex-col items-end gap-[13px] flex-1 w-full ">
                         <b class="w-full relative text-[#FEFEFD] text-[32px]">Policy<br> Strengthening</b>
                         <div class="w-full relative text-left text-xl text-[#FEFEFD]">

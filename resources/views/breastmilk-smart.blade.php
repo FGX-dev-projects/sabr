@@ -16,7 +16,7 @@
             <div class="w-full h-full flex flex-col     gap-6">
                 <div class="w-full h-full flex flex-col text-[#FEFEFD]   gap-6">
                     <div
-                        class="w-full text-[#FEFEFD] text-[48px] md:text-[64px] font-normal break-words pt-[180px]  md:pt-[120px]">
+                        class="w-full text-[#FEFEFD] text-[48px] md:text-[64px] font-normal break-words pt-[80px]  md:pt-[120px]">
                         Make Your Hospital Breastmilk Smart 
                     </div>
 
@@ -128,7 +128,7 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-[64px]">
             <div
-                class="max-w-[377px] max-h-[531px] relative backdrop-blur-lg rounded-2xl bg-[#B03038]    flex flex-col items-end justify-start p-8 text-right text-2xl  font-['Work_Sans']">
+                class="max-w-[377px] max-h-[550px] relative backdrop-blur-lg rounded-2xl bg-[#B03038]    flex flex-col items-end justify-start p-8 text-right text-2xl  font-['Work_Sans']">
                 <div class="flex flex-col gap-8  flex-1 w-full">
                     <b class="w-full relative text-[32px] text-[#FEFEFD]">Affordable and<br> Accessible</b>
                     <div class="w-full text-right relative text-xl text-[#FEFEFD]">
@@ -138,7 +138,7 @@
             </div>
 
             <div
-                class="max-w-[377px] max-h-[531px] relative backdrop-blur-lg rounded-2xl bg-[#B03038]   flex flex-col items-end justify-start p-8 text-right text-2xl  font-['Work_Sans']">
+                class="max-w-[377px] max-h-[550px]  relative backdrop-blur-lg rounded-2xl bg-[#B03038]   flex flex-col items-end justify-start p-8 text-right text-2xl  font-['Work_Sans']">
                 <div class="flex flex-col  flex-1 w-full gap-8">
                     <b class="w-full relative text-[32px] text-[#FEFEFD]">Rapid Testing <br>Technology</b>
                     <div class="w-full text-right flex justify-start  relative text-xl text-[#FEFEFD]">
@@ -148,7 +148,7 @@
             </div>
 
             <div
-                class="max-w-[377px] max-h-[531px] relative backdrop-blur-lg rounded-2xl bg-[#B03038]   flex flex-col items-end justify-start p-8 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
+                class="max-w-[377px] max-h-[550px]  relative backdrop-blur-lg rounded-2xl bg-[#B03038]   flex flex-col items-end justify-start p-8 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
                 <div class="flex flex-col gap-8 flex-1 w-full ">
                     <b class="w-full relative text-[32px] text-[#FEFEFD] ">SOStainer Mobile <br>Clinics</b>
                     <div class="w-full relative text-right text-xl text-[#FEFEFD]">

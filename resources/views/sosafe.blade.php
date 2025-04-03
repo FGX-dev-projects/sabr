@@ -12,8 +12,7 @@
 
         <!-- Content Overlay -->
         <div class="relative z-10 flex flex-col  h-full  wrapper pt-[180px] md:pt-[186px]">
-            <div class="wrapper">
-                <div class="w-full h-full flex flex-col items-center  justify-center  gap-6">
+                <div class="w-full h-full flex flex-col   gap-6">
                     <div class="w-full h-full flex flex-col text-[#FEFEFD]   gap-6">
                         <div class="w-full text-[#FEFEFD] text-[48px] md:text-[64px] font-normal break-words">
                             Introducing the <span class="font-bold">SoSAFE Pasteuriser</span>
@@ -25,7 +24,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     </section>
 
@@ -120,25 +118,25 @@
                         
                         <div class="milk-banking-facilities-nation-parent">
                             <div class="we-are-more-container">
-                                <b class="cutting-edge-solutions font-[Inter] text-[#666562]">Pathogen Elimination</b>
+                                <b class="cutting-edge-solutions font-inter text-[24px] font-bold text-[#666562]">Pathogen Elimination</b>
                                 <ul class="featuring-sosafes-innovative-container pl-8 " style="list-style: disc;">
-                                    <li class="font-normal text-[18px] font-medium">SoSAFE ensures breastmilk is free from harmful bacteria and viruses, providing a safe source of nutrition for infants in neonatal intensive care units (NICUs).
+                                    <li class="font-light text-[24px] font-inter">SoSAFE ensures breastmilk is free from harmful bacteria and viruses, providing a safe source of nutrition for infants in neonatal intensive care units (NICUs).
 
                                     </li>
                                 </ul>
                             </div>
 
                             <div class="we-are-more-container">
-                                <b class="cutting-edge-solutions font-[Inter] text-[#666562]">Nutrient Preservation</b>
+                                <b class="cutting-edge-solutions font-inter text-[24px] font-bold text-[#666562]">Nutrient Preservation</b>
                                 <ul class="featuring-sosafes-innovative-container pl-8 " style="list-style: disc;">
-                                    <li class="font-normal text-[18px] font-medium">Unlike traditional methods, SoSAFE retains the critical proteins, antibodies, and growth factors that make breastmilk an unparalleled source of nourishment.</li>
+                                    <li class="font-light text-[24px] font-inter">Unlike traditional methods, SoSAFE retains the critical proteins, antibodies, and growth factors that make breastmilk an unparalleled source of nourishment.</li>
                                 </ul>
                             </div>
 
                             <div class="we-are-more-container">
-                                <b class="cutting-edge-solutions  text-[#666562]">Equitable Access</b>
+                                <b class="cutting-edge-solutions font-inter text-[24px] font-bold text-[#666562]">Equitable Access</b>
                                 <ul class="featuring-sosafes-innovative-container pl-8 " style="list-style: disc;">
-                                    <li class="font-normal text-[18px] font-medium">By simplifying and reducing the cost of pasteurisation, the SoSAFE Pasteuriser enables more hospitals and communities to provide life-saving donor milk, especially in resource-limited settings.</li>
+                                    <li class="font-light text-[24px] font-inter">By simplifying and reducing the cost of pasteurisation, the SoSAFE Pasteuriser enables more hospitals and communities to provide life-saving donor milk, especially in resource-limited settings.</li>
                                 </ul>
                             </div>
 

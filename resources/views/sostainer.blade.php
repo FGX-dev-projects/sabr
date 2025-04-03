@@ -66,13 +66,10 @@
     <section class="py-[128px]">
         <div class="wrapper ">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-[68px] !items-start">
-                <!-- Left Container (Image) -->
-
                 <div class="">
                     <img src="{{asset('images/sos-baby.png')}}" alt="Placeholder Image" class="w-full  rounded-3xl">
                 </div>
-
-                <!-- Right Container (Text) -->
+                
                 <div
                     class="we-are-more-than-just-a-breast-parent flex !items-start !justify-start gap-[28px] !text-[#E23E48]">
 
@@ -95,7 +92,7 @@
                     </div>
                 </div>
 
-
+                
             </div>
         </div>
     </section>

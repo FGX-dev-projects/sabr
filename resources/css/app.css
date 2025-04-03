@@ -198,7 +198,7 @@ line-height: normal;
     background-color: #23b4e9;
     border: 1px solid rgba(255, 255, 255, 0.25);
     box-sizing: border-box;
-    height: 54px;
+    /* height: 54px; */
     overflow: hidden;
     font-family: "Inter", sans-serif;
     flex-direction: row;
@@ -798,9 +798,10 @@ line-height: normal;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 24px;
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: 300;
     color: #666562;
-    font-family: Work Sans, sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 .home-sec-2 {

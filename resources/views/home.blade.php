@@ -291,26 +291,26 @@
                         </div>
                         <div class="milk-banking-facilities-nation-parent">
                             <div class="we-are-more-container">
-                                <b class="cutting-edge-solutions  text-[#666562]">Cutting-Edge Solutions</b>
+                                <b class="cutting-edge-solutions font-bold font-inter  text-[24px] text-[#666562]">Cutting-Edge Solutions</b>
                                 <ul class="featuring-sosafes-innovative-container pl-8 " style="list-style: disc;">
-                                    <li class="font-normal text-[18px] font-medium">Featuring SoSAFE’s innovative
+                                    <li class="font-light text-[24px] font-inter">Featuring SoSAFE’s innovative
                                         “Breastmilk-in-a-Box” with affordable pasteurisers and rapid testing technology.
                                     </li>
                                 </ul>
                             </div>
 
                             <div class="we-are-more-container">
-                                <b class="cutting-edge-solutions  text-[#666562]">Comprehensive Care</b>
+                                <b class="cutting-edge-solutionsfont-bold font-inter  text-[24px]  text-[#666562]">Comprehensive Care</b>
                                 <ul class="featuring-sosafes-innovative-container pl-8 " style="list-style: disc;">
-                                    <li class="font-normal text-[18px] font-medium">From milk processing to maternal health
+                                    <li class="font-light text-[24px] font-inter">From milk processing to maternal health
                                         services, we equip hospitals to meet critical neonatal care needs.</li>
                                 </ul>
                             </div>
 
                             <div class="we-are-more-container">
-                                <b class="cutting-edge-solutions  text-[#666562]">Expanding Access</b>
+                                <b class="cutting-edge-solutions font-bold font-inter  text-[24px] text-[#666562]">Expanding Access</b>
                                 <ul class="featuring-sosafes-innovative-container pl-8 " style="list-style: disc;">
-                                    <li class="font-normal text-[18px] font-medium">44 human milk banks established
+                                    <li class="font-light text-[24px] font-inter">44 human milk banks established
                                         nationwide, bridging the gap for underserved communities.</li>
                                 </ul>
                             </div>
@@ -409,26 +409,26 @@
                         </div>
                         <div class="milk-banking-facilities-nation-parent">
                             <div class="we-are-more-container">
-                                <b class="cutting-edge-solutions font-[Inter] text-[#666562]">Equitable Access</b>
+                                <b class="cutting-edge-solutions font-bold font-inter  text-[24px] text-[#666562]">Equitable Access</b>
                                 <ul class="featuring-sosafes-innovative-container pl-8 " style="list-style: disc;">
-                                    <li class="font-normal text-[18px] font-medium">Delivering pasteurised donor breastmilk
+                                    <li class="font-light text-[24px] font-inter">Delivering pasteurised donor breastmilk
                                         to infants in NICUs nationwide.
                                     </li>
                                 </ul>
                             </div>
 
                             <div class="we-are-more-container">
-                                <b class="cutting-edge-solutions font-[Inter] text-[#666562]">Priority Care</b>
+                                <b class="cutting-edge-solutions font-bold font-inter  text-[24px] text-[#666562]">Priority Care</b>
                                 <ul class="featuring-sosafes-innovative-container pl-8 " style="list-style: disc;">
-                                    <li class="font-normal text-[18px] font-medium">Focused on babies born before 37 weeks,
+                                    <li class="font-light text-[24px] font-inter">Focused on babies born before 37 weeks,
                                         ensuring vital early nutrition.</li>
                                 </ul>
                             </div>
 
                             <div class="we-are-more-container">
-                                <b class="cutting-edge-solutions  text-[#666562]">Sustainable Impact</b>
+                                <b class="cutting-edge-solutions font-bold font-inter  text-[24px]  text-[#666562]">Sustainable Impact</b>
                                 <ul class="featuring-sosafes-innovative-container pl-8 " style="list-style: disc;">
-                                    <li class="font-normal text-[18px] font-medium">Strengthening neonatal care in
+                                    <li class="font-light text-[24px] font-inter">Strengthening neonatal care in
                                         underserved rural areas through partnerships with Provincial Departments of Health.
                                     </li>
                                 </ul>
@@ -472,13 +472,13 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 place-items-center mt-10 mb:mt-20">
                 <img src="{{asset('images/discovery_logo.png')}}" alt="Discovery logo"
-                    class="w-[298px] h-[60px] object-cover">
+                    class="w-[298px] h-[60px]">
 
-                <img src="{{asset('images/sosafe_logo.png')}}" alt="So safe" class="w-[192px] h-[111px] object-cover">
+                <img src="{{asset('images/sosafe_logo.png')}}" alt="So safe" class="w-[192px] h-[111px]">
 
-                <img src="{{asset('images/Manufact.png')}}" alt="Manufact" class="w-[205px] h-[81px] object-cover">
+                <img src="{{asset('images/Manufact.png')}}" alt="Manufact" class="w-[205px] h-[81px]">
 
-                <img src="{{asset('images/fgx_logo.png')}}" alt="FGX Logo" class="w-[140px] h-[50px] object-cover">
+                <img src="{{asset('images/fgx_logo.png')}}" alt="FGX Logo" class="w-[140px] h-[50px]">
             </div>
 
         </div>

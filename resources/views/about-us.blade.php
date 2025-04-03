@@ -146,23 +146,19 @@
         <div class="wrapper ">
             <div class="grid grid-cols-1  md:grid-cols-2 gap-[50px]">
                 <!-- Left Container (Image) -->
-                <div class="image">
-                    <img src="{{asset('images/baby5.jpg')}}" alt="Placeholder Image"
-                        class=" rounded-xl">
-                </div>
 
                 <div class="flex-1">
                     <div class="make-your-hospital-container !text-[#B2CB14]">
                         <span>Our <b>History</b> </span>
 
                     </div>
-                    <div class="home-sec-1 text-[24px]">
+                    <div class="home-sec-1 ">
                         Founded in 2003, SABR began as a pioneering initiative to address disparities in neonatal care
                         through human milk banking. Over the years, we have:
                         <div class="milk-banking-facilities-nation-parent">
                             <div class="we-are-more-container">
                                 <ul class="featuring-sosafes-innovative-container pl-4 " style="list-style: disc;">
-                                    <li class="font-normal text-[18px] font-medium">Established a sustainable and replicable
+                                    <li class="font-light text-[24px] font-inter">Established a sustainable and replicable
                                         model for non-profit milk banking.
 
                                     </li>
@@ -170,7 +166,7 @@
                             </div>
                             <div class="we-are-more-container">
                                 <ul class="featuring-sosafes-innovative-container pl-4 " style="list-style: disc;">
-                                    <li class="font-normal text-[18px] font-medium">Expanded our reach to serve both public
+                                    <li class="font-light text-[24px] font-inter">Expanded our reach to serve both public
                                         and private healthcare sectors.</li>
                                 </ul>
                             </div>
@@ -178,13 +174,13 @@
                             <div class="we-are-more-container">
 
                                 <ul class="featuring-sosafes-innovative-container pl-4 " style="list-style: disc;">
-                                    <li class="font-normal text-[18px] font-medium">Developed groundbreaking technologies
+                                    <li class="font-light text-[24px] font-inter">Developed groundbreaking technologies
                                         like the SoSAFE Pasteuriser.</li>
                                 </ul>
                             </div>
                             <div class="we-are-more-container">
                                 <ul class="featuring-sosafes-innovative-container pl-4 " style="list-style: disc;">
-                                    <li class="font-normal text-[18px] font-medium">Partnered with government and healthcare institutions to create lasting change.</li>
+                                    <li class="font-light text-[24px] font-inter">Partnered with government and healthcare institutions to create lasting change.</li>
                                 </ul>
                             </div>
                         </div>
@@ -193,11 +189,10 @@
                     </div>
                 </div>
 
-
-                
-
-                <!-- Right Container (Text) -->
-
+                <div class="image">
+                    <img src="{{asset('images/baby5.jpg')}}" alt="Placeholder Image"
+                        class=" rounded-xl">
+                </div>
             </div>
         </div>
     </section>
@@ -300,12 +295,12 @@
                         
 
                     </div>
-                    <div class="home-sec-1 text-right text-[24px]">
-                        The SABR functions as a co-ordinating body for the equitable distribution of life-saving DBM country wide and is geared towards delivering DBM to every part of South Africa within 24 to 48 hours, whilst ensuring that it is of the highest quality and meets regulatory standards. 
-                        <br><br>
-                        The SABR follows a universal guideline that includes all infants below 37 weeks’ gestation. The largest amount of donor breastmilk is directed to public hospital facilities.
-                        <br><br>
-                        The SABR follows a universal guideline that includes all infants below 37 weeks’ gestation. The largest amount of donor breastmilk is directed to public hospital facilities.    
+                    <div class="!text-right ">
+                        <p class="text-right text-[16px] font-normal text-black font-inter">The SABR functions as a co-ordinating body for the equitable distribution of life-saving DBM country wide and is geared towards delivering DBM to every part of South Africa within 24 to 48 hours, whilst ensuring that it is of the highest quality and meets regulatory standards.</p> 
+                        <br>
+                        <p class="text-right text-[24px] font-light  font-inter">The SABR follows a universal guideline that includes all infants below 37 weeks’ gestation. The largest amount of donor breastmilk is directed to public hospital facilities.</p>
+                        <br>
+                        <p class="text-right text-[24px] font-light  font-inter">The SABR follows a universal guideline that includes all infants below 37 weeks’ gestation. The largest amount of donor breastmilk is directed to public hospital facilities.</p>    
 
 
                     </div>
@@ -327,7 +322,7 @@
     <section class="pb-[50px]">
         <div class="wrapper">
             <p class="text-center font-inter text-[24px] mb-[32px] text-light-2">The SABR currently supports breastfeeding mothers in rural areas in:</p>
-            <div class="flex flex-wrap justify-center gap-4 p-4">
+            <div class="flex flex-wrap justify-center gap-3 p-4">
                 <button class="px-4 py-2 border border-slate-400 rounded-full text-[#107BA2] bg-[#F8F5F0] hover:bg-gray-200">
                     Lusikisiki
                 </button>
