@@ -191,7 +191,7 @@
 
                 <div class="image">
                     <img src="{{asset('images/baby5.jpg')}}" alt="Placeholder Image"
-                        class=" rounded-xl">
+                        class="w-full rounded-xl">
                 </div>
             </div>
         </div>

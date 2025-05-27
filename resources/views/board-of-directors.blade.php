@@ -25,51 +25,58 @@
         <div class="wrapper">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6 font-inter ">
                 <div class="bg-white rounded-2xl border border-gray-300 overflow-hidden shadow-lg flex flex-col ">
-                    <img src="{{ asset('images/gray-block1.png') }}" alt="User Image" class="w-full h-64 object-cover">
+                    <img src="{{ asset('images/stasa.jpg') }}" alt="User Image" class="w-full  object-cover">
                     <div class="p-6 ">
                         <p class="text-lg font-bold  text-[#107ba2]">Ms Stasha Jordan</p>
                         <p class="text-[#107ba2] text-lg">Executive Director</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl border border-gray-300 overflow-hidden shadow-lg flex flex-col ">
-                    <img src="{{ asset('images/gray-block1.png') }}" alt="User Image" class="w-full h-64 object-cover">
+                    <img src="{{ asset('images/jeremy.jpg') }}" alt="User Image" class="w-full  object-cover">
                     <div class="p-6 ">
                         <p class="text-lg font-bold  text-[#107ba2]">Mr Jeremy Druker </p>
                         <p class="text-[#107ba2] text-lg">Chairperson</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl border border-gray-300 overflow-hidden shadow-lg flex flex-col ">
-                    <img src="{{ asset('images/gray-block1.png') }}" alt="User Image" class="w-full h-64 object-cover">
+                    <img src="{{ asset('images/gray-block1.png') }}" alt="User Image" class="w-full object-cover">
                     <div class="p-6 ">
                         <p class="text-lg font-bold  text-[#107ba2]">Prof Suzanne Delport</p>
                         <p class="text-[#107ba2] text-lg">Director</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl border border-gray-300 overflow-hidden shadow-lg flex flex-col ">
-                    <img src="{{ asset('images/gray-block1.png') }}" alt="User Image" class="w-full h-64 object-cover">
+                    <img src="{{ asset('images/gray-block1.png') }}" alt="User Image" class="w-full  object-cover">
                     <div class="p-6 ">
                         <p class="text-lg font-bold  text-[#107ba2]">Dr Mhleli Masango</p>
                         <p class="text-[#107ba2] text-lg">Director</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl border border-gray-300 overflow-hidden shadow-lg flex flex-col ">
-                    <img src="{{ asset('images/gray-block1.png') }}" alt="User Image" class="w-full h-64 object-cover">
+                    <img src="{{ asset('images/gray-block1.png') }}" alt="User Image" class="w-full  object-cover">
                     <div class="p-6 ">
                         <p class="text-lg font-bold  text-[#107ba2]">Mr Ayanda Ntsho</p>
                         <p class="text-[#107ba2] text-lg">Director</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl border border-gray-300 overflow-hidden shadow-lg flex flex-col ">
-                    <img src="{{ asset('images/gray-block1.png') }}" alt="User Image" class="w-full h-64 object-cover">
+                    <img src="{{ asset('images/ziyanda.jpg') }}" alt="User Image" class="w-full  object-coverr">
                     <div class="p-6 ">
                         <p class="text-lg font-bold  text-[#107ba2]">Ziyanda Buthelezi</p>
                         <p class="text-[#107ba2] text-lg">Director</p>
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl border border-gray-300 overflow-hidden shadow-lg flex flex-col ">
-                    <img src="{{ asset('images/gray-block1.png') }}" alt="User Image" class="w-full h-64 object-cover">
+                    <img src="{{ asset('images/gray-block1.png') }}" alt="User Image" class="w-full  object-cover">
                     <div class="p-6 ">
                         <p class="text-lg font-bold  text-[#107ba2]">Nomathemba Chandiwana</p>
+                        <p class="text-[#107ba2] text-lg">Director</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl border border-gray-300 overflow-hidden shadow-lg flex flex-col ">
+                    <img src="{{ asset('images/johanna.jpg') }}" alt="User Image" class="w-full  object-cover">
+                    <div class="p-6 ">
+                        <p class="text-lg font-bold  text-[#107ba2]">Johanna Mosime</p>
                         <p class="text-[#107ba2] text-lg">Director</p>
                     </div>
                 </div>
