@@ -67,9 +67,9 @@
                     </div>
                 </div>
                 <div class="bg-white rounded-2xl border border-gray-300 overflow-hidden shadow-lg flex flex-col ">
-                    <img src="{{ asset('images/gray-block1.png') }}" alt="User Image" class="w-full  object-cover">
+                    <img src="{{ asset('images/nom.jpg') }}" alt="User Image" class="w-full  object-cover">
                     <div class="p-6 ">
-                        <p class="text-lg font-bold  text-[#107ba2]">Nomathemba Chandiwana</p>
+                        <p class="text-lg font-bold  text-[#107ba2]">Dr Nomathemba Chandiwana</p>
                         <p class="text-[#107ba2] text-lg">Director</p>
                     </div>
                 </div>
