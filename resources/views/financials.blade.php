@@ -24,19 +24,19 @@
         <div class="flex flex-col gap-8">
             <a class="flex flex-row gap-4" target="_blank" href="{{asset('documents/SABR FS Feb23 Signed.pdf')}}"><img
                     src="{{asset('images/document.png')}}" class="w-10 h-10" /> <span
-                    class="justify-center text-[24px] text-[#466c7a]">Financials 2023</span>
+                    class="justify-center text-[20px] text-[#466c7a]">Financials 2023</span>
             </a>
             <a class="flex flex-row gap-4" target="_blank" href="{{asset('documents/South African Breastmilk Reserve NPC 22 - Financial statements - SME.pdf sign.pdf')}}"><img
                     src="{{asset('images/document.png')}}" class="w-10 h-10" /> <span
-                    class="justify-center text-[24px] text-[#466c7a]">Financials 2022</span>
+                    class="justify-center text-[20px] text-[#466c7a]">Financials 2022</span>
             </a>
             <a class="flex flex-row gap-4" target="_blank" href="{{asset('documents/FS Feb21 Signed.pdf')}}"><img
                     src="{{asset('images/document.png')}}" class="w-10 h-10" /> <span
-                    class="justify-center text-[24px] text-[#466c7a]">Financials 2021</span>
+                    class="justify-center text-[20px] text-[#466c7a]">Financials 2021</span>
             </a>
             <a class="flex flex-row gap-4" target="_blank" href="{{asset('documents/FS-Feb20-Signed.pdf')}}"><img
                     src="{{asset('images/document.png')}}" class="w-10 h-10" /> <span
-                    class="justify-center text-[24px] text-[#466c7a]">Financials 2020</span>
+                    class="justify-center text-[20px] text-[#466c7a]">Financials 2020</span>
             </a>
         </div>
     </div>

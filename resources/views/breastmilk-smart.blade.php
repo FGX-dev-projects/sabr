@@ -26,7 +26,7 @@
     </div>
 </section>
 
-<section class="py-[128px]">
+<section class="py-[80px]">
     <div class="wrapper ">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-[68px] !items-start">
             <!-- Left Container (Image) -->
@@ -45,7 +45,7 @@
                 </div>
                 <div class="home-sec-1 font-light">
                     <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                        <div style="font-weight: 300" class="text-[24px] "> The Make Your Hospital Breastmilk Smart programme is dedicated to ensuring human milk-banking facilities comply with the regulatory framework set by South Africa’s National Department of Health (DOH). By establishing and supporting in-hospital human milk banks, this programme addresses the critical need for safe, accessible donor breastmilk in healthcare facilities nationwide. 
+                        <div style="font-weight: 300" class="text-[20px] "> The Make Your Hospital Breastmilk Smart programme is dedicated to ensuring human milk-banking facilities comply with the regulatory framework set by South Africa’s National Department of Health (DOH). By establishing and supporting in-hospital human milk banks, this programme addresses the critical need for safe, accessible donor breastmilk in healthcare facilities nationwide. 
                         </div>
                     </div>
 
@@ -58,7 +58,7 @@
     </div>
 </section>
 
-<section class="py-[128px] bg-[#23B4E9]">
+<section class="py-[80px] bg-[#23B4E9]">
     <div class="wrapper">
         <div class="introducing-sosafe md:text-[64px] text-[48px] !text-[#FEFEFD]">
             Programme <b>Mission</b> and <b>Goals </b>
@@ -67,7 +67,7 @@
             <div
                 class="relative backdrop-blur-lg rounded-2xl bg-[#20A4D4] border border-[#6CCDF0]  flex flex-col items-end justify-start p-8 gap-6 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
                 <div class="flex flex-col items-end justify-between gap-6 flex-1 w-full">
-                    <b class="w-full relative text-[24px] text-[#FEFEFD] font-inter font-[600]">Mission Statement</b>
+                    <b class="w-full relative text-[20px] text-[#FEFEFD] font-inter font-[600]">Mission Statement</b>
                     <div class="w-full text-left relative text-xl text-[#FEFEFD]">
                         Ensure compliance of human milk-banking facilities with national regulations. 
                     </div>
@@ -88,7 +88,7 @@
     </div>
 </section>
 
-<section class="py-[128px]">
+<section class="py-[80px]">
     <div class="wrapper ">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-[68px] !items-start">
             <!-- Left Container (Image) -->
@@ -105,7 +105,7 @@
                 </div>
                 <div class="home-sec-1 font-light">
                     <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                        <div style="font-weight: 300" class="text-[24px] ">The SoSAFE Breastmilk-in-a-Box Initiative is a comprehensive solution designed to address the challenges of breastmilk safety and accessibility in low-resource settings. This innovative initiative incorporates a range of technologies and strategies to ensure that donor breastmilk reaches vulnerable infants safely and efficiently. 
+                        <div style="font-weight: 300" class="text-[20px] ">The SoSAFE Breastmilk-in-a-Box Initiative is a comprehensive solution designed to address the challenges of breastmilk safety and accessibility in low-resource settings. This innovative initiative incorporates a range of technologies and strategies to ensure that donor breastmilk reaches vulnerable infants safely and efficiently. 
                         </div>
                     </div>
 
@@ -121,7 +121,7 @@
     </div>
 </section>
 
-<section class="py-[128px] bg-[#E23E48]" style="background-color: #E23E48">
+<section class="py-[80px] bg-[#E23E48]" style="background-color: #E23E48">
     <div class="wrapper">
         <div class="introducing-sosafe md:text-[64px] text-[48px] !text-[#FEFEFD]">
             Key <b>Components</b>  
@@ -160,7 +160,7 @@
     </div>
 </section>
 
-<section class="py-[128px]">
+<section class="py-[80px]">
     <div class="wrapper ">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-[68px] !items-start">
             <!-- Left Container (Image) -->
@@ -177,13 +177,13 @@
                 </div>
                 <div class="home-sec-1 ">
                     <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                        <div style="font-weight: 700" class="text-[24px] ">The SoSAFE initiative exemplifies SABR’s commitment to community-based healthcare. By combining affordability, efficiency, and innovation, the initiative
+                        <div style="font-weight: 700" class="text-[20px] ">The SoSAFE initiative exemplifies SABR’s commitment to community-based healthcare. By combining affordability, efficiency, and innovation, the initiative
                         </div>
                     </div>
                 </div>
                 <div class="home-sec-1 font-light">
                     <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                        <div style="font-weight: 300" class="text-[24px] ">Ensures that donor breastmilk remains a viable option even in low-resource environments. 
+                        <div style="font-weight: 300" class="text-[20px] ">Ensures that donor breastmilk remains a viable option even in low-resource environments. 
                             <br><br>
                             Bridges gaps in neonatal care by expanding access to life-saving nutrition for infants. 
                             <br><br>
@@ -201,7 +201,7 @@
     </div>
 </section>
 
-<section class="py-[128px]">
+<section class="py-[80px]">
     <div class="wrapper ">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-[68px] !items-start">
             <!-- Left Container (Image) -->
@@ -220,7 +220,7 @@
                 </div>
                 <div class="home-sec-1 font-light">
                     <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                        <div style="font-weight: 300" class="text-[24px] ">With its scalable design, the "Breastmilk-in-a-Box" initiative can be adapted to various healthcare settings across South Africa and beyond. By integrating these solutions into the Make Your Hospital Breastmilk Smart programme, SABR enhances its capacity to support hospitals, breastfeeding mothers, and pre-term infants nationwide. 
+                        <div style="font-weight: 300" class="text-[20px] ">With its scalable design, the "Breastmilk-in-a-Box" initiative can be adapted to various healthcare settings across South Africa and beyond. By integrating these solutions into the Make Your Hospital Breastmilk Smart programme, SABR enhances its capacity to support hospitals, breastfeeding mothers, and pre-term infants nationwide. 
                         </div>
                     </div>
                 </div>
@@ -232,7 +232,7 @@
     </div>
 </section>
 
-<section class="py-[128px]  bg-[#107BA2]">
+<section class="py-[80px]  bg-[#107BA2]">
     <div class="wrapper ">
         <div class=" bg-[#107BA2] inline-flex justify-center items-start gap-[98px]">
             <div class="flex-1 self-stretch justify-start items-center gap-8">
@@ -245,13 +245,13 @@
 
                         <div class="flex flex-col md:flex-row gap-4 text-[#FEFEFD] mt-10">
                             <div class="flex-1 gap: 24px;">
-                                <h2 class="text-[24px] text-[#FEFEFD] font-inter font-[600] mb-3">Mission Statement</h2>
-                                <p class="text-[24px] font-inter">Deliver pasteurised, donated breastmilk to in-hospital patients and equitably redistribute DBM to infants in public healthcare facilities. 
+                                <h2 class="text-[20px] text-[#FEFEFD] font-inter font-[600] mb-3">Mission Statement</h2>
+                                <p class="text-[20px] font-inter">Deliver pasteurised, donated breastmilk to in-hospital patients and equitably redistribute DBM to infants in public healthcare facilities. 
                                 </p>
                             </div>
                             <div class="flex-1 gap: 24px;">
-                                <h2 class="text-[24px] text-[#FEFEFD] font-inter font-[600] mb-3">Programme Goal</h2>
-                                <p class="text-[24px] font-inter">Provide fair and reliable access to donor breastmilk for both private and public-sector patients, ensuring critical early nutrition for pre-term and at-risk infants. 
+                                <h2 class="text-[20px] text-[#FEFEFD] font-inter font-[600] mb-3">Programme Goal</h2>
+                                <p class="text-[20px] font-inter">Provide fair and reliable access to donor breastmilk for both private and public-sector patients, ensuring critical early nutrition for pre-term and at-risk infants. 
                                 </p>
                             </div>
                         </div>
@@ -266,7 +266,7 @@
     </div>
 </section>
 
-<section class="pt-[128px]  bg-[#107BA2]">
+<section class="pt-[80px]  bg-[#107BA2]">
     <div class="wrapper ">
         <div class=" bg-[#107BA2] inline-flex justify-center items-start gap-[98px]">
             <div class="flex-1 self-stretch flex flex-col justify-start items-center gap-8">

@@ -277,6 +277,8 @@ line-height: normal;
 
 .mobile-menu.active {
     display: flex;
+    margin-top: 30px;
+    margin-left: 10px;
 }
 
 /* Adjust the dropdown menu for mobile */
@@ -391,6 +393,8 @@ line-height: normal;
 
 .find-a-milk-container {
     width: 302px;
+    padding-top:14px;
+    padding-bottom: 14px;
     position: relative;
     display: inline-block;
 }
@@ -495,10 +499,16 @@ line-height: normal;
     justify-content: space-between;
 }
 
+li {
+    font-size: 20px;
+}
+
+
+
 .help-save-lives {
     align-self: stretch;
     position: relative;
-    font-size: 11px;
+    font-size: 16px;
     font-weight: 300;
     font-family: "Inter", sans-serif;
 }
@@ -641,7 +651,7 @@ font-family: Work Sans, sans-serif;
 
 .component-2-parent {
     align-self: stretch;
-    height: 455px;
+    height: 555px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -798,7 +808,7 @@ line-height: normal;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 24px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
     color: #666562;
     font-family: "Inter", sans-serif;
@@ -977,7 +987,7 @@ line-height: normal;
 .ellipse-div {
     position: relative;
     width: 100%;
-    height: 1300px;
+    height: 1200px;
     background: url('../../public/images/ellipse.png') no-repeat center center;
     background-size: cover;
 }
@@ -1033,7 +1043,7 @@ line-height: normal;
 }
 
 .start-today {
-    font-size: 14px;
+    font-size: 16px;
     font-family: "Inter", sans-serif;
     color: #107ba2;
 }
@@ -1121,6 +1131,22 @@ color: #636061;
 text-align: left !important;
   }
   @media only screen and (max-width: 768px) {
+    .text-spacing{
+       line-height: 1;
+    }
+    .text-spacing-2{
+        line-height: 1.2;
+     }
+     .help-us-or-let-us-help-you-parent{
+        padding-top:50px;
+     }
+     .stats3{
+        text-align: start;
+    }
+    .stat-desc{
+        text-align: start;
+    }
+
     .accordion {
       margin-bottom: 16px;
     }
@@ -1139,7 +1165,9 @@ text-align: left !important;
     /*transform: rotate(270deg);  Use rotate instead of rotateX */
     transition: transform 0.75s ease-in-out;
   }
-  
+  /* .py-20{
+    border: 3px solid #c4df16
+  } */
   
   .container-faq {
     width: 100%;
@@ -1163,6 +1191,7 @@ text-align: left !important;
     }
     .help-us-or{
         font-size:48px;
+        line-height: 1.2;
     }
 
     .sm-icon01-parent {
@@ -1183,13 +1212,16 @@ text-align: left !important;
         max-width: 100vw;
         -webkit-overflow-scrolling: touch;
     }
+    .text-light-2{
+        font-size:20px;
+    }
 
     .ellipse-div {
-        height: 2000px;
+        height:1850px;
     }
 
     .ellipse-div2 {
-        height: 1200px;
+        height: 1120px;
     }
 
     .image-container {
@@ -1202,10 +1234,12 @@ text-align: left !important;
 
     .sec3-title {
         font-size: 32px;
+        line-height: 1.2;
     }
 
     .make-your-hospital-container {
         font-size: 48px;
+        line-height: 1.2;
     }
 
     .wrapper {
@@ -1216,6 +1250,7 @@ text-align: left !important;
     .saving-lives-mobile {
         font-size: 48px;
         text-align: start;
+        line-height:1.2
     }
 
     .join-us-in {
@@ -1238,8 +1273,12 @@ text-align: left !important;
 
     .content {
         flex-direction: column;
+        height: 580px;
     }
-
+    .py-20{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
     .h-screen {
         min-height: 1100px;
     }
@@ -1251,6 +1290,7 @@ text-align: left !important;
 
     .introducing-sosafe {
         font-size: 48px;
+        line-height: 1.2;
     }
 
     .component-2-parent {

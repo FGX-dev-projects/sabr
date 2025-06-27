@@ -25,14 +25,14 @@
         </div>
     </section>
 
-    <section class="py-[128px]">
+    <section class="py-[80px]">
         <div class="wrapper">
             <div class="introducing-sosafe md:text-[64px] text-[48px] !text-[#B2CB14]">
                 Transforming Lives Through <b>Human-Milk Banking</b>
             </div>
             <div class="home-sec-1 font-light">
                 <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                    <div style="font-weight: 300" class="text-[24px] ">
+                    <div style="font-weight: 300" class="text-[20px] ">
                         At the South African Breastmilk Reserve (SABR), our impact is measured not only by the lives we save
                         but also by the systemic change we drive. From reducing infant mortality to empowering mothers and
                         advancing cutting-edge research, SABR’s work touches thousands of lives across South Africa every
@@ -44,14 +44,14 @@
         </div>
     </section>
 
-    <section class="py-[128px] bg-[#23B4E9]">
+    <section class="py-[80px] bg-[#23B4E9]">
         <div class="wrapper">
             <div class="introducing-sosafe md:text-[64px] text-[48px] !text-[#FEFEFD]">
                 Advocacy for Breastfeeding and Health Economics
             </div>
             <div class="home-sec-1 font-light !text-[#FEFEFD]">
                 <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                    <div style="font-weight: 300" class="text-[24px] !text-[#FEFEFD]">
+                    <div style="font-weight: 300" class="text-[20px] !text-[#FEFEFD]">
                         As active members of the Maternal Neonatal Guideline and Breastfeeding Technical Working Groups of
                         the National Department of Health (NDOH), SABR champions breastfeeding as a public health priority.
                     </div>
@@ -99,13 +99,13 @@
         </div>
     </section>
 
-    <section class="py-[128px] bg-[#8B9E10]">
+    <section class="py-[80px] bg-[#8B9E10]">
         <div class="wrapper flex flex-col gap-[24px]">
             <div class="introducing-sosafe md:text-[64px] text-[48px] !text-[#FEFEFD]">
                 <b>Research</b>
             </div>
 
-            <p class="text-[#FEFEFD] text-[24px] ">
+            <p class="text-[#FEFEFD] text-[20px] ">
                 While SABR’s innovative research drives advancements in human-milk banking, its true value lies in the lives
                 it touches. From ensuring safer donor milk to supporting at-risk infants, our studies amplify the reach and
                 effectiveness of our programmes. Learn more about the science behind our impact by exploring SABR’s
@@ -129,9 +129,9 @@
         </div>
     </section>
 
-    <section class="py-[128px]">
+    <section class="py-[80px]">
         <div class="wrapper ">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-[68px] !items-start mb-[98px]">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-[68px] !items-start mb-[50px] md:mb-[98px]">
                 <!-- Left Container (Image) -->
                 <div class="">
                     <img src="{{asset('images/about-baby.png')}}" alt="Placeholder Image" class="w-full  rounded-3xl">
@@ -147,26 +147,26 @@
                     </div>
                     <div class="home-sec-1 !gap-0 font-light">
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light mb-6">
-                            <div style="font-weight: 300" class="text-[24px] ">Accessing breastmilk in public care is often
+                            <div style="font-weight: 300" class="text-[20px] ">Accessing breastmilk in public care is often
                                 hindered by significant challenges, including:
                             </div>
                         </div>
                         <div class="for-18-years-the-south-afric-wrapper font-inter ">
-                            <div style="font-weight: 700" class="text-[24px] ">Lack of Infrastructure and Resources
+                            <div style="font-weight: 700" class="text-[20px] ">Lack of Infrastructure and Resources
                             </div>
                         </div>
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light mt-3 mb-6">
-                            <div style="font-weight: 300" class="text-[24px] ">
+                            <div style="font-weight: 300" class="text-[20px] ">
                                 Many healthcare facilities lack the equipment and staffing needed to promote lactation and
                                 maternal health.
                             </div>
                         </div>
                         <div class="for-18-years-the-south-afric-wrapper font-inter ">
-                            <div style="font-weight: 700" class="text-[24px] ">Health Impacts of HIV/AIDS
+                            <div style="font-weight: 700" class="text-[20px] ">Health Impacts of HIV/AIDS
                             </div>
                         </div>
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light  mb-6">
-                            <div style="font-weight: 300" class="text-[24px] mt-3">
+                            <div style="font-weight: 300" class="text-[20px] mt-3">
                                 High rates of HIV/AIDS and associated illnesses, such as TB and meningitis, contribute to
                                 premature births, often leaving mothers too ill to lactate or, in some cases, unable to
                                 survive childbirth.
@@ -174,11 +174,11 @@
                             </div>
                         </div>
                         <div class="for-18-years-the-south-afric-wrapper font-inter ">
-                            <div style="font-weight: 700" class="text-[24px] ">Social and Structural Barriers
+                            <div style="font-weight: 700" class="text-[20px] ">Social and Structural Barriers
                             </div>
                         </div>
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light mt-3">
-                            <div style="font-weight: 300" class="text-[24px] ">
+                            <div style="font-weight: 300" class="text-[20px] ">
                                 Stigma, lack of awareness, and inadequate legislation to protect breastfeeding mothers
                                 exacerbate the challenges faced by many families.
                             </div>
@@ -190,7 +190,7 @@
             </div>
 
             <div class="for-18-years-the-south-afric-wrapper font-inter font-light mb-6">
-                <div style="font-weight: 300" class="text-[24px] text-[#666562] ">SABR’s 15 years of experience have also
+                <div style="font-weight: 300" class="text-[20px] text-[#666562] ">SABR’s 15 years of experience have also
                     highlighted issues specific to rural areas, where limited access to laboratories, electricity, and clean
                     water complicates the safe and hygienic processing of donor breastmilk. These barriers underscore the
                     need for innovative solutions, such as rapid testing technologies and low-cost, self-sustaining
@@ -201,7 +201,7 @@
         </div>
     </section>
 
-    <section class="py-[128px]  bg-[#107BA2]">
+    <section class="py-[80px]  bg-[#107BA2]">
         <div class="wrapper ">
             <div class=" bg-[#107BA2] inline-flex justify-center items-start gap-[98px]">
                 <div class="flex-1 self-stretch justify-start items-center gap-8">
@@ -214,14 +214,14 @@
 
                             <div class="flex flex-col md:flex-row gap-4 text-[#FEFEFD] mt-10">
                                 <div class="flex-1 gap: 24px;">
-                                    <h2 class="text-[24px] mb-3 text-[#FEFEFD] font-inter font-[600]">Mission Statement</h2>
-                                    <p class="text-[24px] font-inter">Deliver pasteurised, donated breastmilk to in-hospital
+                                    <h2 class="text-[20px] mb-3 text-[#FEFEFD] font-inter font-[600]">Mission Statement</h2>
+                                    <p class="text-[20px] font-inter">Deliver pasteurised, donated breastmilk to in-hospital
                                         patients and equitably redistribute DBM to infants in public healthcare facilities. 
                                     </p>
                                 </div>
                                 <div class="flex-1 gap: 24px;">
-                                    <h2 class="text-[24px] mb-3 text-[#FEFEFD] font-inter font-[600]">Programme Goal</h2>
-                                    <p class="text-[24px] font-inter">Provide fair and reliable access to donor breastmilk
+                                    <h2 class="text-[20px] mb-3 text-[#FEFEFD] font-inter font-[600]">Programme Goal</h2>
+                                    <p class="text-[20px] font-inter">Provide fair and reliable access to donor breastmilk
                                         for both private and public-sector patients, ensuring critical early nutrition for
                                         pre-term and at-risk infants. 
                                     </p>
@@ -238,7 +238,7 @@
         </div>
     </section>
 
-    <section class="pt-[128px]  bg-[#107BA2]">
+    <section class="pt-[80px]  bg-[#107BA2]">
         <div class="wrapper ">
             <div class=" bg-[#107BA2] inline-flex justify-center items-start gap-[98px]">
                 <div class="flex-1 self-stretch flex flex-col justify-start items-center gap-8">

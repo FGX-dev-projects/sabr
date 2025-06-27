@@ -26,7 +26,7 @@
                         class="w-full text-[#107BA2] text-[48px] md:text-[64px] font-normal break-words pt-[180px]  md:pt-[20px]">
                         Volunteer
                     </div>
-                    <p class="text-[24px] font-inter font-light">
+                    <p class="text-[20px] font-inter font-light">
                         From collections and deliveries to assisting the SABR team, volunteers help us make it all happen. Thank you for being willing to donate your time and energy. By filling out this form you are making a difference to an infant’s future.
                     </p>
                 </div>
@@ -34,7 +34,7 @@
         </div>
     </div>
 </section>
-<section class="py-[128px]">
+<section class="py-[80px]">
     <div class="wrapper">
         <div class="w-full p- ">
             <h2 class="text-[32px] font-inter font-bold text-[#adaaa5]">Personal Details</h2>

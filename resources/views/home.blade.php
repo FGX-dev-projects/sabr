@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="relative w-full h-[1350px] md:h-[900px] overflow-hidden">
+    <section class="relative w-full h-[1450px] md:h-[900px] overflow-hidden">
         <!-- Background Video -->
         <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay loop muted playsinline>
             <source src="{{asset('images/hero-video.mp4')}}" type="video/mp4">
@@ -18,7 +18,7 @@
                     <div class="content-inner">
                         <div class="frame-parent font-sans">
                             <div class="frame-parent ">
-                                <div >
+                                <div class="text-spacing">
                                     <span>Saving Lives,</span>
                                     <span class="one-drop-at"> One Drop At A Time</span>
                                 </div>
@@ -144,7 +144,7 @@
 
                 <!-- Right Container (Text) -->
                 <div class="we-are-more-than-just-a-breast-parent">
-                    <div class="saving-lives-mobile">
+                    <div class="saving-lives-mobile text-spacing-2">
                         <span>We Are More Than Just A </span>
                         <span class="breastmilk-bank">Breastmilk Bank</span>
                     </div>
@@ -254,9 +254,9 @@
                             </div>
                         </div>
                         <div class="gap-0 items-center  ">
-                            <p class="p-0 m-0 items-center text-center">Interested in implementing SoSAFE in your facility?
+                            <p class="p-0 m-0 items-center text-start md:text-center">Interested in implementing SoSAFE in your facility?
                             </p>
-                            <p class="p-0 items-center text-center">
+                            <p class="p-0 items-center text-start md:text-center">
                                 Contact us at <a href="https://www.SoSafe@sabr.org.za" target="_blank"
                                     class="text-[#23B4E9]"> SoSafe@sabr.org.za </a>for more information on how to get
                                 started.</p>
@@ -291,26 +291,26 @@
                         </div>
                         <div class="milk-banking-facilities-nation-parent">
                             <div class="we-are-more-container">
-                                <b class="cutting-edge-solutions font-bold font-inter  text-[24px] text-[#666562]">Cutting-Edge Solutions</b>
+                                <b class="cutting-edge-solutions font-bold font-inter  text-[20px] text-[#666562]">Cutting-Edge Solutions</b>
                                 <ul class="featuring-sosafes-innovative-container pl-8 " style="list-style: disc;">
-                                    <li class="font-light text-[24px] font-inter">Featuring SoSAFE’s innovative
+                                    <li class="font-light text-[20px] font-inter">Featuring SoSAFE’s innovative
                                         “Breastmilk-in-a-Box” with affordable pasteurisers and rapid testing technology.
                                     </li>
                                 </ul>
                             </div>
 
                             <div class="we-are-more-container">
-                                <b class="cutting-edge-solutionsfont-bold font-inter  text-[24px]  text-[#666562]">Comprehensive Care</b>
+                                <b class="cutting-edge-solutions font-bold font-inter  text-[20px] text-[#666562]">Comprehensive Care</b>
                                 <ul class="featuring-sosafes-innovative-container pl-8 " style="list-style: disc;">
-                                    <li class="font-light text-[24px] font-inter">From milk processing to maternal health
+                                    <li class="font-light text-[20px] font-inter">From milk processing to maternal health
                                         services, we equip hospitals to meet critical neonatal care needs.</li>
                                 </ul>
                             </div>
 
                             <div class="we-are-more-container">
-                                <b class="cutting-edge-solutions font-bold font-inter  text-[24px] text-[#666562]">Expanding Access</b>
+                                <b class="cutting-edge-solutions font-bold font-inter  text-[20px] text-[#666562]">Expanding Access</b>
                                 <ul class="featuring-sosafes-innovative-container pl-8 " style="list-style: disc;">
-                                    <li class="font-light text-[24px] font-inter">44 human milk banks established
+                                    <li class="font-light text-[20px] font-inter">44 human milk banks established
                                         nationwide, bridging the gap for underserved communities.</li>
                                 </ul>
                             </div>
@@ -343,12 +343,12 @@
 
 
     <section
-        class="pt-[2px] md:pt-[120px] wrapper flex flex-col items-center justify-center text-center min-h-screen  relative overflow-hidden">
-        <div class="sec3-title">
+        class="pt-[2px] md:pt-[120px] wrapper flex flex-col items-center justify-center text-center lg:min-h-screen py-20 md:py-0  relative overflow-hidden">
+        <div class="sec3-title text-start md:text-center">
             Join Us In Our Mission To Provide Life-Saving <br> Breastmilk To Premature Babies Worldwide
         </div>
 
-        <div class="stats-container">
+        <div class="stats-container text-start md:text-center">
             <div class="stats3">28 229+</div>
             <p class="stat-desc">Units of breastmilk distributed country-wide</p>
         </div>
@@ -357,10 +357,22 @@
         </div>
 
         <div class="mt-6  gap-4">
-            <div class="button-prim-wrapper cursor-pointer mt-3 relative z-50">
+
+            <div >
+                <div class="button-prim green-btn">
+                    <a href="payfast.co.za/donate/go/southafricanbreastmilkreserve" target="_blank" class="nav-button7 green-btn cursor-pointer">
+                        <div class="button7  text-[18px]">Yes, I want to contribute</div>
+                        <div class="nav-button-child">
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="button-prim-wrapper cursor-pointer   relative z-50 mt-4">
                 <a href="{{route('donate')}}" class="button-prim">
                     <div class="nav-button7 cursor-pointer">
-                        <div class="button7 pt-1 text-[18px]">Start Donating</div>
+                        <div class="button7  text-[18px]">Start Donating</div>
                         <div class="nav-button-child">
                         </div>
                     </div>
@@ -369,17 +381,7 @@
                     </div>
                 </a>
             </div>
-
-            <div class="mt-4">
-                <div class="button-prim green-btn">
-                    <a href="payfast.co.za/donate/go/southafricanbreastmilkreserve" target="_blank" class="nav-button7 green-btn cursor-pointer">
-                        <div class="button7 pt-1">Yes, I want to contribute</div>
-                        <div class="nav-button-child">
-                        </div>
-                    </a>
-                </div>
-            </div>
-
+            
         </div>
 
         <!-- Image container -->
@@ -409,26 +411,26 @@
                         </div>
                         <div class="milk-banking-facilities-nation-parent">
                             <div class="we-are-more-container">
-                                <b class="cutting-edge-solutions font-bold font-inter  text-[24px] text-[#666562]">Equitable Access</b>
+                                <b class="cutting-edge-solutions font-bold font-inter  text-[20px] text-[#666562]">Equitable Access</b>
                                 <ul class="featuring-sosafes-innovative-container pl-8 " style="list-style: disc;">
-                                    <li class="font-light text-[24px] font-inter">Delivering pasteurised donor breastmilk
+                                    <li class="font-light text-[20px] font-inter">Delivering pasteurised donor breastmilk
                                         to infants in NICUs nationwide.
                                     </li>
                                 </ul>
                             </div>
 
                             <div class="we-are-more-container">
-                                <b class="cutting-edge-solutions font-bold font-inter  text-[24px] text-[#666562]">Priority Care</b>
+                                <b class="cutting-edge-solutions font-bold font-inter  text-[20px] text-[#666562]">Priority Care</b>
                                 <ul class="featuring-sosafes-innovative-container pl-8 " style="list-style: disc;">
-                                    <li class="font-light text-[24px] font-inter">Focused on babies born before 37 weeks,
+                                    <li class="font-light text-[20px] font-inter">Focused on babies born before 37 weeks,
                                         ensuring vital early nutrition.</li>
                                 </ul>
                             </div>
 
                             <div class="we-are-more-container">
-                                <b class="cutting-edge-solutions font-bold font-inter  text-[24px]  text-[#666562]">Sustainable Impact</b>
+                                <b class="cutting-edge-solutions font-bold font-inter  text-[20px]  text-[#666562]">Sustainable Impact</b>
                                 <ul class="featuring-sosafes-innovative-container pl-8 " style="list-style: disc;">
-                                    <li class="font-light text-[24px] font-inter">Strengthening neonatal care in
+                                    <li class="font-light text-[20px] font-inter">Strengthening neonatal care in
                                         underserved rural areas through partnerships with Provincial Departments of Health.
                                     </li>
                                 </ul>
@@ -484,7 +486,7 @@
         </div>
     </section>
 
-    <section class="py-20">
+    <section class="pt-10">
         <div class="ellipse-div">
             <div class="wrapper">
                 <div class="help-us-or-let-us-help-you-parent pb-10">
@@ -504,7 +506,7 @@
                             </div>
                             <div class="copy">
                                 <div class="saving-lives-one-container font-sans">Donate Breastmilk</div>
-                                <div class="help-save-lives !font-inter !text-[14px] !font-[300]">Your milk can provide vital nourishment for babies in need.
+                                <div class="help-save-lives !font-inter  !font-[300]">Your milk can provide vital nourishment for babies in need.
                                 </div>
                             </div>
                             <div class="flex items-end justify-end w-full mt-4">
@@ -529,7 +531,7 @@
                             </div>
                             <div class="copy">
                                 <div class="saving-lives-one-container font-sans">Volunteer Your Time</div>
-                                <div class="help-save-lives !font-inter !text-[14px] !font-[300]">From collections and deliveries to assisting the SABR team,
+                                <div class="help-save-lives !font-inter !font-[300]">From collections and deliveries to assisting the SABR team,
                                     volunteers help us make it all happen. </div>
                             </div>
                             <div class="flex items-end justify-end w-full mt-4">
@@ -554,7 +556,7 @@
                             </div>
                             <div class="copy">
                                 <div class="saving-lives-one-container">Donate</div>
-                                <div class="help-save-lives !font-inter !text-[14px] !font-[300]">Help us save lives. Your financial contribution supports SABR’s
+                                <div class="help-save-lives !font-inter  !font-[300]">Help us save lives. Your financial contribution supports SABR’s
                                     programmes, bringing life-saving donor breastmilk and care to vulnerable infants across
                                     South Africa.</div>
                             </div>
@@ -582,7 +584,7 @@
                             </div>
                             <div class="copy">
                                 <div class="saving-lives-one-container">I am a Parent</div>
-                                <div class="help-save-lives !font-inter !text-[14px] !font-[300]">If your baby needs donor breastmilk, we’re here to help. Access
+                                <div class="help-save-lives !font-inter !font-[300]">If your baby needs donor breastmilk, we’re here to help. Access
                                     safe, pasteurised breastmilk for your little one and learn how SABR supports families in
                                     need.</div>
                             </div>
@@ -603,7 +605,7 @@
                             </div>
                             <div class="copy">
                                 <div class="saving-lives-one-container">I am a Doctor</div>
-                                <div class="help-save-lives !font-inter !text-[14px] !font-[300]">Bring life-saving breastmilk services to your facility. Partner
+                                <div class="help-save-lives !font-inter  !font-[300]">Bring life-saving breastmilk services to your facility. Partner
                                     with SABR to access donor breastmilk and establish human milk-banking infrastructure in
                                     your practice.</div>
                             </div>
@@ -621,7 +623,7 @@
                             </div>
                             <div class="copy ">
                                 <div class="saving-lives-one-container">I am a Clinician</div>
-                                <div class="help-save-lives !font-inter !text-[14px] !font-[300]">Help save lives by donating your excess breastmilk to babies in
+                                <div class="help-save-lives !font-inter  !font-[300]">Help save lives by donating your excess breastmilk to babies in
                                     need. Your gift can make all the difference.</div>
                             </div>
                         </div>
@@ -631,7 +633,7 @@
         </div>
     </section>
 
-    <section class="py-20">
+    <section class="pb-10">
         <div class="ellipse-div2">
             <div class="wrapper">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4  ">
@@ -687,13 +689,13 @@
         </div>
     </section>
 
-    <section class="py-20">
+    <section class="pt-20 pb-[80px]">
         <div class="wrapper">
             <div class="home-sec5 !p-0">
                 <div class=" flex flex-col lg:flex-row r gap-6 ">
                     <div class="flex-1 flex flex-col justify-center  gap-6">
                         <div class="text-[#107BA2] text-4xl md:text-6xl font-bold">News</div>
-                        <div class="text-[#107BA2] text-xl md:text-2xl font-bold">News</div>
+                        
                     </div>
                     <div id="scrollContainer" class=" max-w-[730px]  overflow-x-auto whitespace-nowrap py-4 px-4 ">
                         <div class="flex gap-6">
@@ -702,7 +704,7 @@
                                 <div
                                     class="absolute bottom-2 left-2 right-2 p-4 bg-[#FAF8F5] border border-[#DEDAD4] rounded-lg">
                                     <div class="text-[#868480] text-lg font-bold">News</div>
-                                    <div class="text-[#868480] text-sm">Heading</div>
+                                    <div class="text-[#868480] text-[16px]">Heading</div>
                                     <div class="mt-2 flex justify-end">
                                         <div class="px-2 py-1 bg-[#F4F0E9] rounded text-xs text-[#ADAAA5]">12 Aug</div>
                                     </div>
@@ -715,7 +717,7 @@
                                 <div
                                     class="absolute bottom-2 left-2 right-2 p-4 bg-[#FAF8F5] border border-[#DEDAD4] rounded-lg">
                                     <div class="text-[#868480] text-lg font-bold">News</div>
-                                    <div class="text-[#868480] text-sm">Heading</div>
+                                    <div class="text-[#868480] text-[16px]">Heading</div>
                                     <div class="mt-2 flex justify-end">
                                         <div class="px-2 py-1 bg-[#F4F0E9] rounded text-xs text-[#ADAAA5]">12 Aug</div>
                                     </div>
@@ -728,7 +730,7 @@
                                 <div
                                     class="absolute bottom-2 left-2 right-2 p-4 bg-[#FAF8F5] border border-[#DEDAD4] rounded-lg">
                                     <div class="text-[#868480] text-lg font-bold">News</div>
-                                    <div class="text-[#868480] text-sm">Heading</div>
+                                    <div class="text-[#868480] text-[16px]">Heading</div>
                                     <div class="mt-2 flex justify-end">
                                         <div class="px-2 py-1 bg-[#F4F0E9] rounded text-xs text-[#ADAAA5]">12 Aug</div>
                                     </div>
@@ -741,7 +743,7 @@
                                 <div
                                     class="absolute bottom-2 left-2 right-2 p-4 bg-[#FAF8F5] border border-[#DEDAD4] rounded-lg">
                                     <div class="text-[#868480] text-lg font-bold">News</div>
-                                    <div class="text-[#868480] text-sm">Heading</div>
+                                    <div class="text-[#868480] text-[16px]">Heading</div>
                                     <div class="mt-2 flex justify-end">
                                         <div class="px-2 py-1 bg-[#F4F0E9] rounded text-xs text-[#ADAAA5]">12 Aug</div>
                                     </div>
@@ -758,7 +760,7 @@
     </section>
 
 
-    <section class="pt-[128px]  bg-[#107BA2]">
+    <section class="pt-[80px]  bg-[#107BA2]">
         <div class="wrapper ">
             <div class=" bg-[#107BA2] inline-flex justify-center items-start gap-[98px]">
                 <div class="flex-1 self-stretch flex flex-col justify-start items-center gap-8">

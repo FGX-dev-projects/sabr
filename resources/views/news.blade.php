@@ -15,7 +15,7 @@
                         class="w-full text-[#107BA2] text-[48px] md:text-[64px] font-normal break-words pt-[180px]  md:pt-[20px]">
                         Latest News
                     </div>
-                    <p class="text-[24px] font-inter">
+                    <p class="text-[20px] font-inter">
                         With your help, SABR will be able to help more babies every year. Read on to find out what we've been up to, our latest fundraising ventures, and news on how donated breastmilk is changing lives
                     </p>
                 </div>

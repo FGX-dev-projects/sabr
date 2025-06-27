@@ -137,8 +137,8 @@
                         The Cost?</a>
                     <a href="{{ route('safe-user-of-dbm') }}" class="{{ Route::is('safe-user-of-dbm') ? 'bg-[#dedad4] text-[#00000080]'  : '' }} nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl" class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">The
                         Safe Use of DBM</a>
-                    <a href="#" class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl nav-btn-colour">How
-                        to Access DBM / Value of DBM</a>
+                    {{-- <a href="#" class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl nav-btn-colour">How
+                        to Access DBM / Value of DBM</a> --}}
                 </div>
             </div>
             <div class="relative">
@@ -204,7 +204,7 @@
                 <a href="{{ route('breast-is-best') }}" class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">Best In Breast (FAQs)</a>
                 <a href="{{ route('why-the-cost') }}" class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">Why The Cost?</a>
                 <a href="{{ route('safe-user-of-dbm') }}" class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">The Safe Use of DBM</a>
-                <a href="#" class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">How to Access DBM / Value of DBM</a>
+                {{-- <a href="#" class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">How to Access DBM / Value of DBM</a> --}}
             </div>
         </div>
         
@@ -224,7 +224,7 @@
         @yield('content')
     </main>
     
-    <footer class="pt-[128px] pb-[50px] md:pb-[80px] px-[20px] md:px-[40px]  bg-[#107BA2]">
+    <footer class="pt-[128px] pb-[50px] md:pb-[80px] wrapper bg-[#107BA2]">
        
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center ">
                 <!-- Logo -->

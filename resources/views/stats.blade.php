@@ -16,9 +16,9 @@
                             class="w-full text-[#107BA2] text-[48px] md:text-[64px] font-normal break-words pt-[180px]  md:pt-[20px]">
                             Our Statistics
                         </div>
-                        <p class="text-[24px] font-inter font-light">
-                            Subheading
-                        </p>
+                        {{-- <p class="text-[20px] font-inter font-light">
+                            
+                        </p> --}}
                     </div>
                 </div>
             </div>

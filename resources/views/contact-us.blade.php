@@ -21,7 +21,7 @@
 
     <section class="pb-[120px]">
         <div class="wrapper">
-            <p class="text-[24px] text-[#000] font-sans">If you'd like to find out more about what we do, please send us an
+            <p class="text-[20px] text-[#000] font-sans">If you'd like to find out more about what we do, please send us an
                 email or give us a call. SABR also loves to receive feedback from our donors, recipients and breastfeeding
                 mommies - so feel free to get in touch.</p>
 
@@ -29,8 +29,8 @@
                 <div class="flex flex-col gap-4">
                     <h3 class="text-[48px] font-sans text-black font-semibold">Address</h3>
                     <div>
-                        <h5 class="font-semibold text-black font-sans text-[32px]">SABR head office:</h5>
-                        <p class="text-[32px] text-left !font-[300] font-sans text-black">The Media Mills<br> 7 Quince Street<br>
+                        <h5 class="font-semibold text-black font-sans text-[20px] md:text-[32px]">SABR head office:</h5>
+                        <p class="text-[20px] md:text-[32px] text-left !font-[300] font-sans text-black">The Media Mills<br> 7 Quince Street<br>
                             Braamfontein Werf</p>
                     </div>
                 </div>
@@ -43,19 +43,19 @@
             <div  class="grid grid-cols-1 md:grid-cols-2 gap-12  contact-us">
                 <div class=" gap-4">
                     <div>
-                        <h5 class="font-semibold text-black text-left font-sans text-[32px]">Telephone <br> <a href="tel: 011 482 1920" class="font-[300] ">011 482 1920</a></h5>
+                        <h5 class="font-semibold text-black text-left font-sans text-[20px] md:text-[32px]">Telephone <br> <a href="tel: 011 482 1920" class="font-[300] ">011 482 1920</a></h5>
                         
                     </div>
                 </div>
                 <div>
                     <div>
-                        <h5 class="font-semibold text-black text-left font-sans text-[32px]">E-mail <br> <a href="mailto: info@sabr.org.za" class="font-[300] ">info@sabr.org.za</a></h5>
+                        <h5 class="font-semibold text-black text-left font-sans text-[20px] md:text-[32px]">E-mail <br> <a href="mailto: info@sabr.org.za" class="font-[300] ">info@sabr.org.za</a></h5>
                         
                     </div>
                 </div>
                 <div>
                     <div>
-                        <h5 class="font-semibold text-black text-left font-sans text-[32px]">Donor's 24/7 <br> <a href="tel: 066 488 3350" class="font-[300] ">066 488 3350</a></h5>
+                        <h5 class="font-semibold text-black text-left font-sans text-[20px] md:text-[32px]">Donor's 24/7 <br> <a href="tel: 066 488 3350" class="font-[300] ">066 488 3350</a></h5>
                         
                     </div>
                 </div>
@@ -63,7 +63,7 @@
         </div>
     </section>
 
-    <section class="pt-[128px]  bg-[#107BA2]">
+    <section class="pt-[80px]  bg-[#107BA2]">
         <div class="wrapper ">
             <div class=" bg-[#107BA2] inline-flex justify-center items-start gap-[98px]">
                 <div class="flex-1 self-stretch flex flex-col justify-start items-center gap-8">

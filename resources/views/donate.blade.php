@@ -15,7 +15,7 @@
                         class="w-full text-[#107BA2] text-[48px] md:text-[64px] font-normal break-words pt-[180px]  md:pt-[20px]">
                         Donate
                     </div>
-                    <p class="text-[24px] font-inter font-light">
+                    <p class="text-[20px] font-inter font-light">
                         Thank you for wanting to become a breastmilk donor. Ideal candidates are in good health and have access to a fridge and freezer. There is no financial compensation but by filling out this form you are on your way to helping an infant in need. We can’t thank you enough.
                     </p>
                 </div>
@@ -23,7 +23,7 @@
         </div>
     </div>
 </section>
-<section class="py-[128px]">
+<section class="py-[80px]">
     <div class="wrapper">
         <div class="w-full p- ">
             <h2 class="text-[32px] font-inter font-bold text-[#adaaa5]">Mother’s Details</h2>
@@ -141,7 +141,7 @@
                 
                 <!-- Race Selection -->
                 <div class="flex flex-col gap-3">
-                    <label class="block text-gray-600" for="mother_race">Mother's Race</label>
+                    <label class="block text-gray-600" >Mother's Race</label>
                     <div class="grid grid-cols-2 md:grid-cols-5 gap-1">
                         <label for="mother_race_black" class="flex items-center gap-2">
                             <input type="radio" id="mother_race_black" name="mother_race" value="Black" class="form-radio scale-150 text-blue-500"> Black
@@ -271,7 +271,7 @@
                 </div>
 
                 <div>
-                    <label for="woccupation_country" class="block text-gray-600">Work Address: Country</label>
+                    <label for="occupation_country" class="block text-gray-600">Work Address: Country</label>
                     <input name="occupation_country" type="text" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
 

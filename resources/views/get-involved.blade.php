@@ -33,7 +33,7 @@
                     </div>
                     <div class="copy">
                         <div class="saving-lives-one-container font-sans">Donate Breastmilk</div>
-                        <div class="help-save-lives !font-inter !text-[14px] !font-[300]">Your milk can provide vital nourishment for babies in need.
+                        <div class="help-save-lives !font-inter !font-[300]">Your milk can provide vital nourishment for babies in need.
                         </div>
                     </div>
                     <div class="flex items-end justify-end w-full mt-4">
@@ -58,7 +58,7 @@
                     </div>
                     <div class="copy">
                         <div class="saving-lives-one-container font-sans">Volunteer Your Time</div>
-                        <div class="help-save-lives !font-inter !text-[14px] !font-[300]">From collections and deliveries to assisting the SABR team,
+                        <div class="help-save-lives !font-inter  !font-[300]">From collections and deliveries to assisting the SABR team,
                             volunteers help us make it all happen. </div>
                     </div>
                     <div class="flex items-end justify-end w-full mt-4">
@@ -111,7 +111,7 @@
                     </div>
                     <div class="copy">
                         <div class="saving-lives-one-container">I am a Parent</div>
-                        <div class="help-save-lives !font-inter !text-[14px] !font-[300]">If your baby needs donor breastmilk, we’re here to help. Access
+                        <div class="help-save-lives !font-inter !font-[300]">If your baby needs donor breastmilk, we’re here to help. Access
                             safe, pasteurised breastmilk for your little one and learn how SABR supports families in
                             need.</div>
                     </div>
@@ -132,7 +132,7 @@
                     </div>
                     <div class="copy">
                         <div class="saving-lives-one-container">I am a Doctor</div>
-                        <div class="help-save-lives !font-inter !text-[14px] !font-[300]">Bring life-saving breastmilk services to your facility. Partner
+                        <div class="help-save-lives !font-inter !font-[300]">Bring life-saving breastmilk services to your facility. Partner
                             with SABR to access donor breastmilk and establish human milk-banking infrastructure in
                             your practice.</div>
                     </div>
@@ -150,29 +150,29 @@
                     </div>
                     <div class="copy ">
                         <div class="saving-lives-one-container">I am a Clinician</div>
-                        <div class="help-save-lives !font-inter !text-[14px] !font-[300]">Help save lives by donating your excess breastmilk to babies in
+                        <div class="help-save-lives !font-inter !font-[300]">Help save lives by donating your excess breastmilk to babies in
                             need. Your gift can make all the difference.</div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div  class="grid grid-cols-1 md:grid-cols-2 gap-12 pt-14 contact-us">
+        <div  class="grid grid-cols-1 md:grid-cols-2 gap-12 pt-8 contact-us">
             <div class=" gap-4">
                 <div>
-                    <h5 class="font-semibold text-black text-left font-sans text-[32px]">Telephone <br> <a href="tel: 011 482 1920" class="font-[300] ">011 482 1920</a></h5>
+                    <h5 class="font-semibold text-black text-left font-sans text-[20px] md:text-[32px]">Telephone <br> <a href="tel: 011 482 1920" class="font-[300] ">011 482 1920</a></h5>
                     
                 </div>
             </div>
             <div>
                 <div>
-                    <h5 class="font-semibold text-black text-left font-sans text-[32px]">E-mail <br> <a href="mailto: info@sabr.org.za" class="font-[300] ">info@sabr.org.za</a></h5>
+                    <h5 class="font-semibold text-black text-left font-sans text-[20px] md:text-[32px]">E-mail <br> <a href="mailto: info@sabr.org.za" class="font-[300] ">info@sabr.org.za</a></h5>
                     
                 </div>
             </div>
             <div>
                 <div>
-                    <h5 class="font-semibold text-black text-left font-sans text-[32px]">Donor's 24/7 <br> <a href="tel: 066 488 3350" class="font-[300] ">066 488 3350</a></h5>
+                    <h5 class="font-semibold text-black text-left font-sans text-[20px] md:text-[32px]">Donor's 24/7 <br> <a href="tel: 066 488 3350" class="font-[300] ">066 488 3350</a></h5>
                     
                 </div>
             </div>

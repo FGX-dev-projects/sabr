@@ -26,7 +26,7 @@
         </div>
     </section>
 
-    <section class="py-[128px]">
+    <section class="py-[80px]">
         <div class="wrapper ">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-[68px] !items-start">
                 <!-- Left Container (Image) -->
@@ -43,7 +43,7 @@
                     </div>
                     <div class="home-sec-1 font-light">
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                            <div style="font-weight: 300" class="text-[24px] "> The SOStainer Mobile Clinics are a
+                            <div style="font-weight: 300" class="text-[20px] "> The SOStainer Mobile Clinics are a
                                 groundbreaking innovation by the South African Breastmilk Reserve (SABR), bringing essential
                                 maternal and child healthcare services directly to underserved communities. These versatile,
                                 solar-powered facilities are designed to address critical health challenges in low-resource
@@ -63,7 +63,7 @@
         </div>
     </section>
 
-    <section class="py-[128px]">
+    <section class="py-[80px]">
         <div class="wrapper ">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-[68px] !items-start">
                 <div class="">
@@ -79,7 +79,7 @@
                     </div>
                     <div class="home-sec-1 font-light">
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                            <div style="font-weight: 300" class="text-[24px] ">The SOStainer Clinic embodies SABR’s
+                            <div style="font-weight: 300" class="text-[20px] ">The SOStainer Clinic embodies SABR’s
                                 commitment to a holistic, life-cycle approach to health. While our initial focus was on
                                 reducing neonatal mortality through donor breastmilk, the SOStainer expands this mission to
                                 include a broader range of health services. Recognising that the health of infants is deeply
@@ -97,7 +97,7 @@
         </div>
     </section>
 
-    <section class="py-[128px]">
+    <section class="py-[80px]">
         <div class="wrapper ">
 
             <div class="we-are-more-than-just-a-breast-parent flex !items-start !justify-start gap-[28px] !text-[#E23E48]">
@@ -112,7 +112,7 @@
                         <h3 class="get-in-touch font-inter font-bold text-[#666562]">Breastfeeding Support and Nutrition
                         </h3>
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                            <div style="font-weight: 300" class="text-[24px] text-[#666562] ">Guidance for mothers to ensure
+                            <div style="font-weight: 300" class="text-[20px] text-[#666562] ">Guidance for mothers to ensure
                                 optimal infant feeding practices. 
                             </div>
                         </div>
@@ -123,7 +123,7 @@
                     <div>
                         <h3 class="get-in-touch font-inter font-bold text-[#666562]">Immunisations</h3>
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                            <div style="font-weight: 300" class="text-[24px] text-[#666562] ">Vaccinations for children to
+                            <div style="font-weight: 300" class="text-[20px] text-[#666562] ">Vaccinations for children to
                                 prevent life-threatening illnesses. 
                             </div>
                         </div>
@@ -134,7 +134,7 @@
                     <div>
                         <h3 class="get-in-touch font-inter font-bold text-[#666562]">Donor Breastmilk Processing</h3>
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                            <div style="font-weight: 300" class="text-[24px] text-[#666562] ">Collection, pasteurisation,
+                            <div style="font-weight: 300" class="text-[20px] text-[#666562] ">Collection, pasteurisation,
                                 and distribution of safe, nutrient-rich donor breastmilk. 
                             </div>
                         </div>
@@ -145,7 +145,7 @@
                     <div>
                         <h3 class="get-in-touch font-inter font-bold text-[#666562]">HIV Testing and Counselling</h3>
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                            <div style="font-weight: 300" class="text-[24px] text-[#666562] ">Support for HIV prevention and
+                            <div style="font-weight: 300" class="text-[20px] text-[#666562] ">Support for HIV prevention and
                                 treatment. 
                             </div>
                         </div>
@@ -156,7 +156,7 @@
                     <div>
                         <h3 class="get-in-touch font-inter font-bold text-[#666562]">Nutrition Support</h3>
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                            <div style="font-weight: 300" class="text-[24px] text-[#666562] ">Services aimed at preventing
+                            <div style="font-weight: 300" class="text-[20px] text-[#666562] ">Services aimed at preventing
                                 stunting and improving overall health outcomes. 
                             </div>
                         </div>
@@ -167,7 +167,7 @@
                     <div>
                         <h3 class="get-in-touch font-inter font-bold text-[#666562]">Early Childhood Development (ECD)</h3>
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                            <div style="font-weight: 300" class="text-[24px] text-[#666562] ">Programmes focused on the five
+                            <div style="font-weight: 300" class="text-[20px] text-[#666562] ">Programmes focused on the five
                                 pillars of child development. 
                             </div>
                         </div>
@@ -178,7 +178,7 @@
                     <div>
                         <h3 class="get-in-touch font-inter font-bold text-[#666562]">Community Outreach</h3>
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                            <div style="font-weight: 300" class="text-[24px] text-[#666562] ">Home visits and health
+                            <div style="font-weight: 300" class="text-[20px] text-[#666562] ">Home visits and health
                                 communication to expand the clinic’s impact. 
                             </div>
                         </div>
@@ -188,7 +188,7 @@
         </div>
     </section>
 
-    <section class="py-[128px]">
+    <section class="py-[80px]">
         <div class="wrapper ">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-[98px] !items-start">
                 <!-- Left Container (Image) -->
@@ -200,7 +200,7 @@
                     </div>
                     <div class="home-sec-1 font-light">
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                            <div style="font-weight: 300" class="text-[24px] ">Located in Mankweng, Limpopo, the SOStainer
+                            <div style="font-weight: 300" class="text-[20px] ">Located in Mankweng, Limpopo, the SOStainer
                                 addresses significant barriers to healthcare access, including the lack of nearby clinics,
                                 limited transportation, and inadequate infrastructure. This region faces high rates of
                                 diarrhoeal disease, malnutrition, and respiratory infections, which are leading causes of
@@ -217,7 +217,7 @@
         </div>
     </section>
 
-    <section class="py-[128px] bg-[#B03038]">
+    <section class="py-[80px] bg-[#B03038]">
         <div class="wrapper">
             <div class="introducing-sosafe !font-inter !text-end md:text-[64px] text-[48px] font-bold !text-[#FEFEFD]">
                 Beneficiaries and Impact
@@ -231,7 +231,7 @@
 
                     <div class="home-sec-1 font-light">
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                            <div style="font-weight: 300" class="text-[24px] text-white ">The SOStainer has brought
+                            <div style="font-weight: 300" class="text-[20px] text-white ">The SOStainer has brought
                                 healthcare closer to one of Limpopo’s most underserved rural communities. The clinic has
                                 improved immunisation rates, supported exclusive breastfeeding, and provided critical HIV
                                 and nutritional services. In its first year, the SOStainer supported over 1,100 clinic
@@ -251,7 +251,7 @@
         </div>
     </section>
 
-    <section class="py-[128px]">
+    <section class="py-[80px]">
         <div class="wrapper ">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-[68px] !items-start">
                 <!-- Left Container (Image) -->
@@ -268,7 +268,7 @@
                     </div>
                     <div class="home-sec-1 font-light">
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                            <div style="font-weight: 300" class="text-[24px] ">The SOStainer project is supported by
+                            <div style="font-weight: 300" class="text-[20px] ">The SOStainer project is supported by
                                 partnerships with the Limpopo Department of Health, SACSoWACH, and other stakeholders. SABR
                                 collaborates with technical experts, engineers, and academic institutions to ensure the
                                 project’s success. Key contributors include Beyond Wireless for cold-chain support and
@@ -287,7 +287,7 @@
         </div>
     </section>
 
-    <section class="py-[128px]">
+    <section class="py-[80px]">
         <div class="wrapper ">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-[68px] !items-start">
                 <!-- Left Container (Image) -->
@@ -305,7 +305,7 @@
                     </div>
                     <div class="home-sec-1 font-light">
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                            <div style="font-weight: 300" class="text-[24px] ">As a modular, adaptable facility, the
+                            <div style="font-weight: 300" class="text-[20px] ">As a modular, adaptable facility, the
                                 SOStainer has the potential to scale beyond its pilot in Mankweng. Its success has paved the
                                 way for broader implementation across Limpopo and other provinces, providing a flexible,
                                 cost-effective solution to healthcare delivery in low-resource environments.
@@ -321,13 +321,13 @@
         </div>
     </section>
 
-    <section class="py-[128px] bg-[#8B9E10]">
+    <section class="py-[80px] bg-[#8B9E10]">
         <div class="wrapper">
             <div class="introducing-sosafe md:text-[64px] text-[48px] !text-[#FEFEFD]">
                 <b>Recognitions</b> <span class="font-thin">& </span><b>Awards</b>
             </div>
 
-            <p class="text-[#FEFEFD] text-[24px] pt-[28px]">
+            <p class="text-[#FEFEFD] text-[20px] pt-[28px]">
                 The SOStainer project earned the Discovery Foundation Excellence Award in 2018 for its innovative approach
                 to improving maternal and child health. It continues to exemplify SABR’s mission to bring life-saving
                 services to the most vulnerable populations.
@@ -338,7 +338,7 @@
         </div>
     </section>
 
-    <section class="pt-[128px]  bg-[#107BA2]">
+    <section class="pt-[80px]  bg-[#107BA2]">
         <div class="wrapper ">
             <div class=" bg-[#107BA2] inline-flex justify-center items-start gap-[98px]">
                 <div class="flex-1 self-stretch flex flex-col justify-start items-center gap-8">

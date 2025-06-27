@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="relative w-full h-[998px] md:h-[490px]  overflow-hidden">
+<section class="relative w-full h-[800px] md:h-[490px]  overflow-hidden">
     <!-- Background Video -->
    
 
@@ -14,7 +14,7 @@
                         class="w-full text-[#107BA2] text-[48px] md:text-[64px] font-normal break-words pt-[180px]  md:pt-[20px]">
                         Research at SABR 
                     </div>
-                    <p class="text-[24px] font-inter !font-light">
+                    <p class="text-[20px] font-inter !font-light">
                         At the South African Breastmilk Reserve (SABR), research is at the core of our mission to improve maternal and infant health. Through clinical, virological, and safety studies, we enhance the understanding of breastmilk safety and quality, paving the way for innovative testing methodologies and improved healthcare outcomes. Our work is supported by partnerships with leading research teams and public health institutions, ensuring that our findings contribute to advancements in breastfeeding and human-milk banking practices. 
                     </p>
                 </div>
@@ -23,7 +23,7 @@
     </div>
 </section>
 
-<section class="py-[128px]">
+<section class="py-[80px]">
     <div class="wrapper flex flex-col gap-3">
         <div class="w-full h-full p-4 bg-[#FAF8F5] rounded-xl outline outline-1 outline-[#DEDAD4] flex flex-col md:flex-row justify-start  gap-3">
             <div class="w-full md:w-auto h-full  p-0">

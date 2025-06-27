@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <section class="relative w-full h-[750px] md:h-[750px]  overflow-hidden">
+    <section class="relative w-full h-[700px] md:h-[750px]  overflow-hidden">
         <!-- Background Video -->
         <img class="absolute top-0 left-0 w-full h-full object-cover" src="{{ asset('images/sosafe-bg.png') }}"
             alt="Hero Image">
@@ -27,7 +27,7 @@
         </div>
     </section>
 
-    <section class="py-[128px]">
+    <section class="py-[80px]">
         <div class="wrapper ">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-[68px] items-center">
                 <!-- Left Container (Image) -->
@@ -36,7 +36,7 @@
                 </div>
 
                 <!-- Right Container (Text) -->
-                <div class="we-are-more-than-just-a-breast-parent !justify-start gap-[120px]">
+                <div class="we-are-more-than-just-a-breast-parent !justify-start gap-[20px]">
 
                     <div class="saving-lives-mobile text-[#B2CB14] ">
                         <span>A New Standard in </span>
@@ -60,7 +60,7 @@
         </div>
     </section>
 
-    <section class="py-[128px] bg-[#23B4E9]">
+    <section class="py-[80px] bg-[#23B4E9]">
         <div class="wrapper">
             <div class="introducing-sosafe md:text-[64px] text-[48px] !text-[#FEFEFD]">
                 Features of SoSAFE
@@ -104,7 +104,7 @@
         </div>
     </section>
 
-    <section class="py-[128px]">
+    <section class="py-[80px]">
         <div class="wrapper ">
             <div class="grid grid-cols-1  md:grid-cols-2 gap-[68px]">
                 <!-- Left Container (Image) -->
@@ -118,25 +118,25 @@
                         
                         <div class="milk-banking-facilities-nation-parent">
                             <div class="we-are-more-container">
-                                <b class="cutting-edge-solutions font-inter text-[24px] font-bold text-[#666562]">Pathogen Elimination</b>
+                                <b class="cutting-edge-solutions font-inter text-[20px] font-bold text-[#666562]">Pathogen Elimination</b>
                                 <ul class="featuring-sosafes-innovative-container pl-8 " style="list-style: disc;">
-                                    <li class="font-light text-[24px] font-inter">SoSAFE ensures breastmilk is free from harmful bacteria and viruses, providing a safe source of nutrition for infants in neonatal intensive care units (NICUs).
+                                    <li class="font-light text-[20px] font-inter">SoSAFE ensures breastmilk is free from harmful bacteria and viruses, providing a safe source of nutrition for infants in neonatal intensive care units (NICUs).
 
                                     </li>
                                 </ul>
                             </div>
 
                             <div class="we-are-more-container">
-                                <b class="cutting-edge-solutions font-inter text-[24px] font-bold text-[#666562]">Nutrient Preservation</b>
+                                <b class="cutting-edge-solutions font-inter text-[20px] font-bold text-[#666562]">Nutrient Preservation</b>
                                 <ul class="featuring-sosafes-innovative-container pl-8 " style="list-style: disc;">
-                                    <li class="font-light text-[24px] font-inter">Unlike traditional methods, SoSAFE retains the critical proteins, antibodies, and growth factors that make breastmilk an unparalleled source of nourishment.</li>
+                                    <li class="font-light text-[20px] font-inter">Unlike traditional methods, SoSAFE retains the critical proteins, antibodies, and growth factors that make breastmilk an unparalleled source of nourishment.</li>
                                 </ul>
                             </div>
 
                             <div class="we-are-more-container">
-                                <b class="cutting-edge-solutions font-inter text-[24px] font-bold text-[#666562]">Equitable Access</b>
+                                <b class="cutting-edge-solutions font-inter text-[20px] font-bold text-[#666562]">Equitable Access</b>
                                 <ul class="featuring-sosafes-innovative-container pl-8 " style="list-style: disc;">
-                                    <li class="font-light text-[24px] font-inter">By simplifying and reducing the cost of pasteurisation, the SoSAFE Pasteuriser enables more hospitals and communities to provide life-saving donor milk, especially in resource-limited settings.</li>
+                                    <li class="font-light text-[20px] font-inter">By simplifying and reducing the cost of pasteurisation, the SoSAFE Pasteuriser enables more hospitals and communities to provide life-saving donor milk, especially in resource-limited settings.</li>
                                 </ul>
                             </div>
 
@@ -159,13 +159,13 @@
         </div>
     </section>
 
-    <section class="py-[128px] bg-[#8B9E10]">
+    <section class="py-[80px] bg-[#8B9E10]">
         <div class="wrapper">
             <div class="introducing-sosafe md:text-[64px] text-[48px] !text-[#FEFEFD]">
                 Commitment to Equitable Access
             </div>
 
-            <p class="text-[#FEFEFD] text-[24px] py-[64px]">
+            <p class="text-[#FEFEFD] text-[20px] py-[64px]">
             At SABR, we believe that every infant deserves the chance to thrive, regardless of where they are born. Equitable access to safe, nutrient-rich donor breastmilk is a cornerstone of our mission, and the SoSAFE Pasteuriser plays a pivotal role in achieving this vision.
 <br><br>
 By making pasteurisation affordable and accessible, SoSAFE empowers hospitals and communities in underserved regions to bridge the gap in neonatal care. This innovation not only reduces disparities in infant health outcomes but also ensures that even the most vulnerable babies can benefit from the life-saving properties of breastmilk.
@@ -178,7 +178,7 @@ By making pasteurisation affordable and accessible, SoSAFE empowers hospitals an
         </div>
     </section>
 
-    <section class="pt-[128px]  bg-[#107BA2]">
+    <section class="pt-[80px]  bg-[#107BA2]">
         <div class="wrapper ">
             <div class=" bg-[#107BA2] inline-flex justify-center items-start gap-[98px]">
                 <div class="flex-1 self-stretch flex flex-col justify-start items-center gap-8">

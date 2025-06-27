@@ -27,7 +27,7 @@
         </div>
     </section>
 
-    <section class="py-[128px]">
+    <section class="py-[80px]">
         <div class="wrapper ">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-[68px] items-center">
                 <!-- Left Container (Image) -->
@@ -44,7 +44,7 @@
                     </div>
                     <div class="home-sec-1">
                         <div class="for-18-years-the-south-afric-wrapper">
-                            <div class="text-[24px]">The Feed for Life Initiative is a cornerstone programme of the South
+                            <div class="text-[20px]">The Feed for Life Initiative is a cornerstone programme of the South
                                 African Breastmilk Reserve (SABR), dedicated to ensuring that all in-hospital
                                 patients—especially those in low-resource public facilities—have access to pasteurised,
                                 donated breastmilk (DBM). By bridging gaps in neonatal care, the programme supports the
@@ -59,7 +59,7 @@
         </div>
     </section>
 
-    <section class="py-[128px]  bg-[#107BA2]">
+    <section class="py-[80px]  bg-[#107BA2]">
         <div class="wrapper ">
             <div class=" bg-[#107BA2] inline-flex justify-center items-start gap-[98px]">
                 <div class="flex-1 self-stretch justify-start items-center gap-8">
@@ -72,13 +72,13 @@
     
                             <div class="flex flex-col md:flex-row gap-4 text-[#FEFEFD] mt-10">
                                 <div class="flex-1 gap: 24px;">
-                                    <h2 class="text-[24px] text-[#FEFEFD] font-inter font-[600] mb-3">Mission Statement</h2>
-                                    <p class="text-[24px] font-inter">Deliver pasteurised, donated breastmilk to in-hospital patients and equitably redistribute DBM to infants in public healthcare facilities. 
+                                    <h2 class="text-[20px] text-[#FEFEFD] font-inter font-[600] mb-3">Mission Statement</h2>
+                                    <p class="text-[20px] font-inter">Deliver pasteurised, donated breastmilk to in-hospital patients and equitably redistribute DBM to infants in public healthcare facilities. 
                                     </p>
                                 </div>
                                 <div class="flex-1 gap: 24px;">
-                                    <h2 class="text-[24px] text-[#FEFEFD] font-inter font-[600] mb-3">Programme Goal</h2>
-                                    <p class="text-[24px] font-inter">Provide fair and reliable access to donor breastmilk for both private and public-sector patients, ensuring critical early nutrition for pre-term and at-risk infants. 
+                                    <h2 class="text-[20px] text-[#FEFEFD] font-inter font-[600] mb-3">Programme Goal</h2>
+                                    <p class="text-[20px] font-inter">Provide fair and reliable access to donor breastmilk for both private and public-sector patients, ensuring critical early nutrition for pre-term and at-risk infants. 
                                     </p>
                                 </div>
                             </div>
@@ -93,7 +93,7 @@
         </div>
     </section>
 
-    <section class="py-[128px] ">
+    <section class="py-[80px] ">
         <div class="wrapper ">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-[68px] ">
                 <!-- Left Container (Image) -->
@@ -110,7 +110,7 @@
                     </div>
                     <div class="home-sec-1">
                         <div class="for-18-years-the-south-afric-wrapper">
-                            <div class="text-[24px]">The Feed for Life Initiative is a cornerstone programme of the South
+                            <div class="text-[20px]">The Feed for Life Initiative is a cornerstone programme of the South
                                 African Breastmilk Reserve (SABR), dedicated to ensuring that all in-hospital
                                 patients—especially those in low-resource public facilities—have access to pasteurised,
                                 donated breastmilk (DBM). By bridging gaps in neonatal care, the programme supports the
@@ -125,13 +125,13 @@
         </div>
     </section>
 
-    <section class="py-[128px] bg-[#8B9E10]">
+    <section class="py-[80px] bg-[#8B9E10]">
         <div class="wrapper">
             <div class="introducing-sosafe md:text-[64px] text-[48px] !text-[#FEFEFD]">
                 <b>Awards</b> <span class="font-thin">& </span><b>Achievements</b>
             </div>
 
-            <p class="text-[#FEFEFD] text-[24px] pt-[28px]">
+            <p class="text-[#FEFEFD] text-[20px] pt-[28px]">
                 Our commitment to innovation and impact has been recognised with accolades such as the Discovery Excellence
                 Awards in 2018 and 2021. These honours highlight our efforts, including the development of the SoSAFE
                 Pasteuriser, the SOStainer Mobile Clinic, and advancements in virological screening for donor milk.
@@ -142,7 +142,7 @@
         </div>
     </section>
 
-    <section class="py-[128px]">
+    <section class="py-[80px]">
         <div class="wrapper ">
             <div class="grid grid-cols-1  md:grid-cols-2 gap-[50px]">
                 <!-- Left Container (Image) -->
@@ -158,7 +158,7 @@
                         <div class="milk-banking-facilities-nation-parent">
                             <div class="we-are-more-container">
                                 <ul class="featuring-sosafes-innovative-container pl-4 " style="list-style: disc;">
-                                    <li class="font-light text-[24px] font-inter">Established a sustainable and replicable
+                                    <li class="font-light text-[20px] font-inter">Established a sustainable and replicable
                                         model for non-profit milk banking.
 
                                     </li>
@@ -166,7 +166,7 @@
                             </div>
                             <div class="we-are-more-container">
                                 <ul class="featuring-sosafes-innovative-container pl-4 " style="list-style: disc;">
-                                    <li class="font-light text-[24px] font-inter">Expanded our reach to serve both public
+                                    <li class="font-light text-[20px] font-inter">Expanded our reach to serve both public
                                         and private healthcare sectors.</li>
                                 </ul>
                             </div>
@@ -174,13 +174,13 @@
                             <div class="we-are-more-container">
 
                                 <ul class="featuring-sosafes-innovative-container pl-4 " style="list-style: disc;">
-                                    <li class="font-light text-[24px] font-inter">Developed groundbreaking technologies
+                                    <li class="font-light text-[20px] font-inter">Developed groundbreaking technologies
                                         like the SoSAFE Pasteuriser.</li>
                                 </ul>
                             </div>
                             <div class="we-are-more-container">
                                 <ul class="featuring-sosafes-innovative-container pl-4 " style="list-style: disc;">
-                                    <li class="font-light text-[24px] font-inter">Partnered with government and healthcare institutions to create lasting change.</li>
+                                    <li class="font-light text-[20px] font-inter">Partnered with government and healthcare institutions to create lasting change.</li>
                                 </ul>
                             </div>
                         </div>
@@ -197,14 +197,14 @@
         </div>
     </section>
 
-    <section class="py-[128px]">
+    <section class="py-[80px]">
         <div class="wrapper">
             <div class="introducing-sosafe md:text-[64px] text-[48] font-extrabold text-[48px] !text-[#666562] mb-[98px]">
                 Key Milestones
             </div>
 
             <img src="{{asset('images/timeline.png')}}" class="block mx-auto"/>
-            <p class="mt-[98px] font-inter text-light-2 text-[24px] text-[#666562]">
+            <p class="mt-[98px] font-inter text-light-2 text-[20px] text-[#666562]">
                 Through our vision, partnerships, and unwavering commitment, SABR continues to champion the health and well-being of South Africa’s most vulnerable infants.
             </p>
         </div>
@@ -280,7 +280,7 @@
     
     </section>
 
-    <section class="py-[128px]">
+    <section class="py-[80px]">
         <div class="wrapper ">
             <div class="make-your-hospital-container !text-right font-inter font-bold !text-[#959595]">
                 <span>Beneficiaries </span>
@@ -298,9 +298,9 @@
                     <div class="!text-right ">
                         <p class="text-right text-[16px] font-normal text-black font-inter">The SABR functions as a co-ordinating body for the equitable distribution of life-saving DBM country wide and is geared towards delivering DBM to every part of South Africa within 24 to 48 hours, whilst ensuring that it is of the highest quality and meets regulatory standards.</p> 
                         <br>
-                        <p class="text-right text-[24px] font-light  font-inter">The SABR follows a universal guideline that includes all infants below 37 weeks’ gestation. The largest amount of donor breastmilk is directed to public hospital facilities.</p>
+                        <p class="text-right text-[20px] font-light  font-inter">The SABR follows a universal guideline that includes all infants below 37 weeks’ gestation. The largest amount of donor breastmilk is directed to public hospital facilities.</p>
                         <br>
-                        <p class="text-right text-[24px] font-light  font-inter">The SABR follows a universal guideline that includes all infants below 37 weeks’ gestation. The largest amount of donor breastmilk is directed to public hospital facilities.</p>    
+                        <p class="text-right text-[20px] font-light  font-inter">The SABR follows a universal guideline that includes all infants below 37 weeks’ gestation. The largest amount of donor breastmilk is directed to public hospital facilities.</p>    
 
 
                     </div>
@@ -321,7 +321,7 @@
 
     <section class="pb-[50px]">
         <div class="wrapper">
-            <p class="text-center font-inter text-[24px] mb-[32px] text-light-2">The SABR currently supports breastfeeding mothers in rural areas in:</p>
+            <p class="text-center font-inter text-[20px] mb-[32px] text-light-2">The SABR currently supports breastfeeding mothers in rural areas in:</p>
             <div class="flex flex-wrap justify-center gap-3 p-4">
                 <button class="px-4 py-2 border border-slate-400 rounded-full text-[#107BA2] bg-[#F8F5F0] hover:bg-gray-200">
                     Lusikisiki
@@ -356,7 +356,7 @@
         </div>
     </section>
 
-    <section class="pt-[128px]  bg-[#107BA2]">
+    <section class="pt-[80px]  bg-[#107BA2]">
         <div class="wrapper ">
             <div class=" bg-[#107BA2] inline-flex justify-center items-start gap-[98px]">
                 <div class="flex-1 self-stretch flex flex-col justify-start items-center gap-8">
