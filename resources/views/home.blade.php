@@ -1,5 +1,6 @@
 @extends('layouts.app')
-
+@section('title', 'SABR: South African Breastmilk Reserve - Home')
+@section('meta-description', 'South African Breastmilk Reserve - Bringing milk to babies, safely.')
 @section('content')
     <section class="relative w-full h-[1450px] md:h-[900px] overflow-hidden">
         <!-- Background Video -->

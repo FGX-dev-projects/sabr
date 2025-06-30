@@ -1,5 +1,6 @@
 @extends('layouts.app')
-
+@section('title', 'SABR: South African Breastmilk Reserve - Get Involved')
+@section('meta-description', 'South African Breastmilk Reserve - Bringing milk to babies, safely.')
 @section('content')
 
 

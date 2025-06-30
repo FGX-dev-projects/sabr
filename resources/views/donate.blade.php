@@ -1,7 +1,8 @@
 @extends('layouts.app')
+@section('title', 'SABR: South African Breastmilk Reserve - Donate')
+@section('meta-description', 'South African Breastmilk Reserve - Bringing milk to babies, safely.')
 
 @section('content')
-@flasher_render
 <section class="relative w-full h-[650px] md:h-[450px]  overflow-hidden">
     <!-- Background Video -->
 
@@ -27,6 +28,28 @@
     <div class="wrapper">
         <div class="w-full p- ">
             <h2 class="text-[32px] font-inter font-bold text-[#adaaa5]">Mother’s Details</h2>
+{{-- Add Flasher notifications at the top --}}
+@flasher_render
+
+{{-- Keep your existing Laravel session alerts as backup --}}
+@if(session('success'))
+<div class="mb-4 p-4 text-green-800 bg-green-100 border border-green-300 rounded-lg" role="alert">
+    <div class="flex justify-between items-center">
+        <div class="flex items-center">
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="font-medium">Success!</span>
+            <span class="ml-2">{{ session('success') }}</span>
+        </div>
+        <button type="button" class="text-green-600 hover:text-green-800" onclick="this.parentElement.parentElement.remove()">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+        </button>
+    </div>
+</div>
+@endif
             <form action="{{ route('donate.submit') }}"  class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-12" method="POST" onsubmit="updateDOB();">
                 @csrf
                 <!-- Name -->

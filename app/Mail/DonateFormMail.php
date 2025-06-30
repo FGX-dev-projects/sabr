@@ -29,7 +29,7 @@ class DonateFormMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'New Donate Form',
+            subject: 'New Donate Form Submission',
         );
     }
 
