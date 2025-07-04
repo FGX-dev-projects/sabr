@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DonateController;
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\VolunteerController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Mail;
@@ -92,3 +93,6 @@ Route::get('/financials', function(){
 
 Route::post('/donate-submit', [DonateController::class, 'submit'])->name('donate.submit');
 Route::post('/volunteer-submit', [VolunteerController::class, 'submit'])->name('volunteer.submit');
+
+Route::get('/', [NewsController::class, 'index'])->name('home');
+Route::get('/news/{slug}', [NewsController::class, 'show'])->name('news.article');

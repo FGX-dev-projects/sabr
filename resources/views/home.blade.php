@@ -698,60 +698,43 @@
                         <div class="text-[#107BA2] text-4xl md:text-6xl font-bold">News</div>
                         
                     </div>
-                    <div id="scrollContainer" class=" max-w-[730px]  overflow-x-auto whitespace-nowrap py-4 px-4 ">
+                    <div id="scrollContainer" class="max-w-[730px] overflow-x-auto whitespace-nowrap py-4 px-4">
                         <div class="flex gap-6">
-                            <div class="w-80 h-[440px] relative shrink-0">
-                                <img class="h-full object-cover rounded-lg" src="{{asset('images/baby2.jpg')}}" />
-                                <div
-                                    class="absolute bottom-2 left-2 right-2 p-4 bg-[#FAF8F5] border border-[#DEDAD4] rounded-lg">
-                                    <div class="text-[#868480] text-lg font-bold">News</div>
-                                    <div class="text-[#868480] text-[16px]">Heading</div>
-                                    <div class="mt-2 flex justify-end">
-                                        <div class="px-2 py-1 bg-[#F4F0E9] rounded text-xs text-[#ADAAA5]">12 Aug</div>
+                            @forelse($news as $article)
+                                <div class="w-80 h-[440px] relative shrink-0 cursor-pointer hover:transform hover:scale-105 transition-transform duration-300"
+                                     onclick="window.location.href='{{ route('news.article', $article->slug) }}'">
+                                    
+                                        <img class="h-full w-full object-cover rounded-lg" 
+                                             src="{{ $article->small_image ? env('CMS_UPLOADS') . 'posts/small/' . $article->small_image : asset('images/baby2.jpg') }}" 
+                                             alt="{{ $article->title }}" />
+                                    
+                                    <div class="absolute bottom-2 left-2 right-2 p-4 bg-[#FAF8F5] border border-[#DEDAD4] rounded-lg">
+                                        <div class="text-[#868480] text-lg font-bold truncate">{{ Str::limit($article->title, 50) }}</div>
+                                        <div class="text-[#868480] text-[16px] truncate"></div>
+                                        <div class="mt-2 flex justify-end">
+                                            <div class="px-2 py-1 bg-[#F4F0E9] rounded text-xs text-[#ADAAA5]">
+                                                @if($article->article_date instanceof \Carbon\Carbon)
+                                                    {{ $article->article_date->format('j M') }}
+                                                @else
+                                                    {{ \Carbon\Carbon::parse($article->article_date)->format('j M') }}
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="absolute top-4 left-4 px-2 py-1 bg-[#F4F0E9] rounded text-xs text-[#ADAAA5]">
+                                        News
+                                    </div>
+                                    
+                                    
+                                </div>
+                            @empty
+                                <div class="w-80 h-[440px] relative shrink-0">
+                                    <div class="h-full bg-gray-200 rounded-lg flex items-center justify-center">
+                                        <p class="text-gray-500">No news articles available</p>
                                     </div>
                                 </div>
-                                <div class="absolute top-4 left-4 px-2 py-1 bg-[#F4F0E9] rounded text-xs text-[#ADAAA5]">
-                                    News</div>
-                            </div>
-                            <div class="w-80 h-[440px] relative shrink-0">
-                                <img class="h-full object-cover rounded-lg" src="{{asset('images/baby2.jpg')}}" />
-                                <div
-                                    class="absolute bottom-2 left-2 right-2 p-4 bg-[#FAF8F5] border border-[#DEDAD4] rounded-lg">
-                                    <div class="text-[#868480] text-lg font-bold">News</div>
-                                    <div class="text-[#868480] text-[16px]">Heading</div>
-                                    <div class="mt-2 flex justify-end">
-                                        <div class="px-2 py-1 bg-[#F4F0E9] rounded text-xs text-[#ADAAA5]">12 Aug</div>
-                                    </div>
-                                </div>
-                                <div class="absolute top-4 left-4 px-2 py-1 bg-[#F4F0E9] rounded text-xs text-[#ADAAA5]">
-                                    News</div>
-                            </div>
-                            <div class="w-80 h-[440px] relative shrink-0">
-                                <img class="h-full object-cover rounded-lg" src="{{asset('images/baby2.jpg')}}" />
-                                <div
-                                    class="absolute bottom-2 left-2 right-2 p-4 bg-[#FAF8F5] border border-[#DEDAD4] rounded-lg">
-                                    <div class="text-[#868480] text-lg font-bold">News</div>
-                                    <div class="text-[#868480] text-[16px]">Heading</div>
-                                    <div class="mt-2 flex justify-end">
-                                        <div class="px-2 py-1 bg-[#F4F0E9] rounded text-xs text-[#ADAAA5]">12 Aug</div>
-                                    </div>
-                                </div>
-                                <div class="absolute top-4 left-4 px-2 py-1 bg-[#F4F0E9] rounded text-xs text-[#ADAAA5]">
-                                    News</div>
-                            </div>
-                            <div class="w-80 h-[440px] relative shrink-0">
-                                <img class="h-full object-cover rounded-lg" src="{{asset('images/baby2.jpg')}}" />
-                                <div
-                                    class="absolute bottom-2 left-2 right-2 p-4 bg-[#FAF8F5] border border-[#DEDAD4] rounded-lg">
-                                    <div class="text-[#868480] text-lg font-bold">News</div>
-                                    <div class="text-[#868480] text-[16px]">Heading</div>
-                                    <div class="mt-2 flex justify-end">
-                                        <div class="px-2 py-1 bg-[#F4F0E9] rounded text-xs text-[#ADAAA5]">12 Aug</div>
-                                    </div>
-                                </div>
-                                <div class="absolute top-4 left-4 px-2 py-1 bg-[#F4F0E9] rounded text-xs text-[#ADAAA5]">
-                                    News</div>
-                            </div>
+                            @endforelse
                         </div>
                     </div>
 
