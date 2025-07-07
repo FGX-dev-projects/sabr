@@ -3,16 +3,16 @@
 @section('title', $article->title)
 
 @section('content')
-<section class="py-[120px] wrapper">
+<section class="py-[150px] wrapper">
     <div class="flex flex-col md:flex-row gap-8">
         <!-- Left box / sidebar -->
-        <div class="md:w-1/4 flex flex-col items-start space-y-4">
+        <div class="md:w-1/4 flex flex-col items-start space-y-4 mt-1">
             @if($article->small_image)
                 <img src="{{ env('CMS_UPLOADS') . 'posts/small/' . $article->small_image }}" 
                      alt="{{ $article->title }}"
                      class="w-full md:w-auto rounded-lg shadow-lg object-cover">
             @endif
-            
+
         </div>
 
         <!-- Right content -->
