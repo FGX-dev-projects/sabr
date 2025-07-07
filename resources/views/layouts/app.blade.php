@@ -152,6 +152,9 @@
                         class="{{ Route::is('safe-user-of-dbm') ? 'bg-[#dedad4] text-[#00000080]' : '' }} nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl"
                         class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">The
                         Safe Use of DBM</a>
+                    <a href="{{ route('news') }}"
+                        class="{{ Route::is('news') ? 'bg-[#dedad4] text-[#00000080]' : '' }} nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl"
+                        class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">News</a>
                     {{-- <a href="#"
                         class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl nav-btn-colour">How
                         to Access DBM / Value of DBM</a> --}}
@@ -254,6 +257,8 @@
                     <a href="{{ route('safe-user-of-dbm') }}"
                         class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">The Safe
                         Use of DBM</a>
+                        <a href="{{ route('news') }}"
+                        class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">News</a>
                     {{-- <a href="#"
                         class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">How to
                         Access DBM / Value of DBM</a> --}}

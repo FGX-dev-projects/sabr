@@ -6,13 +6,17 @@ use App\Http\Controllers\VolunteerController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Mail;
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', [NewsController::class, 'index'])->name('home');
+Route::get('/news', action: [NewsController::class, 'newsPage'])->name('news');
 
 Route::get('/sosafe', function () {
     return view('sosafe');
 })->name('sosafe');
+
+Route::get('/news-test', function () {
+    $news = DB::table('posts')->where('is_active', 1)->get();
+    return view('news', compact('news'));
+});
 
 Route::get('/about-us', function () {
     return view('about-us');
@@ -46,9 +50,6 @@ Route::get('/breast-is-best', function(){
     return view('breast-is-best');
 })->name('breast-is-best');
 
-Route::get('/news', function(){
-    return view('news');
-})->name('news');
 
 Route::get('/safe-user-of-dbm', function(){
     return view('safe-user-of-dbm');
