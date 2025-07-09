@@ -63,7 +63,7 @@
                                     <div class="background-child">
                                     </div>
                                 </div>
-                                <div class="details">
+                                <a href="{{route('donate')}}" class="details cursor-pointer">
                                     <div class="info font-sans">
                                         <div class="tags">
                                             <div class="pills">
@@ -78,7 +78,7 @@
                                                 to babies in need. Your gift can make all the difference.</div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="component-1">
                                 <div class="background">
@@ -87,7 +87,7 @@
                                     <div class="background-inner">
                                     </div>
                                 </div>
-                                <div class="details">
+                                <a href="{{route('donate')}}" class="details cursor-pointer">
                                     <div class="info">
                                         <div class="tags">
                                             <div class="pills">
@@ -102,14 +102,14 @@
                                                 to babies in need. Your gift can make all the difference.</div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="component-11">
                                 <div class="background2">
                                     <div class="rectangle-div">
                                     </div>
                                 </div>
-                                <div class="details">
+                                <a href="{{route('donate')}}" class="details cursor-pointer">
                                     <div class="info">
                                         <div class="tags">
                                             <div class="pills2">
@@ -124,7 +124,7 @@
                                                 to babies in need. Your gift can make all the difference.</div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>

@@ -88,13 +88,15 @@ class VolunteerController extends Controller
             Mail::to('lesedi@fgx.co.za')->send(new VolunteerFormMail($validatedData));
             
             // Success message
-            return redirect()->back()->with('success', 'Your form was successfully submitted!');
+            return view('volunteer')->with('success', 'Your form was successfully submitted!');
+            
         } catch (\Exception $e) {
             // Log the error
             Log::error('Mail sending failed: ' . $e->getMessage());
             
             // Error message
-            return redirect()->back()->with('error', 'An error occurred, please try again later.');
+            return view('volunteer')->with('error', 'Failed to submit form. Please try again.');
+
         }
     }
 }

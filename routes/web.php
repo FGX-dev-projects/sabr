@@ -6,7 +6,6 @@ use App\Http\Controllers\VolunteerController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Mail;
 
-Route::get('/', [NewsController::class, 'index'])->name('home');
 Route::get('/news', action: [NewsController::class, 'newsPage'])->name('news');
 
 Route::get('/sosafe', function () {

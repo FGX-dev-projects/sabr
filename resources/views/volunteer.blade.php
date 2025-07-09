@@ -3,17 +3,7 @@
 @section('meta-description', 'South African Breastmilk Reserve - Bringing milk to babies, safely.')
 @section('content')
 
-@if(session('success'))
-    <div class="alert alert-success">
-        {{ session('success') }}
-    </div>
-@endif
 
-@if(session('error'))
-    <div class="alert alert-danger">
-        {{ session('error') }}
-    </div>
-@endif
 <section class="relative w-full h-[550px] md:h-[450px]  overflow-hidden">
     <!-- Background Video -->
 
@@ -383,11 +373,29 @@
                 
                 <div class="nav-button7 w-36 flex text-center cursor-pointer z-0">
                     <button type="submit" class="button7">Submit</button>
+                    
                 </div>
+                
+
             </form>
+            @if (isset($success))
+    <div class="mt-6 text-green-800 bg-green-100 border border-green-300 rounded-lg p-4">
+        {{ $success }}
+    </div>
+@endif
         </div>
         
     </div>
 </section>
+@push('scripts')
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const alertBox = document.querySelector('.bg-green-100, .bg-red-100');
+        if (alertBox) {
+            alertBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    });
+</script>
+@endpush
 
 @endsection
