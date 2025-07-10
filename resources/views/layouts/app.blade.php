@@ -283,11 +283,11 @@
         @yield('content')
     </main>
 
-    <footer class="pt-[128px] pb-[50px] md:pb-[80px] wrapper bg-[#107BA2]">
+    <footer class="pt-[80px] pb-[80px] md:pb-[80px] wrapper bg-[#107BA2]">
 
         <div class="flex flex-col md:flex-row justify-between items-start md:items-center ">
             <!-- Logo -->
-            <div class="flex flex-col md:flex-row gap-[100px]">
+            <div class="flex flex-col md:flex-row gap-[80px] md:gap-[100px]">
                 <img class="w-[87.15px] h-[118.99px] bg-white rounded-[12px]" src="{{asset('images/logo.png')}}"
                     alt="Logo" />
 
@@ -323,7 +323,7 @@
 
 
         </div>
-        <div class="flex justify-center items-center md:mt-10 mt-5 ">
+        <div class="flex justify-start items-center md:justify-center md:mt-10 mt-5 ">
             <div class="grid grid-cols-6 gap-4">
                 <a href="https://www.facebook.com/SABreastmilkReserve/" target="_blank"
                     class="w-[32px] h-[32px] flex justify-center items-center border border-[#BBE8F8] rounded-lg">
@@ -348,7 +348,7 @@
 
 
         <div
-            class="flex justify-center text-center items-center md:mt-10 mt-5 text-[#BBE8F8] text-[16px] font-open-sans font-normal leading-4 break-words">
+            class="flex justify-center text-start md:text-center items-center md:mt-10 mt-5 text-[#BBE8F8] text-[16px] font-open-sans font-normal leading-4 break-words">
             <a href="{{asset('documents/SABR-Privacy-Policy.pdf')}}">Privacy Policy </a> <span class="m-2"> | </span> <a
                 href="{{asset('documents/SABR-Website-Terms-and-Conditions.pdf')}}">Terms & Conditions</a> <span
                 class="m-2"> | </span> <a href="{{asset('documents/Subject-Access-Request-Form1.pdf')}}">Subject Access
