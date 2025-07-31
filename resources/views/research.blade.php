@@ -161,7 +161,7 @@
                 <div class="flex flex-col items-start gap-3 self-stretch">
                     <div class="flex flex-col items-start gap-3 self-stretch">
                         <div class="text-[#868480] text-2xl font-bold self-stretch">Toward Rapid Testing and Improved Breastmilk Processing  </div>
-                        <div class="text-[#868480] text-lg font-inter font-light self-stretch">SABR’s long-term goal is to develop a rapid, multiplex testing method for breastmilk capable of detecting pathogens like HIV, HTLV, TB, and Syphilis. Through studies like SABRViro1, we are validating direct virological testing, reducing the cost and complexity of donor screening. This</div>
+                        <div class="text-[#868480] text-lg font-inter font-light self-stretch">SABR’s long-term goal is to develop a rapid, multiplex testing method for breastmilk capable of detecting pathogens like HIV, HTLV, TB, and Syphilis. Through studies like SABRViro1, we are validating direct virological testing, reducing the cost and complexity of donor screening. </div>
                     </div>
                 </div>
                 <div class="flex flex-col items-end gap-2 self-stretch">

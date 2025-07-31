@@ -2,7 +2,7 @@
 @section('title', 'SABR: South African Breastmilk Reserve - Home')
 @section('meta-description', 'South African Breastmilk Reserve - Bringing milk to babies, safely.')
 @section('content')
-    <section class="relative w-full h-[1450px] md:h-[900px] overflow-hidden">
+    <section class="relative w-full h-[1500px] md:h-[950px] overflow-hidden">
         <!-- Background Video -->
         <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay loop muted playsinline>
             <source src="{{asset('images/hero-video.mp4')}}" type="video/mp4">
@@ -87,7 +87,7 @@
                                     <div class="background-inner">
                                     </div>
                                 </div>
-                                <a href="{{route('donate')}}" class="details cursor-pointer">
+                                <a href="{{route('register')}}" class="details cursor-pointer">
                                     <div class="info">
                                         <div class="tags">
                                             <div class="pills">
@@ -98,8 +98,7 @@
                                         </div>
                                         <div class="copy">
                                             <div class="saving-lives-one-container">I am a Parent</div>
-                                            <div class="help-save-lives">Help save lives by donating your excess breastmilk
-                                                to babies in need. Your gift can make all the difference.</div>
+                                            <div class="help-save-lives">If your baby needs donor breastmilk, we’re here to help. Access safe, pasteurised breastmilk for your little one and learn how SABR supports families in need.</div>
                                         </div>
                                     </div>
                                 </a>
@@ -109,7 +108,7 @@
                                     <div class="rectangle-div">
                                     </div>
                                 </div>
-                                <a href="{{route('donate')}}" class="details cursor-pointer">
+                                <a href="{{route('register')}}" class="details cursor-pointer">
                                     <div class="info">
                                         <div class="tags">
                                             <div class="pills2">
@@ -120,8 +119,7 @@
                                         </div>
                                         <div class="copy">
                                             <div class="saving-lives-one-container">I am a Clinician</div>
-                                            <div class="help-save-lives">Help save lives by donating your excess breastmilk
-                                                to babies in need. Your gift can make all the difference.</div>
+                                            <div class="help-save-lives">Bring life-saving breastmilk services to your facility. Partner with SABR to access donor breastmilk and establish human milk-banking infrastructure in your practice.</div>
                                         </div>
                                     </div>
                                 </a>
@@ -536,7 +534,7 @@
                                     volunteers help us make it all happen. </div>
                             </div>
                             <div class="flex items-end justify-end w-full mt-4">
-                                <a href="{{route('register')}}" class="card-button flex gap-1 row justify-end">
+                                <a href="{{route('volunteer')}}" class="card-button flex gap-1 row justify-end">
                                     <div class="start-today !font-inter">Start Today</div>
                                     <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
                                 </a>
@@ -589,7 +587,12 @@
                                     safe, pasteurised breastmilk for your little one and learn how SABR supports families in
                                     need.</div>
                             </div>
-
+                            <div class="flex items-end justify-end w-full mt-4">
+                                <a href="{{route('register')}}" class="card-button flex gap-1 row justify-end">
+                                    <div class="start-today !font-inter">Start Today</div>
+                                    <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
+                                </a>
+                            </div>
 
 
                         </div>
@@ -610,7 +613,12 @@
                                     with SABR to access donor breastmilk and establish human milk-banking infrastructure in
                                     your practice.</div>
                             </div>
-
+                            <div class="flex items-end justify-end w-full mt-4">
+                                <a href="{{route('register')}}" class="card-button flex gap-1 row justify-end">
+                                    <div class="start-today !font-inter">Start Today</div>
+                                    <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -626,6 +634,12 @@
                                 <div class="saving-lives-one-container">I am a Clinician</div>
                                 <div class="help-save-lives !font-inter  !font-[300]">Help save lives by donating your excess breastmilk to babies in
                                     need. Your gift can make all the difference.</div>
+                            </div>
+                            <div class="flex items-end justify-end w-full mt-4">
+                                <a href="{{route('register')}}" class="card-button flex gap-1 row justify-end">
+                                    <div class="start-today !font-inter">Start Today</div>
+                                    <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
+                                </a>
                             </div>
                         </div>
                     </div>

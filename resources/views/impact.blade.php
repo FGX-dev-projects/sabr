@@ -113,7 +113,7 @@
                 dedicated research initiatives.
             </p>
 
-            <div class="button-prim-wrapper">
+            <div class="button-prim-wrapper !border-none">
                 <a href="{{route('research')}}" class="button-prim">
                     <div class="nav-button7 cursor-pointer !bg-[#107BA2]">
                         <div class="button7 pt-1">Learn More About Us</div>

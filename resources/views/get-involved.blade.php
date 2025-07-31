@@ -89,7 +89,7 @@
                             South Africa.</div>
                     </div>
                     <div class="flex items-end justify-end w-full mt-4">
-                        <a href="payfast.co.za/donate/go/southafricanbreastmilkreserve" target="_blank" class="card-button flex gap-1 row justify-end">
+                        <a href="https://payfast.co.za/donate/go/southafricanbreastmilkreserve" target="_blank" class="card-button flex gap-1 row justify-end">
                             <div class="start-today !font-inter">Start Today</div>
                             <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
                         </a>
@@ -116,7 +116,12 @@
                             safe, pasteurised breastmilk for your little one and learn how SABR supports families in
                             need.</div>
                     </div>
-
+                    <div class="flex items-end justify-end w-full mt-4">
+                        <a href="{{route('register')}}" class="card-button flex gap-1 row justify-end">
+                            <div class="start-today !font-inter">Start Today</div>
+                            <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
+                        </a>
+                    </div>
 
 
                 </div>
@@ -137,12 +142,17 @@
                             with SABR to access donor breastmilk and establish human milk-banking infrastructure in
                             your practice.</div>
                     </div>
-
+                    <div class="flex items-end justify-end w-full mt-4">
+                        <a href="{{route('register')}}" class="card-button flex gap-1 row justify-end">
+                            <div class="start-today !font-inter">Start Today</div>
+                            <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <div class="details-4 !bg-[#107BA280]">
-                <div class="info gap-3 !text-[#ffff]">
+                <div class="info !justify-start gap-3 !text-[#ffff]">
                     <div class="tags">
                         <div class="pills !bg-[#107BA280] text-[#ffff]">
                             <div class="start-searching">Register</div>
@@ -155,7 +165,14 @@
                             need. Your gift can make all the difference.</div>
                     </div>
                 </div>
+                <div class="flex items-end justify-end w-full mt-4">
+                    <a href="{{route('register')}}" class="card-button flex gap-1 row justify-end">
+                        <div class="start-today !font-inter">Start Today</div>
+                        <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
+                    </a>
+                </div>
             </div>
+            
         </div>
 
         <div  class="grid grid-cols-1 md:grid-cols-2 gap-12 pt-8 contact-us">

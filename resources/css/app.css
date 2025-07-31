@@ -590,7 +590,7 @@ font-family: Work Sans, sans-serif;
 .component-1 {
     align-self: stretch;
     width: 100% ;
-    flex: 1;
+    /* flex: 1; */
     border-radius: 24px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
@@ -636,7 +636,7 @@ font-family: Work Sans, sans-serif;
 
 .component-11 {
     align-self: stretch;
-    flex: 1;
+    /* flex: 1; */
     box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.45);
     border-radius: 24px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -651,7 +651,7 @@ font-family: Work Sans, sans-serif;
 
 .component-2-parent {
     align-self: stretch;
-    height: 555px;
+    height: 655px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
