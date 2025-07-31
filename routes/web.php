@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DonateController;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\VolunteerController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Mail;
@@ -71,9 +72,13 @@ Route::get('/stats', function() {
     return view('stats');
 })->name('stats');
 
-Route::get('/volunteer', function(){
-    return view('volunteer');
-})->name('volunteer');
+// Route::get('/register',function(){
+//     return view('register');
+// })->name('register');
+
+// Route::get('/volunteer', function(){
+//     return view('volunteer');
+// })->name('volunteer');
 
 Route::get('/get-involved', function() {
     return view('get-involved');
@@ -91,8 +96,12 @@ Route::get('/financials', function(){
 //     return 'Mail sent 2 day';
 // });
 
+Route::get('/register', [RegisterController::class, 'show'])->name('register');
+Route::post('/register-submit', [RegisterController::class, 'submit'])->name('register.submit');
+
 Route::post('/donate-submit', [DonateController::class, 'submit'])->name('donate.submit');
-Route::post('/volunteer-submit', [VolunteerController::class, 'submit'])->name('volunteer.submit');
+// Route::post('/volunteer-submit', [VolunteerController::class, 'submit'])->name('volunteer.submit');
+// Route::post('/register-submit', [RegisterController::class, 'submit'])->name('register.submit');
 
 Route::get('/', [NewsController::class, 'index'])->name('home');
 Route::get('/news/{slug}', [NewsController::class, 'show'])->name('news.article');

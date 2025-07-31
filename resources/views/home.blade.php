@@ -27,7 +27,7 @@
                                     premature babies worldwide</div>
                             </div>
                             <div class="button-prim-wrapper">
-                                <a href="{{route('volunteer')}}" class="button-prim">
+                                <a href="{{route('register')}}" class="button-prim">
                                     <div class="nav-button7 cursor-pointer">
                                         <div class="button7 pt-1">Start Contributing</div>
                                         <div class="nav-button-child">
@@ -361,7 +361,7 @@
 
             <div >
                 <div class="button-prim green-btn">
-                    <a href="payfast.co.za/donate/go/southafricanbreastmilkreserve" target="_blank" class="nav-button7 green-btn cursor-pointer">
+                    <a href="https://payfast.co.za/donate/go/southafricanbreastmilkreserve" target="_blank" class="nav-button7 green-btn cursor-pointer">
                         <div class="button7  text-[18px]">Yes, I want to contribute</div>
                         <div class="nav-button-child">
                         </div>
@@ -386,7 +386,7 @@
         </div>
 
         <!-- Image container -->
-        <div class=" absolute  mt-12 w-full h-[300px] image-container">
+        <div class=" absolute z-[-99]  mt-12 w-full h-[300px] image-container">
             <img src="{{asset('images/baby6.jpg')}}" class="image top-left">
             <img src="{{asset('images/baby5.jpg')}}" class="image top-right">
             <img src="{{asset('images/baby5.jpg')}}" class="image center">
@@ -536,7 +536,7 @@
                                     volunteers help us make it all happen. </div>
                             </div>
                             <div class="flex items-end justify-end w-full mt-4">
-                                <a href="{{route('volunteer')}}" class="card-button flex gap-1 row justify-end">
+                                <a href="{{route('register')}}" class="card-button flex gap-1 row justify-end">
                                     <div class="start-today !font-inter">Start Today</div>
                                     <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
                                 </a>
@@ -562,7 +562,7 @@
                                     South Africa.</div>
                             </div>
                             <div class="flex items-end justify-end w-full mt-4">
-                                <a href="payfast.co.za/donate/go/southafricanbreastmilkreserve" target="_blank" class="card-button flex gap-1 row justify-end">
+                                <a href="https://payfast.co.za/donate/go/southafricanbreastmilkreserve" target="_blank" class="card-button flex gap-1 row justify-end">
                                     <div class="start-today !font-inter">Start Today</div>
                                     <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
                                 </a>

@@ -1483,20 +1483,17 @@
                         </div>
                     </div>
 
-                    <div
-                        class="flex flex-col col-span-1 md:col-span-2 gap-6 border border-[#91c2d4] bg-[#e7f2f6] rounded-3xl p-6">
+                    <div class="flex flex-col col-span-1 md:col-span-2 gap-6 border border-[#91c2d4] bg-[#e7f2f6] rounded-3xl p-6">
                         <label class="block text-[#107ba2] font-bold">Please note</label>
-                        <div class="flex flex-wrap  gap-2">
-                            <label class="flex flex-row items-center gap-2 ">
-                                <input id="popia-consent" name="popia_consent" value="yes" type="checkbox"
-                                    class="form-checkbox checked:text-blue-500 scale-150 !w-3 !h-3 text-[#636061] required"
-                                    required>
-                                Yes, I HAVE READ AND UNDERSTAND WHAT I AM CONSENTING TO AS OUTLINED ON THE POPIA CONSENT
-                                TERMS AND CONDITIONS AND IN THE INFORMATION PRIVACY POLICY AND CONSENT TO THE PROCESSING OF
-                                MY PERSONAL INFORMATION. I understand that the outcome OF MY APPLICATION is at the sole
-                                discretion of the SABR and I will abide by it.
+                        <div class="flex flex-wrap gap-2">
+                            <label class="flex flex-row items-center  gap-2">
+                                <input id="popia-consent" name="popia_consent" value="yes" type="checkbox" class="form-checkbox checked:text-blue-500 scale-150 !w-3 !h-3 text-[#636061] required" required>
+                              <p class="m-0 p-0">  Yes, I HAVE READ AND UNDERSTAND WHAT I AM CONSENTING TO AS OUTLINED ON THE 
+                                <a href="{{asset('documents/Donor-Consent-Terms-and-Conditions-updated.pdf')}}" class="underline">POPIA CONSENT TERMS AND CONDITIONS</a> 
+                                AND IN THE 
+                                <a href="{{asset('documents/SABR-Privacy-Policy.pdf')}}" class="underline">INFORMATION PRIVACY POLICY</a> 
+                                AND CONSENT TO THE PROCESSING OF MY PERSONAL INFORMATION. I understand that the outcome OF MY APPLICATION is at the sole discretion of the SABR and I will abide by it.</p>
                             </label>
-
                         </div>
                     </div>
 
