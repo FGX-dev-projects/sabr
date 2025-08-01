@@ -4,7 +4,7 @@
 @section('content')
     <section class="relative w-full h-[1500px] md:h-[950px] overflow-hidden">
         <!-- Background Video -->
-        <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay loop muted playsinline>
+        <video class="absolute top-0 left-0 w-full h-full object-cover" playsinline autoplay muted loop preload="auto">
             <source src="{{asset('images/hero-video.mp4')}}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
