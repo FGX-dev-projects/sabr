@@ -852,9 +852,9 @@
                             <div class="self-stretch flex-1 relative">
                                 <!-- Tags -->
                                 <div class="absolute top-0 left-0 w-full flex flex-row items-center justify-between">
-                                    <div class="rounded-md bg-primary-purple flex flex-row items-center justify-center px-3 py-2">
+                                    <a href="{{route('donate')}}" class="rounded-md bg-primary-purple flex flex-row items-center justify-center px-3 py-2">
                                         <span class="font-bold text-sm">Register</span>
-                                    </div>
+                                    </a>
                                     <div class="w-8 h-8  rounded-full flex items-center justify-center">
                                         <img class="w-8 h-8" alt="" src="{{asset('images/holding-hands-icon.svg')}}">    
                                     </div>
@@ -867,7 +867,7 @@
                                 </div>
                                 
                                 <!-- Button -->
-                                <div class="absolute bottom-0 right-0 flex flex-row items-end justify-end">
+                                <div class="absolute bottom-0  right-0 flex flex-row items-end justify-end">
                                     <a href="{{route('donate')}}" class="flex flex-row items-center gap-2 group-hover:gap-3 transition-all duration-300">
                                         <span class="text-lg font-[300]">Give Hope</span>
                                         <div class="w-5 h-5 flex items-center justify-center">
@@ -903,7 +903,7 @@
                                 
                                 
                                 <!-- Button -->
-                                <div class="absolute bottom-0 right-0  flex flex-row items-end justify-end">
+                                <div class="absolute bottom-0 right-0 m-5 flex flex-row items-end justify-end">
                                     <a href="{{route('volunteer')}}" class="flex flex-row items-center gap-2 group-hover:gap-3 transition-all duration-300">
                                         <span class="text-lg font-[300]">Begin Helping Today</span>
                                         <div class="w-5 h-5 flex items-center justify-center">
@@ -939,7 +939,7 @@
                                 </div>
                                 
                                 <!-- Button -->
-                                <div class="absolute bottom-0 right-0 flex flex-row items-end justify-end">
+                                <div class="absolute bottom-0 right-0 m-5 flex flex-row items-end justify-end">
                                     <a href="https://payfast.co.za/donate/go/southafricanbreastmilkreserve" class="flex flex-row items-center gap-2 group-hover:gap-3 transition-all duration-300">
                                         <span class="text-lg font-[300]">Fund a Miracle</span>
                                         <div class="w-5 h-5 flex items-center justify-center">
