@@ -26,7 +26,7 @@
                                 <div class="join-us-in">Join us in giving premature and fragile babies the best start in life. Every drop of donated breastmilk is a gift of nourishment, comfort, and hope.</div>
                             </div>
                             <div class="button-prim-wrapper !ml-0 !pl-0">
-                                <a href="{{route('register')}}" class="button-prim">
+                                <a href="https://payfast.co.za/donate/go/southafricanbreastmilkreserve" class="button-prim">
                                     <div class="nav-button7 cursor-pointer">
                                         <div class="button7 pt-1">Start Contributing</div>
                                         <div class="nav-button-child">
@@ -261,7 +261,7 @@
                             <p class="p-0 m-0 items-center text-start md:text-center">Interested in implementing SoSAFE in your facility?
                             </p>
                             <p class="p-0 items-center text-start md:text-center ">
-                                Contact us at <a href="https://www.SoSafe@sabr.org.za" target="_blank"
+                                Contact us at <a href="mailto:SoSafe@sabr.org.za" target="_blank"
                                     class="text-[#23B4E9]"> SoSafe@sabr.org.za </a>for more information on how to get
                                 started.</p><br>
                                 <p>Discover how we maintain the highest standards for every precious drop</p>
