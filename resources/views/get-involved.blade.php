@@ -2,7 +2,13 @@
 @section('title', 'SABR: South African Breastmilk Reserve - Get Involved')
 @section('meta-description', 'South African Breastmilk Reserve - Bringing milk to babies, safely.')
 @section('content')
-
+<style>
+    .pills{
+        background-color: rgba(16, 123, 162, 0.15);
+        font-size: 11px;
+        font-weight:300 !important; 
+    }
+</style>
 
 <section class="relative w-full h-[350px] md:h-[350px]  overflow-hidden">
     <!-- Content Overlay -->
@@ -23,7 +29,7 @@
 <section class="pb-[128px]">
     <div class="wrapper">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-            <div class="details-4">
+            <div class="details-4 !bg-white border ">
                 <div class="info gap-3">
                     <div class="tags">
                         <div class="pills">
@@ -48,7 +54,7 @@
                 </div>
             </div>
 
-            <div class="details-4">
+            <div class="details-4 !bg-white border">
                 <div class="info">
                     <div class="tags">
                         <div class="pills">
@@ -73,7 +79,7 @@
                 </div>
             </div>
 
-            <div class="details-4">
+            <div class="details-4 !bg-white border">
                 <div class="info">
                     <div class="tags">
                         <div class="pills">
@@ -88,20 +94,20 @@
                             programmes, bringing life-saving donor breastmilk and care to vulnerable infants across
                             South Africa.</div>
                     </div>
+                    
                     <div class="flex items-end justify-end w-full mt-4">
-                        <a href="https://payfast.co.za/donate/go/southafricanbreastmilkreserve" target="_blank" class="card-button flex gap-1 row justify-end">
+                        <a href="https://payfast.co.za/donate/go/southafricanbreastmilkreserve" class="card-button flex gap-1 row justify-end">
                             <div class="start-today !font-inter">Start Today</div>
                             <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
                         </a>
                     </div>
-
 
                 </div>
             </div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-8">
-            <div class="details-4 !bg-[#107BA226] !text-[#107BA2]">
+            <div class="details-4 !bg-[#F8F5F040] border !text-[#107BA2]">
                 <div class="info gap-3">
                     <div class="tags">
                         <div class="pills !bg-[#107BA226]">
@@ -116,18 +122,13 @@
                             safe, pasteurised breastmilk for your little one and learn how SABR supports families in
                             need.</div>
                     </div>
-                    <div class="flex items-end justify-end w-full mt-4">
-                        <a href="{{route('register')}}" class="card-button flex gap-1 row justify-end">
-                            <div class="start-today !font-inter">Start Today</div>
-                            <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
-                        </a>
-                    </div>
+                    
 
 
                 </div>
             </div>
 
-            <div class="details-4 !bg-[#FFFFFF80]">
+            <div class="details-4 !bg-[#FFFF] border">
                 <div class="info gap-3">
                     <div class="tags">
                         <div class="pills">
@@ -142,12 +143,7 @@
                             with SABR to access donor breastmilk and establish human milk-banking infrastructure in
                             your practice.</div>
                     </div>
-                    <div class="flex items-end justify-end w-full mt-4">
-                        <a href="{{route('register')}}" class="card-button flex gap-1 row justify-end">
-                            <div class="start-today !font-inter">Start Today</div>
-                            <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
-                        </a>
-                    </div>
+                    
                 </div>
             </div>
 
@@ -165,12 +161,7 @@
                             need. Your gift can make all the difference.</div>
                     </div>
                 </div>
-                <div class="flex items-end justify-end w-full mt-4">
-                    <a href="{{route('register')}}" class="card-button flex gap-1 row justify-end">
-                        <div class="start-today !font-inter">Start Today</div>
-                        <img class="mingcuteright-line-icon" alt="" src="{{asset('images/right-line.svg')}}">
-                    </a>
-                </div>
+                
             </div>
             
         </div>

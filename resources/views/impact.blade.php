@@ -4,7 +4,7 @@
 @section('content')
     <section class="relative w-full h-[750px] md:h-[750px]  overflow-hidden">
         <!-- Background Video -->
-        <img class="absolute top-0 left-0 w-full h-full object-cover " src="{{ asset('images/feed-for-life-banner.png') }}"
+        <img class="absolute top-0 left-0 w-full h-full object-cover " src="{{ asset('images/impactbanner.png') }}"
             alt="Hero Image">
 
         <!-- Dark Overlay -->
@@ -17,7 +17,7 @@
                     <div class="w-full h-full flex flex-col text-[#FEFEFD]   gap-6">
                         <div
                             class="w-full text-[#FEFEFD] text-[48px] md:text-[64px] font-normal break-words pt-[180px]  md:pt-[120px]">
-                            Our Impact
+                            
                         </div>
 
                     </div>
@@ -28,12 +28,12 @@
 
     <section class="py-[80px]">
         <div class="wrapper">
-            <div class="introducing-sosafe md:text-[64px] text-[48px] !text-[#B2CB14]">
+            <div class="introducing-sosafe md:text-[64px] text-[48px] !text-[#905460]">
                 Transforming Lives Through <b>Human-Milk Banking</b>
             </div>
             <div class="home-sec-1 font-light">
                 <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                    <div style="font-weight: 300" class="text-[20px] ">
+                    <div style="font-weight: 300" class="text-[24px] ">
                         At the South African Breastmilk Reserve (SABR), our impact is measured not only by the lives we save
                         but also by the systemic change we drive. From reducing infant mortality to empowering mothers and
                         advancing cutting-edge research, SABR’s work touches thousands of lives across South Africa every
@@ -45,14 +45,14 @@
         </div>
     </section>
 
-    <section class="py-[80px] bg-[#23B4E9]">
+    <section class="py-[80px] bg-[#948ea7]">
         <div class="wrapper">
             <div class="introducing-sosafe md:text-[64px] text-[48px] !text-[#FEFEFD]">
                 Advocacy for Breastfeeding and Health Economics
             </div>
             <div class="home-sec-1 font-light !text-[#FEFEFD]">
                 <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                    <div style="font-weight: 300" class="text-[20px] !text-[#FEFEFD]">
+                    <div style="font-weight: 300" class="text-[24px] !text-[#FEFEFD]">
                         As active members of the Maternal Neonatal Guideline and Breastfeeding Technical Working Groups of
                         the National Department of Health (NDOH), SABR champions breastfeeding as a public health priority.
                     </div>
@@ -60,10 +60,10 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-[64px]">
                 <div
-                    class="max-w-[377px] max-h-[610px] relative backdrop-blur-lg rounded-2xl bg-[#20A4D4] border border-[#6CCDF0]  flex flex-col items-end justify-start p-8 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
+                    class="max-w-[377px] max-h-[610px] relative backdrop-blur-lg rounded-2xl bg-[#a7a3b3] border border-[#a7a3b3]  flex flex-col items-end justify-start p-8 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
                     <div class="flex flex-col items-end gap-[13px] flex-1 w-full">
                         <b class="w-full relative text-[#FEFEFD] text-[32px]">Breastfeeding<br>Algorithm</b>
-                        <div class="w-full text-left relative text-xl text-[#FEFEFD]">
+                        <div class="w-full text-left relative text-xl text-[#FEFEFD] font-[300]">
                             SABR has proposed a systematic breastfeeding algorithm to identify staffing needs in postnatal
                             wards, factoring in ward size, bed count, and C-section rates. With public hospital C-section
                             rates at 44%, many mothers face prolonged separations from their newborns, hindering essential
@@ -73,10 +73,10 @@
                 </div>
 
                 <div
-                    class="max-w-[377px] max-h-[610px] relative backdrop-blur-lg rounded-2xl bg-[#20A4D4] border border-[#6CCDF0]  flex flex-col items-end justify-start p-8 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
+                    class="max-w-[377px] max-h-[610px] relative backdrop-blur-lg rounded-2xl bg-[#a7a3b3] border border-[#a7a3b3]  flex flex-col items-end justify-start p-8 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
                     <div class="flex flex-col items-end gap-[13px] flex-1 w-full ">
                         <b class="w-full relative text-[#FEFEFD] text-[32px]">Health <br>Economics</b>
-                        <div class="w-full text-left flex justify-start relative text-xl text-[#FEFEFD]">
+                        <div class="w-full text-left flex justify-start relative text-xl font-[300] text-[#FEFEFD]">
                             SABR advocates for aligning public health budgets with the importance of breastfeeding.
                             Reallocation of resources could enable greater breastfeeding assistance, improve lactation
                             support, and expand human-milk banking services. This ensures breastfeeding is prioritised as an
@@ -86,10 +86,10 @@
                 </div>
 
                 <div
-                    class="max-w-[377px] max-h-[610px] relative backdrop-blur-lg rounded-2xl bg-[#20A4D4] border border-[#6CCDF0]  flex flex-col items-end justify-start p-8 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
+                    class="max-w-[377px] max-h-[610px] relative backdrop-blur-lg rounded-2xl bg-[#a7a3b3] border border-[#a7a3b3]  flex flex-col items-end justify-start p-8 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
                     <div class="flex flex-col items-end gap-[13px] flex-1 w-full ">
                         <b class="w-full relative text-[#FEFEFD] text-[32px]">Policy<br> Strengthening</b>
-                        <div class="w-full relative text-left text-xl text-[#FEFEFD]">
+                        <div class="w-full relative text-left text-xl font-[300] text-[#FEFEFD]">
                             SABR collaborates with healthcare providers and communities to re-engage post-pandemic
                             breastfeeding initiatives. Our goal is to sustain and promote breastfeeding as an affordable,
                             accessible, and beneficial choice for families from all backgrounds.
@@ -100,13 +100,13 @@
         </div>
     </section>
 
-    <section class="py-[80px] bg-[#8B9E10]">
+    <section class="py-[80px] bg-[#a8b096]">
         <div class="wrapper flex flex-col gap-[24px]">
             <div class="introducing-sosafe md:text-[64px] text-[48px] !text-[#FEFEFD]">
                 <b>Research</b>
             </div>
 
-            <p class="text-[#FEFEFD] text-[20px] ">
+            <p class="text-[#FEFEFD] text-[24px] font-inter font-[300] ">
                 While SABR’s innovative research drives advancements in human-milk banking, its true value lies in the lives
                 it touches. From ensuring safer donor milk to supporting at-risk infants, our studies amplify the reach and
                 effectiveness of our programmes. Learn more about the science behind our impact by exploring SABR’s
@@ -115,12 +115,12 @@
 
             <div class="button-prim-wrapper !border-none">
                 <a href="{{route('research')}}" class="button-prim">
-                    <div class="nav-button7 cursor-pointer !bg-[#107BA2]">
+                    <div class="nav-button7 cursor-pointer !bg-[#8b917d]">
                         <div class="button7 pt-1">Learn More About Us</div>
                         <div class="nav-button-child">
                         </div>
                     </div>
-                    <div class="pharrow-up-wrapper cursor-pointer !bg-[#107BA2]">
+                    <div class="pharrow-up-wrapper cursor-pointer !bg-[#8b917d]">
                         <img class="pharrow-up-icon" alt="" src="{{asset('images/arrow-up.svg')}}">
                     </div>
                 </a>
@@ -130,19 +130,19 @@
         </div>
     </section>
 
-    <section class="py-[80px]">
+    <section class="py-[80px] bg-[#e8dfcf]">
         <div class="wrapper ">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-[68px] !items-start mb-[50px] md:mb-[98px]">
                 <!-- Left Container (Image) -->
                 <div class="">
-                    <img src="{{asset('images/about-baby.png')}}" alt="Placeholder Image" class="w-full  rounded-3xl">
+                    <img src="{{asset('images/baby110.png')}}" alt="Placeholder Image" class="w-full  rounded-3xl">
                 </div>
 
                 <!-- Right Container (Text) -->
                 <div class="we-are-more-than-just-a-breast-parent flex !items-start !justify-start gap-[28px] ">
 
-                    <div class="!text-[#23B4E9] saving-lives-mobile sostainer  ">
-                        <span class="text-[#23B4E9]">Challenges & Opportunities
+                    <div class="!text-[#905460] saving-lives-mobile sostainer  text-[48px] md:text-[64px] ">
+                        <span class="text-[#905460]">Challenges & Opportunities
                         </span>
 
                     </div>
@@ -202,69 +202,62 @@
         </div>
     </section>
 
-    <section class="py-[80px]  bg-[#107BA2]">
-        <div class="wrapper ">
-            <div class=" bg-[#107BA2] inline-flex justify-center items-start gap-[98px]">
-                <div class="flex-1 self-stretch justify-start items-center gap-8">
-                    <div class="self-stretch items-start gap-6">
-                        <!-- Left Section -->
-                        <div class="justify-center items-start gap-3">
-                            <div class="self-stretch text-[#F9FCE8] text-4xl md:text-7xl font-normal ">
-                                Programme <b>Mission</b> and <b>Goals</b>
-                            </div>
-
-                            <div class="flex flex-col md:flex-row gap-4 text-[#FEFEFD] mt-10">
-                                <div class="flex-1 gap: 24px;">
-                                    <h2 class="text-[20px] mb-3 text-[#FEFEFD] font-inter font-[600]">Mission Statement</h2>
-                                    <p class="text-[20px] font-inter">Deliver pasteurised, donated breastmilk to in-hospital
-                                        patients and equitably redistribute DBM to infants in public healthcare facilities. 
-                                    </p>
-                                </div>
-                                <div class="flex-1 gap: 24px;">
-                                    <h2 class="text-[20px] mb-3 text-[#FEFEFD] font-inter font-[600]">Programme Goal</h2>
-                                    <p class="text-[20px] font-inter">Provide fair and reliable access to donor breastmilk
-                                        for both private and public-sector patients, ensuring critical early nutrition for
-                                        pre-term and at-risk infants. 
-                                    </p>
-                                </div>
-                            </div>
+    <section class="py-[80px] bg-[#a8b096]">
+        <div class="wrapper">
+            <div class="introducing-sosafe md:text-[64px] text-[48px] !text-[#FEFEFD]">
+                Programme <b>Mission</b> and <b>Goals </b>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 py-[64px]">
+                <div
+                    class="relative backdrop-blur-lg rounded-2xl bg-[#99a383] border border-[#90987e]  flex flex-col items-end justify-start p-8 gap-10 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
+                    <div class="flex flex-col items-end justify-between gap-10 flex-1 w-full">
+                        <b class="w-full relative text-[32px] text-[#FEFEFD] font-sans font-[600]">Mission Statement</b>
+                        <div class="w-full text-left font-inter font-[300] relative text-xl text-[#FEFEFD]">
+                            Ensure compliance of human milk-banking facilities with national regulations. 
                         </div>
-
-
-
+                    </div>
+                </div>
+    
+    
+                <div
+                    class="relative  backdrop-blur-lg rounded-2xl bg-[#99a383] border border-[#90987e]  flex flex-col items-end justify-start p-8 gap-10 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
+                    <div class="flex flex-col items-end justify-between gap-10 flex-1 w-full">
+                        <b class="w-full relative text-[32px] !text-[#FEFEFD]">Programme Goal</b>
+                        <div class="w-full text-left relative text-xl text-[#FEFEFD] font-inter font-[300]">
+                            Re-establish and support in-hospital human milk banks while raising awareness of the importance of breastfeeding. 
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <section class="pt-[80px]  bg-[#107BA2]">
+    <section class="py-[80px]  bg-[#e8d8c6]">
         <div class="wrapper ">
-            <div class=" bg-[#107BA2] inline-flex justify-center items-start gap-[98px]">
+            <div class=" bg-[#e8d8c6] inline-flex justify-center items-start gap-[98px]">
                 <div class="flex-1 self-stretch flex flex-col justify-start items-center gap-8">
                     <div class="self-stretch flex flex-col lg:flex-row justify-start items-start gap-6">
                         <!-- Left Section -->
                         <div class="flex-1 flex flex-col justify-center items-start gap-3">
-                            <div class="self-stretch text-[#F9FCE8] text-6xl font-normal leading-tight">
+                            <div class="self-stretch text-[#6d5d43] text-6xl font-normal leading-tight">
                                 Take the <span class="font-bold">Next<br> Step</span>
                             </div>
                             <div class="self-stretch h-auto flex flex-col justify-start items-start gap-6">
-                                <p class="self-stretch text-[#FEFEFD] text-2xl font-normal">
+                                <p class="self-stretch text-[#6d5d43] text-2xl font-inter font-[300]">
                                     Bring SoSAFE to your facility and set a new standard in breastmilk safety.
                                 </p>
                             </div>
                         </div>
-
+    
                         <!-- Right Section -->
                         <div class="flex-1 flex flex-col justify-center items-start gap-3">
                             <div class="self-stretch h-auto flex flex-col justify-start items-start gap-6">
-                                <p class="self-stretch text-[#FEFEFD] text-3xl font-bold">
+                                <p class="self-stretch text-[#6d5d43] text-3xl font-bold">
                                     Ready to Learn More?
                                 </p>
                             </div>
                             <div class="self-stretch h-auto flex flex-col justify-start items-start gap-6">
-                                <p class="self-stretch text-[#FEFEFD] text-2xl font-normal">
+                                <p class="self-stretch text-[#6d5d43] font-inter text-2xl font-[300] font-inter">
                                     Email us at <a href="mailto:SoSafe@sabr.org.za" class="underline">SoSafe@sabr.org.za</a>
                                     to explore implementation options, pricing details, and how SoSAFE fits into your
                                     existing infrastructure.
@@ -274,7 +267,7 @@
                     </div>
                 </div>
             </div>
-
+    
         </div>
     </section>
 

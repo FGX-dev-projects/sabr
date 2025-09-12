@@ -2,7 +2,7 @@
 @section('title', 'SABR: South African Breastmilk Reserve - Breast is Best')
 @section('meta-description', 'South African Breastmilk Reserve - Bringing milk to babies, safely.')
 @section('content')
-    <section class="relative w-full h-[300px] md:h-[350px]  overflow-hidden">
+    <section class="relative w-full h-[300px] md:h-[350px]  overflow-hidden ">
         <!-- Background Video -->
 
 
@@ -10,12 +10,12 @@
         <div class="relative z-10 flex flex-col  h-full   pt-[10px] md:pt-[186px]">
             <div class="wrapper">
                 <div class="w-full h-full flex flex-col     gap-6">
-                    <div class="w-full h-full flex flex-col text-[#107BA2]   gap-0">
+                    <div class="w-full h-full flex flex-col text-[#905460]   gap-0">
                         <div
-                            class="w-full text-[#107BA2] text-[48px] md:text-[64px] font-normal break-words pt-[180px]  md:pt-[20px]">
+                            class="w-full text-[#905460] text-[48px] md:text-[64px] font-normal break-words pt-[180px]  md:pt-[20px]">
                             Breast is Best
                         </div>
-                        <p class="text-[20px] font-inter font-bold">
+                        <p class="text-[24px] font-inter font-bold">
                             FAQs
                         </p>
                     </div>
@@ -101,7 +101,7 @@
                     </div>
                 </div>
 
-                <img src="{{asset('images/baby8.png')}}" class="w-full"/>
+                <img src="{{asset('images/bannerb.png')}}" class="w-full"/>
         </div>
 
     </section>

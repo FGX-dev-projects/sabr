@@ -25,24 +25,29 @@
     </div>
 </section>
 
-<section class="py-[80px]">
+<section class="py-[80px] bg-[#e5d2b8]">
     <div class="wrapper ">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-[68px] !items-start">
             <!-- Left Container (Image) -->
             <div class="">
-                <img src="{{asset('images/newborn.png')}}" alt="Placeholder Image" class="w-full  rounded-xl">
+                <img src="{{asset('images/baby104.png')}}" alt="Placeholder Image" class="w-full  ">
             </div>
 
             <!-- Right Container (Text) -->
-            <div class="we-are-more-than-just-a-breast-parent flex !items-start !justify-start gap-[28px]">
+            <div class="we-are-more-than-just-a-breast-parent flex !items-start !justify-start gap-[24px]">
 
-                <div class="saving-lives-mobile  text-[#B2CB14] ">
-                    <span><b>Vision</b> and <b class="!text-[#B2CB14]"><br> Mission</b></span>
+                <div class="saving-lives-mobile  md:text-[64px] text-[48px] text-[#905460] ">
+                    <span><b>Vision</b> and <b class="!text-[#905460] font-bold"><br> Mission</b></span>
 
                 </div>
                 <div class="home-sec-1 font-light">
                     <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                        <div style="font-weight: 300" class="text-[20px] ">At the South African Breastmilk Reserve (SABR), we envision a world where every infant has access to the life-saving benefits of breastmilk, regardless of their circumstances. Our mission is to bridge gaps in healthcare by promoting equitable access to donor breastmilk, fostering healthier beginnings for vulnerable newborns, and advancing innovation in human milk banking.
+                        <div style="font-weight: 300" class="text-[24px] ">
+                            At the South African Breastmilk Reserve (SABR), we dream of a world where every newborn - no matter their circumstances - has access to the life-saving nourishment of breastmilk. <br><br>
+                            
+                            We believe in the healing power of milk, in protecting the most vulnerable, and in giving fragile babies the healthiest possible start.
+                            <br><br>
+                            Through innovation, compassion, and collaboration, we are opening the door to breastmilk for those who need it most and leading the way in advancing human milk banking.
                         </div>
                     </div>
 
@@ -53,13 +58,13 @@
     </div>
 </section>
 
-<section class="py-[80px] bg-[#8B9E10]">
+<section class="py-[80px] bg-[#a8b096]">
     <div class="wrapper">
         <div class="introducing-sosafe md:text-[64px] text-[48px] !text-[#FEFEFD]">
             <b>Awards</b> <span class="font-thin">& </span><b>Achievements</b>
         </div>
 
-        <p class="text-[#FEFEFD] text-[20px] pt-[28px]">
+        <p class="text-[#FEFEFD] text-[24px] pt-[28px]">
             Our commitment to innovation and impact has been recognised with accolades such as the Discovery Excellence
             Awards in 2018 and 2021. These honours highlight our efforts, including the development of the SoSAFE
             Pasteuriser, the SOStainer Mobile Clinic, and advancements in virological screening for donor milk.
@@ -79,14 +84,14 @@
             <!-- Right Container (Text) -->
             <div class="we-are-more-than-just-a-breast-parent flex !items-start !justify-start gap-[28px]">
 
-                <div class="saving-lives-mobile  text-[#23B4E9] ">
-                    <span>Overview of the   <b class="!text-[#23B4E9]"><br>Initiative</b></span>
+                <div class="saving-lives-mobile  text-[48px] md:text-[64px] text-[#905460] ">
+                    <span>Make your hospital <b class="!text-[#905460]"><br>breastmilk smart</b></span>
 
                 </div>
                 <div class="home-sec-1 font-light">
                     <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                        <div style="font-weight: 300" class="text-[20px] !font-light not-italic">
-                            Pioneered by SABR, the Feed for Life Initiative represents an altruistic, sustainable, and replicable model for human milk banking. This system has demonstrated substantial impact, particularly in low-resourced public hospitals with large neonatal intensive care units (NICUs) and rural areas. Over the past decade, the programme has strengthened partnerships with South Africa’s Provincial Departments of Health, making life-saving donor breastmilk accessible to infants across the country. 
+                        <div style="font-weight: 300" class="text-[24px] !font-light not-italic">
+                            Born from a belief that no baby should go without the nourishment they deserve, SABR’s Feed for Life initiative transforms compassion into action. <br><br>By working hand in hand with hospitals, NICUs, and provincial health departments, we make life-saving donor breastmilk accessible to infants across South Africa - even in the most under-resourced communities. <br><br>Every drop donated is a promise: a promise of strength, of growth, and of a brighter future.
                         </div>
                     </div>
 
@@ -96,16 +101,16 @@
 
 
             <div class="">
-                <img src="{{asset('images/newborn.png')}}" alt="Placeholder Image" class="w-full  rounded-xl">
+                <img src="{{asset('images/baby104.png')}}" alt="Placeholder Image" class="w-full  rounded-xl">
             </div>
         </div>
     </div>
 </section>
 
-<section class="py-[80px]">
+<section class="py-[80px] bg-[#e8dfcf]">
     <div class="wrapper flex flex-col gap-6">
-        <div class="we-are-more-than-just-a-breast-parent saving-lives-mobile flex !items-start !text-start text-[#B2CB14] ">
-            <span class="!text-[#B2CB14]">Inclusion Criteria for  <b class="!text-[#B2CB14]"> Recipient <br>Babies</b></span>
+        <div class="we-are-more-than-just-a-breast-parent saving-lives-mobile flex !items-start !text-start text-[#905460] ">
+            <span class="!text-[#905460]">Inclusion Criteria for  <b class="!text-[#905460]"> Recipient <br>Babies</b></span>
         </div>
         <h3 class="get-in-touch font-inter font-bold text-[#666562]">Infants eligible to receive donated breastmilk through the Feed for Life Initiative must meet the following criteria: </h3>
         <h4 class="font-inter">Prematurity</h4>
@@ -121,18 +126,18 @@
     </div>
 </section>
 
-<section class="pt-[80px]  bg-[#107BA2]">
+<section class="py-[80px]  bg-[#905460]">
     <div class="wrapper ">
-        <div class=" bg-[#107BA2] inline-flex justify-center items-start gap-[98px]">
+        <div class=" bg-[#905460] inline-flex justify-center items-start gap-[98px]">
             <div class="flex-1 self-stretch flex flex-col justify-start items-center gap-8">
                 <div class="self-stretch flex flex-col lg:flex-row justify-start items-start gap-6">
                     <!-- Left Section -->
                     <div class="flex-1 flex flex-col justify-center items-start gap-3">
-                        <div class="self-stretch text-[#F9FCE8] text-6xl font-normal leading-tight">
+                        <div class="self-stretch text-[#f9fce8] text-6xl font-normal leading-tight">
                             Take the <span class="font-bold">Next<br> Step</span>
                         </div>
                         <div class="self-stretch h-auto flex flex-col justify-start items-start gap-6">
-                            <p class="self-stretch text-[#FEFEFD] text-2xl font-normal">
+                            <p class="self-stretch text-[#fefefd] text-2xl font-inter font-[300]">
                                 Bring SoSAFE to your facility and set a new standard in breastmilk safety.
                             </p>
                         </div>
@@ -141,12 +146,12 @@
                     <!-- Right Section -->
                     <div class="flex-1 flex flex-col justify-center items-start gap-3">
                         <div class="self-stretch h-auto flex flex-col justify-start items-start gap-6">
-                            <p class="self-stretch text-[#FEFEFD] text-3xl font-bold">
+                            <p class="self-stretch text-[32px] text-[#fefefd] text-3xl font-bold">
                                 Ready to Learn More?
                             </p>
                         </div>
                         <div class="self-stretch h-auto flex flex-col justify-start items-start gap-6">
-                            <p class="self-stretch text-[#FEFEFD] text-2xl font-normal">
+                            <p class="self-stretch text-[#fefefd]  text-2xl font-[300] font-inter">
                                 Email us at <a href="mailto:SoSafe@sabr.org.za" class="underline">SoSafe@sabr.org.za</a>
                                 to explore implementation options, pricing details, and how SoSAFE fits into your
                                 existing infrastructure.

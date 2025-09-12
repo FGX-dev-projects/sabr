@@ -18,7 +18,7 @@
                         <div class="w-full text-[#FEFEFD] text-[48px] md:text-[64px] font-normal break-words">
                             Introducing the <span class="font-bold">SoSAFE Pasteuriser</span>
                         </div>
-                        <div class="join-us-in">
+                        <div class="join-us-in font-sans !font-[300] text-[24px]">
                             Engineered by SABR to address the critical need for reliable donor breastmilk processing, SoSAFE
                             ensures the highest level of safety and preserves essential nutrients. Join us in transforming
                             infant care worldwide.
@@ -39,9 +39,9 @@
                 <!-- Right Container (Text) -->
                 <div class="we-are-more-than-just-a-breast-parent !justify-start gap-[20px]">
 
-                    <div class="saving-lives-mobile text-[#B2CB14] ">
+                    <div class="saving-lives-mobile text-[#905460] ">
                         <span>A New Standard in </span>
-                        <b class="breastmilk-bank !text-[#B2CB14]">Breastmilk Safety</b>
+                        <b class="breastmilk-bank !text-[#905460]">Breastmilk Safety</b>
                     </div>
                     <div class="home-sec-1">
                         <div class="for-18-years-the-south-afric-wrapper">
@@ -61,14 +61,14 @@
         </div>
     </section>
 
-    <section class="py-[80px] bg-[#23B4E9]">
+    <section class="py-[80px] bg-[#948ea7]">
         <div class="wrapper">
             <div class="introducing-sosafe md:text-[64px] text-[48px] !text-[#FEFEFD]">
                 Features of SoSAFE
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-[64px]">
                 <div
-                    class="max-w-[377px] max-h-[431px] relative backdrop-blur-lg rounded-2xl bg-[#20A4D4] border border-[#6CCDF0]  flex flex-col items-end justify-start p-8 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
+                    class="max-w-[377px] max-h-[431px] relative backdrop-blur-lg rounded-2xl bg-[#a7a3b3] border border-[#fefefd]  flex flex-col items-end justify-start p-8 text-right text-2xl text-[#fefefd] font-['Work_Sans']">
                     <div class="flex flex-col items-end justify-between flex-1 w-full">
                         <b class="w-full relative text-[#FEFEFD] text-[32px]">Affordable and<br> Accessible</b>
                         <div class="w-full text-left relative text-xl text-[#FEFEFD]">
@@ -80,7 +80,7 @@
                 </div>
 
                 <div
-                    class="max-w-[377px] max-h-[431px] relative backdrop-blur-lg rounded-2xl bg-[#20A4D4] border border-[#6CCDF0]  flex flex-col items-end justify-start p-8 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
+                    class="max-w-[377px] max-h-[431px] relative backdrop-blur-lg rounded-2xl bg-[#a7a3b3] border border-[#fefefd]  flex flex-col items-end justify-start p-8 text-right text-2xl text-[#fefefd] font-['Work_Sans']">
                     <div class="flex flex-col items-end justify-between flex-1 w-full gap-8">
                         <b class="w-full relative text-[#FEFEFD] text-[32px]">High Safety <br>Standards</b>
                         <div class="w-full text-left flex justify-start relative text-xl text-[#FEFEFD]">
@@ -92,10 +92,10 @@
                 </div>
 
                 <div
-                    class="max-w-[377px] max-h-[431px] relative backdrop-blur-lg rounded-2xl bg-[#20A4D4] border border-[#6CCDF0]  flex flex-col items-end justify-start p-8 text-right text-2xl text-[#23b4e9] font-['Work_Sans']">
+                    class="max-w-[377px] max-h-[431px] relative backdrop-blur-lg rounded-2xl bg-[#a7a3b3] border border-[#fefefd]  flex flex-col items-end justify-start p-8 text-right text-2xl text-[#fefefd] font-['Work_Sans']">
                     <div class="flex flex-col items-end justify-between flex-1 w-full ">
                         <b class="w-full relative text-[#FEFEFD] text-[32px]">Efficient <br>Processing</b>
-                        <div class="w-full relative text-left text-xl text-[#FEFEFD]">
+                        <div class="w-full relative text-left text-[24px] font-[300] text-[#FEFEFD]">
                             The SoSAFE Pasteuriser streamlines the pasteurisation process, reducing time and costs for
                             facilities without compromising safety or quality.
                         </div>
@@ -111,8 +111,8 @@
                 <!-- Left Container (Image) -->
 
                 <div class="flex-1">
-                    <div class="make-your-hospital-container !text-[#B2CB14]">
-                        <span>Why <b>SoSAFE</b> <br>Matters</span>
+                    <div class="make-your-hospital-container !text-[#905460]">
+                        <span>Why <b>SoSAFE</b> Matters</span>
                         
                     </div>
                     <div class="home-sec-1">
@@ -160,7 +160,7 @@
         </div>
     </section>
 
-    <section class="py-[80px] bg-[#8B9E10]">
+    <section class="py-[80px] bg-[#a8b096]">
         <div class="wrapper">
             <div class="introducing-sosafe md:text-[64px] text-[48px] !text-[#FEFEFD]">
                 Commitment to Equitable Access
@@ -179,18 +179,18 @@ By making pasteurisation affordable and accessible, SoSAFE empowers hospitals an
         </div>
     </section>
 
-    <section class="pt-[80px]  bg-[#107BA2]">
+    <section class="py-[80px]  bg-[#e8d8c6]">
         <div class="wrapper ">
-            <div class=" bg-[#107BA2] inline-flex justify-center items-start gap-[98px]">
+            <div class=" bg-[#e8d8c6] inline-flex justify-center items-start gap-[98px]">
                 <div class="flex-1 self-stretch flex flex-col justify-start items-center gap-8">
                     <div class="self-stretch flex flex-col lg:flex-row justify-start items-start gap-6">
                         <!-- Left Section -->
                         <div class="flex-1 flex flex-col justify-center items-start gap-3">
-                            <div class="self-stretch text-[#F9FCE8] text-6xl font-normal leading-tight">
+                            <div class="self-stretch text-[#6d5d43] text-6xl font-normal leading-tight">
                                 Take the <span class="font-bold">Next<br> Step</span>
                             </div>
                             <div class="self-stretch h-auto flex flex-col justify-start items-start gap-6">
-                                <p class="self-stretch text-[#FEFEFD] text-2xl font-normal">
+                                <p class="self-stretch text-[#6d5d43] text-2xl font-inter font-[300]">
                                     Bring SoSAFE to your facility and set a new standard in breastmilk safety.
                                 </p>
                             </div>
@@ -199,12 +199,12 @@ By making pasteurisation affordable and accessible, SoSAFE empowers hospitals an
                         <!-- Right Section -->
                         <div class="flex-1 flex flex-col justify-center items-start gap-3">
                             <div class="self-stretch h-auto flex flex-col justify-start items-start gap-6">
-                                <p class="self-stretch text-[#FEFEFD] text-3xl font-bold">
+                                <p class="self-stretch text-[#6d5d43] text-3xl font-bold">
                                     Ready to Learn More?
                                 </p>
                             </div>
                             <div class="self-stretch h-auto flex flex-col justify-start items-start gap-6">
-                                <p class="self-stretch text-[#FEFEFD] text-2xl font-normal">
+                                <p class="self-stretch text-[#6d5d43] font-inter text-2xl font-[300] font-inter">
                                     Email us at <a href="mailto:SoSafe@sabr.org.za" class="underline">SoSafe@sabr.org.za</a>
                                     to explore implementation options, pricing details, and how SoSAFE fits into your
                                     existing infrastructure.

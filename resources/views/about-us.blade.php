@@ -5,7 +5,7 @@
 
     <section class="relative w-full h-[750px] md:h-[750px]  overflow-hidden">
         <!-- Background Video -->
-        <img class="absolute top-0 left-0 w-full h-full object-cover " src="{{ asset('images/about-us-banner.png') }}"
+        <img class="absolute top-0 left-0 w-full h-full object-cover " src="{{ asset('images/about-bg.png') }}"
             alt="Hero Image">
 
         <!-- Dark Overlay -->
@@ -33,23 +33,23 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-[68px] items-center">
                 <!-- Left Container (Image) -->
                 <div class="">
-                    <img src="{{asset('images/about-img1.png')}}" alt="Placeholder Image" class="w-full  rounded-xl">
+                    <img src="{{asset('images/sleeping-baby.png')}}" alt="Placeholder Image" class="w-full  rounded-xl">
                 </div>
 
                 <!-- Right Container (Text) -->
-                <div class="we-are-more-than-just-a-breast-parent !justify-start gap-[50px]">
+                <div class="we-are-more-than-just-a-breast-parent !justify-start gap-[24px]">
 
-                    <div class="saving-lives-mobile  text-[#23B4E9] ">
-                        <span>Ensuring <b class="!text-[#23B4E9]">Equitable Access</b> to Donor Breastmilk </span>
+                    <div class="saving-lives-mobile  text-[#905460] ">
+                        <span>Ensuring <b class="!text-[#905460]">Equitable Access</b> to Donor Breastmilk </span>
 
                     </div>
                     <div class="home-sec-1">
                         <div class="for-18-years-the-south-afric-wrapper">
-                            <div class="text-[20px]">The Feed for Life Initiative is a cornerstone programme of the South
-                                African Breastmilk Reserve (SABR), dedicated to ensuring that all in-hospital
-                                patients—especially those in low-resource public facilities—have access to pasteurised,
-                                donated breastmilk (DBM). By bridging gaps in neonatal care, the programme supports the
-                                survival and development of South Africa’s most vulnerable infants. 
+                            <div class="text-[24px] font-inter font-[300] text-[#666562]">The Feed for Life Initiative beats at the very heart of SABR - a promise that every precious life deserves the same tender beginning, no matter where they draw their first breath. 
+                                <br><br>
+                                From bustling city centers to remote rural clinics, we believe a mother's love shouldn't be limited by geography. <br><br>
+                                
+                                Through gentle hands and caring hearts, we ensure pasteurised donor breastmilk flows like liquid hope to every baby who needs it. 
                             </div>
                         </div>
 
@@ -60,26 +60,26 @@
         </div>
     </section>
 
-    <section class="py-[80px]  bg-[#107BA2]">
+    <section class="py-[80px]  bg-[#9f9ab1]">
         <div class="wrapper ">
-            <div class=" bg-[#107BA2] inline-flex justify-center items-start gap-[98px]">
+            <div class=" bg-[#9f9ab1] inline-flex justify-center items-start gap-[98px]">
                 <div class="flex-1 self-stretch justify-start items-center gap-8">
                     <div class="self-stretch items-start gap-6">
                         <!-- Left Section -->
                         <div class="justify-center items-start gap-3">
-                            <div class="self-stretch text-[#F9FCE8] text-4xl md:text-7xl font-normal ">
+                            <div class="self-stretch text-[#f9fce8] text-[48px] md:text-[64px] font-normal ">
                                 Programme <b>Mission</b> and <b>Goals</b>
                             </div>
     
-                            <div class="flex flex-col md:flex-row gap-4 text-[#FEFEFD] mt-10">
-                                <div class="flex-1 gap: 24px;">
-                                    <h2 class="text-[20px] text-[#FEFEFD] font-inter font-[600] mb-3">Mission Statement</h2>
-                                    <p class="text-[20px] font-inter">Deliver pasteurised, donated breastmilk to in-hospital patients and equitably redistribute DBM to infants in public healthcare facilities. 
+                            <div class="flex flex-col md:flex-row gap-4 text-[#f9fce8] mt-10">
+                                <div class="flex-1 gap-[12px]">
+                                    <h2 class="text-[24px] text-[#FEFEFD] font-inter font-[600] ">Mission Statement</h2>
+                                    <p class="text-[24px] font-inter font-[300]">Deliver pasteurised, donated breastmilk to in-hospital patients and equitably redistribute DBM to infants in public healthcare facilities. 
                                     </p>
                                 </div>
-                                <div class="flex-1 gap: 24px;">
-                                    <h2 class="text-[20px] text-[#FEFEFD] font-inter font-[600] mb-3">Programme Goal</h2>
-                                    <p class="text-[20px] font-inter">Provide fair and reliable access to donor breastmilk for both private and public-sector patients, ensuring critical early nutrition for pre-term and at-risk infants. 
+                                <div class="flex-1 gap-[12px]">
+                                    <h2 class="text-[24px] text-[#FEFEFD] font-inter font-[600] ">Programme Goal</h2>
+                                    <p class="text-[24px] font-inter font-[300]">Provide fair and reliable access to donor breastmilk for both private and public-sector patients, ensuring critical early nutrition for pre-term and at-risk infants. 
                                     </p>
                                 </div>
                             </div>
@@ -99,19 +99,19 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-[68px] ">
                 <!-- Left Container (Image) -->
                 <div class="">
-                    <img src="{{asset('images/about-baby.png')}}" alt="Placeholder Image" class="w-full  rounded-xl">
+                    <img src="{{asset('images/baby101.png')}}" alt="Placeholder Image" class="w-full  rounded-xl">
                 </div>
 
                 <!-- Right Container (Text) -->
-                <div class="we-are-more-than-just-a-breast-parent !items-start !justify-start gap-[30px]">
+                <div class="we-are-more-than-just-a-breast-parent !items-start !justify-start gap-[24px]">
 
-                    <div class="!text-left saving-lives-mobile  text-[#23B4E9]">
-                        <span class="!text-left">Our <b class="!text-[#23B4E9]">Reach </b></span>
+                    <div class="!text-left saving-lives-mobile text-[64px]  text-[#905460]">
+                        <span class="!text-left">Our <b class="!text-[#905460]">Reach </b></span>
 
                     </div>
                     <div class="home-sec-1">
                         <div class="for-18-years-the-south-afric-wrapper">
-                            <div class="text-[20px]">The Feed for Life Initiative is a cornerstone programme of the South
+                            <div class="text-[24px]">The Feed for Life Initiative is a cornerstone programme of the South
                                 African Breastmilk Reserve (SABR), dedicated to ensuring that all in-hospital
                                 patients—especially those in low-resource public facilities—have access to pasteurised,
                                 donated breastmilk (DBM). By bridging gaps in neonatal care, the programme supports the
@@ -126,13 +126,13 @@
         </div>
     </section>
 
-    <section class="py-[80px] bg-[#8B9E10]">
+    <section class="py-[80px] bg-[#a8b096]">
         <div class="wrapper">
-            <div class="introducing-sosafe md:text-[64px] text-[48px] !text-[#FEFEFD]">
+            <div class="introducing-sosafe md:text-[64px] text-[48px] !text-[#f9fce8]">
                 <b>Awards</b> <span class="font-thin">& </span><b>Achievements</b>
             </div>
 
-            <p class="text-[#FEFEFD] text-[20px] pt-[28px]">
+            <p class="text-[#FEFEFD] text-[24px] pt-[24px] font-inter font-[300]">
                 Our commitment to innovation and impact has been recognised with accolades such as the Discovery Excellence
                 Awards in 2018 and 2021. These honours highlight our efforts, including the development of the SoSAFE
                 Pasteuriser, the SOStainer Mobile Clinic, and advancements in virological screening for donor milk.
@@ -149,7 +149,7 @@
                 <!-- Left Container (Image) -->
 
                 <div class="flex-1">
-                    <div class="make-your-hospital-container !text-[#B2CB14]">
+                    <div class="make-your-hospital-container !text-[#905460]">
                         <span>Our <b>History</b> </span>
 
                     </div>
@@ -191,7 +191,7 @@
                 </div>
 
                 <div class="image">
-                    <img src="{{asset('images/baby5.jpg')}}" alt="Placeholder Image"
+                    <img src="{{asset('images/baby102.png')}}" alt="Placeholder Image"
                         class="w-full rounded-xl">
                 </div>
             </div>
@@ -200,12 +200,12 @@
 
     <section class="py-[80px]">
         <div class="wrapper">
-            <div class="introducing-sosafe md:text-[64px] text-[48] font-extrabold text-[48px] !text-[#666562] mb-[98px]">
+            <div class="introducing-sosafe md:text-[64px] text-[48] font-extrabold text-[48px] !text-[#905460] mb-[98px]">
                 Key Milestones
             </div>
 
-            <img src="{{asset('images/timeline.png')}}" class="block mx-auto"/>
-            <p class="mt-[98px] font-inter text-light-2 text-[20px] text-[#666562]">
+            <img src="{{asset('images/newtimeline.png')}}" class="block mx-auto"/>
+            <p class="mt-[98px] font-inter text-light-2 !text-left text-[24px]  text-[#666562]">
                 Through our vision, partnerships, and unwavering commitment, SABR continues to champion the health and well-being of South Africa’s most vulnerable infants.
             </p>
         </div>
@@ -281,9 +281,9 @@
     
     </section>
 
-    <section class="py-[80px]">
+    <section class="py-[80px] bg-[#e5d2b8]">
         <div class="wrapper ">
-            <div class="make-your-hospital-container !text-right font-inter font-bold !text-[#959595]">
+            <div class="make-your-hospital-container !text-right font-inter font-bold !text-[#905460]">
                 <span>Beneficiaries </span>
 
             </div>
@@ -297,12 +297,9 @@
 
                     </div>
                     <div class="!text-right ">
-                        <p class="text-right text-[16px] font-normal text-black font-inter">The SABR functions as a co-ordinating body for the equitable distribution of life-saving DBM country wide and is geared towards delivering DBM to every part of South Africa within 24 to 48 hours, whilst ensuring that it is of the highest quality and meets regulatory standards.</p> 
+                        <p class="text-right text-[24px] font-normal text-black font-inter">The SABR follows a universal guideline that includes all infants below 37 weeks’ gestation. The largest amount of donor breastmilk is directed to public hospital facilities.</p> 
                         <br>
-                        <p class="text-right text-[20px] font-light  font-inter">The SABR follows a universal guideline that includes all infants below 37 weeks’ gestation. The largest amount of donor breastmilk is directed to public hospital facilities.</p>
-                        <br>
-                        <p class="text-right text-[20px] font-light  font-inter">The SABR follows a universal guideline that includes all infants below 37 weeks’ gestation. The largest amount of donor breastmilk is directed to public hospital facilities.</p>    
-
+                       
 
                     </div>
                 </div>
@@ -310,7 +307,7 @@
 
                 <div class="image">
                     
-                    <img src="{{asset('images/baby5.jpg')}}" alt="Placeholder Image"
+                    <img src="{{asset('images/baby-group.png')}}" alt="Placeholder Image"
                         class=" rounded-xl w-full">
                 </div>
 
@@ -320,35 +317,35 @@
         </div>
     </section>
 
-    <section class="pb-[50px]">
+    <section class="pb-[50px] bg-[#e5d2b8]">
         <div class="wrapper">
-            <p class="text-center font-inter text-[20px] mb-[32px] text-light-2">The SABR currently supports breastfeeding mothers in rural areas in:</p>
+            <p class="text-center font-inter text-[20px] mb-[32px] text-[rgba(0, 0, 0, 0.5)] text-light-2">The SABR currently supports breastfeeding mothers in rural areas in:</p>
             <div class="flex flex-wrap justify-center gap-3 p-4">
-                <button class="px-4 py-2 border border-slate-400 rounded-full text-[#107BA2] bg-[#F8F5F0] hover:bg-gray-200">
+                <button class="px-4 py-2 border border-[rgba(0, 0, 0, 0.15)] rounded-full text-[#107BA2] bg-[#F8F5F0] hover:bg-gray-200">
                     Lusikisiki
                 </button>
-                <button class="px-4 py-2 border border-slate-400 rounded-full text-[#107BA2] bg-[#F8F5F0] hover:bg-gray-200">
+                <button class="px-4 py-2 border border-[rgba(0, 0, 0, 0.15)] rounded-full text-[#107BA2] bg-[#F8F5F0] hover:bg-gray-200">
                     Umthatha
                 </button>
-                <button class="px-4 py-2 border border-slate-400 rounded-full text-[#107BA2] bg-[#F8F5F0] hover:bg-gray-200">
+                <button class="px-4 py-2 border border-[rgba(0, 0, 0, 0.15)] rounded-full text-[#107BA2] bg-[#F8F5F0] hover:bg-gray-200">
                     Queenstown
                 </button>
-                <button class="px-4 py-2 border border-slate-400 rounded-full text-[#107BA2] bg-[#F8F5F0] hover:bg-gray-200">
+                <button class="px-4 py-2 border border-[rgba(0, 0, 0, 0.15)] rounded-full text-[#107BA2] bg-[#F8F5F0] hover:bg-gray-200">
                     Upington
                 </button>
-                <button class="px-4 py-2 border border-slate-400 rounded-full text-[#107BA2] bg-[#F8F5F0] hover:bg-gray-200">
+                <button class="px-4 py-2 border border-[rgba(0, 0, 0, 0.15)] rounded-full text-[#107BA2] bg-[#F8F5F0] hover:bg-gray-200">
                     Kimberley
                 </button>
-                <button class="px-4 py-2 border border-slate-400 rounded-full text-[#107BA2] bg-[#F8F5F0] hover:bg-gray-200">
+                <button class="px-4 py-2 border border-[rgba(0, 0, 0, 0.15)] rounded-full text-[#107BA2] bg-[#F8F5F0] hover:bg-gray-200">
                     Vryburg
                 </button>
-                <button class="px-4 py-2 border border-slate-400 rounded-full text-[#107BA2] bg-[#F8F5F0] hover:bg-gray-200">
+                <button class="px-4 py-2 border border-[rgba(0, 0, 0, 0.15)] rounded-full text-[#107BA2] bg-[#F8F5F0] hover:bg-gray-200">
                     Dihlabeng
                 </button>
-                <button class="px-4 py-2 border border-slate-400 rounded-full text-[#107BA2] bg-[#F8F5F0] hover:bg-gray-200">
+                <button class="px-4 py-2 border border-[rgba(0, 0, 0, 0.15)] rounded-full text-[#107BA2] bg-[#F8F5F0] hover:bg-gray-200">
                     Phuthaditjhaba
                 </button>
-                <button class="px-4 py-2 border border-slate-400 rounded-full text-[#107BA2] bg-[#F8F5F0] hover:bg-gray-200">
+                <button class="px-4 py-2 border border-[rgba(0, 0, 0, 0.15)] rounded-full text-[#107BA2] bg-[#F8F5F0] hover:bg-gray-200">
                     Mankweng
                 </button>
                 
@@ -357,18 +354,18 @@
         </div>
     </section>
 
-    <section class="pt-[80px]  bg-[#107BA2]">
+    <section class="py-[80px]  bg-[#905460]">
         <div class="wrapper ">
-            <div class=" bg-[#107BA2] inline-flex justify-center items-start gap-[98px]">
+            <div class=" bg-[#905460] inline-flex justify-center items-start gap-[98px]">
                 <div class="flex-1 self-stretch flex flex-col justify-start items-center gap-8">
                     <div class="self-stretch flex flex-col lg:flex-row justify-start items-start gap-6">
                         <!-- Left Section -->
                         <div class="flex-1 flex flex-col justify-center items-start gap-3">
-                            <div class="self-stretch text-[#F9FCE8] text-6xl font-normal leading-tight">
+                            <div class="self-stretch text-[#f9fce8] text-6xl font-normal leading-tight">
                                 Take the <span class="font-bold">Next<br> Step</span>
                             </div>
                             <div class="self-stretch h-auto flex flex-col justify-start items-start gap-6">
-                                <p class="self-stretch text-[#FEFEFD] text-2xl font-normal">
+                                <p class="self-stretch text-[#fefefd] text-2xl font-inter font-[300]">
                                     Bring SoSAFE to your facility and set a new standard in breastmilk safety.
                                 </p>
                             </div>
@@ -377,12 +374,12 @@
                         <!-- Right Section -->
                         <div class="flex-1 flex flex-col justify-center items-start gap-3">
                             <div class="self-stretch h-auto flex flex-col justify-start items-start gap-6">
-                                <p class="self-stretch text-[#FEFEFD] text-3xl font-bold">
+                                <p class="self-stretch text-[32px] text-[#fefefd] text-3xl font-bold">
                                     Ready to Learn More?
                                 </p>
                             </div>
                             <div class="self-stretch h-auto flex flex-col justify-start items-start gap-6">
-                                <p class="self-stretch text-[#FEFEFD] text-2xl font-normal">
+                                <p class="self-stretch text-[#fefefd]  text-2xl font-[300] font-inter">
                                     Email us at <a href="mailto:SoSafe@sabr.org.za" class="underline">SoSafe@sabr.org.za</a>
                                     to explore implementation options, pricing details, and how SoSAFE fits into your
                                     existing infrastructure.

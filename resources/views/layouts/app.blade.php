@@ -164,11 +164,12 @@
                     <div class="button">Contact Us</div>
                 </a>
             </div>
+            <div class="nav-button7  md:flex hidden cursor-pointer z-0">
+                <a href="http://payfast.co.za/donate/go/southafricanbreastmilkreserve" target="_blank"
+                    class="button7">Donate Today</a>
+            </div>
         </div>
-        <div class="nav-button7  md:flex hidden cursor-pointer z-0">
-            <a href="http://payfast.co.za/donate/go/southafricanbreastmilkreserve" target="_blank"
-                class="button7">Donate Today</a>
-        </div>
+       
 
 
         <!-- Mobile Menu -->
@@ -283,7 +284,7 @@
         @yield('content')
     </main>
 
-    <footer class="pt-[80px] pb-[80px] md:pb-[80px] wrapper bg-[#107BA2]">
+    <footer class="pt-[80px] pb-[80px] md:pb-[80px] wrapper bg-[#905460]">
 
         <div class="flex flex-col md:flex-row justify-between items-start md:items-center ">
             <!-- Logo -->
@@ -311,12 +312,12 @@
 
             <!-- Newsletter Signup -->
             <div
-                class="flex flex-col md:flex-row items-center gap-4 mt-4 md:mt-0 bg-[#107BA2] wifull border border-[#C4DF16] rounded-[12px] p-3 mb-5">
+                class="flex flex-col md:flex-row items-center gap-4 mt-4 md:mt-0 bg-[#834551] wifull border border-[#fff] rounded-[12px] p-3 mb-5">
                 <input type="text"
-                    class="text-[#C4DF16] bg-[#107BA2] placeholder:text-[#C4DF16]  placeholder:text-[18px] placeholder:font-inter outline-none w-[250px]"
+                    class="text-[#e7f2f6] bg-[#834551] placeholder:text-[#fff]  placeholder:text-[18px] placeholder:font-inter outline-none w-[250px]"
                     placeholder="Sign up for our Newsletter">
                 <button
-                    class="px-4 py-2 bg-[#107BA2] rounded-[6px] text-[#E7F2F6] text-[18px] font-inter border border-white">
+                    class="px-4 py-2 bg-[#68343e] rounded-[6px] text-[#e7f2f6] text-[18px] font-inter border border-white">
                     Sign up
                 </button>
             </div>
@@ -326,20 +327,20 @@
         <div class="flex justify-start items-center md:justify-center md:mt-10 mt-5 ">
             <div class="grid grid-cols-6 gap-4">
                 <a href="https://www.facebook.com/SABreastmilkReserve/" target="_blank"
-                    class="w-[32px] h-[32px] flex justify-center items-center border border-[#BBE8F8] rounded-lg">
+                    class="w-[32px] h-[32px] flex justify-center items-center border border-[#fff] rounded-lg">
                     <img src="{{asset('images/favebook-icon.svg')}}" />
                 </a>
-                <a class="w-[32px] h-[32px] flex justify-center items-center border border-[#BBE8F8] rounded-lg">
+                <a class="w-[32px] h-[32px] flex justify-center items-center border border-[#fff]  rounded-lg">
                     <img src="{{asset('images/linkedin-icon.svg')}}" />
                 </a>
-                <div class="w-[32px] h-[32px] flex justify-center items-center border border-[#BBE8F8] rounded-lg">
+                <div class="w-[32px] h-[32px] flex justify-center items-center border border-[#fff]  rounded-lg">
                     <img src="{{asset('images/youtube-icon.svg')}}" />
                 </div>
                 <a href="https://twitter.com/SABRMilk" target="_blank"
-                    class="w-[32px] h-[32px] flex justify-center items-center border border-[#BBE8F8] rounded-lg">
+                    class="w-[32px] h-[32px] flex justify-center items-center border border-[#fff]  rounded-lg">
                     <img src="{{asset('images/twitter-icon.svg')}}" />
                 </a>
-                <div class="w-[32px] h-[32px] flex justify-center items-center border border-[#BBE8F8] rounded-lg">
+                <div class="w-[32px] h-[32px] flex justify-center items-center border border-[#fff]  rounded-lg">
                     <img src="{{asset('images/tiktik-icon.svg')}}" />
                 </div>
 
@@ -348,7 +349,7 @@
 
 
         <div
-            class="flex justify-center text-start md:text-center items-center md:mt-10 mt-5 text-[#BBE8F8] text-[16px] font-open-sans font-normal leading-4 break-words">
+            class="flex justify-center text-start md:text-center items-center md:mt-10 mt-5 text-[#fff] text-[16px] font-open-sans font-normal leading-4 break-words">
             <a href="{{asset('documents/SABR-Privacy-Policy.pdf')}}">Privacy Policy </a> <span class="m-2"> | </span> <a
                 href="{{asset('documents/SABR-Website-Terms-and-Conditions.pdf')}}">Terms & Conditions</a> <span
                 class="m-2"> | </span> <a href="{{asset('documents/Subject-Access-Request-Form1.pdf')}}">Subject Access

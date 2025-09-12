@@ -5,7 +5,7 @@
 
     <section class="relative w-full h-[750px] md:h-[750px]  overflow-hidden">
         <!-- Background Video -->
-        <img class="absolute top-0 left-0 w-full h-full object-cover " src="{{ asset('images/sos-banner.png') }}"
+        <img class="absolute top-0 left-0 w-full h-full object-cover bg-white " src="{{ asset('images/sostainer-banner.png') }}"
             alt="Hero Image">
 
         <!-- Dark Overlay -->
@@ -35,21 +35,18 @@
 
                 <!-- Right Container (Text) -->
                 <div
-                    class="we-are-more-than-just-a-breast-parent flex !items-start !justify-start gap-[28px] !text-[#E23E48]">
+                    class="we-are-more-than-just-a-breast-parent flex !items-start !justify-start gap-[28px] ">
 
-                    <div class="!text-[#E23E48] saving-lives-mobile sostainer   ">
-                        <span class="text-[#E23E48]">Bringing <b>Maternal</b> and <b>Child Health</b> Closer to
+                    <div class="!text-[#905460] saving-lives-mobile sostainer   text-[48px] md:text-[64px] ">
+                        <span class="text-[#905460]">Bringing <b>Maternal</b> and <b>Child Health</b> Closer to
                             <b>Communities</b> </span>
 
                     </div>
                     <div class="home-sec-1 font-light">
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                            <div style="font-weight: 300" class="text-[20px] "> The SOStainer Mobile Clinics are a
-                                groundbreaking innovation by the South African Breastmilk Reserve (SABR), bringing essential
-                                maternal and child healthcare services directly to underserved communities. These versatile,
-                                solar-powered facilities are designed to address critical health challenges in low-resource
-                                settings, improving access to life-saving interventions for mothers and children under
-                                five. 
+                            <div style="font-weight: 300" class="text-[20px] "> The SOStainer Mobile Clinics are a groundbreaking innovation by the South African Breastmilk Reserve (SABR), bringing essential maternal and child healthcare services directly to underserved communities. 
+                                
+                                <br><br>These versatile, solar-powered facilities are designed to address critical health challenges in low-resource settings, improving access to life-saving interventions for mothers and children under five. 
                             </div>
                         </div>
 
@@ -58,34 +55,30 @@
                 </div>
 
                 <div class="">
-                    <img src="{{asset('images/sos-baby.png')}}" alt="Placeholder Image" class="w-full  rounded-3xl">
+                    <img src="{{asset('images/feeding.png')}}" alt="Placeholder Image" class="w-full  rounded-3xl">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-[80px]">
+    <section class="py-[80px] bg-[#e8dfcf]">
         <div class="wrapper ">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-[68px] !items-start">
                 <div class="">
-                    <img src="{{asset('images/sos-baby.png')}}" alt="Placeholder Image" class="w-full  rounded-3xl">
+                    <img src="{{asset('images/baby106.png')}}" alt="Placeholder Image" class="w-full  rounded-3xl">
                 </div>
                 
                 <div
-                    class="we-are-more-than-just-a-breast-parent flex !items-start !justify-start gap-[28px] !text-[#E23E48]">
+                    class="we-are-more-than-just-a-breast-parent flex !items-start !justify-start gap-[28px] ">
 
-                    <div class="!text-[#E23E48] saving-lives-mobile sostainer   ">
-                        <span class="text-[#E23E48]"><b>Concept</b> and <b>Vision </b></span>
+                    <div class="!text-[#905460] saving-lives-mobile sostainer  text-[48] md:text-[64px] ">
+                        <span class="text-[#905460]"><b>Concept</b> and <b>Vision </b></span>
 
                     </div>
                     <div class="home-sec-1 font-light">
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                            <div style="font-weight: 300" class="text-[20px] ">The SOStainer Clinic embodies SABR’s
-                                commitment to a holistic, life-cycle approach to health. While our initial focus was on
-                                reducing neonatal mortality through donor breastmilk, the SOStainer expands this mission to
-                                include a broader range of health services. Recognising that the health of infants is deeply
-                                connected to maternal well-being and early childhood development, the SOStainer integrates
-                                breastfeeding support with comprehensive primary care services. 
+                            <div style="font-weight: 300" class="text-[24px] ">
+                                The SOStainer Clinic embodies SABR’s commitment to a holistic, life-cycle approach to health. While our initial focus was on reducing neonatal mortality through donor breastmilk, the SOStainer expands this mission to include a broader range of health services. <br><br>Recognising that the health of infants is deeply connected to maternal well-being and early childhood development, the SOStainer integrates breastfeeding support with comprehensive primary care services. 
                             </div>
                         </div>
 
@@ -103,12 +96,12 @@
 
             <div class="we-are-more-than-just-a-breast-parent flex !items-start !justify-start gap-[28px] !text-[#E23E48]">
 
-                <div class="!text-[#E23E48] saving-lives-mobile sostainer   ">
-                    <span class="text-[#E23E48]">Key <b>Services Provided</b> </span>
+                <div class="!text-[#905460] saving-lives-mobile sostainer  text-[48px] md:text-[68px] ">
+                    <span class="text-[#905460]">Key <b>Services Provided</b> </span>
 
                 </div>
                 <div class="flex gap-6">
-                    <img src="{{asset('images/eclip.svg')}}" />
+                    <img src="{{asset('images/bs.svg')}}" />
                     <div>
                         <h3 class="get-in-touch font-inter font-bold text-[#666562]">Breastfeeding Support and Nutrition
                         </h3>
@@ -120,7 +113,7 @@
                     </div>
                 </div>
                 <div class="flex gap-6">
-                    <img src="{{asset('images/eclip.svg')}}" />
+                    <img src="{{asset('images/bs.svg')}}" />
                     <div>
                         <h3 class="get-in-touch font-inter font-bold text-[#666562]">Immunisations</h3>
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
@@ -131,7 +124,7 @@
                     </div>
                 </div>
                 <div class="flex gap-6">
-                    <img src="{{asset('images/eclip.svg')}}" />
+                    <img src="{{asset('images/bs.svg')}}" />
                     <div>
                         <h3 class="get-in-touch font-inter font-bold text-[#666562]">Donor Breastmilk Processing</h3>
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
@@ -142,7 +135,7 @@
                     </div>
                 </div>
                 <div class="flex gap-6">
-                    <img src="{{asset('images/eclip.svg')}}" />
+                    <img src="{{asset('images/bs.svg')}}" />
                     <div>
                         <h3 class="get-in-touch font-inter font-bold text-[#666562]">HIV Testing and Counselling</h3>
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
@@ -153,7 +146,7 @@
                     </div>
                 </div>
                 <div class="flex gap-6">
-                    <img src="{{asset('images/eclip.svg')}}" />
+                    <img src="{{asset('images/bs.svg')}}" />
                     <div>
                         <h3 class="get-in-touch font-inter font-bold text-[#666562]">Nutrition Support</h3>
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
@@ -164,7 +157,7 @@
                     </div>
                 </div>
                 <div class="flex gap-6">
-                    <img src="{{asset('images/eclip.svg')}}" />
+                    <img src="{{asset('images/bs.svg')}}" />
                     <div>
                         <h3 class="get-in-touch font-inter font-bold text-[#666562]">Early Childhood Development (ECD)</h3>
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
@@ -175,7 +168,7 @@
                     </div>
                 </div>
                 <div class="flex gap-6">
-                    <img src="{{asset('images/eclip.svg')}}" />
+                    <img src="{{asset('images/bs.svg')}}" />
                     <div>
                         <h3 class="get-in-touch font-inter font-bold text-[#666562]">Community Outreach</h3>
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
@@ -189,21 +182,21 @@
         </div>
     </section>
 
-    <section class="py-[80px]">
+    <section class="py-[80px] bg-[#a8b096]">
         <div class="wrapper ">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-[98px] !items-start">
                 <!-- Left Container (Image) -->
                 <!-- Right Container (Text) -->
                 <div
                     class="we-are-more-than-just-a-breast-parent flex !items-start !justify-start gap-[24px] !text-[#E23E48]">
-                    <div class="!text-[#E23E48] saving-lives-mobile sostainer   ">
-                        <span class="text-[#E23E48]">Addressing <b>Critical Needs</b> </span>
+                    <div class="!text-[#fff] saving-lives-mobile sostainer text-[48px] md:text-[64px]  ">
+                        <span class="text-[#fff]">Addressing <b>Critical Needs</b> </span>
                     </div>
                     <div class="home-sec-1 font-light">
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                            <div style="font-weight: 300" class="text-[20px] ">Located in Mankweng, Limpopo, the SOStainer
+                            <div style="font-weight: 300" class="text-[24px]  text-[#fff]">Located in Mankweng, Limpopo, the SOStainer
                                 addresses significant barriers to healthcare access, including the lack of nearby clinics,
-                                limited transportation, and inadequate infrastructure. This region faces high rates of
+                                limited transportation, and inadequate infrastructure. <br><br>This region faces high rates of
                                 diarrhoeal disease, malnutrition, and respiratory infections, which are leading causes of
                                 infant mortality. By providing care closer to home, the SOStainer ensures that mothers and
                                 children receive timely, quality healthcare services.
@@ -212,13 +205,13 @@
                     </div>
                 </div>
                 <div class="">
-                    <img src="{{asset('images/sos-baby.png')}}" alt="Placeholder Image" class="w-full rounded-3xl">
+                    <img src="{{asset('images/baby107.png')}}" alt="Placeholder Image" class="w-full rounded-3xl">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-[80px] bg-[#B03038]">
+    <section class="py-[80px] bg-[#905460]">
         <div class="wrapper">
             <div class="introducing-sosafe !font-inter !text-end md:text-[64px] text-[48px] font-bold !text-[#FEFEFD]">
                 Beneficiaries and Impact
@@ -232,7 +225,7 @@
 
                     <div class="home-sec-1 font-light">
                         <div class="for-18-years-the-south-afric-wrapper font-inter font-light">
-                            <div style="font-weight: 300" class="text-[20px] text-white ">The SOStainer has brought
+                            <div style="font-weight: 300" class="text-[24px] text-white ">The SOStainer has brought
                                 healthcare closer to one of Limpopo’s most underserved rural communities. The clinic has
                                 improved immunisation rates, supported exclusive breastfeeding, and provided critical HIV
                                 and nutritional services. In its first year, the SOStainer supported over 1,100 clinic
@@ -243,7 +236,7 @@
                     </div>
                 </div>
                 <div class="">
-                    <img src="{{asset('images/baby3.jpg')}}" alt="Placeholder Image" class="w-full rounded-3xl">
+                    <img src="{{asset('images/group2.png')}}" alt="Placeholder Image" class="w-full rounded-3xl">
                 </div>
             </div>
 
@@ -254,7 +247,7 @@
 
     <section class="py-[80px]">
         <div class="wrapper ">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-[68px] !items-start">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-[68px] ">
                 <!-- Left Container (Image) -->
 
 
@@ -263,8 +256,8 @@
                 <div
                     class="we-are-more-than-just-a-breast-parent flex !items-start !justify-start gap-[28px] !text-[#E23E48]">
 
-                    <div class="!text-[#E23E48] saving-lives-mobile sostainer   ">
-                        <span class="text-[#E23E48]"><b>Partnerships </b> and <b>Collaboration</b></span>
+                    <div class="!text-[#905460] saving-lives-mobile sostainer text-[48px] md:text-[64px]  ">
+                        <span class="text-[#905460]"><b>Partnerships </b> and <b>Collaboration</b></span>
 
                     </div>
                     <div class="home-sec-1 font-light">
@@ -280,8 +273,8 @@
 
                     </div>
                 </div>
-                <div class="">
-                    <img src="{{asset('images/sos-baby.png')}}" alt="Placeholder Image" class="w-full  rounded-3xl">
+                <div class="flex items-center justify-center">
+                    <img src="{{asset('images/partners.png')}}" alt="Placeholder Image" class="flex items-center justify-center rounded-3xl">
                 </div>
 
             </div>
@@ -293,15 +286,15 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-[68px] !items-start">
                 <!-- Left Container (Image) -->
                 <div class="">
-                    <img src="{{asset('images/sos-baby.png')}}" alt="Placeholder Image" class="w-full  rounded-3xl">
+                    <img src="{{asset('images/container.png')}}" alt="Placeholder Image" class="w-full  rounded-3xl">
                 </div>
 
                 <!-- Right Container (Text) -->
                 <div
-                    class="we-are-more-than-just-a-breast-parent flex !items-start !justify-start gap-[28px] !text-[#E23E48]">
+                    class="we-are-more-than-just-a-breast-parent flex !items-start !justify-start gap-[28px] ">
 
-                    <div class="!text-[#E23E48] saving-lives-mobile sostainer   ">
-                        <span class="text-[#E23E48]"><b>Scalability </b> and <b>Sustainability</b></span>
+                    <div class="!text-[#948ea7] saving-lives-mobile sostainer  text-[48px] md:text-[64px] ">
+                        <span class="text-[#948ea7]"><b>Scalability </b> and <b>Sustainability</b></span>
 
                     </div>
                     <div class="home-sec-1 font-light">
@@ -322,13 +315,13 @@
         </div>
     </section>
 
-    <section class="py-[80px] bg-[#8B9E10]">
+    <section class="py-[80px] bg-[#e5d2b8]">
         <div class="wrapper">
-            <div class="introducing-sosafe md:text-[64px] text-[48px] !text-[#FEFEFD]">
-                <b>Recognitions</b> <span class="font-thin">& </span><b>Awards</b>
+            <div class="introducing-sosafe md:text-[64px] text-[48px] !text-[#6d5d43]">
+                <b>Recognitions</b> <span class="font-thin">and </span><b>Awards</b>
             </div>
 
-            <p class="text-[#FEFEFD] text-[20px] pt-[28px]">
+            <p class="text-[#75654b] text-[24px] font-inter font-[300] pt-[28px]">
                 The SOStainer project earned the Discovery Foundation Excellence Award in 2018 for its innovative approach
                 to improving maternal and child health. It continues to exemplify SABR’s mission to bring life-saving
                 services to the most vulnerable populations.
@@ -339,9 +332,9 @@
         </div>
     </section>
 
-    <section class="pt-[80px]  bg-[#107BA2]">
+    <section class="py-[80px]  bg-[#948ea7]">
         <div class="wrapper ">
-            <div class=" bg-[#107BA2] inline-flex justify-center items-start gap-[98px]">
+            <div class=" bg-[#948ea7] inline-flex justify-center items-start gap-[98px]">
                 <div class="flex-1 self-stretch flex flex-col justify-start items-center gap-8">
                     <div class="self-stretch flex flex-col lg:flex-row justify-start items-start gap-6">
                         <!-- Left Section -->
@@ -350,7 +343,7 @@
                                 Join Us in<br> <span class="font-bold">Expanding Impact</span>
                             </div>
                             <div class="self-stretch h-auto flex flex-col justify-start items-start gap-6">
-                                <p class="self-stretch text-[#FEFEFD] text-2xl font-normal">
+                                <p class="self-stretch text-[#FEFEFD] text-2xl font-inter font-[300]">
                                     The SOStainer Mobile Clinics demonstrate what’s possible when innovation meets
                                     commitment. Partner with SABR to scale this transformative initiative and bring health
                                     and hope to more communities in need. 
@@ -366,7 +359,7 @@
                                 </p>
                             </div>
                             <div class="self-stretch h-auto flex flex-col justify-start items-start gap-6">
-                                <p class="self-stretch text-[#FEFEFD] text-2xl font-normal">
+                                <p class="self-stretch text-[#FEFEFD] text-2xl font-[300] font-inter">
                                     Email us at <a href="mailto:SoSafe@sabr.org.za" class="underline">SoSafe@sabr.org.za</a>
                                     to explore implementation options, pricing details, and how SoSAFE fits into your
                                     existing infrastructure.

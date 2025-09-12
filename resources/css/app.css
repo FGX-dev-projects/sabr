@@ -77,6 +77,43 @@ line-height: normal;
     z-index: 2;
 }
 
+.img-frame-99 {
+    top: -40px;
+    right: -130.26px;
+    z-index: 2;
+}
+.explore-sostainer {
+    position: relative;
+    }
+.explore-sostainer-parent {
+    margin-top: 30px;
+    position: relative;
+    border-radius: 32px;
+    background-color: #fff;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 18px;
+    color: #905460;
+    font-family: 'Inter', sans-serif;
+    }
+
+
+.ellipse-div3{
+    position: relative;
+    width: 100%;
+    height: 850px;
+    border-radius: 32px;
+    background: url('../../public/images/Ellips3.png') no-repeat center center;
+    background-size: cover;
+    background-color: #fff;
+}
+
 .img-frame-97 {
     width: 461.7px;
     height: 361.7px;
@@ -156,6 +193,7 @@ background-color: #e5d2b8;
     border-radius: 12px;
     display: flex;
     flex-direction: row;
+    background-color: #f8f5f0;
     align-items: center;
     justify-content: center;
     padding: 12px 16px;
@@ -208,8 +246,8 @@ background-color: #e5d2b8;
 .buttons {
     backdrop-filter: blur(32px);
     border-radius: 16px;
-    background-color: #f8f5f0;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(248, 245, 240, 0.2);
+    border: 2px solid #F8F5F033;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
@@ -392,12 +430,11 @@ background-color: #e5d2b8;
 }
 
 .pharrow-up-icon {
-    width: 22.6px;
+    width: 20.6px;
     position: relative;
-    height: 22.6px;
+    height: 20.6px;
     overflow: hidden;
     flex-shrink: 0;
-    object-fit: contain;
 }
 
 .pharrow-up-wrapper {
@@ -407,7 +444,7 @@ background-color: #e5d2b8;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 18px;
+    padding: 16px;
     box-sizing: border-box;
 }
 
@@ -422,7 +459,7 @@ background-color: #e5d2b8;
 
 .button-prim-wrapper {
     border-radius: 20px 32px 32px 20px;
-    border: 1px solid rgba(35, 180, 233, 0.25);
+    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -860,7 +897,7 @@ line-height: normal;
 .make-your-hospital-container {
     width: 100%;
     position: relative;
-    font-size: 48px;
+    font-size: 60px;
     color: #adaaa5;
     text-align: left;
     display: inline-block;
@@ -876,7 +913,7 @@ line-height: normal;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 24px;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 300;
     color: #666562;
     font-family: "Inter", sans-serif;
@@ -977,14 +1014,14 @@ line-height: normal;
 }
 
 .image-container.show .center {
-    top: 140%;
-    left: 35%;
+    top: 120%;
+    left: 25%;
     transform: rotate(322deg) scale(2);
     opacity: 1;
 }
 
 .image-container.show .bottom-left {
-    top: 50%;
+    top: 10%;
     left: 15%;
     transform: rotate(322deg) scale(2);
     opacity: 1;
@@ -1044,11 +1081,11 @@ line-height: normal;
 }
 
 .green-btn {
-    background-color: #c4df16;
+    background-color: #2a909d;
 
-    color: rgba(0, 0, 0, 0.75);
+    color: rgba(255, 255, 255, 0.75);
     font-family: "Inter", sans-serif;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 16px;
 }
 
@@ -1125,7 +1162,7 @@ gap: 98px;
 }
 
 .sostainer{
-    color: #E23E48;
+    line-height: 1.1;
 }
 
 .py-60 {
@@ -1290,6 +1327,10 @@ text-align: left !important;
     }
 
     .ellipse-div2 {
+        padding-top: 50px;
+        height: 1120px;
+    }
+    .ellipse-div3 {
         padding-top: 50px;
         height: 1120px;
     }

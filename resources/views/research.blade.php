@@ -10,12 +10,12 @@
     <div class="relative z-10 flex flex-col  h-full   pt-[10px] md:pt-[186px]">
         <div class="wrapper">
             <div class="w-full h-full flex flex-col     gap-6">
-                <div class="w-full h-full flex flex-col text-[#107BA2]   gap-4">
+                <div class="w-full h-full flex flex-col    gap-4">
                     <div
-                        class="w-full text-[#107BA2] text-[48px] md:text-[64px] font-normal break-words pt-[180px]  md:pt-[20px]">
-                        Research at SABR 
+                        class="w-full text-[#905460] text-[48px] md:text-[64px] font-normal break-words pt-[180px]  md:pt-[20px]">
+                        Research at <span class="font-bold">SABR </span>
                     </div>
-                    <p class="text-[20px] font-inter !font-light">
+                    <p class="text-[20px] text-[#107BA2] font-inter !font-light">
                         At the South African Breastmilk Reserve (SABR), research is at the core of our mission to improve maternal and infant health. Through clinical, virological, and safety studies, we enhance the understanding of breastmilk safety and quality, paving the way for innovative testing methodologies and improved healthcare outcomes. Our work is supported by partnerships with leading research teams and public health institutions, ensuring that our findings contribute to advancements in breastfeeding and human-milk banking practices. 
                     </p>
                 </div>

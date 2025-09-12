@@ -22,9 +22,7 @@
 
     <section class="pb-[120px]">
         <div class="wrapper">
-            <p class="text-[20px] text-[#000] font-sans">If you'd like to find out more about what we do, please send us an
-                email or give us a call. SABR also loves to receive feedback from our donors, recipients and breastfeeding
-                mommies - so feel free to get in touch.</p>
+            <p class="text-[24px] text-[#000] font-sans">If you'd like to find out more about what we do, please send us an email or give us a call. SABR also loves to receive feedback from our donors, recipients and breastfeeding mommies - so feel free to get in touch.</p>
 
             <div  class="grid grid-cols-1 md:grid-cols-2 gap-10  contact-us">
                 <div class="flex flex-col gap-4">
@@ -64,18 +62,18 @@
         </div>
     </section>
 
-    <section class="pt-[80px]  bg-[#107BA2]">
+    <section class="py-[80px]  bg-[#e8d8c6]">
         <div class="wrapper ">
-            <div class=" bg-[#107BA2] inline-flex justify-center items-start gap-[98px]">
+            <div class=" bg-[#e8d8c6] inline-flex justify-center items-start gap-[98px]">
                 <div class="flex-1 self-stretch flex flex-col justify-start items-center gap-8">
                     <div class="self-stretch flex flex-col lg:flex-row justify-start items-start gap-6">
                         <!-- Left Section -->
                         <div class="flex-1 flex flex-col justify-center items-start gap-3">
-                            <div class="self-stretch text-[#F9FCE8] text-6xl font-normal leading-tight">
+                            <div class="self-stretch text-[#6d5d43] text-6xl font-normal leading-tight">
                                 Take the <span class="font-bold">Next<br> Step</span>
                             </div>
                             <div class="self-stretch h-auto flex flex-col justify-start items-start gap-6">
-                                <p class="self-stretch text-[#FEFEFD] text-2xl font-normal">
+                                <p class="self-stretch text-[#6d5d43] text-2xl font-inter font-[300]">
                                     Bring SoSAFE to your facility and set a new standard in breastmilk safety.
                                 </p>
                             </div>
@@ -84,12 +82,12 @@
                         <!-- Right Section -->
                         <div class="flex-1 flex flex-col justify-center items-start gap-3">
                             <div class="self-stretch h-auto flex flex-col justify-start items-start gap-6">
-                                <p class="self-stretch text-[#FEFEFD] text-3xl font-bold">
+                                <p class="self-stretch text-[#6d5d43] text-3xl font-bold">
                                     Ready to Learn More?
                                 </p>
                             </div>
                             <div class="self-stretch h-auto flex flex-col justify-start items-start gap-6">
-                                <p class="self-stretch text-[#FEFEFD] text-2xl font-normal">
+                                <p class="self-stretch text-[#6d5d43] font-inter text-2xl font-[300] font-inter">
                                     Email us at <a href="mailto:SoSafe@sabr.org.za" class="underline">SoSafe@sabr.org.za</a>
                                     to explore implementation options, pricing details, and how SoSAFE fits into your
                                     existing infrastructure.
