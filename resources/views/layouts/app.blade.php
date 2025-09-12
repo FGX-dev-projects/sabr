@@ -330,19 +330,19 @@
                     class="w-[32px] h-[32px] flex justify-center items-center border border-[#fff] rounded-lg">
                     <img src="{{asset('images/favebook-icon.svg')}}" />
                 </a>
-                <a class="w-[32px] h-[32px] flex justify-center items-center border border-[#fff]  rounded-lg">
+                {{-- <a class="w-[32px] h-[32px] flex justify-center items-center border border-[#fff]  rounded-lg">
                     <img src="{{asset('images/linkedin-icon.svg')}}" />
                 </a>
                 <div class="w-[32px] h-[32px] flex justify-center items-center border border-[#fff]  rounded-lg">
                     <img src="{{asset('images/youtube-icon.svg')}}" />
-                </div>
+                </div> --}}
                 <a href="https://twitter.com/SABRMilk" target="_blank"
                     class="w-[32px] h-[32px] flex justify-center items-center border border-[#fff]  rounded-lg">
                     <img src="{{asset('images/twitter-icon.svg')}}" />
                 </a>
-                <div class="w-[32px] h-[32px] flex justify-center items-center border border-[#fff]  rounded-lg">
+                {{-- <div class="w-[32px] h-[32px] flex justify-center items-center border border-[#fff]  rounded-lg">
                     <img src="{{asset('images/tiktik-icon.svg')}}" />
-                </div>
+                </div> --}}
 
             </div>
         </div>

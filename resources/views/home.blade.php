@@ -1266,7 +1266,7 @@
                                 </p>
                             </div>
                             <div class="self-stretch h-auto flex flex-col justify-start items-start gap-6">
-                                <p class="self-stretch text-[#6d5d43] font-inter text-2xl font-[300] font-inter">
+                                <p class="self-stretch text-[#6d5d43]  text-2xl font-[300] font-inter">
                                     Email us at <a href="mailto:SoSafe@sabr.org.za" class="underline">SoSafe@sabr.org.za</a>
                                     to explore implementation options, pricing details, and how SoSAFE fits into your
                                     existing infrastructure.
