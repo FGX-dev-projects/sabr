@@ -841,14 +841,14 @@
             <!-- Cards Container -->
             <div class="self-stretch flex flex-col items-center justify-start gap-6 z-20 text-left text-lg text-white font-inter">
                 <!-- Top Row - 3 Cards -->
-                <div class="self-stretch flex flex-row items-center justify-between gap-0 flex-wrap lg:flex-nowrap">
+                <div class="self-stretch flex flex-row items-center justify-between gap-11 flex-wrap lg:flex-nowrap">
                     <!-- Donate Breastmilk Card -->
                     <div class="w-full lg:w-96 rounded-3xl bg-card-bg border border-card-border overflow-hidden flex-shrink-0 flex flex-row items-start justify-start relative  h-[320px] group hover:shadow-lg transition-all duration-300">
                         <!-- Background Effects -->
                         <div class="absolute -top-48 -left-96 w-full h-full backdrop-blur-2xl opacity-20"></div>
                         
                         <!-- Card Content -->
-                        <div class="w-full bg-card-bg  border-white h-full flex flex-col items-start justify-center p-6 z-10 relative">
+                        <div class="w-full bg-card-bg  border-white h-full flex flex-col items-start justify-center p-6 z-10 relative ">
                             <div class="self-stretch flex-1 relative">
                                 <!-- Tags -->
                                 <div class="absolute top-0 left-0 w-full flex flex-row items-center justify-between">
