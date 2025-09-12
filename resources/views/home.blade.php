@@ -322,7 +322,7 @@
                             <div class="relative font-bold">Donate Milk</div>
                         </a>
                         
-                        <a href="{{route('donate')}}" class="w-full sm:w-auto rounded-[32px] btn-outline flex flex-row items-center justify-center p-3 lg:p-4">
+                        <a href="https://payfast.co.za/donate/go/southafricanbreastmilkreserve" class="w-full sm:w-auto rounded-[32px] btn-outline flex flex-row items-center justify-center p-3 lg:p-4">
                             <div class="relative font-bold">Support Us</div>
                         </a>
                         
