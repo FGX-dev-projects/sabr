@@ -2,7 +2,7 @@
 @section('title', 'SABR: South African Breastmilk Reserve - Why the Cost')
 @section('meta-description', 'South African Breastmilk Reserve - Bringing milk to babies, safely.')
 @section('content')
-    <section class="relative w-full h-[310px] md:h-[390px]  overflow-hidden !bg-white">
+    <section class="relative w-full h-[350px] md:h-[390px]  overflow-hidden !bg-white">
         <!-- Background Video -->
 
 
