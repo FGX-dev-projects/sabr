@@ -841,7 +841,7 @@
             <!-- Cards Container -->
             <div class="self-stretch flex flex-col items-center justify-start gap-6 z-20 text-left text-lg text-white font-inter">
                 <!-- Top Row - 3 Cards -->
-                <div class="self-stretch flex flex-row items-center justify-between gap-11 flex-wrap lg:flex-nowrap">
+                <div class="self-stretch flex flex-row items-center justify-between gap-0 flex-wrap lg:flex-nowrap">
                     <!-- Donate Breastmilk Card -->
                     <div class="w-full lg:w-96 rounded-3xl bg-card-bg border border-card-border overflow-hidden flex-shrink-0 flex flex-row items-start justify-start relative  h-[320px] group hover:shadow-lg transition-all duration-300">
                         <!-- Background Effects -->
@@ -883,7 +883,7 @@
                     <div class="w-full lg:w-96 rounded-3xl bg-card-bg border border-card-border overflow-hidden flex-shrink-0 flex flex-row items-start justify-start relative  h-[320px] group hover:shadow-lg transition-all duration-300">
                         <!-- Card Content -->
                         <div class="w-full bg-card-bg border border-card-border h-full flex flex-col items-start justify-center p-6 z-10 relative">
-                            <div class="self-stretch flex-1 relative">
+                            <a href={{route('volunteer')}} class="self-stretch flex-1 relative">
                                 <!-- Tags -->
                                 <div class="absolute top-0 left-0 w-full flex flex-row items-center justify-between">
                                     <div class="rounded-md bg-primary-purple flex flex-row items-center justify-center px-3 py-2">
@@ -899,9 +899,11 @@
                                     <h3 class="text-2xl font-work-sans font-semibold mb-2 text-white">Volunteer Your Time</h3>
                                     <p class="text-lg font-light font-inter text-white/90">From collections and deliveries to assisting the SABR team, volunteers help us make it all happen.</p>
                                 </div>
+
+                                
                                 
                                 <!-- Button -->
-                                <div class="absolute bottom-0 right-0 flex flex-row items-end justify-end">
+                                <div class="absolute bottom-0 right-0  flex flex-row items-end justify-end">
                                     <a href="{{route('volunteer')}}" class="flex flex-row items-center gap-2 group-hover:gap-3 transition-all duration-300">
                                         <span class="text-lg font-[300]">Begin Helping Today</span>
                                         <div class="w-5 h-5 flex items-center justify-center">
@@ -911,7 +913,7 @@
                                         </div>
                                     </a>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                     
@@ -919,7 +921,7 @@
                     <div class="w-full lg:w-96 rounded-3xl bg-card-bg border border-white overflow-hidden flex-shrink-0 flex flex-row items-start justify-start relative h-[320px] group hover:shadow-lg transition-all duration-300">
                         <!-- Card Content -->
                         <div class="w-full bg-card-bg border border-card-border h-full flex flex-col items-start justify-center p-6 z-10 relative">
-                            <div class="self-stretch flex-1 relative">
+                            <a href="{{route('donate')}}" class="self-stretch flex-1 relative">
                                 <!-- Tags -->
                                 <div class="absolute top-0 left-0 w-full flex flex-row items-center justify-between">
                                     <div class="rounded-md bg-primary-purple flex flex-row items-center justify-center px-3 py-2">
@@ -947,7 +949,7 @@
                                         </div>
                                     </a>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -961,7 +963,7 @@
                         
                         <!-- Card Content -->
                         <div class="flex-1 flex flex-col items-start justify-start p-6 z-10 relative">
-                            <div class="self-stretch flex flex-col items-start justify-start gap-4">
+                            <a href={{route('register')}} class="self-stretch flex flex-col items-start justify-start gap-4">
                                 <!-- Header -->
                                 <div class="self-stretch flex flex-row items-center justify-between">
                                     <div class="rounded-md bg-primary-purple flex flex-row items-center justify-center px-3 py-2">
@@ -977,7 +979,7 @@
                                     <h3 class="self-stretch text-2xl font-work-sans font-semibold text-white">I am a Parent</h3>
                                     <p class="w-full text-lg font-light font-inter text-white/90">If your baby can't receive milk from you, we're here to help. Donated breastmilk is love in liquid form - giving your child the best possible start when they need it most.</p>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                     
