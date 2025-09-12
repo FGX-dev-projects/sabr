@@ -181,7 +181,7 @@
                             </a>
                           
                             <!-- Support Us -->
-                            <a href="{{route('donate')}}" 
+                            <a href="https://payfast.co.za/donate/go/southafricanbreastmilkreserve" 
                                class="rounded-[32px] border border-[#503325] flex flex-row items-center justify-center p-4 text-[#503325] text-[18px] font-bold hover:bg-[#503325] hover:text-white transition">
                               Support Us 
                             </a>
@@ -921,7 +921,7 @@
                     <div class="w-full lg:w-96 rounded-3xl bg-card-bg border border-white overflow-hidden flex-shrink-0 flex flex-row items-start justify-start relative h-[320px] group hover:shadow-lg transition-all duration-300">
                         <!-- Card Content -->
                         <div class="w-full bg-card-bg border border-card-border h-full flex flex-col items-start justify-center p-6 z-10 relative">
-                            <a href="{{route('donate')}}" class="self-stretch flex-1 relative">
+                            <a href="https://payfast.co.za/donate/go/southafricanbreastmilkreserve" class="self-stretch flex-1 relative">
                                 <!-- Tags -->
                                 <div class="absolute top-0 left-0 w-full flex flex-row items-center justify-between">
                                     <div class="rounded-md bg-primary-purple flex flex-row items-center justify-center px-3 py-2">
