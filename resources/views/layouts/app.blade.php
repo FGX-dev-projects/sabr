@@ -325,7 +325,7 @@
 
         </div>
         <div class="flex justify-start items-center md:justify-center md:mt-10 mt-5 ">
-            <div class="grid grid-cols-6 gap-4">
+            <div class=" gap-4 flex flex-row justify-center">
                 <a href="https://www.facebook.com/SABreastmilkReserve/" target="_blank"
                     class="w-[32px] h-[32px] flex justify-center items-center border border-[#fff] rounded-lg">
                     <img src="{{asset('images/favebook-icon.svg')}}" />
