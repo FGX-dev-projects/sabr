@@ -1,4 +1,8 @@
 {
+  "public/images/Ellips3.png": {
+    "file": "assets/Ellips3-C4Z-FH9i.png",
+    "src": "public/images/Ellips3.png"
+  },
   "public/images/ellipse.png": {
     "file": "assets/ellipse-B-DZsQic.png",
     "src": "public/images/ellipse.png"
@@ -8,7 +12,7 @@
     "src": "public/images/ellipse2.png"
   },
   "resources/css/app.css": {
-    "file": "assets/app-BNYZAdt7.css",
+    "file": "assets/app-j8raV5OJ.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
