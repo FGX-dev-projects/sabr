@@ -59,13 +59,13 @@
             </div> --}}
 
             <!-- Ayanda Ntsho -->
-            <div class="bg-white rounded-2xl border border-gray-300 overflow-hidden shadow-lg flex flex-col cursor-pointer hover:shadow-xl hover:-rotate-1 hover:scale-105 transition-all duration-300 ease-in-out" onclick="openModal('ayanda')">
+            {{-- <div class="bg-white rounded-2xl border border-gray-300 overflow-hidden shadow-lg flex flex-col cursor-pointer hover:shadow-xl hover:-rotate-1 hover:scale-105 transition-all duration-300 ease-in-out" onclick="openModal('ayanda')">
                 <img src="{{ asset('images/ayanda.jpg') }}" alt="Mr Ayanda Ntsho" class="w-full object-cover">
                 <div class="p-6">
                     <p class="text-lg font-bold text-[#107ba2]">Mr Ayanda Ntsho</p>
                     <p class="text-[#107ba2] text-lg">Director</p>
                 </div>
-            </div>
+            </div> --}}
 
             <!-- Ziyanda Buthelezi -->
             <div class="bg-white rounded-2xl border border-gray-300 overflow-hidden shadow-lg flex flex-col cursor-pointer hover:shadow-xl hover:rotate-1 hover:scale-105 transition-all duration-300 ease-in-out" onclick="openModal('ziyanda')">
