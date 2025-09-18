@@ -75,11 +75,13 @@
                             <h3 class="text-2xl font-work-sans font-semibold mb-2 text-white">Volunteer Your Time</h3>
                             <p class="text-lg font-light font-inter text-white/90">From collections and deliveries to assisting the SABR team, volunteers help us make it all happen.</p>
                         </div>
-                        <div class="absolute bottom-0 right-0 m-5 flex flex-row items-end justify-end">
-                            <span class="text-lg font-[300]">Begin Helping Today</span>
-                            <div class="w-5 h-5 flex items-center justify-center">
-                                <img alt="" src="{{asset('images/right-arrwow.svg')}}">
-                            </div>
+                        <div class="absolute bottom-0 right-0 flex flex-row items-end justify-end m-5">
+                            <a href="{{route('volunteer')}}" class="flex flex-row items-center gap-2 group-hover:gap-3 transition-all duration-300">
+                                <span class="text-lg font-[300]">Begin Heling Today</span>
+                                <div class="w-5 h-5 flex items-center justify-center">
+                                    <img alt="" src="{{asset('images/right-arrwow.svg')}}">
+                                </div>
+                            </a>
                         </div>
                     </a>
                 </div>
@@ -101,9 +103,9 @@
                             <h3 class="text-2xl font-work-sans font-semibold mb-2 text-white">Donate</h3>
                             <p class="text-lg font-light font-inter text-white/90">Help us save lives. Your financial contribution supports SABR's programmes, bringing life-saving donor breastmilk and care to vulnerable infants across SA.</p>
                         </div>
-                        <div class="absolute bottom-0 right-0 m-5 flex flex-row items-end justify-end">
+                        <div class="absolute bottom-0 right-0  flex flex-row items-end justify-end gap-2">
                             <span class="text-lg font-[300]">Fund a Miracle</span>
-                            <div class="w-5 h-5 flex items-center justify-center">
+                            <div class="w-5 h-5 flex items-center justify-center pb-1">
                                 <img alt="" src="{{asset('images/right-arrwow.svg')}}">
                             </div>
                         </div>
