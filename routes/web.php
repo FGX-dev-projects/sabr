@@ -88,6 +88,10 @@ Route::get('/financials', function(){
     return view('financials');
 })->name('financials');
 
+Route::get('/milk-banks', function(){
+    return view('milk-banks');
+})->name('milk-banks');
+
 // Route::get('/test-mail', function() {
 //     Mail::raw('This is a test email', function ($message) {
 //         $message->to('lesedi@fgx.co.za')->subject('Test Email');
