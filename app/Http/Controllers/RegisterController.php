@@ -6,99 +6,19 @@ use App\Mail\RegisterFormMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\DB;
 
 class RegisterController extends Controller
 {
-    public function show()
+    public function show(Request $request)
     {
-        return view('register');
+        $memberGroupID = $request->get('memberGroupID', 20); // Default to 20 for recipients
+        return view('register', compact('memberGroupID'));
     }
     public function submit(Request $request)
     {
-        $validatedData = $request->validate([
-            'order_date' => 'required|date',
-            'order_time' => 'required',
-            'hospital_type' => 'required|string|in:public,private',
-            'hospital_name' => 'required|string',
-            'unit_telephone' => 'required|string',
-            'nurse_name' => 'required|string',
-            'unit_email' => 'required|email',
-            'quantity_ordered' => 'required|string',
-            'amount_due' => 'nullable|string',
-            'sa_citizen' => 'required|string|in:Yes,No',
-            'id_number' => 'required_if:sa_citizen,Yes|digits:13|nullable',
-            'passport_number' => 'required_if:sa_citizen,No|string|nullable',
-            'name' => 'required|string',
-            'surname' => 'required|string',
-            'email' => 'required|email',
-            'cell' => 'required|string',
-            'account_responsible' => 'required|string',
-            'physical_address' => 'required|string',
-            'maternal_lactation_status' => 'required|string|in:lactating,not_lactating',
-            'infant_name' => 'required|string',
-            'infant_dob' => 'required|date',
-            'birth_weight' => 'required|numeric|min:200|max:3500',
-            'gestational_age' => 'required|numeric|min:20|max:40',
-            'gender' => 'required|string|in:Male,Female',
-            'race' => 'required|string',
-            'medical_conditions' => 'required|string',
-            'nec_case' => 'required|string|in:Yes,No',
-            'feeding_status' => 'required|string|in:1st_week,2nd_week,3rd_week,over_3_weeks',
-            'motivation_extended_feeds' => 'nullable|string',
-            'feeding_started' => 'required|date',
-            'total_volume' => 'required|numeric|min:0|max:150',
-            'patient_file_no' => 'required|string',
-            'prescribing_paediatrician' => 'required|string',
-            'infant_name_2' => 'nullable|string',
-            'birth_weight_2' => 'nullable|numeric|min:200|max:3500',
-            'gestational_age_2' => 'nullable|numeric|min:20|max:40',
-            'medical_conditions_2' => 'nullable|string',
-            'nec_case_2' => 'nullable|string|in:Yes,No',
-            'feeding_status_2' => 'nullable|string|in:1st_week,2nd_week,3rd_week,over_3_weeks',
-            'feeding_started_2' => 'nullable|date',
-            'motivation_extended_feeds_2' => 'nullable|string',
-            'total_volume_2' => 'nullable|numeric|min:0|max:150',
-            'patient_file_no_2' => 'nullable|string',
-            'prescribing_paediatrician_2' => 'nullable|string',
-            'infant_name_3' => 'nullable|string',
-            'birth_weight_3' => 'nullable|numeric|min:200|max:3500',
-            'gestational_age_3' => 'nullable|numeric|min:20|max:40',
-            'medical_conditions_3' => 'nullable|string',
-            'nec_case_3' => 'nullable|string|in:Yes,No',
-            'feeding_status_3' => 'nullable|string|in:1st_week,2nd_week,3rd_week,over_3_weeks',
-            'feeding_started_3' => 'nullable|date',
-            'motivation_extended_feeds_3' => 'nullable|string',
-            'total_volume_3' => 'nullable|numeric|min:0|max:150',
-            'patient_file_no_3' => 'nullable|string',
-            'prescribing_paediatrician_3' => 'nullable|string',
-            'infant_name_4' => 'nullable|string',
-            'birth_weight_4' => 'nullable|numeric|min:200|max:3500',
-            'gestational_age_4' => 'nullable|numeric|min:20|max:40',
-            'medical_conditions_4' => 'nullable|string',
-            'nec_case_4' => 'nullable|string|in:Yes,No',
-            'feeding_status_4' => 'nullable|string|in:1st_week,2nd_week,3rd_week,over_3_weeks',
-            'feeding_started_4' => 'nullable|date',
-            'motivation_extended_feeds_4' => 'nullable|string',
-            'total_volume_4' => 'nullable|numeric|min:0|max:150',
-            'patient_file_no_4' => 'nullable|string',
-            'prescribing_paediatrician_4' => 'nullable|string',
-            'medical_aid_scheme' => 'nullable|string',
-            'medical_aid_number' => 'nullable|string',
-            'medical_aid_plan' => 'nullable|string',
-            'infant_dependent_code' => 'nullable|string',
-            'parent_consent_name' => 'required|string',
-            'parent_consent_id' => 'required|digits:13',
-            'parent_consent_infant_name' => 'required|string',
-            'parent_consent' => 'required|string|in:Yes,No',
-            'nurse_consent' => 'required|string|in:Yes,No',
-            'healthcare_professional_consent' => 'required|string|in:Yes,No',
-            'healthcare_professional_trained' => 'required|string|in:Yes,No',
-            'prescribing_doctor_consent' => 'required|string|in:Yes,No',
-            'prescribing_nurse_consent' => 'required|string|in:Yes,No',
-            'communication_consent' => 'required|string|in:Yes,No',
-            'communication_method' => 'required|string|in:sms,email,both',
-            'popia_consent' => 'required|string|in:yes',
-        ]);
+        // No server-side validation - handled by frontend JavaScript
+        $validatedData = $request->all();
 
         // Define labels for specific fields
         $labels = [
@@ -152,11 +72,14 @@ class RegisterController extends Controller
 
         // Send the email with the updated data inside a try-catch block
         try {
-            Mail::to('lesedi@fgx.co.za')->send(new RegisterFormMail($validatedData));
+            Mail::to('lesedi@fgx.co.za')->cc('adriaan@fgx.co.za')->send(new RegisterFormMail($validatedData));
             Log::info('Register email sent successfully');
             
+            // Insert into secondary database (existing Perl-style structure)
+            $this->insertIntoSecondaryDatabase($request);
+            
             // Return back to the form with success message (like donate form)
-            return view('donate')->with('success', 'Your form was successfully submitted!');
+            return view('register')->with('success', 'Your form was successfully submitted!');
 
         } catch (\Exception $e) {
             // Log the error
@@ -164,6 +87,106 @@ class RegisterController extends Controller
 
             // Return back with error message
             return redirect()->back()->with('error', 'Failed to submit form. Please try again.');
+        }
+    }
+
+    private function insertIntoSecondaryDatabase(Request $request)
+    {
+        try {
+            // Use the secondary database connection
+            $db = \DB::connection('sabr_secondary');
+            
+            // Client ID for SABR
+            $clientID = 153;
+            // Get memberGroupID from request, default to 20 for recipients
+            $memberGroupID = $request->get('memberGroupID', 20);
+            
+            // Insert main member record
+            $memberID = $db->table("member{$clientID}")->insertGetId([
+                'clientID' => $clientID,
+                'dateAdded' => now(),
+                'lastUpdate' => now(),
+                'activate' => 'Y',
+                'HTTP_USER_AGENT' => $request->server('HTTP_USER_AGENT'),
+                'REQUEST_URI' => $request->server('REQUEST_URI'),
+                'HTTP_REFERER' => $request->server('HTTP_REFERER'),
+                'HTTP_X_FORWARDED_FOR' => $request->ip(),
+            ]);
+
+            // Insert member group association
+            $db->table("memberGroups{$clientID}")->insert([
+                'memberID' => $memberID,
+                'memberGroupID' => $memberGroupID
+            ]);
+
+            // Map form fields to database fields for recipients
+            $fieldMappings = [
+                // Default fields (memberDefaultID)
+                'name' => ['memberDefaultID' => 2, 'memberCustomID' => 0], // First name
+                'surname' => ['memberDefaultID' => 3, 'memberCustomID' => 0], // Surname
+                'email' => ['memberDefaultID' => 4, 'memberCustomID' => 0], // Email
+                'cell' => ['memberDefaultID' => 5, 'memberCustomID' => 0], // Cell
+                'id_number' => ['memberDefaultID' => 8, 'memberCustomID' => 0], // ID Number
+                'passport_number' => ['memberDefaultID' => 9, 'memberCustomID' => 0], // Passport
+                'race' => ['memberDefaultID' => 10, 'memberCustomID' => 0], // Race
+                'physical_address' => ['memberDefaultID' => 13, 'memberCustomID' => 0], // Address
+                
+                // Custom fields for recipients (adjust IDs as needed)
+                'order_date' => ['memberDefaultID' => 0, 'memberCustomID' => 400],
+                'order_time' => ['memberDefaultID' => 0, 'memberCustomID' => 401],
+                'hospital_type' => ['memberDefaultID' => 0, 'memberCustomID' => 402],
+                'hospital_name' => ['memberDefaultID' => 0, 'memberCustomID' => 403],
+                'unit_telephone' => ['memberDefaultID' => 0, 'memberCustomID' => 404],
+                'nurse_name' => ['memberDefaultID' => 0, 'memberCustomID' => 405],
+                'unit_email' => ['memberDefaultID' => 0, 'memberCustomID' => 406],
+                'quantity_ordered' => ['memberDefaultID' => 0, 'memberCustomID' => 407],
+                'amount_due' => ['memberDefaultID' => 0, 'memberCustomID' => 408],
+                'sa_citizen' => ['memberDefaultID' => 0, 'memberCustomID' => 409],
+                'account_responsible' => ['memberDefaultID' => 0, 'memberCustomID' => 410],
+                'maternal_lactation_status' => ['memberDefaultID' => 0, 'memberCustomID' => 411],
+                'infant_name' => ['memberDefaultID' => 0, 'memberCustomID' => 412],
+                'infant_dob' => ['memberDefaultID' => 0, 'memberCustomID' => 413],
+                'birth_weight' => ['memberDefaultID' => 0, 'memberCustomID' => 414],
+                'gestational_age' => ['memberDefaultID' => 0, 'memberCustomID' => 415],
+                'gender' => ['memberDefaultID' => 0, 'memberCustomID' => 416],
+                'medical_conditions' => ['memberDefaultID' => 0, 'memberCustomID' => 417],
+                'nec_case' => ['memberDefaultID' => 0, 'memberCustomID' => 418],
+                'feeding_status' => ['memberDefaultID' => 0, 'memberCustomID' => 419],
+                'feeding_started' => ['memberDefaultID' => 0, 'memberCustomID' => 420],
+                'total_volume' => ['memberDefaultID' => 0, 'memberCustomID' => 421],
+                'patient_file_no' => ['memberDefaultID' => 0, 'memberCustomID' => 422],
+                'prescribing_paediatrician' => ['memberDefaultID' => 0, 'memberCustomID' => 423],
+                'medical_aid_scheme' => ['memberDefaultID' => 0, 'memberCustomID' => 424],
+                'parent_consent' => ['memberDefaultID' => 0, 'memberCustomID' => 425],
+                'communication_consent' => ['memberDefaultID' => 0, 'memberCustomID' => 426],
+                'communication_method' => ['memberDefaultID' => 0, 'memberCustomID' => 427],
+                'popia_consent' => ['memberDefaultID' => 0, 'memberCustomID' => 428],
+            ];
+
+            // Insert form values into memberValue table
+            foreach ($fieldMappings as $formField => $mapping) {
+                $formValue = $request->input($formField);
+                
+                if ($formValue !== null && $formValue !== '') {
+                    // Handle arrays (checkboxes, etc.)
+                    if (is_array($formValue)) {
+                        $formValue = implode(';', $formValue);
+                    }
+
+                    $db->table("memberValue{$clientID}")->insert([
+                        'memberID' => $memberID,
+                        'memberDefaultID' => $mapping['memberDefaultID'],
+                        'memberCustomID' => $mapping['memberCustomID'],
+                        'formValue' => $formValue
+                    ]);
+                }
+            }
+
+            Log::info("Successfully inserted recipient data into secondary database with memberID: {$memberID}");
+
+        } catch (\Exception $e) {
+            Log::error('Failed to insert recipient data into secondary database: ' . $e->getMessage());
+            // Don't throw exception here - we still want email to be sent even if DB insert fails
         }
     }
 }

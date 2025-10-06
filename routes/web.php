@@ -6,6 +6,7 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\VolunteerController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Http\Request;
 
 Route::get('/news', action: [NewsController::class, 'newsPage'])->name('news');
 
@@ -59,8 +60,9 @@ Route::get('/why-the-cost', function(){
     return view('why-the-cost');
 })->name('why-the-cost');
 
-Route::get('/donate', function(){
-    return view('donate');
+Route::get('/donate', function(Request $request){
+    $memberGroupID = $request->get('memberGroupID', 2); // Default to 2 for donors
+    return view('donate', compact('memberGroupID'));
 })->name('donate');
 
 Route::get('board-of-directors', function(){
@@ -76,8 +78,9 @@ Route::get('/stats', function() {
 //     return view('register');
 // })->name('register');
 
- Route::get('/volunteer', function(){
-     return view('volunteer');
+Route::get('/volunteer', function(Request $request){
+    $memberGroupID = $request->get('memberGroupID', 4); // Default to 4 for volunteers
+    return view('volunteer', compact('memberGroupID'));
 })->name('volunteer');
 
 Route::get('/get-involved', function() {

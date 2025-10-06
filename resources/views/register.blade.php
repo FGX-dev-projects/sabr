@@ -25,17 +25,18 @@
                 <form action="{{ route('register.submit') }}" class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-12"
                     method="POST">
                     @csrf
+                    <!-- Hidden field for memberGroupID -->
+                    <input type="hidden" name="memberGroupID" value="{{ $memberGroupID ?? 20 }}">
 
                     <script>
                         document.addEventListener('DOMContentLoaded', function () {
+                            // Essential recipient/order information that should be required (matching red asterisks)
                             const requiredFields = [
-                                'order_date', 'order_time', 'hospital_type', 'hospital_name', 'unit_telephone',
-                                'nurse_name', 'unit_email', 'quantity_ordered', 'name', 'surname', 'email',
-                                'cell', 'account_responsible', 'physical_address', 'maternal_lactation_status',
-                                'infant_name', 'infant_dob', 'birth_weight', 'gestational_age', 'race',
-                                'medical_conditions', 'feeding_status', 'feeding_started', 'total_volume',
-                                'patient_file_no', 'prescribing_paediatrician', 'parent_consent_name',
-                                'parent_consent_id', 'parent_consent_infant_name', 'popia_consent'
+                                // Order Details (essential - marked with red asterisks)
+                                'order_date', 'order_time', 'hospital_type',
+                                
+                                // Contact Person (essential - marked with red asterisks)
+                                'name', 'surname', 'email', 'cell'
                             ];
 
                             requiredFields.forEach(field => {
@@ -44,43 +45,57 @@
                                     el.setAttribute('required', 'required');
                                 }
                             });
-
-                            // Conditionally handle ID or Passport based on sa_citizen
-                            const saCitizenRadios = document.querySelectorAll('[name="sa_citizen"]');
-                            const idNumberInput = document.querySelector('[name="id_number"]');
-                            const passportNumberInput = document.querySelector('[name="passport_number"]');
-
-                            saCitizenRadios.forEach(radio => {
-                                radio.addEventListener('change', function () {
-                                    if (this.value === 'Yes') {
-                                        idNumberInput.setAttribute('required', 'required');
-                                        passportNumberInput.removeAttribute('required');
-                                    } else {
-                                        idNumberInput.removeAttribute('required');
-                                        passportNumberInput.setAttribute('required', 'required');
-                                    }
-                                });
+                            
+                            // Handle conditional requirements for additional infants
+                            const additionalInfantNumbers = [2, 3, 4];
+                            additionalInfantNumbers.forEach(num => {
+                                const nameField = document.querySelector(`[name="infant_name_${num}"]`);
+                                if (nameField) {
+                                    nameField.addEventListener('input', function() {
+                                        const hasName = this.value.trim() !== '';
+                                        const fieldsToToggle = [
+                                            `birth_weight_${num}`, `gestational_age_${num}`, 
+                                            `medical_conditions_${num}`, `nec_case_${num}`,
+                                            `feeding_status_${num}`, `feeding_started_${num}`,
+                                            `total_volume_${num}`, `patient_file_no_${num}`,
+                                            `prescribing_paediatrician_${num}`
+                                        ];
+                                        
+                                        fieldsToToggle.forEach(fieldName => {
+                                            const field = document.querySelector(`[name="${fieldName}"]`);
+                                            if (field) {
+                                                if (hasName) {
+                                                    field.required = true;
+                                                } else {
+                                                    field.required = false;
+                                                }
+                                            }
+                                        });
+                                    });
+                                }
                             });
+
+                            // ID and Passport are both optional - no conditional requirements needed
                         });
                     </script>
 
                     <!-- Order Date -->
                     <div>
-                        <label for="order_date" class="block text-gray-600">Date of Order</label>
+                        <label for="order_date" class="block text-gray-600">Date of Order <span class="text-red-500">*</span></label>
                         <input type="date" name="order_date" id="order_date"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
 
                     <!-- Order Time -->
                     <div>
-                        <label for="order_time" class="block text-gray-600">Time of Order</label>
+                        <label for="order_time" class="block text-gray-600">Time of Order <span class="text-red-500">*</span></label>
                         <input type="time" name="order_time" id="order_time"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
 
                     <!-- Type of Hospital -->
                     <div>
-                        <label for="hospital_type" class="block text-gray-600">Type of Hospital</label>
+                        <label for="hospital_type" class="block text-gray-600">Type of Hospital <span class="text-red-500">*</span></label>
                         <select name="hospital_type" id="hospital_type"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                             <option value="">Select Hospital Type</option>
@@ -167,28 +182,28 @@
 
                     <!-- Name -->
                     <div>
-                        <label for="name" class="block text-gray-600">Name</label>
+                        <label for="name" class="block text-gray-600">Name <span class="text-red-500">*</span></label>
                         <input type="text" name="name" id="name"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
 
                     <!-- Surname -->
                     <div>
-                        <label for="surname" class="block text-gray-600">Surname</label>
+                        <label for="surname" class="block text-gray-600">Surname <span class="text-red-500">*</span></label>
                         <input type="text" name="surname" id="surname"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
 
                     <!-- Email -->
                     <div>
-                        <label for="email" class="block text-gray-600">E-mail</label>
+                        <label for="email" class="block text-gray-600">E-mail <span class="text-red-500">*</span></label>
                         <input type="email" name="email" id="email"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
 
                     <!-- Cell -->
                     <div>
-                        <label for="cell" class="block text-gray-600">Cell</label>
+                        <label for="cell" class="block text-gray-600">Cell <span class="text-red-500">*</span></label>
                         <input type="tel" name="cell" id="cell"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
@@ -633,7 +648,7 @@
                         <div class="text-gray-600 mb-4 text-[20px]">
                             <p>I, <input type="text" name="parent_consent_name" id="parent_consent_name"
                                     class="inline-block p-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                    required> (ID No. <input type="number" name="parent_consent_id" id="parent_consent_id"
+                                    > (ID No. <input type="number" name="parent_consent_id" id="parent_consent_id"
                                     class="inline-block p-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                     required>), parent / guardian of <input type="text" name="parent_consent_infant_name"
                                     id="parent_consent_infant_name"

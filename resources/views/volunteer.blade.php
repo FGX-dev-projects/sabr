@@ -31,13 +31,18 @@
             <h2 class="text-[32px] font-inter font-bold text-[#adaaa5]">Personal Details</h2>
             <form action="{{ route('volunteer.submit') }}"  class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-12" method="POST">
                 @csrf
+                <!-- Hidden field for memberGroupID -->
+                <input type="hidden" name="memberGroupID" value="{{ $memberGroupID ?? 4 }}">
 
                 <script>
                     document.addEventListener('DOMContentLoaded', function () {
+                        // Essential volunteer information that should be required (matching red asterisks)
                         const requiredFields = [
-                            'name', 'surname', 'cell', 'email', 'date_of_birth', 'gender', 'country', 'addres_1', 'suburb', 'province',
-                            'volunteer_work', 'employment_type', 'involved', 'health_care_prof', 'drivers_license', 'own_transport',
-                            'vehicle_offering', 'location', 'communication_method', 'communication_consent', 'popia_consent'
+                            // Personal Details (essential - marked with red asterisks)
+                            'name', 'surname', 'email', 'cell', 'dob_day', 'dob_month', 'dob_year',
+                            
+                            // Address (essential for contact - marked with red asterisks)
+                            'addres_1', 'suburb'
                         ];
 
                         requiredFields.forEach(field => {
@@ -46,23 +51,73 @@
                                 el.setAttribute('required', 'required');
                             }
                         });
+                        
+                        // Special validation for date of birth completeness
+                        const dobDay = document.querySelector('[name="dob_day"]');
+                        const dobMonth = document.querySelector('[name="dob_month"]');
+                        const dobYear = document.querySelector('[name="dob_year"]');
+                        
+                        function validateDateOfBirth() {
+                            if (dobDay && dobMonth && dobYear) {
+                                const hasDay = dobDay.value !== '';
+                                const hasMonth = dobMonth.value !== '';
+                                const hasYear = dobYear.value !== '';
+                                
+                                // If any part is filled, all parts should be required
+                                if (hasDay || hasMonth || hasYear) {
+                                    dobDay.required = true;
+                                    dobMonth.required = true;
+                                    dobYear.required = true;
+                                }
+                            }
+                        }
+                        
+                        if (dobDay) dobDay.addEventListener('change', validateDateOfBirth);
+                        if (dobMonth) dobMonth.addEventListener('change', validateDateOfBirth);
+                        if (dobYear) dobYear.addEventListener('change', validateDateOfBirth);
+                        
+                        // Initial validation
+                        validateDateOfBirth();
+                        
+                        // Special handling for conditional fields
+                        const driverFields = ['vehicle_offering', 'location'];
+                        const driversLicenseField = document.querySelector('[name="drivers_license"]');
+                        const ownTransportField = document.querySelector('[name="own_transport"]');
+                        
+                        // Only require driver-specific fields if they have license and transport
+                        function updateDriverRequirements() {
+                            const hasLicense = driversLicenseField && driversLicenseField.value === 'yes';
+                            const hasTransport = ownTransportField && ownTransportField.value === 'yes';
+                            
+                            driverFields.forEach(fieldName => {
+                                const field = document.querySelector(`[name="${fieldName}"]`);
+                                if (field) {
+                                    field.required = hasLicense && hasTransport;
+                                }
+                            });
+                        }
+                        
+                        if (driversLicenseField) driversLicenseField.addEventListener('change', updateDriverRequirements);
+                        if (ownTransportField) ownTransportField.addEventListener('change', updateDriverRequirements);
+                    });
+                        if (ownTransportField) ownTransportField.addEventListener('change', updateDriverRequirements);
                     });
                 </script>
                 <!-- Name -->
                 <div>
-                    <label for="name" class="block  text-gray-600" >Name</label>
+                    <label for="name" class="block  text-gray-600" >Name <span class="text-red-500">*</span></label>
                     <input  type="text" name="name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
                 
                 <!-- Surname -->
                 <div>
-                    <label for="surname" class="block text-gray-600">Surname</label>
+                    <label for="surname" class="block text-gray-600">Surname <span class="text-red-500">*</span></label>
                     <input type="text" name="surname" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
                 
                 <!-- Cell -->
                 <div>
-                    <label for="cell" class="block text-gray-600">Cell</label>
+                    <label for="cell" class="block text-gray-600">Cell <span class="text-red-500">*</span></label>
                     <input type="text" name="cell" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
                 
@@ -86,13 +141,13 @@
                 
                 <!-- Email -->
                 <div>
-                    <label for="email" class="block text-gray-600">E-mail</label>
+                    <label for="email" class="block text-gray-600">E-mail <span class="text-red-500">*</span></label>
                     <input type="email" name="email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                 </div>
                 
                 
                     <div class="dob-container">
-                        <label class="block text-gray-600">Your Date of Birth</label>
+                        <label class="block text-gray-600">Your Date of Birth <span class="text-red-500">*</span></label>
                         <div class="flex gap-2">
                             <!-- Day Dropdown -->
                             <select name="dob_day" id="dob_day" class="dob-date w-1/3 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -155,7 +210,7 @@
                 
                 <!-- Address -->
                 <div class="">
-                    <label for="address_1" class="block text-gray-600">Address 1*</label>
+                    <label for="address_1" class="block text-gray-600">Address 1 <span class="text-red-500">*</span></label>
                     <input name="addres_1" type="text" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
                 <div class="">
@@ -164,7 +219,7 @@
                 </div>
                 
                 <div>
-                    <label for="suburb" class="block text-gray-600">Suburb *</label>
+                    <label for="suburb" class="block text-gray-600">Suburb <span class="text-red-500">*</span></label>
                     <input name="suburb" type="text" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
                 <div>

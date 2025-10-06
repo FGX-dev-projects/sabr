@@ -403,7 +403,201 @@
                                 </div>
                             </div>
     
-                            <!-- Add more cards as needed -->
+                            <!-- Card 4 -->
+                            <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-3">
+                                <div class="flex flex-col h-[1000px] rounded-3xl shadow-[0_12px_24px_rgba(80,51,37,0.25)] overflow-hidden">
+                                    <img src="{{asset('images/gray-block1.png')}}" alt="testimonial" class="w-full flex-1 object-cover">
+                                    <div class="p-8 flex flex-col gap-4">
+                                        <h3 class="text-2xl font-bold text-black">Sr Monageng</h3>
+                                        <p class="text-[#50332540] text-xl font-[300]">Unit Manager, Joe Morolong Memorial Hospital</p>
+                                        <blockquote class="text-[#535353] leading-9 font-inter">
+                                            "Donating breastmilk gives small, vulnerable babies a fighting chance — boosting their immunity to help defend against harmful pathogens. At Joe Morolong Memorial Hospital, most of our recipients are babies weighing under 1 kilogram. Thanks to access to donor breastmilk, we've seen a significant improvement in survival rates. Attached is a photo of one of our mothers breastfeeding her baby (not premature), and our dedicated milk bank champion, Sister Topp — both proudly part of this life-saving journey."
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Card 5 -->
+                            <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-3">
+                                <div class="flex flex-col h-[1000px] rounded-3xl shadow-[0_12px_24px_rgba(80,51,37,0.25)] overflow-hidden">
+                                    <img src="{{asset('images/gray-block1.png')}}" alt="testimonial" class="w-full flex-1 object-cover">
+                                    <div class="p-8 flex flex-col gap-4">
+                                        <h3 class="text-2xl font-bold text-black">Yamini</h3>
+                                        <p class="text-[#50332540] text-xl font-[300]">Sandton Mediclinic NICU Team</p>
+                                        <blockquote class="text-[#535353] leading-9 font-inter">
+                                            "To the South African Breastmilk Reserve team, we extend our heartfelt gratitude for your life-changing work. Your dedication to providing breastmilk for vulnerable neonatal babies is truly appreciated. And to the amazing donor moms — thank you for your selflessness and generosity in sharing your precious milk. Your contributions are making a real difference in the lives of these tiny humans."
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Card 6 -->
+                            <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-3">
+                                <div class="flex flex-col h-[1000px] rounded-3xl shadow-[0_12px_24px_rgba(80,51,37,0.25)] overflow-hidden">
+                                    <img src="{{asset('images/gray-block1.png')}}" alt="testimonial" class="w-full flex-1 object-cover">
+                                    <div class="p-8 flex flex-col gap-4">
+                                        <h3 class="text-2xl font-bold text-black">Gomotseng Ndlovu Mannya</h3>
+                                        <p class="text-[#50332540] text-xl font-[300]">Breastmilk Donor</p>
+                                        <blockquote class="text-[#535353] leading-9 font-inter">
+                                            "My baby and I were proud breastmilk donors in 2024. Together, we donated 205 units of breastmilk, feeding 14 premature babies. To upcoming new moms, I would like to say: Breastmilk gives life to our children. As mothers, it is our duty, where possible, to share our breastmilk to give life and spread love to as many children as we can."
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Card 7 -->
+                            <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-3">
+                                <div class="flex flex-col h-[1000px] rounded-3xl shadow-[0_12px_24px_rgba(80,51,37,0.25)] overflow-hidden">
+                                    <img src="{{asset('images/gray-block1.png')}}" alt="testimonial" class="w-full flex-1 object-cover">
+                                    <div class="p-8 flex flex-col gap-4">
+                                        <h3 class="text-2xl font-bold text-black">Tracy Ann Swanepoel</h3>
+                                        <p class="text-[#50332540] text-xl font-[300]">Breastmilk Donor</p>
+                                        <blockquote class="text-[#535353] leading-9 font-inter">
+                                            "My baby didn't take a bottle, and because I worked until 12h00, I ended up throwing away one feed every day. One night, I saw a post on Facebook about the Milkbank and immediately registered — it was super easy. Donating meant so much to me because I knew my milk wasn't going to waste. I felt complete and expressed with a smile. I wish more moms would donate and save more babies — they are our future. Thank you, Milkbank, for making donating so easy and comfortable."
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Card 8 -->
+                            <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-3">
+                                <div class="flex flex-col h-[1000px] rounded-3xl shadow-[0_12px_24px_rgba(80,51,37,0.25)] overflow-hidden">
+                                    <img src="{{asset('images/gray-block1.png')}}" alt="testimonial" class="w-full flex-1 object-cover">
+                                    <div class="p-8 flex flex-col gap-4">
+                                        <h3 class="text-2xl font-bold text-black">Annarie Theron</h3>
+                                        <p class="text-[#50332540] text-xl font-[300]">Breastmilk Donor</p>
+                                        <blockquote class="text-[#535353] leading-9 font-inter">
+                                            "Being a donor mom has been such a privilege. Since the beginning of 2025, I have donated 443 units of breastmilk, helping to feed 53 babies in the NICU — and my journey is still continuing. Each drop feels like a small gift of strength and love for a baby in need. It's humbling to know that something so natural can make such a difference."
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Card 9 -->
+                            <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-3">
+                                <div class="flex flex-col h-[1000px] rounded-3xl shadow-[0_12px_24px_rgba(80,51,37,0.25)] overflow-hidden">
+                                    <img src="{{asset('images/gray-block1.png')}}" alt="testimonial" class="w-full flex-1 object-cover">
+                                    <div class="p-8 flex flex-col gap-4">
+                                        <h3 class="text-2xl font-bold text-black">Barbra Van den Merwe</h3>
+                                        <p class="text-[#50332540] text-xl font-[300]">Breastmilk Donor</p>
+                                        <blockquote class="text-[#535353] leading-9 font-inter">
+                                            "The surprise diagnosis of Down Syndrome meant my breastfeeding journey looked a little different than I had envisioned. Little Stella-Marie's AVSD meant she would be receiving expressed milk. As an oversupplier, I need SABR just as much as they need me! It's a blessing to be able to bless other mommies and babies — all because of this little extra chromosome."
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Card 10 -->
+                            <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-3">
+                                <div class="flex flex-col h-[1000px] rounded-3xl shadow-[0_12px_24px_rgba(80,51,37,0.25)] overflow-hidden">
+                                    <img src="{{asset('images/gray-block1.png')}}" alt="testimonial" class="w-full flex-1 object-cover">
+                                    <div class="p-8 flex flex-col gap-4">
+                                        <h3 class="text-2xl font-bold text-black">Stefanie Botha</h3>
+                                        <p class="text-[#50332540] text-xl font-[300]">Breastmilk Donor</p>
+                                        <blockquote class="text-[#535353] leading-9 font-inter">
+                                            "Being able to donate is my way of giving something to the ones who will change the world. Children are our future, and every single one — no matter the world they are born into — deserves the best. And as we know, breast is best. With every drop of donated milk, I pray for success and growth for those who drink it."
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Card 11 -->
+                            <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-3">
+                                <div class="flex flex-col h-[1000px] rounded-3xl shadow-[0_12px_24px_rgba(80,51,37,0.25)] overflow-hidden">
+                                    <img src="{{asset('images/gray-block1.png')}}" alt="testimonial" class="w-full flex-1 object-cover">
+                                    <div class="p-8 flex flex-col gap-4">
+                                        <h3 class="text-2xl font-bold text-black">Pepita Emeyene</h3>
+                                        <p class="text-[#50332540] text-xl font-[300]">Breastmilk Donor</p>
+                                        <blockquote class="text-[#535353] leading-9 font-inter">
+                                            "We lost our first child due to health complications, and one of the hardest parts was that she could not be fed properly. Sometimes we could only express a few millilitres of milk for her, and the formula available was too harsh. By God's grace, we have had more babies since. I now donate as much milk as I can, hoping another mother will have the help she needs to keep her baby strong in a natural way during hospital care."
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Card 12 -->
+                            <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-3">
+                                <div class="flex flex-col h-[1000px] rounded-3xl shadow-[0_12px_24px_rgba(80,51,37,0.25)] overflow-hidden">
+                                    <img src="{{asset('images/gray-block1.png')}}" alt="testimonial" class="w-full flex-1 object-cover">
+                                    <div class="p-8 flex flex-col gap-4">
+                                        <h3 class="text-2xl font-bold text-black">Linda-Ann Swart</h3>
+                                        <p class="text-[#50332540] text-xl font-[300]">Breastmilk Donor</p>
+                                        <blockquote class="text-[#535353] leading-9 font-inter">
+                                            "Donating breastmilk has been one of the most rewarding experiences of my motherhood journey. When I discovered in 2018 — and again in 2023 — that my milk could help nourish and care for babies in need, I felt a deep sense of purpose and decided to continue for as long as possible. The process was straightforward, and I often imagined tiny hands holding the bottles, tiny bodies growing stronger with each feeding. It's my way of showing love and care for children beyond my own."
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Card 13 -->
+                            <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-3">
+                                <div class="flex flex-col h-[1000px] rounded-3xl shadow-[0_12px_24px_rgba(80,51,37,0.25)] overflow-hidden">
+                                    <img src="{{asset('images/gray-block1.png')}}" alt="testimonial" class="w-full flex-1 object-cover">
+                                    <div class="p-8 flex flex-col gap-4">
+                                        <h3 class="text-2xl font-bold text-black">Nthabiseng Qhesi</h3>
+                                        <p class="text-[#50332540] text-xl font-[300]">Breastmilk Donor</p>
+                                        <blockquote class="text-[#535353] leading-9 font-inter">
+                                            "As an African mother, I grew up in a culture where I never knew a programme like this even existed. We were never exposed to the idea of donating breastmilk. When I discovered that it was possible, I was overjoyed. I started donating in January 2024 and, as someone who produces more milk than my baby needs, I have felt blessed to share the extra. So far, I have donated around 289 units of breastmilk, and I am very proud knowing that my milk has helped save the lives of other babies."
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Card 14 -->
+                            <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-3">
+                                <div class="flex flex-col h-[1000px] rounded-3xl shadow-[0_12px_24px_rgba(80,51,37,0.25)] overflow-hidden">
+                                    <img src="{{asset('images/gray-block1.png')}}" alt="testimonial" class="w-full flex-1 object-cover">
+                                    <div class="p-8 flex flex-col gap-4">
+                                        <h3 class="text-2xl font-bold text-black">Shanta Bosman</h3>
+                                        <p class="text-[#50332540] text-xl font-[300]">Breastmilk Donor</p>
+                                        <blockquote class="text-[#535353] leading-9 font-inter">
+                                            "Breastmilk donation, to me, is an act of connection — a way of giving life, health, and hope from one mother to another. It's more than just milk; it's hours of nourishment, antibodies, comfort, and care packaged into every drop. Knowing that my milk can help a baby thrive when their own mother's supply is limited fills my heart with gratitude and joy. It's a quiet reminder that we are part of a wider community, lifting each other up in the most fundamental way possible — by helping the tiniest among us have a stronger start."
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Card 15 -->
+                            <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-3">
+                                <div class="flex flex-col h-[1000px] rounded-3xl shadow-[0_12px_24px_rgba(80,51,37,0.25)] overflow-hidden">
+                                    <img src="{{asset('images/gray-block1.png')}}" alt="testimonial" class="w-full flex-1 object-cover">
+                                    <div class="p-8 flex flex-col gap-4">
+                                        <h3 class="text-2xl font-bold text-black">Kaylin Wilson</h3>
+                                        <p class="text-[#50332540] text-xl font-[300]">Breastmilk Donor</p>
+                                        <blockquote class="text-[#535353] leading-9 font-inter">
+                                            "As a mom, breastfeeding has been one of the most beautiful and fulfilling journeys of my life. Being able to nourish my own children and still have enough to donate 868 units of milk — feeding 63 precious little ones — has been such a blessing. I want to encourage every mother: your milk is powerful, your body is amazing, and every drop truly makes a difference."
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Card 16 -->
+                            <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-3">
+                                <div class="flex flex-col h-[1000px] rounded-3xl shadow-[0_12px_24px_rgba(80,51,37,0.25)] overflow-hidden">
+                                    <img src="{{asset('images/gray-block1.png')}}" alt="testimonial" class="w-full flex-1 object-cover">
+                                    <div class="p-8 flex flex-col gap-4">
+                                        <h3 class="text-2xl font-bold text-black">Lihlethu Mhlongo</h3>
+                                        <p class="text-[#50332540] text-xl font-[300]">Born at Nelspruit Mediclinic</p>
+                                        <blockquote class="text-[#535353] leading-9 font-inter">
+                                            "Lihlethu was born on 12 March 2025 at Nelspruit Mediclinic, weighing just 1.39 kg. Today, she is thriving at 5.7 kg — a beautiful reminder of how far our tiniest fighters can come."
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Card 17 -->
+                            <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-3">
+                                <div class="flex flex-col h-[1000px] rounded-3xl shadow-[0_12px_24px_rgba(80,51,37,0.25)] overflow-hidden">
+                                    <img src="{{asset('images/gray-block1.png')}}" alt="testimonial" class="w-full flex-1 object-cover">
+                                    <div class="p-8 flex flex-col gap-4">
+                                        <h3 class="text-2xl font-bold text-black">Nikita & Jeremy Foord</h3>
+                                        <p class="text-[#50332540] text-xl font-[300]">Parents</p>
+                                        <blockquote class="text-[#535353] leading-9 font-inter">
+                                            "Our baby girl was born prematurely at just 27 weeks and 5 days, and my milk supply had not yet come in. The doctors needed to start feeding her immediately so she could gain weight, as she was extremely underweight. That's when one of the front desk nurses quietly handed me a small note with a number on it. Through that number, I was connected to the South African Breastmilk Reserve and received the most incredible service and support. I want to express my deepest gratitude — not only to SABR for their assistance, but also to every mother selfless enough to donate."
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
     
@@ -413,7 +607,7 @@
                             <img src="{{asset('images/arrowleft.svg')}}" alt="Previous" class="w-6 h-6 "/>
                         </button>
                         <button id="nextBtn" class="w-16 h-16 rounded-full bg-[#23B4E9] hover:bg-primary-blue/20 transition-colors duration-200 flex items-center justify-center group">
-                            <img src="{{asset('images/arrowright.svg')}}" alt="Previous" class="w-6 h-6 "/>
+                            <img src="{{asset('images/arrowright.svg')}}" alt="Next" class="w-6 h-6 "/>
                         </button>
                     </div>
     
@@ -422,8 +616,72 @@
                 </div>
             </div>
         </div>
+    
+        <script>
+            const track = document.getElementById('testimonialTrack');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            
+            let currentIndex = 0;
+            const cards = track.children.length;
+            
+            // Get cards per view based on screen size
+            function getCardsPerView() {
+                if (window.innerWidth >= 1024) return 3; // lg
+                if (window.innerWidth >= 768) return 2;  // md
+                return 1; // mobile
+            }
+            
+            function updateCarousel() {
+                const cardsPerView = getCardsPerView();
+                const maxIndex = cards - cardsPerView;
+                
+                // Ensure currentIndex is within bounds
+                if (currentIndex > maxIndex) {
+                    currentIndex = maxIndex;
+                }
+                if (currentIndex < 0) {
+                    currentIndex = 0;
+                }
+                
+                const cardWidth = track.children[0].offsetWidth;
+                const offset = -currentIndex * cardWidth;
+                track.style.transform = `translateX(${offset}px)`;
+                
+                // Update button states
+                prevBtn.disabled = currentIndex === 0;
+                nextBtn.disabled = currentIndex >= maxIndex;
+                
+                prevBtn.style.opacity = currentIndex === 0 ? '0.5' : '1';
+                nextBtn.style.opacity = currentIndex >= maxIndex ? '0.5' : '1';
+            }
+            
+            prevBtn.addEventListener('click', () => {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateCarousel();
+                }
+            });
+            
+            nextBtn.addEventListener('click', () => {
+                const cardsPerView = getCardsPerView();
+                const maxIndex = cards - cardsPerView;
+                if (currentIndex < maxIndex) {
+                    currentIndex++;
+                    updateCarousel();
+                }
+            });
+            
+            // Update on window resize
+            window.addEventListener('resize', updateCarousel);
+            
+            // Initial update
+            updateCarousel();
+        </script>
     </section>
     
+    
+
     <script>
     let currentSlide = 0;
     const track = document.getElementById('testimonialTrack');

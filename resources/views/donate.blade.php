@@ -34,41 +34,113 @@
                 <form action="{{ route('donate.submit') }}" class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-12"
                     method="POST" onsubmit="updateDOB();">
                     @csrf
+                    <!-- Hidden field for memberGroupID -->
+                    <input type="hidden" name="memberGroupID" value="{{ $memberGroupID ?? 2 }}">
                     <!-- Name -->
                     <script>
                         document.addEventListener('DOMContentLoaded', function () {
-                            const form = document.querySelector('form');
-                            const requiredInputs = form.querySelectorAll('input[type="text"], input[type="email"], input[type="radio"], select');
-                            const nameAttributesToExclude = ['other_medication', 'other_medicine', 'other_medicine_specify', 'herbal_medication_specify', 'herbal_medication_other', 'expressing_donate', 'milk_expression_date', 'referral_source'];
+                            // Essential donor information that should be required
+                            const requiredFields = [
+                                // Personal Details (essential)
+                                'mother_name', 'mother_surname', 'mother_email', 'mother_cell',
+                                'mother_dob_day', 'mother_dob_month', 'mother_dob_year',
+                                
+                                // Address (essential for contact)
+                                'addres_1', 'suburb',
+                                
+                                // All consent fields from Declarations & Consent section
+                                'collect_info', 'share_info', 'truth_info', 'keep_records',
+                                'cooler_box', 'hiv_test', 'confidentiality', 'withdraw_consent',
+                                'hiv_info', 'popia_consent', 'antenatal_results', 'breastmilk_testing',
+                                
+                                // Health questionnaire fields
+                                'blood_transfusion', 'alcohol', 'vegetarian', 'tobacco', 'drugs',
+                                'cannabis', 'prescribed_medication', 'over-counter-medication',
+                                'herbal_medicines', 'galactogogues', 'cytotoxic_medication',
+                                'contraceptives', 'monogamous_relationship', 'hepatitis_b_hiv_tb',
+                                'hepatitis_b_diagnosis', 'hepatitis_c_diagnosis', 'tb_diagnosis',
+                                'syphilis_diagnosis', 'hiv_diagnosis', 'partner_hemophiliac',
+                                'partner_hiv_risk', 'partner_drug_use', 'partner_haemophiliac',
+                                'hiv_test_timing', 'persistent_cough', 'persistent_cough_exposure',
+                                'job_hazard_exposure', 'hiv_rapid_test', 'hiv_test_results',
+                                'donor_type', 'info_sharing'
+                            ];
 
-                            requiredInputs.forEach(input => {
-                                if (!input.hasAttribute('required') && !nameAttributesToExclude.includes(input.name) && !input.closest('.dob-container')) {
-                                    input.required = true;
+                            requiredFields.forEach(fieldName => {
+                                const field = document.querySelector(`[name="${fieldName}"]`);
+                                if (field) {
+                                    field.required = true;
                                 }
                             });
-
-                            // Date of Birth dropdowns require all 3 selects to be filled, so set required on each
-                            document.querySelectorAll('.dob-container select').forEach(select => {
-                                select.required = true;
+                            
+                            // Special validation for mother's date of birth completeness
+                            const motherDobDay = document.querySelector('[name="mother_dob_day"]');
+                            const motherDobMonth = document.querySelector('[name="mother_dob_month"]');
+                            const motherDobYear = document.querySelector('[name="mother_dob_year"]');
+                            
+                            function validateMotherDateOfBirth() {
+                                if (motherDobDay && motherDobMonth && motherDobYear) {
+                                    const hasDay = motherDobDay.value !== '';
+                                    const hasMonth = motherDobMonth.value !== '';
+                                    const hasYear = motherDobYear.value !== '';
+                                    
+                                    // If any part is filled, all parts should be required
+                                    if (hasDay || hasMonth || hasYear) {
+                                        motherDobDay.required = true;
+                                        motherDobMonth.required = true;
+                                        motherDobYear.required = true;
+                                    }
+                                }
+                            }
+                            
+                            if (motherDobDay) motherDobDay.addEventListener('change', validateMotherDateOfBirth);
+                            if (motherDobMonth) motherDobMonth.addEventListener('change', validateMotherDateOfBirth);
+                            if (motherDobYear) motherDobYear.addEventListener('change', validateMotherDateOfBirth);
+                            
+                            // Initial validation
+                            validateMotherDateOfBirth();
+                            
+                            // Handle radio button groups - at least one must be selected
+                            const radioGroups = [
+                                'collect_info', 'share_info', 'truth_info', 'keep_records',
+                                'cooler_box', 'hiv_test', 'confidentiality', 'withdraw_consent',
+                                'hiv_info', 'antenatal_results', 'breastmilk_testing',
+                                'blood_transfusion', 'alcohol', 'vegetarian', 'tobacco', 'drugs',
+                                'cannabis', 'prescribed_medication', 'over-counter-medication',
+                                'herbal_medicines', 'galactogogues', 'cytotoxic_medication',
+                                'contraceptives', 'monogamous_relationship', 'hepatitis_b_hiv_tb',
+                                'hepatitis_b_diagnosis', 'hepatitis_c_diagnosis', 'tb_diagnosis',
+                                'syphilis_diagnosis', 'hiv_diagnosis', 'partner_hemophiliac',
+                                'partner_hiv_risk', 'partner_drug_use', 'partner_haemophiliac',
+                                'hiv_test_timing', 'persistent_cough', 'persistent_cough_exposure',
+                                'job_hazard_exposure', 'hiv_rapid_test', 'hiv_test_results',
+                                'donor_type', 'info_sharing', 'communication_consent'
+                            ];
+                            
+                            radioGroups.forEach(groupName => {
+                                const radios = document.querySelectorAll(`[name="${groupName}"]`);
+                                if (radios.length > 0) {
+                                    radios.forEach(radio => radio.required = true);
+                                }
                             });
                         });
                     </script>
                     <div>
-                        <label for="mother_name" class="block  text-gray-600">Name</label>
+                        <label for="mother_name" class="block  text-gray-600">Name <span class="text-red-500">*</span></label>
                         <input type="text" name="mother_name"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
 
                     <!-- Surname -->
                     <div>
-                        <label for="mother_surname" class="block text-gray-600">Surname</label>
+                        <label for="mother_surname" class="block text-gray-600">Surname <span class="text-red-500">*</span></label>
                         <input type="text" name="mother_surname"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
 
                     <!-- Cell -->
                     <div>
-                        <label for="mother_cell" class="block text-gray-600">Cell</label>
+                        <label for="mother_cell" class="block text-gray-600">Cell <span class="text-red-500">*</span></label>
                         <input type="text" name="mother_cell"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
@@ -82,14 +154,14 @@
 
                     <!-- Email -->
                     <div>
-                        <label for="mother_email" class="block text-gray-600">E-mail</label>
+                        <label for="mother_email" class="block text-gray-600">E-mail <span class="text-red-500">*</span></label>
                         <input type="email" name="mother_email"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
 
 
                     <div class="dob-container">
-                        <label class="block text-gray-600">Your Date of Birth</label>
+                        <label class="block text-gray-600">Your Date of Birth <span class="text-red-500">*</span></label>
                         <div class="flex gap-2">
                             <!-- Day Dropdown -->
                             <select name="mother_dob_day" id="mother_dob_day"
@@ -208,7 +280,7 @@
 
                     <!-- Address -->
                     <div class="">
-                        <label for="address_1" class="block text-gray-600">Address 1*</label>
+                        <label for="address_1" class="block text-gray-600">Address 1 <span class="text-red-500">*</span></label>
                         <input name="addres_1" type="text"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
@@ -219,7 +291,7 @@
                     </div>
 
                     <div>
-                        <label for="suburb" class="block text-gray-600">Suburb *</label>
+                        <label for="suburb" class="block text-gray-600">Suburb <span class="text-red-500">*</span></label>
                         <input name="suburb" type="text"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
@@ -407,7 +479,7 @@
                     <!-- Consent to collect personal information -->
                     <div class="flex flex-col gap-3">
                         <label class="block text-gray-600">I give the SABR permission to collect and retain personal
-                            information as necessary *</label>
+                            information as necessary <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label for="collect_info_yes" class="flex items-center gap-2">
                                 <input type="radio" id="collect_info_yes" name="collect_info" value="Yes"
@@ -423,7 +495,7 @@
                     <!-- Consent to share information with third parties -->
                     <div class="flex flex-col gap-3">
                         <label class="block text-gray-600">I agree that necessary personal information may be shared with a
-                            contracted 3rd party for donor sign-up purposes *</label>
+                            contracted 3rd party for donor sign-up purposes <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label for="share_info_yes" class="flex items-center gap-2">
                                 <input type="radio" id="share_info_yes" name="share_info" value="Yes"
@@ -439,7 +511,7 @@
                     <!-- Confirmation of truthfulness -->
                     <div class="flex flex-col gap-3">
                         <label class="block text-gray-600">I agree that the information I have provided is true and correct
-                            *</label>
+                            <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label for="truth_info_yes" class="flex items-center gap-2">
                                 <input type="radio" id="truth_info_yes" name="truth_info" value="Yes"
@@ -455,7 +527,7 @@
                     <!-- Consent to keep medical records -->
                     <div class="flex flex-col gap-3">
                         <label class="block text-gray-600">I confirm that I give the SABR permission to keep records of my
-                            antenatal and other blood test results as necessary *</label>
+                            antenatal and other blood test results as necessary <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label for="keep_records_yes" class="flex items-center gap-2">
                                 <input type="radio" id="keep_records_yes" name="keep_records" value="Yes"
@@ -471,7 +543,7 @@
                     <!-- Confirmation of issued cooler box -->
                     <div class="flex flex-col gap-3">
                         <label class="block text-gray-600">I confirm that I have been issued with a SABR-issued cooler box
-                            and bottles *</label>
+                            and bottles <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label for="cooler_box_yes" class="flex items-center gap-2">
                                 <input type="radio" id="cooler_box_yes" name="cooler_box" value="Yes"
@@ -507,7 +579,7 @@
 
                     <div class="flex flex-col gap-3">
                         <label for="hiv_test_yes" class="block text-gray-600">I confirm that I agree to be tested for HIV &
-                            agree to be retested every 3 months *</label>
+                            agree to be retested every 3 months <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2">
                                 <input type="radio" id="hiv_test_yes" name="hiv_test" value="yes"
@@ -523,7 +595,7 @@
                     <div class="flex flex-col gap-3">
                         <label for="confidentiality_yes" class="block text-gray-600">I confirm that I have been informed
                             that my test results are confidential & will not be released without my written permission
-                            *</label>
+                            <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2">
                                 <input type="radio" id="confidentiality_yes" name="confidentiality" value="yes"
@@ -539,7 +611,7 @@
                     <div class="flex flex-col gap-3">
                         <label for="withdraw_consent_yes" class="block text-gray-600">I confirm that I understand that I
                             have the right to withdraw my consent for the test at any time before the test is complete
-                            *</label>
+                            <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2">
                                 <input type="radio" id="withdraw_consent_yes" name="withdraw_consent" value="yes"
@@ -554,7 +626,7 @@
 
                     <div class="flex flex-col gap-3">
                         <label for="hiv_info_yes" class="block text-gray-600">I confirm that I have been given basic
-                            information on HIV & the testing process *</label>
+                            information on HIV & the testing process <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2">
                                 <input type="radio" id="hiv_info_yes" name="hiv_info" value="yes"
@@ -569,7 +641,7 @@
 
                     <div class="flex flex-col gap-3">
                         <label for="info_declined_yes" class="block text-gray-600">Or, I confirm that I was offered basic
-                            information as above but declined *</label>
+                            information as above but declined <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2">
                                 <input type="radio" id="info_declined_yes" name="info_declined" value="yes"
@@ -584,7 +656,7 @@
 
                     <div class="flex flex-col gap-3">
                         <label for="questions_opportunity_yes" class="block text-gray-600">I confirm that I have been given
-                            the opportunity to ask questions concerning the test for HIV *</label>
+                            the opportunity to ask questions concerning the test for HIV <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2">
                                 <input type="radio" id="questions_opportunity_yes" name="questions_opportunity" value="yes"
@@ -599,7 +671,7 @@
 
                     <div class="flex flex-col gap-3">
                         <label for="questions_answered_yes" class="block text-gray-600">I confirm that my questions have
-                            been answered to my satisfaction *</label>
+                            been answered to my satisfaction <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2">
                                 <input type="radio" id="questions_answered_yes" name="questions_answered" value="yes"
@@ -615,7 +687,7 @@
                     <div class="flex flex-col gap-3">
                         <label for="antenatal_results_yes" class="block text-gray-600">I confirm that I grant the SABR
                             permission to obtain my antenatal blood results in the event of me not issuing them with a copy
-                            *</label>
+                            <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2">
                                 <input type="radio" id="antenatal_results_yes" name="antenatal_results" value="yes"
@@ -630,7 +702,7 @@
 
                     <div class="flex flex-col gap-3">
                         <label for="breastmilk_testing_yes" class="block text-gray-600">I agree to allow the SABR to conduct
-                            random testing on my donated breastmilk for quality assurance and research purposes *</label>
+                            random testing on my donated breastmilk for quality assurance and research purposes <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2">
                                 <input type="radio" id="breastmilk_testing_yes" name="breastmilk_testing" value="yes"
@@ -647,7 +719,7 @@
 
                     <div class="flex flex-col gap-3">
                         <label for="blood_transfusion_yes" class="block text-gray-600">1. Have you received a blood
-                            transfusion or blood products in the last 12 months? *</label>
+                            transfusion or blood products in the last 12 months? <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2">
                                 <input type="radio" id="blood_transfusion_yes" name="blood_transfusion" value="yes"
@@ -662,7 +734,7 @@
 
                     <div class="flex flex-col gap-3">
                         <label for="hard_liquor_yes" class="block text-gray-600">2. Do you regularly consume more than 50ml
-                            of hard liquor or its equivalent in a 24hr period? *</label>
+                            of hard liquor or its equivalent in a 24hr period? <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2">
                                 <input type="radio" id="hard_liquor_yes" name="hard_liquor" value="yes"
@@ -676,7 +748,7 @@
                     </div>
 
                     <div class="flex flex-col gap-3">
-                        <label for="vegetarian_yes" class="block text-gray-600">3. Are you a total vegetarian? *</label>
+                        <label for="vegetarian_yes" class="block text-gray-600">3. Are you a total vegetarian? <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2">
                                 <input type="radio" id="vegetarian_yes" name="vegetarian" value="yes"
@@ -706,7 +778,7 @@
 
                     <div class="flex flex-col gap-3">
                         <label for="tobacco_yes" class="block text-gray-600">4. Do you smoke or use tobacco products (snuff,
-                            chewing tobacco etc.)? *</label>
+                            chewing tobacco etc.)? <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2">
                                 <input type="radio" id="tobacco_yes" name="tobacco" value="yes"
@@ -720,7 +792,7 @@
                     </div>
 
                     <div class="flex flex-col gap-3">
-                        <label for="drugs_yes" class="block text-gray-600">5. Do you use habit-forming drugs? *</label>
+                        <label for="drugs_yes" class="block text-gray-600">5. Do you use habit-forming drugs? <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2">
                                 <input type="radio" id="drugs_yes" name="drugs" value="yes"
@@ -734,7 +806,7 @@
                     </div>
 
                     <div class="flex flex-col gap-3">
-                        <label for="cannabis_yes" class="block text-gray-600">6. Do you use cannabis? *</label>
+                        <label for="cannabis_yes" class="block text-gray-600">6. Do you use cannabis? <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2">
                                 <input type="radio" id="cannabis_yes" name="cannabis" value="yes"
@@ -749,7 +821,7 @@
 
                     <div class="flex flex-col gap-3">
                         <label for="prescribed_medication_yes" class="block text-gray-600">8. Do you use any prescribed
-                            medication? *</label>
+                            medication? <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2">
                                 <input type="radio" id="prescribed_medication_yes" name="prescribed_medication" value="yes"
@@ -881,7 +953,7 @@
 
                     <div class="flex flex-col gap-3">
                         <label for="over-counter-medication" class="block text-gray-600">9. Do you regularly use over the
-                            counter medication? *</label>
+                            counter medication? <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2">
                                 <input type="radio" id="over-counter-medication_yes" name="over-counter-medication"
@@ -946,7 +1018,7 @@
                     </div>
                     <div class="flex flex-col col-span-1 md:col-span-2 gap-3">
                         <label class="block text-gray-600" for="herbal_medicines_yes">10. Do you use any herbal /
-                            homeopathic medications / remedies? *</label>
+                            homeopathic medications / remedies? <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2">
                                 <input type="radio" id="herbal_medicines_yes" name="herbal_medicines" value="yes"
@@ -996,7 +1068,7 @@
                     </div>
                     <div class="flex flex-col gap-3">
                         <label class="block text-gray-600">11. Do you use any galactogogues / substances to increase your
-                            breastmilk supply? *</label>
+                            breastmilk supply? <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2" for="galactogogues_yes">
                                 <input type="radio" id="galactogogues_yes" name="galactogogues" value="Yes"
@@ -1012,7 +1084,7 @@
                     </div>
 
                     <div class="flex flex-col gap-3">
-                        <label class="block text-gray-600">12. Do you use any cytotoxic or radioactive medication? *</label>
+                        <label class="block text-gray-600">12. Do you use any cytotoxic or radioactive medication? <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2" for="cytotoxic_yes">
                                 <input type="radio" id="cytotoxic_yes" name="cytotoxic_medication" value="Yes"
@@ -1028,7 +1100,7 @@
                     </div>
 
                     <div class="flex flex-col gap-3">
-                        <label class="block text-gray-600">13. Do you use any form of contraceptives? *</label>
+                        <label class="block text-gray-600">13. Do you use any form of contraceptives? <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2" for="contraceptives_yes">
                                 <input type="radio" id="contraceptives_yes" name="contraceptives" value="Yes"
@@ -1064,7 +1136,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col col-span-1 md:col-span-2 gap-3">
-                        <label class="block text-gray-600">15. Are you in a monogamous relationship? *</label>
+                        <label class="block text-gray-600">15. Are you in a monogamous relationship? <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2" for="monogamous_yes">
                                 <input type="radio" id="monogamous_yes" name="monogamous_relationship" value="Yes"
@@ -1083,7 +1155,7 @@
 
                     </div>
                     {{-- <div class="flex flex-col gap-3">
-                        <label class="block text-gray-600">Have you ever had hepatitis B, HIV, or TB? *</label>
+                        <label class="block text-gray-600">Have you ever had hepatitis B, HIV, or TB? <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2" for="hepatitis_hiv_tb_yes">
                                 <input type="radio" id="hepatitis_hiv_tb_yes" name="hepatitis_hiv_tb" value="Yes"
@@ -1098,7 +1170,7 @@
                         </div>
                     </div> --}}
                     <div class="flex flex-col gap-3">
-                        <label class="block text-gray-600">Have you ever been diagnosed with Hepatitis B? *</label>
+                        <label class="block text-gray-600">Have you ever been diagnosed with Hepatitis B? <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2" for="hepatitis_b_yes">
                                 <input type="radio" id="hepatitis_b_yes" name="hepatitis_b" value="Yes"
@@ -1115,7 +1187,7 @@
 
                     <div class="flex flex-col gap-3">
                         <label class="block text-gray-600" for="hepatitis_c">Have you ever been diagnosed with Hepatitis C?
-                            *</label>
+                            <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2" for="hepatitis_c_yes">
                                 <input type="radio" id="hepatitis_c_yes" name="hepatitis_c" value="Yes"
@@ -1131,7 +1203,7 @@
                     </div>
                     <div class="flex flex-col gap-3">
                         <label class="block text-gray-600" for="tb_diagnosis">Have you ever been diagnosed with TB?
-                            *</label>
+                            <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2" for="tb_yes">
                                 <input type="radio" id="tb_yes" name="tb_diagnosis" value="Yes"
@@ -1147,7 +1219,7 @@
                     </div>
                     <div class="flex flex-col gap-3">
                         <label class="block text-gray-600" for="syphilis_diagnosis">Have you ever been diagnosed with
-                            Syphilis? *</label>
+                            Syphilis? <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2" for="syphilis_yes">
                                 <input type="radio" id="syphilis_yes" name="syphilis_diagnosis" value="Yes"
@@ -1163,7 +1235,7 @@
                     </div>
                     <div class="flex flex-col gap-3">
                         <label class="block text-gray-600" for="hiv_diagnosis">Have you ever been diagnosed with HIV?
-                            *</label>
+                            <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2" for="hiv_yes">
                                 <input type="radio" id="hiv_yes" name="hiv_diagnosis" value="Yes"
@@ -1182,12 +1254,12 @@
 
 
                     <div class="flex flex-col col-span-1 md:col-span-2 gap-3">
-                        <label class="block text-gray-600">17. Do you or have you ever had a sexual partner who:*</label>
+                        <label class="block text-gray-600">17. Do you or have you ever had a sexual partner who: <span class="text-red-500">*</span></label>
                     </div>
                     {{-- <div class="flex flex-col gap-3">
                         <label class="block text-gray-600" for="partner_risk_hiv">
                             Have you ever had a sexual partner who is at risk for HIV, takes habit-forming drugs, or is a
-                            hemophiliac? *
+                            hemophiliac?  <span class="text-red-500">*</span>
                         </label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2" for="partner_risk_hiv_yes">
@@ -1204,7 +1276,7 @@
                     </div> --}}
                     <div class="flex flex-col gap-3">
                         <label class="block text-gray-600" for="partner_hiv_risk">
-                            Do you currently have, or have you ever had, a sexual partner who has or is at risk for HIV? *
+                            Do you currently have, or have you ever had, a sexual partner who has or is at risk for HIV?  <span class="text-red-500">*</span>
                         </label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2" for="partner_hiv_risk_yes">
@@ -1221,7 +1293,7 @@
                     </div>
                     <div class="flex flex-col gap-3">
                         <label class="block text-gray-600" for="partner_drug_use">
-                            Do you currently have, or have you ever had, a sexual partner who uses habit-forming drugs? *
+                            Do you currently have, or have you ever had, a sexual partner who uses habit-forming drugs?  <span class="text-red-500">*</span>
                         </label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2" for="partner_drug_use_yes">
@@ -1238,7 +1310,7 @@
                     </div>
                     <div class="flex flex-col gap-3">
                         <label class="block text-gray-600" for="partner_haemophiliac">
-                            Do you currently have, or have you ever had, a sexual partner who is a haemophiliac? *
+                            Do you currently have, or have you ever had, a sexual partner who is a haemophiliac?  <span class="text-red-500">*</span>
                         </label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2" for="partner_haemophiliac_yes">
@@ -1255,7 +1327,7 @@
                     </div>
                     <div class="flex flex-col gap-3">
                         <label class="block text-gray-600" for="last_hiv_test">
-                            18. When was the last time your spouse/consort/regular sexual partner was tested for HIV? *
+                            18. When was the last time your spouse/consort/regular sexual partner was tested for HIV?  <span class="text-red-500">*</span>
                         </label>
                         <input type="text" id="last_hiv_test" name="last_hiv_test"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -1264,7 +1336,7 @@
 
                     <div class="flex flex-col gap-3">
                         <label class="block text-gray-600" for="persistent_cough">
-                            19. Have you been coughing persistently (2 weeks or longer)? *
+                            19. Have you been coughing persistently (2 weeks or longer)?   <span class="text-red-500">*</span>
                         </label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2" for="persistent_cough_yes">
@@ -1282,7 +1354,7 @@
 
                     <div class="flex flex-col gap-3">
                         <label class="block text-gray-600" for="persistent_cough_exposure">
-                            20. Have you been exposed to someone (work or home) who is coughing persistently? *
+                            20. Have you been exposed to someone (work or home) who is coughing persistently?  <span class="text-red-500">*</span>
                         </label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2" for="persistent_cough_exposure_yes">
@@ -1299,7 +1371,7 @@
                     </div>
                     <div class="flex flex-col gap-3">
                         <label class="block text-gray-600" for="job_hazard_exposure">
-                            21. Are you exposed to harmful environments or chemicals due to your job? *
+                            21. Are you exposed to harmful environments or chemicals due to your job?  <span class="text-red-500">*</span>
                         </label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2" for="job_hazard_exposure_yes">
@@ -1317,7 +1389,7 @@
 
                     <div class="flex flex-col gap-3">
                         <label class="block text-gray-600" for="hiv_test_results">
-                            Do you have a copy of the results of your antenatal HIV tests? *
+                            Do you have a copy of the results of your antenatal HIV tests?  <span class="text-red-500">*</span>
                         </label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2" for="hiv_test_results_yes">
@@ -1337,7 +1409,7 @@
                     <div class="flex flex-col gap-3">
                         <label class="block text-gray-600" for="hiv_rapid_test">
                             If not, would you be prepared to undergo a rapid test for HIV at your expense and submit the
-                            results to the screening officer? *
+                            results to the screening officer?  <span class="text-red-500">*</span>
                         </label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2" for="hiv_rapid_test_yes">
@@ -1431,7 +1503,7 @@
                     </div>
                     <div class="flex flex-col gap-3">
                         <label class="block text-gray-600">
-                            I agree to the sharing of my information for sign-up purposes only. *
+                            I agree to the sharing of my information for sign-up purposes only.   <span class="text-red-500">*</span>
                         </label>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2">
