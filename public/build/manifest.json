@@ -1,0 +1,28 @@
+{
+  "public/images/Ellips3.png": {
+    "file": "assets/Ellips3-C4Z-FH9i.png",
+    "src": "public/images/Ellips3.png"
+  },
+  "public/images/ellipse.png": {
+    "file": "assets/ellipse-B-DZsQic.png",
+    "src": "public/images/ellipse.png"
+  },
+  "public/images/ellipse2.png": {
+    "file": "assets/ellipse2-BwJ861wY.png",
+    "src": "public/images/ellipse2.png"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-CdrQ3mTe.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-DyF7ItrY.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app-DNDxSBlH.css"
+    ]
+  }
+}

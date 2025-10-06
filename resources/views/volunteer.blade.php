@@ -1,18 +1,9 @@
 @extends('layouts.app')
-
+@section('title', 'SABR: South African Breastmilk Reserve - Volunteer')
+@section('meta-description', 'South African Breastmilk Reserve - Bringing milk to babies, safely.')
 @section('content')
 
-@if(session('success'))
-    <div class="alert alert-success">
-        {{ session('success') }}
-    </div>
-@endif
 
-@if(session('error'))
-    <div class="alert alert-danger">
-        {{ session('error') }}
-    </div>
-@endif
 <section class="relative w-full h-[550px] md:h-[450px]  overflow-hidden">
     <!-- Background Video -->
 
@@ -20,13 +11,13 @@
     <!-- Content Overlay -->
     <div class="relative z-10 flex flex-col  h-full   pt-[10px] md:pt-[186px]">
         <div class="wrapper">
-            <div class="w-full h-full flex flex-col     gap-6">
+            <div class="w-full h-full flex flex-col gap-6">
                 <div class="w-full h-full flex flex-col text-[#107BA2]   gap-0">
                     <div
                         class="w-full text-[#107BA2] text-[48px] md:text-[64px] font-normal break-words pt-[180px]  md:pt-[20px]">
                         Volunteer
                     </div>
-                    <p class="text-[24px] font-inter font-light">
+                    <p class="text-[20px] font-inter font-light">
                         From collections and deliveries to assisting the SABR team, volunteers help us make it all happen. Thank you for being willing to donate your time and energy. By filling out this form you are making a difference to an infant’s future.
                     </p>
                 </div>
@@ -34,27 +25,99 @@
         </div>
     </div>
 </section>
-<section class="py-[128px]">
+<section class="py-[80px]">
     <div class="wrapper">
         <div class="w-full p- ">
             <h2 class="text-[32px] font-inter font-bold text-[#adaaa5]">Personal Details</h2>
             <form action="{{ route('volunteer.submit') }}"  class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-12" method="POST">
                 @csrf
+                <!-- Hidden field for memberGroupID -->
+                <input type="hidden" name="memberGroupID" value="{{ $memberGroupID ?? 4 }}">
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        // Essential volunteer information that should be required (matching red asterisks)
+                        const requiredFields = [
+                            // Personal Details (essential - marked with red asterisks)
+                            'name', 'surname', 'email', 'cell', 'dob_day', 'dob_month', 'dob_year',
+                            
+                            // Address (essential for contact - marked with red asterisks)
+                            'addres_1', 'suburb'
+                        ];
+
+                        requiredFields.forEach(field => {
+                            const el = document.querySelector(`[name="${field}"]`);
+                            if (el) {
+                                el.setAttribute('required', 'required');
+                            }
+                        });
+                        
+                        // Special validation for date of birth completeness
+                        const dobDay = document.querySelector('[name="dob_day"]');
+                        const dobMonth = document.querySelector('[name="dob_month"]');
+                        const dobYear = document.querySelector('[name="dob_year"]');
+                        
+                        function validateDateOfBirth() {
+                            if (dobDay && dobMonth && dobYear) {
+                                const hasDay = dobDay.value !== '';
+                                const hasMonth = dobMonth.value !== '';
+                                const hasYear = dobYear.value !== '';
+                                
+                                // If any part is filled, all parts should be required
+                                if (hasDay || hasMonth || hasYear) {
+                                    dobDay.required = true;
+                                    dobMonth.required = true;
+                                    dobYear.required = true;
+                                }
+                            }
+                        }
+                        
+                        if (dobDay) dobDay.addEventListener('change', validateDateOfBirth);
+                        if (dobMonth) dobMonth.addEventListener('change', validateDateOfBirth);
+                        if (dobYear) dobYear.addEventListener('change', validateDateOfBirth);
+                        
+                        // Initial validation
+                        validateDateOfBirth();
+                        
+                        // Special handling for conditional fields
+                        const driverFields = ['vehicle_offering', 'location'];
+                        const driversLicenseField = document.querySelector('[name="drivers_license"]');
+                        const ownTransportField = document.querySelector('[name="own_transport"]');
+                        
+                        // Only require driver-specific fields if they have license and transport
+                        function updateDriverRequirements() {
+                            const hasLicense = driversLicenseField && driversLicenseField.value === 'yes';
+                            const hasTransport = ownTransportField && ownTransportField.value === 'yes';
+                            
+                            driverFields.forEach(fieldName => {
+                                const field = document.querySelector(`[name="${fieldName}"]`);
+                                if (field) {
+                                    field.required = hasLicense && hasTransport;
+                                }
+                            });
+                        }
+                        
+                        if (driversLicenseField) driversLicenseField.addEventListener('change', updateDriverRequirements);
+                        if (ownTransportField) ownTransportField.addEventListener('change', updateDriverRequirements);
+                    });
+                        if (ownTransportField) ownTransportField.addEventListener('change', updateDriverRequirements);
+                    });
+                </script>
                 <!-- Name -->
                 <div>
-                    <label for="name" class="block  text-gray-600" >Name</label>
+                    <label for="name" class="block  text-gray-600" >Name <span class="text-red-500">*</span></label>
                     <input  type="text" name="name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
                 
                 <!-- Surname -->
                 <div>
-                    <label for="surname" class="block text-gray-600">Surname</label>
+                    <label for="surname" class="block text-gray-600">Surname <span class="text-red-500">*</span></label>
                     <input type="text" name="surname" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
                 
                 <!-- Cell -->
                 <div>
-                    <label for="cell" class="block text-gray-600">Cell</label>
+                    <label for="cell" class="block text-gray-600">Cell <span class="text-red-500">*</span></label>
                     <input type="text" name="cell" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
                 
@@ -78,13 +141,13 @@
                 
                 <!-- Email -->
                 <div>
-                    <label for="email" class="block text-gray-600">E-mail</label>
+                    <label for="email" class="block text-gray-600">E-mail <span class="text-red-500">*</span></label>
                     <input type="email" name="email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                 </div>
                 
                 
                     <div class="dob-container">
-                        <label class="block text-gray-600">Your Date of Birth</label>
+                        <label class="block text-gray-600">Your Date of Birth <span class="text-red-500">*</span></label>
                         <div class="flex gap-2">
                             <!-- Day Dropdown -->
                             <select name="dob_day" id="dob_day" class="dob-date w-1/3 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -147,7 +210,7 @@
                 
                 <!-- Address -->
                 <div class="">
-                    <label for="address_1" class="block text-gray-600">Address 1*</label>
+                    <label for="address_1" class="block text-gray-600">Address 1 <span class="text-red-500">*</span></label>
                     <input name="addres_1" type="text" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
                 <div class="">
@@ -156,7 +219,7 @@
                 </div>
                 
                 <div>
-                    <label for="suburb" class="block text-gray-600">Suburb *</label>
+                    <label for="suburb" class="block text-gray-600">Suburb <span class="text-red-500">*</span></label>
                     <input name="suburb" type="text" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
                 <div>
@@ -365,11 +428,29 @@
                 
                 <div class="nav-button7 w-36 flex text-center cursor-pointer z-0">
                     <button type="submit" class="button7">Submit</button>
+                    
                 </div>
+                
+
             </form>
+            @if (isset($success))
+    <div class="mt-6 text-green-800 bg-green-100 border border-green-300 rounded-lg p-4">
+        {{ $success }}
+    </div>
+@endif
         </div>
         
     </div>
 </section>
+@push('scripts')
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const alertBox = document.querySelector('.bg-green-100, .bg-red-100');
+        if (alertBox) {
+            alertBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    });
+</script>
+@endpush
 
 @endsection

@@ -62,6 +62,26 @@ return [
             ]) : [],
         ],
 
+        'sabr_secondary' => [
+            'driver' => 'mysql',
+            'url' => env('SABR_DB_URL'),
+            'host' => env('SABR_DB_HOST', 'dedi140.cpt2.host-h.net'),
+            'port' => env('SABR_DB_PORT', '3306'),
+            'database' => env('SABR_DB_DATABASE', 'sabr_db3'),
+            'username' => env('SABR_DB_USERNAME', 'sabr_3'),
+            'password' => env('SABR_DB_PASSWORD', ''),
+            'unix_socket' => env('SABR_DB_SOCKET', ''),
+            'charset' => env('SABR_DB_CHARSET', 'utf8mb4'),
+            'collation' => env('SABR_DB_COLLATION', 'utf8mb4_unicode_ci'),
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            ]) : [],
+        ],
+
         'mariadb' => [
             'driver' => 'mariadb',
             'url' => env('DB_URL'),

@@ -1,7 +1,8 @@
 @extends('layouts.app')
-
+@section('title', 'SABR: South African Breastmilk Reserve - Research')
+@section('meta-description', 'South African Breastmilk Reserve - Bringing milk to babies, safely.')
 @section('content')
-<section class="relative w-full h-[998px] md:h-[490px]  overflow-hidden">
+<section class="relative w-full h-[800px] md:h-[490px]  overflow-hidden">
     <!-- Background Video -->
    
 
@@ -9,12 +10,12 @@
     <div class="relative z-10 flex flex-col  h-full   pt-[10px] md:pt-[186px]">
         <div class="wrapper">
             <div class="w-full h-full flex flex-col     gap-6">
-                <div class="w-full h-full flex flex-col text-[#107BA2]   gap-4">
+                <div class="w-full h-full flex flex-col    gap-4">
                     <div
-                        class="w-full text-[#107BA2] text-[48px] md:text-[64px] font-normal break-words pt-[180px]  md:pt-[20px]">
-                        Research at SABR 
+                        class="w-full text-[#905460] text-[48px] md:text-[64px] font-normal break-words pt-[180px]  md:pt-[20px]">
+                        Research at <span class="font-bold">SABR </span>
                     </div>
-                    <p class="text-[24px] font-inter !font-light">
+                    <p class="text-[20px] text-[#107BA2] font-inter !font-light">
                         At the South African Breastmilk Reserve (SABR), research is at the core of our mission to improve maternal and infant health. Through clinical, virological, and safety studies, we enhance the understanding of breastmilk safety and quality, paving the way for innovative testing methodologies and improved healthcare outcomes. Our work is supported by partnerships with leading research teams and public health institutions, ensuring that our findings contribute to advancements in breastfeeding and human-milk banking practices. 
                     </p>
                 </div>
@@ -23,7 +24,7 @@
     </div>
 </section>
 
-<section class="py-[128px]">
+<section class="py-[80px]">
     <div class="wrapper flex flex-col gap-3">
         <div class="w-full h-full p-4 bg-[#FAF8F5] rounded-xl outline outline-1 outline-[#DEDAD4] flex flex-col md:flex-row justify-start  gap-3">
             <div class="w-full md:w-auto h-full  p-0">
@@ -160,7 +161,7 @@
                 <div class="flex flex-col items-start gap-3 self-stretch">
                     <div class="flex flex-col items-start gap-3 self-stretch">
                         <div class="text-[#868480] text-2xl font-bold self-stretch">Toward Rapid Testing and Improved Breastmilk Processing  </div>
-                        <div class="text-[#868480] text-lg font-inter font-light self-stretch">SABR’s long-term goal is to develop a rapid, multiplex testing method for breastmilk capable of detecting pathogens like HIV, HTLV, TB, and Syphilis. Through studies like SABRViro1, we are validating direct virological testing, reducing the cost and complexity of donor screening. This</div>
+                        <div class="text-[#868480] text-lg font-inter font-light self-stretch">SABR’s long-term goal is to develop a rapid, multiplex testing method for breastmilk capable of detecting pathogens like HIV, HTLV, TB, and Syphilis. Through studies like SABRViro1, we are validating direct virological testing, reducing the cost and complexity of donor screening. </div>
                     </div>
                 </div>
                 <div class="flex flex-col items-end gap-2 self-stretch">

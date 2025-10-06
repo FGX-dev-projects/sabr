@@ -1,7 +1,8 @@
 @extends('layouts.app')
-
+@section('title', 'SABR: South African Breastmilk Reserve - Why the Cost')
+@section('meta-description', 'South African Breastmilk Reserve - Bringing milk to babies, safely.')
 @section('content')
-    <section class="relative w-full h-[610px] md:h-[390px]  overflow-hidden">
+    <section class="relative w-full h-[350px] md:h-[390px]  overflow-hidden !bg-white">
         <!-- Background Video -->
 
 
@@ -12,14 +13,39 @@
                     <div class="w-full h-full flex flex-col text-[#107BA2]   gap-0">
                         <div
                             class="w-full text-[#107BA2] text-[48px] md:text-[64px] font-normal break-words pt-[180px]  md:pt-[20px]">
-                            COVID-19 linked to increase in infant and maternal deaths
+                            Why The Cost?
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="pt-[50px] pb-[128px]">
+
+    <section class="pb-20 !bg-white">
+        <div class="wrapper ">
+            <img src="{{asset('images/whycost.png')}}" class="w-full mb-6"/>
+            <p class="text-[24px] font-inter font-[300] text-black">
+                Dear SABR partners and stakeholders,
+<br><br>
+Here at the SABR, we believe that the survival of our organisation, and especially the survival of 'our babies', are mandatory! However, in order to ensure our sustainability and continued compliance with the National Department of Health's proposed Regulatory Framework for Human Milk Banking, it has become necessary for us to make some changes.
+<br><br>
+Our vision is survival: both the survival of premature babies and of the SABR, by becoming sustainable in the long term. Vulnerable, low birth weight infants - your patients and children - are the reason we exist. For the SABR to continue helping them through the provision of breastmilk, we depend on the support of all stakeholders and role-players in the human milk banking endeavour.
+<br><br>
+While the SABR is a non-profit human milk banking organisation, our primary goal is breastfeeding advocacy and promotion - especially considering the low breastfeeding rates in South Africa. Human milk banking cannot exist without breastfeeding mothers; as such, maternal lactation remains the key intervention in promoting baby-friendly values. As part of the South African breastfeeding community, we wish to collaborate with our prescribing doctors in reaching a shared understanding of the ethical values governing the equitable distribution donor breastmilk, as with all donated tissues and organs. We have an ethical obligation to ensure the safe and appropriate use of our product (see our work aid 'Promoting the Safe Use of Donor Breastmilk'), as well as the equitable distribution to babies in both private and public institutions.
+<br><br>
+At current capacity, the SABR is able to supply donor breastmilk to infants weighing under 1.8kg and younger than 14 days, for a period of 14 days (with the possibility of an extension to 28 days in certain cases). We hope that with the expansion of breastfeeding in South Africa, we will be able to extend these guidelines in order to help many other babies in need.
+            </p>
+            <p class="text-[24px] font-inter font-[300] text-black text-end mt-[28px]">
+                The SABR follows a universal guideline that includes all infants below 37 weeks’ gestation. The largest amount of donor breastmilk is directed to public hospital facilities.
+            </p>
+            <img src="{{asset('images/banner2.png')}}" class="w-full my-6"/>
+            <p class="text-[24px] font-inter font-[300] text-black">
+                We aim to continue providing the best quality product at the lowest price. Our new pricing structure (as per the most recent 'SABR Pricelist' and 'SABR Packages') for facilities that do not currently have service-level agreements will be implemented as of October 2016. 'Sister Joy' will regularly update you via our monthly 'What's the Buzz?' newsletter. Please feel free to contact us to discuss any questions or queries you might have.
+<br><br>We trust that you understand that this change is necessary, in order for the SABR to keep providing safe and sustainable donor breastmilk that is equally accessible to all babies in need. We look forward to many more years of contributing this life-saving service!
+            </p>
+        </div>
+    </section>
+    {{-- <section class="pt-[50px] pb-[128px]">
         <div class="wrapper">
             <img src="{{asset('images/why-the cost.png')}}" class="w-full h-full"/>
 
@@ -47,5 +73,5 @@
             
         </div>
 
-    </section>
+    </section> --}}
 @endsection

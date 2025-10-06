@@ -1,7 +1,8 @@
 @extends('layouts.app')
-
+@section('title', 'SABR: South African Breastmilk Reserve - Breast is Best')
+@section('meta-description', 'South African Breastmilk Reserve - Bringing milk to babies, safely.')
 @section('content')
-    <section class="relative w-full h-[300px] md:h-[350px]  overflow-hidden">
+    <section class="relative w-full h-[300px] md:h-[350px]  overflow-hidden ">
         <!-- Background Video -->
 
 
@@ -9,9 +10,9 @@
         <div class="relative z-10 flex flex-col  h-full   pt-[10px] md:pt-[186px]">
             <div class="wrapper">
                 <div class="w-full h-full flex flex-col     gap-6">
-                    <div class="w-full h-full flex flex-col text-[#107BA2]   gap-0">
+                    <div class="w-full h-full flex flex-col text-[#905460]   gap-0">
                         <div
-                            class="w-full text-[#107BA2] text-[48px] md:text-[64px] font-normal break-words pt-[180px]  md:pt-[20px]">
+                            class="w-full text-[#905460] text-[48px] md:text-[64px] font-normal break-words pt-[180px]  md:pt-[20px]">
                             Breast is Best
                         </div>
                         <p class="text-[24px] font-inter font-bold">
@@ -25,7 +26,7 @@
 
     <section class="pt-[50px]">
         <div class="wrapper flex flex-col gap-6">
-            <p class="text-[#868480] text-[24px] font-bold font-inter">Understanding Breastmilk Banking</p>
+            <p class="text-[#868480] text-[20px] font-bold font-inter">Understanding Breastmilk Banking</p>
             <div class="w-full flex flex-col md:flex-row justify-start items-stretch gap-6">
 
                 <!-- First Box -->
@@ -100,7 +101,7 @@
                     </div>
                 </div>
 
-                <img src="{{asset('images/baby8.png')}}" class="w-full"/>
+                <img src="{{asset('images/bannerb.png')}}" class="w-full"/>
         </div>
 
     </section>
@@ -111,7 +112,7 @@
           <div class="faqs-section">
             <div class="faq accordion">
               <div class="question-wrapper">
-                  <p class=" font-inter text-[24px] font-bold text-[#107BA2]" title="">
+                  <p class=" font-inter text-[20px] font-bold text-[#107BA2]" title="">
                     Why should women donate breastmilk?</p>
                      <img src="{{asset('images/down-2.svg')}}" class="material-icons drop  cursor-pointer"/>
               </div>
@@ -124,7 +125,7 @@
           <div class="faqs-section">
             <div class="faq accordion">
               <div class="question-wrapper">
-                  <p class=" font-inter text-[24px] font-bold text-[#107BA2]" title="">
+                  <p class=" font-inter text-[20px] font-bold text-[#107BA2]" title="">
                     How does it work?
                 </p>
                      <img src="{{asset('images/down-2.svg')}}" class="material-icons drop  cursor-pointer"/>
@@ -139,7 +140,7 @@
           <div class="faqs-section">
             <div class="faq accordion">
               <div class="question-wrapper">
-                  <p class=" font-inter text-[24px] font-bold text-[#107BA2]" title="">
+                  <p class=" font-inter text-[20px] font-bold text-[#107BA2]" title="">
                     Who receives donated breastmilk?
 </p>
                      <img src="{{asset('images/down-2.svg')}}" class="material-icons drop  cursor-pointer"/>
@@ -153,7 +154,7 @@
           <div class="faqs-section">
             <div class="faq accordion">
               <div class="question-wrapper">
-                  <p class=" font-inter text-[24px] font-bold text-[#107BA2]" title="">
+                  <p class=" font-inter text-[20px] font-bold text-[#107BA2]" title="">
                     Who are the safest donors?
 
                 </p>
@@ -168,7 +169,7 @@
           <div class="faqs-section">
             <div class="faq accordion">
               <div class="question-wrapper">
-                  <p class=" font-inter text-[24px] font-bold text-[#107BA2]" title="">
+                  <p class=" font-inter text-[20px] font-bold text-[#107BA2]" title="">
                    Who qualifies to become a breastmilk donor?
 
 
@@ -191,7 +192,7 @@
           <div class="faqs-section">
             <div class="faq accordion">
               <div class="question-wrapper">
-                  <p class=" font-inter text-[24px] font-bold text-[#107BA2]" title="">
+                  <p class=" font-inter text-[20px] font-bold text-[#107BA2]" title="">
                     Do you randomly test donors?
 
 
@@ -207,7 +208,7 @@
           <div class="faqs-section">
             <div class="faq accordion">
               <div class="question-wrapper">
-                  <p class=" font-inter text-[24px] font-bold text-[#107BA2]" title="">
+                  <p class=" font-inter text-[20px] font-bold text-[#107BA2]" title="">
                     What tests does the SABR use?
 
 
@@ -224,7 +225,7 @@
           <div class="faqs-section">
             <div class="faq accordion">
               <div class="question-wrapper">
-                  <p class=" font-inter text-[24px] font-bold text-[#107BA2]" title="">
+                  <p class=" font-inter text-[20px] font-bold text-[#107BA2]" title="">
                    How often can I donate breastmilk?
                 </p>
                      <img src="{{asset('images/down-2.svg')}}" class="material-icons drop  cursor-pointer"/>
@@ -238,7 +239,7 @@
           <div class="faqs-section">
             <div class="faq accordion">
               <div class="question-wrapper">
-                  <p class=" font-inter text-[24px] font-bold text-[#107BA2]" title="">
+                  <p class=" font-inter text-[20px] font-bold text-[#107BA2]" title="">
                     How much breastmilk must I donate at one time?
                 </p>
                      <img src="{{asset('images/down-2.svg')}}" class="material-icons drop  cursor-pointer"/>
@@ -252,7 +253,7 @@
           <div class="faqs-section">
             <div class="faq accordion">
               <div class="question-wrapper">
-                  <p class=" font-inter text-[24px] font-bold text-[#107BA2]" title="">
+                  <p class=" font-inter text-[20px] font-bold text-[#107BA2]" title="">
                     Will I receive payment for my breastmilk?
                 </p>
                      <img src="{{asset('images/down-2.svg')}}" class="material-icons drop  cursor-pointer"/>
@@ -266,7 +267,7 @@
           <div class="faqs-section">
             <div class="faq accordion">
               <div class="question-wrapper">
-                  <p class=" font-inter text-[24px] font-bold text-[#107BA2]" title="">
+                  <p class=" font-inter text-[20px] font-bold text-[#107BA2]" title="">
                     How do I become a breastmilk donor?
 
 
@@ -288,7 +289,7 @@
           <div class="faqs-section">
             <div class="faq accordion">
               <div class="question-wrapper">
-                  <p class=" font-inter text-[24px] font-bold text-[#107BA2]" title="">
+                  <p class=" font-inter text-[20px] font-bold text-[#107BA2]" title="">
                    
 Can I only donate milk I expressed after becoming registered? / Is any breastmilk acceptable as a donation?
                 </p>
@@ -303,7 +304,7 @@ Can I only donate milk I expressed after becoming registered? / Is any breastmil
           <div class="faqs-section">
             <div class="faq accordion">
               <div class="question-wrapper">
-                  <p class=" font-inter text-[24px] font-bold text-[#107BA2]" title="">
+                  <p class=" font-inter text-[20px] font-bold text-[#107BA2]" title="">
                    
                     What is safe breastmilk?
 
@@ -319,7 +320,7 @@ Can I only donate milk I expressed after becoming registered? / Is any breastmil
           <div class="faqs-section">
             <div class="faq accordion">
               <div class="question-wrapper">
-                  <p class=" font-inter text-[24px] font-bold text-[#107BA2]" title="">
+                  <p class=" font-inter text-[20px] font-bold text-[#107BA2]" title="">
                     What infections can be transmitted by breastmilk?
                 </p>
                      <img src="{{asset('images/down-2.svg')}}" class="material-icons drop  cursor-pointer"/>
@@ -333,7 +334,7 @@ Can I only donate milk I expressed after becoming registered? / Is any breastmil
           <div class="faqs-section">
             <div class="faq accordion">
               <div class="question-wrapper">
-                  <p class=" font-inter text-[24px] font-bold text-[#107BA2]" title="">
+                  <p class=" font-inter text-[20px] font-bold text-[#107BA2]" title="">
                     Who should not donate breastmilk?
 
                 </p>
@@ -357,7 +358,7 @@ Can I only donate milk I expressed after becoming registered? / Is any breastmil
           <div class="faqs-section">
             <div class="faq accordion">
               <div class="question-wrapper">
-                  <p class=" font-inter text-[24px] font-bold text-[#107BA2]" title="">
+                  <p class=" font-inter text-[20px] font-bold text-[#107BA2]" title="">
                     How safe is it to donate breastmilk?
 
                 </p>

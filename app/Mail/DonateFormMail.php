@@ -29,7 +29,7 @@ class DonateFormMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'New Donate Form',
+            subject: 'New Donate Form Submission',
         );
     }
 
@@ -37,11 +37,14 @@ class DonateFormMail extends Mailable
      * Get the message content definition.
      */
     public function content(): Content
-    {
-        return new Content(
-            view: 'emails.donate',
-        );
-    }
+{
+    return new Content(
+        view: 'emails.donate',
+        with: [
+            'formData' => $this->formData,
+        ],
+    );
+}
 
     /**
      * Get the attachments for the message.
