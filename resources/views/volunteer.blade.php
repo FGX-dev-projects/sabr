@@ -242,7 +242,7 @@
                     <label class="block text-gray-600" for="volunteer_work">Volunteer work is serious work</label>
                     <select id="volunteer_work" name="volunteer_work"
         class="block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
-        <option value="veteran">I'm a veteran volunteer, lot's of experience!</option>
+        <option value="veteran">I'm a veteran volunteer, lots of experience!</option>
         <option value="ngo_experience">I have professional experience in not for profit / NGO work</option>
         <option value="public_sector">I work for the public sector</option>
         <option value="community_programs">I have joined community programs at my place of employment</option>
@@ -338,7 +338,7 @@
                
 
                 <div class="flex flex-col gap-3">
-                    <label for="vehicle_offering" class="block text-gray-600">I do understand that offering to drive for the cause means that: I am donating my time, my petrol, ware and tear on my vehicle and I drive at my own risk. SABR will not be liable for any loss or damage incurred in the conduct of my volunteer work</label>
+                    <label for="vehicle_offering" class="block text-gray-600">I do understand that offering to drive for the cause means that: I am donating my time, my petrol, wear and tear on my vehicle and I drive at my own risk. SABR will not be liable for any loss or damage incurred in the conduct of my volunteer work</label>
                     <div class="flex gap-4">
                         <label class="flex items-center gap-2">
                             <input type="radio" id="vehicle_offering_yes" name="vehicle_offering" value="Agree" class="form-radio scale-150 text-blue-500"> Agree
@@ -420,7 +420,7 @@
                     <div class="flex flex-wrap  gap-2">
                         <label class="flex flex-row items-center gap-2 ">
                             <input id="popia-consent" name="popia_consent" value="yes" type="checkbox" class="form-checkbox checked:text-blue-500 scale-150 !w-3 !h-3 text-[#636061] required" required>
-                            Yes, I HAVE READ AND UNDERSTAND WHAT I AM CONSENTING TO AS OUTLINED ON THE POPIA CONSENT TERMS AND CONDITIONS AND IN THE INFORMATION PRIVACY POLICY AND CONSENT TO THE PROCESSING OF MY PERSONAL INFORMATION. I understand that the outcome OF MY APPLICATION is at the sole discretion of the SABR and I will abide by it.
+                            Yes, I have read and understand what I am consenting to as outlined on the POPIA consent terms and conditions and in the information privacy policy and consent to the processing of my personal information. I understand that the outcome of my application is at the sole discretion of the SABR and I will abide by it.
                         </label>
                           
                     </div>

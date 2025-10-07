@@ -825,24 +825,24 @@
                     </div>
 
                     <div
-                        class="flex flex-col col-span-1 md:col-span-2 gap-6 border border-[#91c2d4] bg-[#e7f2f6] rounded-3xl p-6">
-                        <label id="popia_consent_label" class="block text-[#107ba2] font-bold">Please note</label>
-                        <div class="flex flex-wrap gap-2">
-                            <label for="popia-consent" class="flex flex-row items-center gap-2">
-                                <input id="popia-consent" name="popia_consent" value="yes" type="checkbox"
-                                    class="form-checkbox scale-150 text-blue-500" required>
-                                <span class="m-0 p-0">Yes, I HAVE READ AND UNDERSTAND WHAT I AM CONSENTING TO AS OUTLINED ON
-                                    THE
-                                    <a href="{{asset('documents/Donor-Consent-Terms-and-Conditions-updated.pdf')}}"
-                                        class="underline">POPIA CONSENT TERMS AND CONDITIONS</a>
-                                    AND IN THE
-                                    <a href="{{asset('documents/SABR-Privacy-Policy.pdf')}}" class="underline">INFORMATION
-                                        PRIVACY POLICY</a>
-                                    AND CONSENT TO THE PROCESSING OF MY PERSONAL INFORMATION. I understand that the outcome
-                                    OF MY APPLICATION is at the sole discretion of the SABR and I will abide by it.</span>
-                            </label>
-                        </div>
+                    class="flex flex-col col-span-1 md:col-span-2 gap-6 border border-[#91c2d4] bg-[#e7f2f6] rounded-3xl p-6">
+                    <label id="popia_consent_label" class="block text-[#107ba2] font-bold">Please note</label>
+                    <div class="flex flex-wrap gap-2">
+                        <label for="popia-consent" class="flex flex-row items-center gap-2">
+                            <input id="popia-consent" name="popia_consent" value="yes" type="checkbox"
+                                class="form-checkbox scale-150 text-blue-500" required>
+                            <span class="m-0 p-0">Yes, I have read and understand what I am consenting to as outlined on
+                                the
+                                <a href="{{asset('documents/Donor-Consent-Terms-and-Conditions-updated.pdf')}}"
+                                    class="underline">POPIA consent terms and conditions</a>
+                                and in the
+                                <a href="{{asset('documents/SABR-Privacy-Policy.pdf')}}" class="underline">information
+                                    privacy policy</a>
+                                and consent to the processing of my personal information. I understand that the outcome
+                                of my application is at the sole discretion of the SABR and I will abide by it.</span>
+                        </label>
                     </div>
+                </div>
 
                     <div class="nav-button7 w-36 flex text-center cursor-pointer z-0">
                         <button type="submit" class="button7">Submit</button>
