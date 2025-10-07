@@ -233,6 +233,125 @@ background-color: #e5d2b8;
     gap: 10px;
 }
 
+.testimonials-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 128px 24px;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    color: #6d5d43;
+}
+
+.frame-parent {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.the-tree-of-life-stories-of-l-parent {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.the-tree-of-container {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.donor-moms-recipient {
+    font-size: 20px;
+    color: #535353;
+}
+
+/* Masonry Layout */
+.masonry-grid {
+    column-count: 3;
+    column-gap: 24px;
+}
+.masonry-item {
+    break-inside: avoid;
+    margin-bottom: 24px;
+}
+@media (max-width: 1024px) { .masonry-grid { column-count: 2; } }
+@media (max-width: 640px) { .masonry-grid { column-count: 1; } }
+
+/* Testimonial Cards */
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 32px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #000;
+    transition: all 0.4s ease;
+}
+.shadow-card {
+    box-shadow: 0px 12px 24px rgba(80, 51, 37, 0.25);
+}
+.bordered-card {
+    border: 1px solid rgba(226, 102, 84, 0.25);
+}
+.testimonial-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.testimonial-content {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.testimonial-content h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+}
+.testimonial-content .subtitle {
+    font-size: 16px;
+    color: rgba(80, 51, 37, 0.5);
+}
+.testimonial-content blockquote {
+    font-size: 16px;
+    color: #535353;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Load More */
+.testimonial-hidden {
+    display: none;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+}
+.testimonial-visible {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+.load-more-container {
+    text-align: center;
+}
+.load-more-btn {
+    background-color: #6d5d43;
+    color: #fff;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+.load-more-btn:hover {
+    background-color: #8d7855;
+}
+
+
 .nav-button4 {
     border-radius: 12px;
     background-color: #f8f5f0;

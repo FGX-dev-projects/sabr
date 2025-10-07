@@ -339,7 +339,7 @@
         </div>
     </section>
 
-    <section>
+    {{-- <section>
         <div class="relative w-full h-auto flex flex-col items-center justify-start px-4 sm:px-8 lg:px-32 py-16 sm:py-20 lg:py-32 gap-8 lg:gap-16 text-left font-work-sans">
     
             <!-- Header Section -->
@@ -678,9 +678,496 @@
             // Initial update
             updateCarousel();
         </script>
+    </section> --}}
+    
+    <section>
+        <div class="testimonials-container">
+    
+            <!-- Header Section -->
+            <div class="testimonials-header">
+                <div class="testimonials-title">
+                    <h1>
+                        <span class="title-bold">The Tree of Life:</span>
+                    </h1>
+                    <p class="title-subtitle">Stories of Love and Survival</p>
+                </div>
+                <p class="testimonials-description">
+                    Donor moms, recipient families, and healthcare workers share how every drop truly counts.
+                </p>
+            </div>
+    
+            <!-- Masonry Grid -->
+            <div class="masonry-grid" id="masonryGrid">
+                <!-- Column 1 -->
+                <div class="masonry-column">
+                    <!-- Card 1 - Initial -->
+                    <div class="testimonial-card card-with-image" data-visible="true">
+                        <img src="{{asset('images/review-1.png')}}" alt="testimonial" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-name">Baby Ngobeni</h3>
+                            <p class="card-subtitle">Life Daleview Hospital</p>
+                            <blockquote class="card-quote">
+                                "As a new mom struggling with breastfeeding, I just want to say thank you for the milk you've been providing me. My baby is healthy and getting stronger every day. What a beautiful testimony — my baby is growing so nicely with your donor milk. Thank you so much, team. Keep it up!"
+                            </blockquote>
+                        </div>
+                    </div>
+    
+                    <!-- Card 2 - Hidden -->
+                    <div class="testimonial-card card-text-only hidden-card" data-visible="false">
+                        <div class="card-content">
+                            <h3 class="card-name">Tracy Ann Swanepoel</h3>
+                            <p class="card-subtitle">Breastmilk Donor</p>
+                            <blockquote class="card-quote">
+                                "My baby didn't take a bottle, and because I worked until 12h00, I ended up throwing away one feed every day. One night, I saw a post on Facebook about the Milkbank and immediately registered — it was super easy. Donating meant so much to me because I knew my milk wasn't going to waste. I felt complete and expressed with a smile. I wish more moms would donate and save more babies — they are our future. Thank you, Milkbank, for making donating so easy and comfortable."
+                            </blockquote>
+                        </div>
+                    </div>
+    
+                    <!-- Card 3 - Hidden -->
+                    <div class="testimonial-card card-text-only hidden-card" data-visible="false">
+                        <div class="card-content">
+                            <h3 class="card-name">Annarie Theron</h3>
+                            <p class="card-subtitle">Breastmilk Donor</p>
+                            <blockquote class="card-quote">
+                                "Being a donor mom has been such a privilege. Since the beginning of 2025, I have donated 443 units of breastmilk, helping to feed 53 babies in the NICU — and my journey is still continuing. Each drop feels like a small gift of strength and love for a baby in need. It's humbling to know that something so natural can make such a difference."
+                            </blockquote>
+                        </div>
+                    </div>
+    
+                    <!-- Card 4 - Hidden -->
+                    <div class="testimonial-card card-text-only hidden-card" data-visible="false">
+                        <div class="card-content">
+                            <h3 class="card-name">Pepita Emeyene</h3>
+                            <p class="card-subtitle">Breastmilk Donor</p>
+                            <blockquote class="card-quote">
+                                "We lost our first child due to health complications, and one of the hardest parts was that she could not be fed properly. Sometimes we could only express a few millilitres of milk for her, and the formula available was too harsh. By God's grace, we have had more babies since. I now donate as much milk as I can, hoping another mother will have the help she needs to keep her baby strong in a natural way during hospital care."
+                            </blockquote>
+                        </div>
+                    </div>
+    
+                    <!-- Card 5 - Hidden -->
+                    <div class="testimonial-card card-text-only hidden-card" data-visible="false">
+                        <div class="card-content">
+                            <h3 class="card-name">Kaylin Wilson</h3>
+                            <p class="card-subtitle">Breastmilk Donor</p>
+                            <blockquote class="card-quote">
+                                "As a mom, breastfeeding has been one of the most beautiful and fulfilling journeys of my life. Being able to nourish my own children and still have enough to donate 868 units of milk — feeding 63 precious little ones — has been such a blessing. I want to encourage every mother: your milk is powerful, your body is amazing, and every drop truly makes a difference."
+                            </blockquote>
+                        </div>
+                    </div>
+    
+                    <!-- Card 6 - Hidden -->
+                    <div class="testimonial-card card-text-only hidden-card" data-visible="false">
+                        <div class="card-content">
+                            <h3 class="card-name">Nthabiseng Qhesi</h3>
+                            <p class="card-subtitle">Breastmilk Donor</p>
+                            <blockquote class="card-quote">
+                                "As an African mother, I grew up in a culture where I never knew a programme like this even existed. We were never exposed to the idea of donating breastmilk. When I discovered that it was possible, I was overjoyed. I started donating in January 2024 and, as someone who produces more milk than my baby needs, I have felt blessed to share the extra. So far, I have donated around 289 units of breastmilk, and I am very proud knowing that my milk has helped save the lives of other babies."
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Column 2 -->
+                <div class="masonry-column">
+                    <!-- Card 7 - Initial -->
+                    <div class="testimonial-card card-text-only" data-visible="true">
+                        <div class="card-content">
+                            <h3 class="card-name">Gomotseng Ndlovu Mannya</h3>
+                            <p class="card-subtitle">Breastmilk Donor</p>
+                            <blockquote class="card-quote">
+                                "My baby and I were proud breastmilk donors in 2024. Together, we donated 205 units of breastmilk, feeding 14 premature babies. To upcoming new moms, I would like to say: Breastmilk gives life to our children. As mothers, it is our duty, where possible, to share our breastmilk to give life and spread love to as many children as we can."
+                            </blockquote>
+                        </div>
+                    </div>
+    
+                    <!-- Card 8 - Initial -->
+                    <div class="testimonial-card card-with-image" data-visible="true">
+                        <img src="{{asset('images/review-2.png')}}" alt="testimonial" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-name">Dr Harri Surti</h3>
+                            <p class="card-subtitle">Neonatologist</p>
+                            <blockquote class="card-quote">
+                                "This little girl was born at just 28 weeks in October 2016, weighing only 1.18kg. In her first few days in the NICU, she received donor expressed breastmilk from the South African Breastmilk Reserve, giving her the vital start she needed until her mother's own milk supply came in. She went on to be exclusively breastfed until one year of age — and today, she's a healthy, thriving 8-year-old. A true testament to the life-saving power of breastmilk."
+                            </blockquote>
+                        </div>
+                    </div>
+    
+                    <!-- Card 9 - Hidden -->
+                    <div class="testimonial-card card-text-only hidden-card" data-visible="false">
+                        <div class="card-content">
+                            <h3 class="card-name">Barbra Van den Merwe</h3>
+                            <p class="card-subtitle">Breastmilk Donor</p>
+                            <blockquote class="card-quote">
+                                "The surprise diagnosis of Down Syndrome meant my breastfeeding journey looked a little different than I had envisioned. Little Stella-Marie's AVSD meant she would be receiving expressed milk. As an oversupplier, I need SABR just as much as they need me! It's a blessing to be able to bless other mommies and babies — all because of this little extra chromosome."
+                            </blockquote>
+                        </div>
+                    </div>
+    
+                    <!-- Card 10 - Hidden -->
+                    <div class="testimonial-card card-text-only hidden-card" data-visible="false">
+                        <div class="card-content">
+                            <h3 class="card-name">Linda-Ann Swart</h3>
+                            <p class="card-subtitle">Breastmilk Donor</p>
+                            <blockquote class="card-quote">
+                                "Donating breastmilk has been one of the most rewarding experiences of my motherhood journey. When I discovered in 2018 — and again in 2023 — that my milk could help nourish and care for babies in need, I felt a deep sense of purpose and decided to continue for as long as possible. The process was straightforward, and I often imagined tiny hands holding the bottles, tiny bodies growing stronger with each feeding. It's my way of showing love and care for children beyond my own."
+                            </blockquote>
+                        </div>
+                    </div>
+    
+                    <!-- Card 11 - Hidden -->
+                    <div class="testimonial-card card-text-only hidden-card" data-visible="false">
+                        <div class="card-content">
+                            <h3 class="card-name">Lihlethu Mhlongo</h3>
+                            <p class="card-subtitle">Born at Nelspruit Mediclinic</p>
+                            <blockquote class="card-quote">
+                                "Lihlethu was born on 12 March 2025 at Nelspruit Mediclinic, weighing just 1.39 kg. Today, she is thriving at 5.7 kg — a beautiful reminder of how far our tiniest fighters can come."
+                            </blockquote>
+                        </div>
+                    </div>
+    
+                    <!-- Card 12 - Hidden -->
+                    <div class="testimonial-card card-text-only hidden-card" data-visible="false">
+                        <div class="card-content">
+                            <h3 class="card-name">Shanta Bosman</h3>
+                            <p class="card-subtitle">Breastmilk Donor</p>
+                            <blockquote class="card-quote">
+                                "Breastmilk donation, to me, is an act of connection — a way of giving life, health, and hope from one mother to another. It's more than just milk; it's hours of nourishment, antibodies, comfort, and care packaged into every drop. Knowing that my milk can help a baby thrive when their own mother's supply is limited fills my heart with gratitude and joy. It's a quiet reminder that we are part of a wider community, lifting each other up in the most fundamental way possible — by helping the tiniest among us have a stronger start."
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Column 3 -->
+                <div class="masonry-column">
+                    <!-- Card 13 - Initial -->
+                    <div class="testimonial-card card-with-image" data-visible="true">
+                        <img src="{{asset('images/review-3.png')}}" alt="testimonial" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-name">Kyle Schenck</h3>
+                            <p class="card-subtitle">Parent, Wilgers Hospital</p>
+                            <blockquote class="card-quote">
+                                "Liebe Hunter Schenck was born at just 31 weeks. With her mom in ICU and unable to produce milk, we were desperate for help. The South African Breastmilk Reserve stepped in, and I was able to purchase donor milk for our little miracle. I placed the order in the afternoon, and by the next morning, the hospital had received the milk. The service was top-notch — friendly, professional, and deeply caring. I can't recommend them enough."
+                            </blockquote>
+                        </div>
+                    </div>
+    
+                    <!-- Card 14 - Initial -->
+                    <div class="testimonial-card card-text-only" data-visible="true">
+                        <div class="card-content">
+                            <h3 class="card-name">Sr Monageng</h3>
+                            <p class="card-subtitle">Unit Manager, Joe Morolong Memorial Hospital</p>
+                            <blockquote class="card-quote">
+                                "Donating breastmilk gives small, vulnerable babies a fighting chance — boosting their immunity to help defend against harmful pathogens. At Joe Morolong Memorial Hospital, most of our recipients are babies weighing under 1 kilogram. Thanks to access to donor breastmilk, we've seen a significant improvement in survival rates. Attached is a photo of one of our mothers breastfeeding her baby (not premature), and our dedicated milk bank champion, Sister Topp — both proudly part of this life-saving journey."
+                            </blockquote>
+                        </div>
+                    </div>
+    
+                    <!-- Card 15 - Hidden -->
+                    <div class="testimonial-card card-text-only hidden-card" data-visible="false">
+                        <div class="card-content">
+                            <h3 class="card-name">Yamini</h3>
+                            <p class="card-subtitle">Sandton Mediclinic NICU Team</p>
+                            <blockquote class="card-quote">
+                                "To the South African Breastmilk Reserve team, we extend our heartfelt gratitude for your life-changing work. Your dedication to providing breastmilk for vulnerable neonatal babies is truly appreciated. And to the amazing donor moms — thank you for your selflessness and generosity in sharing your precious milk. Your contributions are making a real difference in the lives of these tiny humans."
+                            </blockquote>
+                        </div>
+                    </div>
+    
+                    <!-- Card 16 - Hidden -->
+                    <div class="testimonial-card card-text-only hidden-card" data-visible="false">
+                        <div class="card-content">
+                            <h3 class="card-name">Stefanie Botha</h3>
+                            <p class="card-subtitle">Breastmilk Donor</p>
+                            <blockquote class="card-quote">
+                                "Being able to donate is my way of giving something to the ones who will change the world. Children are our future, and every single one — no matter the world they are born into — deserves the best. And as we know, breast is best. With every drop of donated milk, I pray for success and growth for those who drink it."
+                            </blockquote>
+                        </div>
+                    </div>
+    
+                    <!-- Card 17 - Hidden -->
+                    <div class="testimonial-card card-text-only hidden-card" data-visible="false">
+                        <div class="card-content">
+                            <h3 class="card-name">Nikita & Jeremy Foord</h3>
+                            <p class="card-subtitle">Parents</p>
+                            <blockquote class="card-quote">
+                                "Our baby girl was born prematurely at just 27 weeks and 5 days, and my milk supply had not yet come in. The doctors needed to start feeding her immediately so she could gain weight, as she was extremely underweight. That's when one of the front desk nurses quietly handed me a small note with a number on it. Through that number, I was connected to the South African Breastmilk Reserve and received the most incredible service and support. I want to express my deepest gratitude — not only to SABR for their assistance, but also to every mother selfless enough to donate."
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Load More Button -->
+            <div class="load-more-container" id="loadMoreContainer">
+                <button class="load-more-btn" id="loadMoreBtn">
+                    Load More Stories
+                </button>
+            </div>
+        </div>
+    
+        <style>
+            .testimonials-container {
+                position: relative;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 128px;
+                box-sizing: border-box;
+                gap: 64px;
+                text-align: left;
+                font-family: 'Work Sans', sans-serif;
+            }
+    
+            .testimonials-header {
+                align-self: stretch;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 24px;
+            }
+    
+            .testimonials-title {
+                align-self: stretch;
+                color: #905460;
+                font-size: 64px;
+                line-height: 1.2;
+            }
+    
+            .testimonials-title h1 {
+                margin: 0;
+                font-size: 64px;
+                line-height: 1.2;
+            }
+    
+            .title-bold {
+                font-weight: 700;
+            }
+    
+            .title-subtitle {
+                margin: 0;
+                font-weight: 300;
+                font-size: 64px;
+                line-height: 1.2;
+            }
+    
+            .testimonials-description {
+                align-self: stretch;
+                position: relative;
+                font-family: 'Inter', sans-serif;
+                font-weight: 300;
+                font-size: 24px;
+                color: #535353;
+                margin: 0;
+            }
+    
+            .masonry-grid {
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+                gap: 24px;
+            }
+    
+            .masonry-column {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+            }
+    
+            .testimonial-card {
+                align-self: stretch;
+                border-radius: 32px;
+                background-color: rgba(255, 255, 255, 0.25);
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                transition: opacity 0.5s ease, transform 0.5s ease;
+            }
+    
+            .testimonial-card.hidden-card {
+                display: none;
+                opacity: 0;
+            }
+    
+            .testimonial-card.show-card {
+                display: flex;
+                animation: fadeInUp 0.6s ease forwards;
+            }
+    
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+    
+            .card-with-image {
+                box-shadow: 0px 12px 24px rgba(80, 51, 37, 0.25);
+            }
+    
+            .card-text-only {
+                border: 1px solid rgba(226, 102, 84, 0.25);
+            }
+    
+            .card-image {
+                align-self: stretch;
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+            }
+    
+            .card-content {
+                align-self: stretch;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 32px;
+                gap: 17px;
+            }
+    
+            .card-name {
+                align-self: stretch;
+                position: relative;
+                font-size: 18px;
+                font-weight: 700;
+                color: #000;
+                margin: 0;
+            }
+    
+            .card-subtitle {
+                align-self: stretch;
+                position: relative;
+                font-size: 18px;
+                color: rgba(80, 51, 37, 0.25);
+                margin: 0;
+            }
+    
+            .card-quote {
+                align-self: stretch;
+                position: relative;
+                font-size: 16px;
+                font-family: 'Inter', sans-serif;
+                color: #535353;
+                line-height: 1.6;
+                margin: 0;
+            }
+    
+            /* Load More Button */
+            .load-more-container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            .load-more-btn {
+                padding: 16px 48px;
+                background-color: #23B4E9;
+                color: #fff;
+                font-family: 'Work Sans', sans-serif;
+                font-size: 18px;
+                font-weight: 600;
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                box-shadow: 0px 8px 16px rgba(35, 180, 233, 0.3);
+            }
+    
+            .load-more-btn:hover {
+                background-color: #1a94c4;
+                transform: translateY(-2px);
+                box-shadow: 0px 12px 24px rgba(35, 180, 233, 0.4);
+            }
+    
+            .load-more-btn:active {
+                transform: translateY(0);
+            }
+    
+            .load-more-container.hidden {
+                display: none;
+            }
+    
+            /* Responsive Design */
+            @media (max-width: 1024px) {
+                .testimonials-container {
+                    padding: 64px 32px;
+                }
+    
+                .testimonials-title h1,
+                .title-subtitle {
+                    font-size: 48px;
+                }
+    
+                .masonry-grid {
+                    flex-direction: column;
+                }
+    
+                .masonry-column {
+                    width: 100%;
+                }
+            }
+    
+            @media (max-width: 768px) {
+                .testimonials-container {
+                    padding: 32px 16px;
+                    gap: 32px;
+                }
+    
+                .testimonials-title h1,
+                .title-subtitle {
+                    font-size: 36px;
+                }
+    
+                .testimonials-description {
+                    font-size: 18px;
+                }
+    
+                .card-content {
+                    padding: 24px;
+                }
+    
+                .card-image {
+                    height: 300px;
+                }
+    
+                .load-more-btn {
+                    padding: 14px 36px;
+                    font-size: 16px;
+                }
+            }
+        </style>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const loadMoreBtn = document.getElementById('loadMoreBtn');
+                const loadMoreContainer = document.getElementById('loadMoreContainer');
+                const hiddenCards = document.querySelectorAll('.hidden-card');
+    
+                loadMoreBtn.addEventListener('click', function() {
+                    // Show all hidden cards with staggered animation
+                    hiddenCards.forEach((card, index) => {
+                        setTimeout(() => {
+                            card.classList.remove('hidden-card');
+                            card.classList.add('show-card');
+                        }, index * 100); // Stagger by 100ms
+                    });
+    
+                    // Hide the load more button
+                    setTimeout(() => {
+                        loadMoreContainer.classList.add('hidden');
+                    }, hiddenCards.length * 100);
+                });
+            });
+        </script>
     </section>
-    
-    
 
     <script>
     let currentSlide = 0;
