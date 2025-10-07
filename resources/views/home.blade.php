@@ -725,6 +725,7 @@
     
                     <!-- Card 3 - Hidden -->
                     <div class="testimonial-card card-text-only hidden-card" data-visible="false">
+                        <img src="{{asset('images/Testimonial9.jpeg')}}" alt="testimonial" class="card-image">
                         <div class="card-content">
                             <h3 class="card-name">Annarie Theron</h3>
                             <p class="card-subtitle">Breastmilk Donor</p>
@@ -736,6 +737,7 @@
     
                     <!-- Card 4 - Hidden -->
                     <div class="testimonial-card card-text-only hidden-card" data-visible="false">
+                        <img src="{{asset('images/Testimonial12.jpeg')}}" alt="testimonial" class="card-image">
                         <div class="card-content">
                             <h3 class="card-name">Pepita Emeyene</h3>
                             <p class="card-subtitle">Breastmilk Donor</p>
@@ -747,6 +749,7 @@
     
                     <!-- Card 5 - Hidden -->
                     <div class="testimonial-card card-text-only hidden-card" data-visible="false">
+                        <img src="{{asset('images/Testimonial16.jpeg')}}" alt="testimonial" class="card-image">
                         <div class="card-content">
                             <h3 class="card-name">Kaylin Wilson</h3>
                             <p class="card-subtitle">Breastmilk Donor</p>
@@ -758,6 +761,7 @@
     
                     <!-- Card 6 - Hidden -->
                     <div class="testimonial-card card-text-only hidden-card" data-visible="false">
+                        <img src="{{asset('images/Testimonial14.jpeg')}}" alt="testimonial" class="card-image">
                         <div class="card-content">
                             <h3 class="card-name">Nthabiseng Qhesi</h3>
                             <p class="card-subtitle">Breastmilk Donor</p>
@@ -772,6 +776,7 @@
                 <div class="masonry-column">
                     <!-- Card 7 - Initial -->
                     <div class="testimonial-card card-text-only" data-visible="true">
+                        <img src="{{asset('images/Testimonial8.jpeg')}}" alt="testimonial" class="card-image">
                         <div class="card-content">
                             <h3 class="card-name">Gomotseng Ndlovu Mannya</h3>
                             <p class="card-subtitle">Breastmilk Donor</p>
@@ -795,6 +800,7 @@
     
                     <!-- Card 9 - Hidden -->
                     <div class="testimonial-card card-text-only hidden-card" data-visible="false">
+                        <img src="{{asset('images/Testimonial10.jpeg')}}" alt="testimonial" class="card-image">
                         <div class="card-content">
                             <h3 class="card-name">Barbra Van den Merwe</h3>
                             <p class="card-subtitle">Breastmilk Donor</p>
@@ -806,6 +812,7 @@
     
                     <!-- Card 10 - Hidden -->
                     <div class="testimonial-card card-text-only hidden-card" data-visible="false">
+                        <img src="{{asset('images/Testimonial13.jpeg')}}" alt="testimonial" class="card-image">
                         <div class="card-content">
                             <h3 class="card-name">Linda-Ann Swart</h3>
                             <p class="card-subtitle">Breastmilk Donor</p>
@@ -817,6 +824,7 @@
     
                     <!-- Card 11 - Hidden -->
                     <div class="testimonial-card card-text-only hidden-card" data-visible="false">
+                        <img src="{{asset('images/Testimonial17.jpeg')}}" alt="testimonial" class="card-image">
                         <div class="card-content">
                             <h3 class="card-name">Lihlethu Mhlongo</h3>
                             <p class="card-subtitle">Born at Nelspruit Mediclinic</p>
@@ -828,6 +836,7 @@
     
                     <!-- Card 12 - Hidden -->
                     <div class="testimonial-card card-text-only hidden-card" data-visible="false">
+                        <img src="{{asset('images/Testimonial15.jpeg')}}" alt="testimonial" class="card-image">
                         <div class="card-content">
                             <h3 class="card-name">Shanta Bosman</h3>
                             <p class="card-subtitle">Breastmilk Donor</p>
@@ -854,6 +863,7 @@
     
                     <!-- Card 14 - Initial -->
                     <div class="testimonial-card card-text-only" data-visible="true">
+                        <img src="{{asset('images/Testimonial60.jpg')}}" alt="testimonial" class="card-image">
                         <div class="card-content">
                             <h3 class="card-name">Sr Monageng</h3>
                             <p class="card-subtitle">Unit Manager, Joe Morolong Memorial Hospital</p>
@@ -876,6 +886,7 @@
     
                     <!-- Card 16 - Hidden -->
                     <div class="testimonial-card card-text-only hidden-card" data-visible="false">
+                        <img src="{{asset('images/Testimonial11.jpeg')}}" alt="testimonial" class="card-image">
                         <div class="card-content">
                             <h3 class="card-name">Stefanie Botha</h3>
                             <p class="card-subtitle">Breastmilk Donor</p>
@@ -887,6 +898,7 @@
     
                     <!-- Card 17 - Hidden -->
                     <div class="testimonial-card card-text-only hidden-card" data-visible="false">
+                        <img src="{{asset('images/Testimonial18.jpeg')}}" alt="testimonial" class="card-image">
                         <div class="card-content">
                             <h3 class="card-name">Nikita & Jeremy Foord</h3>
                             <p class="card-subtitle">Parents</p>
