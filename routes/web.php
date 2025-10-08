@@ -3,6 +3,7 @@
 use App\Http\Controllers\DonateController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\SearchController;
 use App\Http\Controllers\VolunteerController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Mail;
@@ -82,6 +83,8 @@ Route::get('/volunteer', function(Request $request){
     $memberGroupID = $request->get('memberGroupID', 4); // Default to 4 for volunteers
     return view('volunteer', compact('memberGroupID'));
 })->name('volunteer');
+
+Route::get('/search', [SearchController::class, 'search'])->name('search');
 
 Route::get('/get-involved', function() {
     return view('get-involved');

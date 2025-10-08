@@ -7,7 +7,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="Author" content="SABR" />
     <title>@yield('title', 'SABR: South African Breastmilk Reserve')</title>
-    <meta name="description" content="@yield('meta-description', 'South African Breastmilk Reserve - Bringing milk to babies, safely.')">
+    <meta name="description"
+        content="@yield('meta-description', 'South African Breastmilk Reserve - Bringing milk to babies, safely.')">
     <meta name="Keywords"
         content="Breast milk bank johannesburg, infant feeding, breastfeeding, breast feeding, breast is best, Feed for Life initiative, breast milk, breastmilk banking" />
     <!-- Fonts -->
@@ -42,16 +43,25 @@
         </div>
     </div>
     <div class="navigation wrapper  !fixed   py-[28px]">
-        <a href={{route('home')}}>
+        <a href="{{route('home')}}">
             <img src="{{ asset('images/logo.png') }}" class="h-[112px] rounded-lg" alt="Logo">
         </a>
-
-
-        <div class="md:hidden cursor-pointer" id="mobile-menu-button">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
+    
+        <!-- Mobile Controls (Hamburger + Search) -->
+        <div class="md:hidden flex items-center gap-4">
+            <!-- Search Button for Mobile -->
+            <button id="search-btn-mobile" class="flex items-center justify-center cursor-pointer">
+                <img src="{{asset('images/search-icon.png')}}" class="w-6 h-6" alt="Search" />
+            </button>
+            
+            <!-- Hamburger Menu -->
+            <div class="cursor-pointer" id="mobile-menu-button">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </div>
         </div>
+    
         <div class="buttons md:flex hidden">
             <a href="{{ route('home') }}" class="nav-button {{ Route::is('home') ? 'bg-[#dedad4] ' : '' }}">
                 <div class="button">Home</div>
@@ -63,7 +73,7 @@
                     <img class="mingcuteright-line-icon ml-2 w-4 h-4" alt=""
                         src="{{ asset('images/nav-dropdown-icon.svg') }}">
                 </div>
-
+    
                 <!-- Dropdown Menu -->
                 <div
                     class="dropdown-menu absolute text-sm left-0 mt-2 w-[255px] bg-[#f8f5f0] border  border-gray-300 dropdown-shadow px-[12px] py-[6px] text-left rounded-3xl hidden">
@@ -73,8 +83,7 @@
                     <a href="{{ route('stats') }}"
                         class="{{ Route::is('stats') ? 'bg-[#dedad4] ' : '' }} text-left block px-4 py-2 transition ease-in duration-[0.4s] nav-btn-colour hover:bg-white rounded-xl">Stats</a>
                     <a href="{{ route('board-of-directors') }}"
-                        class="{{ Route::is('board-of-directors') ? 'bg-[#dedad4] ' : '' }} text-left block px-4 py-2 nav-btn-colour transition ease-in duration-[0.4s] hover:bg-white rounded-xl"
-                        class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">Our
+                        class="{{ Route::is('board-of-directors') ? 'bg-[#dedad4] ' : '' }} text-left block px-4 py-2 nav-btn-colour transition ease-in duration-[0.4s] hover:bg-white rounded-xl">Our
                         Board of Directors</a>
                     <a href="{{asset('documents/SABR-Annual-Report-14-10-2020.pdf')}}" target="_blank"
                         class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl nav-btn-colour"><span
@@ -85,20 +94,20 @@
                         Financial Statements</a>
                 </div>
             </div>
-
+    
             <div class="relative">
                 <a href="{{ route(name: 'impact') }}"
                     class="nav-button {{ Route::is('impact') ? 'bg-[#dedad4] ' : '' }}">
                     <div class="button">Our Impact</div>
                 </a>
             </div>
-
+    
             <div class="relative">
                 <div class="nav-button flex items-center cursor-pointer p-2  rounded-lg">
                     <div class="button">Innovation</div>
                     <img class="mingcuteright-line-icon" alt="" src="{{ asset('images/nav-dropdown-icon.svg') }}">
                 </div>
-
+    
                 <div
                     class="dropdown-menu absolute text-sm left-0 mt-2 w-[455px] bg-[#f8f5f0] border  border-gray-300 dropdown-shadow pl-[12px] pr-[5px] py-[6px] text-left rounded-3xl hidden">
                     <a href="{{ route('feed-for-life') }}"
@@ -123,8 +132,7 @@
                         Research at SABR</a>
                 </div>
             </div>
-
-
+    
             <div class="relative">
                 <a href="{{ route(name: 'get-involved') }}"
                     class="nav-button {{ Route::is('get-involved') ? 'bg-[#dedad4] text-[#00000080]' : '' }}">
@@ -136,7 +144,7 @@
                     <div class="button">Resources</div>
                     <img class="mingcuteright-line-icon" alt="" src="{{ asset('images/nav-dropdown-icon.svg') }}">
                 </div>
-
+    
                 <div
                     class="dropdown-menu absolute text-sm left-0 mt-2 w-[300px] bg-[#f8f5f0] border  border-gray-300 dropdown-shadow px-[12px] py-[6px] text-left rounded-3xl hidden">
                     <a href="{{ route('breast-is-best') }}"
@@ -147,18 +155,13 @@
                         class="{{ Route::is('why-the-cost') ? 'bg-[#dedad4] text-[#00000080]' : '' }} nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">Why
                         The Cost?</a>
                     <a href="{{ route('safe-user-of-dbm') }}"
-                        class="{{ Route::is('safe-user-of-dbm') ? 'bg-[#dedad4] text-[#00000080]' : '' }} nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl"
-                        class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">The
+                        class="{{ Route::is('safe-user-of-dbm') ? 'bg-[#dedad4] text-[#00000080]' : '' }} nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">The
                         Safe Use of DBM</a>
                     <a href="{{ route('news') }}"
-                        class="{{ Route::is('news') ? 'bg-[#dedad4] text-[#00000080]' : '' }} nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl"
-                        class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">News</a>
-                        <a href="{{ route('milk-banks') }}"
-                        class="{{ Route::is('milk-banks') ? 'bg-[#dedad4] text-[#00000080]' : '' }} nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl"
-                        class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">Breast Milk Banks</a>
-                    {{-- <a href="#"
-                        class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl nav-btn-colour">How
-                        to Access DBM / Value of DBM</a> --}}
+                        class="{{ Route::is('news') ? 'bg-[#dedad4] text-[#00000080]' : '' }} nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">News</a>
+                    <a href="{{ route('milk-banks') }}"
+                        class="{{ Route::is('milk-banks') ? 'bg-[#dedad4] text-[#00000080]' : '' }} nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">Breast
+                        Milk Banks</a>
                 </div>
             </div>
             <div class="relative">
@@ -167,15 +170,16 @@
                     <div class="button">Contact Us</div>
                 </a>
             </div>
-            <div class="nav-button7  md:flex hidden cursor-pointer z-0">
+            <div class="nav-button7 md:flex hidden cursor-pointer z-0">
                 <a href="http://payfast.co.za/donate/go/southafricanbreastmilkreserve" target="_blank"
                     class="button7">Donate Today</a>
             </div>
+            <!-- Search Button Desktop -->
+            <button id="search-btn" class="flex items-center justify-center cursor-pointer">
+                <img src="{{asset('images/search-icon.png')}}" alt="Search" />
+            </button>
         </div>
-       
 
-
-        <!-- Mobile Menu -->
         <div class="mobile-menu  hidden md:hidden absolute top-[140px] left-4 w-[350px] mx-auto bg-[#f8f5f0] border border-gray-300 dropdown-shadow px-[12px] py-[6px] text-left rounded-3xl z-50"
             id="mobile-menu">
             <a href="{{ route('home') }}"
@@ -263,9 +267,6 @@
                         class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">News</a>
                         <a href="{{ route('milk-banks') }}"
                         class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">Breast Milk Banks</a>
-                    {{-- <a href="#"
-                        class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">How to
-                        Access DBM / Value of DBM</a> --}}
                 </div>
             </div>
 
@@ -280,7 +281,285 @@
             </div>
         </div>
     </div>
+    
+    <!-- Search Modal -->
+    <div id="search-modal"
+        class="fixed inset-0 bg-black bg-opacity-50 z-[9999] hidden items-center justify-center px-4">
+        <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[80vh] overflow-hidden shadow-2xl">
+            <!-- Modal Header -->
+            <div class="p-6 border-b border-gray-200">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-2xl font-semibold text-[#905460]">Search SABR</h3>
+                    <button id="close-search-modal"
+                        class="text-gray-400 hover:text-gray-600 transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <!-- Search Input -->
+                <div class="relative">
+                    <input type="text" id="search-input"
+                        class="w-full px-4 py-3 pr-12 rounded-xl border-2 border-gray-200 focus:border-[#23b4e9] focus:outline-none transition-colors"
+                        placeholder="Search for pages, programs, or information...">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5 absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+            </div>
+    
+            <!-- Search Results -->
+            <div id="search-results" class="p-6 overflow-y-auto max-h-[50vh]">
+                <div class="text-center text-gray-500 py-8">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="w-16 h-16 mx-auto mb-4 text-gray-300" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    <p class="text-lg">Start typing to search...</p>
+                </div>
+            </div>
+    
+            <!-- Loading State -->
+            <div id="search-loading" class="hidden p-6">
+                <div class="flex items-center justify-center py-8">
+                    <div
+                        class="animate-spin rounded-full h-12 w-12 border-b-2 border-[#23b4e9]">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    
+    <style>
+        #search-modal.show {
+            display: flex !important;
+        }
+    
+        .search-result-item {
+            padding: 16px;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            transition: all 0.3s ease;
+            border: 1px solid #f0f0f0;
+        }
+    
+        .search-result-item:hover {
+            background-color: #f8f5f0;
+            border-color: #23b4e9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+    
+        .search-result-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #905460;
+            margin-bottom: 8px;
+        }
+    
+        .search-result-description {
+            font-size: 14px;
+            color: #666562;
+            line-height: 1.5;
+        }
+    
+        .search-result-url {
+            font-size: 12px;
+            color: #23b4e9;
+            margin-top: 4px;
+        }
+
+        /* Mobile-specific modal adjustments */
+        @media only screen and (max-width: 768px) {
+            #search-modal > div {
+                max-width: 95%;
+                margin: 0 auto;
+            }
+            
+            #search-modal .p-6 {
+                padding: 1rem;
+            }
+            
+            #search-results {
+                max-height: 60vh;
+            }
+
+            .search-result-title {
+                font-size: 16px;
+            }
+            
+            .search-result-description {
+                font-size: 13px;
+            }
+        }
+
+        /* Highlight styling */
+        mark {
+            background-color: #fef08a;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+    </style>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchBtn = document.getElementById('search-btn');
+            const searchBtnMobile = document.getElementById('search-btn-mobile');
+            const searchModal = document.getElementById('search-modal');
+            const closeModal = document.getElementById('close-search-modal');
+            const searchInput = document.getElementById('search-input');
+            const searchResults = document.getElementById('search-results');
+            const searchLoading = document.getElementById('search-loading');
+    
+            let searchTimeout;
+    
+            // Open modal - Desktop
+            if (searchBtn) {
+                searchBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    searchModal.classList.add('show');
+                    searchModal.style.display = 'flex';
+                    searchInput.focus();
+                });
+            }
+
+            // Open modal - Mobile
+            if (searchBtnMobile) {
+                searchBtnMobile.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    searchModal.classList.add('show');
+                    searchModal.style.display = 'flex';
+                    searchInput.focus();
+                });
+            }
+    
+            // Close modal
+            if (closeModal) {
+                closeModal.addEventListener('click', function() {
+                    searchModal.classList.remove('show');
+                    searchModal.style.display = 'none';
+                    searchInput.value = '';
+                    searchResults.innerHTML = `
+                        <div class="text-center text-gray-500 py-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 mx-auto mb-4 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                            <p class="text-lg">Start typing to search...</p>
+                        </div>
+                    `;
+                });
+            }
+    
+            // Close on outside click
+            if (searchModal) {
+                searchModal.addEventListener('click', function(e) {
+                    if (e.target === searchModal) {
+                        closeModal.click();
+                    }
+                });
+            }
+    
+            // Close on ESC key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && searchModal.classList.contains('show')) {
+                    closeModal.click();
+                }
+            });
+    
+            // Search functionality
+            if (searchInput) {
+                searchInput.addEventListener('input', function() {
+                    clearTimeout(searchTimeout);
+                    const query = this.value.trim();
+    
+                    if (query.length < 2) {
+                        searchResults.innerHTML = `
+                            <div class="text-center text-gray-500 py-8">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 mx-auto mb-4 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg>
+                                <p class="text-lg">Type at least 2 characters to search...</p>
+                            </div>
+                        `;
+                        return;
+                    }
+    
+                    searchTimeout = setTimeout(() => {
+                        performSearch(query);
+                    }, 300);
+                });
+            }
+    
+            function performSearch(query) {
+                searchResults.classList.add('hidden');
+                searchLoading.classList.remove('hidden');
+    
+                fetch(`/search?query=${encodeURIComponent(query)}`, {
+                        headers: {
+                            'X-Requested-With': 'XMLHttpRequest'
+                        }
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        searchLoading.classList.add('hidden');
+                        searchResults.classList.remove('hidden');
+    
+                        if (data.length === 0) {
+                            searchResults.innerHTML = `
+                                <div class="text-center text-gray-500 py-8">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 mx-auto mb-4 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <p class="text-lg font-medium mb-2">No results found</p>
+                                    <p class="text-sm">Try different keywords or check your spelling</p>
+                                </div>
+                            `;
+                            return;
+                        }
+    
+                        let html = '';
+                        data.forEach(result => {
+                            html += `
+                                <a href="${result.url}" class="search-result-item block">
+                                    <div class="search-result-title">${highlightText(result.title, query)}</div>
+                                    <div class="search-result-description">${highlightText(result.description, query)}</div>
+                                    <div class="search-result-url">${result.url}</div>
+                                </a>
+                            `;
+                        });
+    
+                        searchResults.innerHTML = html;
+                    })
+                    .catch(error => {
+                        searchLoading.classList.add('hidden');
+                        searchResults.classList.remove('hidden');
+                        searchResults.innerHTML = `
+                            <div class="text-center text-red-500 py-8">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <p class="text-lg font-medium mb-2">Something went wrong</p>
+                                <p class="text-sm">Please try again later</p>
+                            </div>
+                        `;
+                    });
+            }
+    
+            function highlightText(text, query) {
+                const regex = new RegExp(`(${query})`, 'gi');
+                return text.replace(regex, '<mark class="bg-yellow-200 px-1 rounded">$1</mark>');
+            }
+        });
+    </script>
 
 
 
@@ -335,20 +614,10 @@
                     class="w-[32px] h-[32px] flex justify-center items-center border border-[#fff] rounded-lg">
                     <img src="{{asset('images/favebook-icon.svg')}}" />
                 </a>
-                {{-- <a class="w-[32px] h-[32px] flex justify-center items-center border border-[#fff]  rounded-lg">
-                    <img src="{{asset('images/linkedin-icon.svg')}}" />
-                </a>
-                <div class="w-[32px] h-[32px] flex justify-center items-center border border-[#fff]  rounded-lg">
-                    <img src="{{asset('images/youtube-icon.svg')}}" />
-                </div> --}}
                 <a href="https://twitter.com/SABRMilk" target="_blank"
                     class="w-[32px] h-[32px] flex justify-center items-center border border-[#fff]  rounded-lg">
                     <img src="{{asset('images/twitter-icon.svg')}}" />
                 </a>
-                {{-- <div class="w-[32px] h-[32px] flex justify-center items-center border border-[#fff]  rounded-lg">
-                    <img src="{{asset('images/tiktik-icon.svg')}}" />
-                </div> --}}
-
             </div>
         </div>
 
@@ -362,12 +631,12 @@
         </div>
         </div>
     </footer>
-    
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
-@stack('scripts')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    @stack('scripts')
 </body>
 
 </html>
