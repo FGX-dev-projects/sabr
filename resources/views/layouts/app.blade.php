@@ -42,7 +42,7 @@
         <div class="frame-child">
         </div>
     </div>
-    <div class="navigation wrapper  !fixed   py-[28px]">
+    <div class="navigation wrapper   !fixed   py-[28px]">
         <a href="{{route('home')}}">
             <img src="{{ asset('images/logo.png') }}" class="h-[112px] rounded-lg" alt="Logo">
         </a>

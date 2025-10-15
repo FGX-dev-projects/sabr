@@ -2,6 +2,29 @@
 @section('title', 'SABR: South African Breastmilk Reserve - Breast is Best')
 @section('meta-description', 'South African Breastmilk Reserve - Bringing milk to babies, safely.')
 @section('content')
+
+<style>
+/* FAQ Bottle Flip Styles */
+.material-icons.drop {
+  padding: 10px;
+  width: 48px;
+  height: 48px;
+  transition: transform 0.5s ease-in-out;
+  pointer-events: auto;
+}
+
+.accordion.active .material-icons.drop {
+  transform: rotate(180deg);
+}
+
+.material-icons.drop img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+</style>
+
     <section class="relative w-full h-[300px] md:h-[350px]  overflow-hidden ">
         <!-- Background Video -->
 
@@ -97,7 +120,7 @@
                         </div>
                     </div>
                     <div class="w-full text-black text-[18px] font-inter font-light break-words flex-grow">
-                        A dangerous infection of the intestine, which typically affects premature, formula-fed babies in the third to fourth week of life (source: Medscape.com).
+                        A dangerous infection of the intestine, which typically affects premature, formula-fed babies in the third to fourth week of life (source: Medscape.com).
                     </div>
                 </div>
 
@@ -114,7 +137,9 @@
               <div class="question-wrapper">
                   <p class=" font-inter text-[20px] font-bold text-[#107BA2]" title="">
                     Why should women donate breastmilk?</p>
-                     <img src="{{asset('images/down-2.svg')}}" class="material-icons drop  cursor-pointer"/>
+                     <div class="material-icons drop cursor-pointer">
+                        <img src="{{asset('images/bottle.png')}}" alt="Toggle FAQ"/>
+                     </div>
               </div>
               <div class="answer-wrapper px-4 pb-6">
                 <p class=" font-inter text-[18px] text-[#666562] font-light">To save the lives of the most vulnerable babies. Breastmilk is the perfect first "food". Babies are born with immature immune systems, and breastmilk being rich in antibodies and immune factors helps to "speed" up the development of their immune systems</p>
@@ -128,7 +153,9 @@
                   <p class=" font-inter text-[20px] font-bold text-[#107BA2]" title="">
                     How does it work?
                 </p>
-                     <img src="{{asset('images/down-2.svg')}}" class="material-icons drop  cursor-pointer"/>
+                     <div class="material-icons drop cursor-pointer">
+                        <img src="{{asset('images/bottle.png')}}" alt="Toggle FAQ"/>
+                     </div>
               </div>
               <div class="answer-wrapper px-4 pb-6">
                 <p class=" font-inter text-[18px] text-[#666562] font-light">
@@ -143,7 +170,9 @@
                   <p class=" font-inter text-[20px] font-bold text-[#107BA2]" title="">
                     Who receives donated breastmilk?
 </p>
-                     <img src="{{asset('images/down-2.svg')}}" class="material-icons drop  cursor-pointer"/>
+                     <div class="material-icons drop cursor-pointer">
+                        <img src="{{asset('images/bottle.png')}}" alt="Toggle FAQ"/>
+                     </div>
               </div>
               <div class="answer-wrapper px-4 pb-6">
                 <p class=" font-inter text-[18px] text-[#666562] font-light">Premature babies, weighing under 1.8kgs at birth and younger than 14 days of age. Without breastmilk during their first two weeks of life, these babies are vulnerable to infections and diseases due to their very immature immune systems. Under our outpatient programme, we treat every request on a case by case basis after discussion with our Medical Advisory Board, but generally our recipients are babies with severe allergies where breastmilk is a medical necessity or mom needs to interrupt breastfeeding due to medical treatment contraindicated to breastfeeding.</p>
@@ -158,7 +187,9 @@
                     Who are the safest donors?
 
                 </p>
-                     <img src="{{asset('images/down-2.svg')}}" class="material-icons drop  cursor-pointer"/>
+                     <div class="material-icons drop cursor-pointer">
+                        <img src="{{asset('images/bottle.png')}}" alt="Toggle FAQ"/>
+                     </div>
               </div>
               <div class="answer-wrapper px-4 pb-6">
                 <p class=" font-inter text-[18px] text-[#666562] font-light">Breastfeeding women who lead a healthy lifestyle and have excess breastmilk</p>
@@ -174,7 +205,9 @@
 
 
                 </p>
-                     <img src="{{asset('images/down-2.svg')}}" class="material-icons drop  cursor-pointer"/>
+                     <div class="material-icons drop cursor-pointer">
+                        <img src="{{asset('images/bottle.png')}}" alt="Toggle FAQ"/>
+                     </div>
               </div>
               <div class="answer-wrapper px-4 pb-6">
                 <p class=" font-inter text-[18px] text-[#666562] font-light">Any healthy, lactating mother who:
@@ -197,7 +230,9 @@
 
 
                 </p>
-                     <img src="{{asset('images/down-2.svg')}}" class="material-icons drop  cursor-pointer"/>
+                     <div class="material-icons drop cursor-pointer">
+                        <img src="{{asset('images/bottle.png')}}" alt="Toggle FAQ"/>
+                     </div>
               </div>
               <div class="answer-wrapper px-4 pb-6">
                 <p class="font-inter text-[18px] text-[#666562] font-light">No, all donors are required to complete a screening questionnaire and undergo the necessary blood tests.</p>
@@ -214,7 +249,9 @@
 
 
                 </p>
-                     <img src="{{asset('images/down-2.svg')}}" class="material-icons drop  cursor-pointer"/>
+                     <div class="material-icons drop cursor-pointer">
+                        <img src="{{asset('images/bottle.png')}}" alt="Toggle FAQ"/>
+                     </div>
               </div>
               <div class="answer-wrapper px-4 pb-6">
                 <p class="font-inter text-[18px] text-[#666562] font-light">Donor mothers are tested for HIV and hepatitis B and microbiological testing is done on the breastmilk.</p>
@@ -228,7 +265,9 @@
                   <p class=" font-inter text-[20px] font-bold text-[#107BA2]" title="">
                    How often can I donate breastmilk?
                 </p>
-                     <img src="{{asset('images/down-2.svg')}}" class="material-icons drop  cursor-pointer"/>
+                     <div class="material-icons drop cursor-pointer">
+                        <img src="{{asset('images/bottle.png')}}" alt="Toggle FAQ"/>
+                     </div>
               </div>
               <div class="answer-wrapper px-4 pb-6">
                 <p class="font-inter text-[18px] text-[#666562] font-light">As often as what you are able to.</p>
@@ -242,7 +281,9 @@
                   <p class=" font-inter text-[20px] font-bold text-[#107BA2]" title="">
                     How much breastmilk must I donate at one time?
                 </p>
-                     <img src="{{asset('images/down-2.svg')}}" class="material-icons drop  cursor-pointer"/>
+                     <div class="material-icons drop cursor-pointer">
+                        <img src="{{asset('images/bottle.png')}}" alt="Toggle FAQ"/>
+                     </div>
               </div>
               <div class="answer-wrapper px-4 pb-6">
                 <p class="font-inter text-[18px] text-[#666562] font-light">There is no minimum requirement, every donation is valued.</p>
@@ -256,7 +297,9 @@
                   <p class=" font-inter text-[20px] font-bold text-[#107BA2]" title="">
                     Will I receive payment for my breastmilk?
                 </p>
-                     <img src="{{asset('images/down-2.svg')}}" class="material-icons drop  cursor-pointer"/>
+                     <div class="material-icons drop cursor-pointer">
+                        <img src="{{asset('images/bottle.png')}}" alt="Toggle FAQ"/>
+                     </div>
               </div>
               <div class="answer-wrapper px-4 pb-6">
                 <p class="font-inter text-[18px] text-[#666562] font-light">No, legally we are not allowed to compensate our donor mothers, as breastmilk is considered a human tissue in South Africa. Breastmilk, like blood, is donated as a charitable exercise to save the lives of premature babies and not for financial gain.</p>
@@ -272,7 +315,9 @@
 
 
                 </p>
-                     <img src="{{asset('images/down-2.svg')}}" class="material-icons drop  cursor-pointer"/>
+                     <div class="material-icons drop cursor-pointer">
+                        <img src="{{asset('images/bottle.png')}}" alt="Toggle FAQ"/>
+                     </div>
               </div>
               <div class="answer-wrapper px-4 pb-6">
                 <p class=" font-inter text-[18px] text-[#666562] font-light">
@@ -293,7 +338,9 @@
                    
 Can I only donate milk I expressed after becoming registered? / Is any breastmilk acceptable as a donation?
                 </p>
-                     <img src="{{asset('images/down-2.svg')}}" class="material-icons drop  cursor-pointer"/>
+                     <div class="material-icons drop cursor-pointer">
+                        <img src="{{asset('images/bottle.png')}}" alt="Toggle FAQ"/>
+                     </div>
               </div>
               <div class="answer-wrapper px-4 pb-6">
                 <p class="font-inter text-[18px] text-[#666562] font-light">No, we will gladly accept any milk that has been stored correctly and is not older than 6 months, provided you pass our screening process.</p>
@@ -309,7 +356,9 @@ Can I only donate milk I expressed after becoming registered? / Is any breastmil
                     What is safe breastmilk?
 
                 </p>
-                     <img src="{{asset('images/down-2.svg')}}" class="material-icons drop  cursor-pointer"/>
+                     <div class="material-icons drop cursor-pointer">
+                        <img src="{{asset('images/bottle.png')}}" alt="Toggle FAQ"/>
+                     </div>
               </div>
               <div class="answer-wrapper px-4 pb-6">
                 <p class="font-inter text-[18px] text-[#666562] font-light">Breastmilk from a healthy donor that has been screened / tested, pasteurised and stored correctly could be considered safe.</p>
@@ -323,7 +372,9 @@ Can I only donate milk I expressed after becoming registered? / Is any breastmil
                   <p class=" font-inter text-[20px] font-bold text-[#107BA2]" title="">
                     What infections can be transmitted by breastmilk?
                 </p>
-                     <img src="{{asset('images/down-2.svg')}}" class="material-icons drop  cursor-pointer"/>
+                     <div class="material-icons drop cursor-pointer">
+                        <img src="{{asset('images/bottle.png')}}" alt="Toggle FAQ"/>
+                     </div>
               </div>
               <div class="answer-wrapper px-4 pb-6">
                 <p class="font-inter text-[18px] text-[#666562] font-light">HIV, hepatitis B, as well as other viral infections can be transmitted by breastmilk, which is why our donors are screened and the milk is tested before use.</p>
@@ -338,7 +389,9 @@ Can I only donate milk I expressed after becoming registered? / Is any breastmil
                     Who should not donate breastmilk?
 
                 </p>
-                     <img src="{{asset('images/down-2.svg')}}" class="material-icons drop  cursor-pointer"/>
+                     <div class="material-icons drop cursor-pointer">
+                        <img src="{{asset('images/bottle.png')}}" alt="Toggle FAQ"/>
+                     </div>
               </div>
               <div class="answer-wrapper px-4 pb-6">
                 <p class=" font-inter text-[18px] text-[#666562] font-light">Amongst others, women who:
@@ -362,7 +415,9 @@ Can I only donate milk I expressed after becoming registered? / Is any breastmil
                     How safe is it to donate breastmilk?
 
                 </p>
-                     <img src="{{asset('images/down-2.svg')}}" class="material-icons drop  cursor-pointer"/>
+                     <div class="material-icons drop cursor-pointer">
+                        <img src="{{asset('images/bottle.png')}}" alt="Toggle FAQ"/>
+                     </div>
               </div>
               <div class="answer-wrapper px-4 pb-6">
                 <p class="font-inter text-[18px] text-[#666562] font-light">There is no risk in donating breastmilk.</p>
@@ -372,4 +427,29 @@ Can I only donate milk I expressed after becoming registered? / Is any breastmil
 
         </div>
       </section>
+
+<script>
+// FAQ Bottle Flip JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+  const accordions = document.querySelectorAll('.accordion');
+  
+  accordions.forEach(accordion => {
+    const questionWrapper = accordion.querySelector('.question-wrapper');
+    const answerWrapper = accordion.querySelector('.answer-wrapper');
+    
+    questionWrapper.addEventListener('click', function() {
+      // Toggle active class for bottle rotation
+      accordion.classList.toggle('active');
+      
+      // Toggle answer visibility
+      if (answerWrapper.style.display === 'block') {
+        answerWrapper.style.display = 'none';
+      } else {
+        answerWrapper.style.display = 'block';
+      }
+    });
+  });
+});
+</script>
+
 @endsection

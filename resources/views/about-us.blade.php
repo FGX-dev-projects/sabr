@@ -204,7 +204,7 @@
                 Key Milestones
             </div>
 
-            <img src="{{asset('images/newtimeline.png')}}" class="block mx-auto"/>
+            <img src="{{asset('images/milestones.png')}}" class="block mx-auto"/>
             <p class="mt-[98px] font-inter text-light-2 !text-left text-[24px]  text-[#666562]">
                 Through our vision, partnerships, and unwavering commitment, SABR continues to champion the health and well-being of South Africa’s most vulnerable infants.
             </p>
