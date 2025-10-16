@@ -53,9 +53,13 @@ Route::get('/breast-is-best', function(){
 })->name('breast-is-best');
 
 
-Route::get('/safe-user-of-dbm', function(){
+Route::get('/safe-use-of-dbm', function(){
     return view('safe-user-of-dbm');
-})->name('safe-user-of-dbm');
+})->name('safe-use-of-dbm');
+
+Route::get('/toolkit-access-value', function(){
+    return view('toolkit-access-value');
+})->name('toolkit-access-value');
 
 Route::get('/why-the-cost', function(){
     return view('why-the-cost');

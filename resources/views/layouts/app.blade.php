@@ -22,11 +22,7 @@
         <script src="{{ asset('js/app.js') }}"></script>
     @endif
 
-    <!-- In your HTML head section -->
-
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
-    <!-- Toastr CSS -->
-
 </head>
 
 <body class="font-sans">
@@ -148,15 +144,15 @@
                 <div
                     class="dropdown-menu absolute text-sm left-0 mt-2 w-[300px] bg-[#f8f5f0] border  border-gray-300 dropdown-shadow px-[12px] py-[6px] text-left rounded-3xl hidden">
                     <a href="{{ route('breast-is-best') }}"
-                        class="{{ Route::is('breast-is-best') ? 'bg-[#dedad4] text-[#00000080]' : '' }} nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">Best
-                        In
-                        Breast (FAQs)</a>
+                        class="{{ Route::is('breast-is-best') ? 'bg-[#dedad4] text-[#00000080]' : '' }} nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">Breast is Best (FAQs)</a>
                     <a href="{{ route('why-the-cost') }}"
                         class="{{ Route::is('why-the-cost') ? 'bg-[#dedad4] text-[#00000080]' : '' }} nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">Why
                         The Cost?</a>
-                    <a href="{{ route('safe-user-of-dbm') }}"
-                        class="{{ Route::is('safe-user-of-dbm') ? 'bg-[#dedad4] text-[#00000080]' : '' }} nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">The
+                    <a href="{{ route('safe-use-of-dbm') }}"
+                        class="{{ Route::is('safe-use-of-dbm') ? 'bg-[#dedad4] text-[#00000080]' : '' }} nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">The
                         Safe Use of DBM</a>
+                        <a href="{{ route('toolkit-access-value') }}"
+                        class="{{ Route::is('toolkit-access-value') ? 'bg-[#dedad4] text-[#00000080]' : '' }} nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">How to Access DBM / Value of DBM</a>
                     <a href="{{ route('news') }}"
                         class="{{ Route::is('news') ? 'bg-[#dedad4] text-[#00000080]' : '' }} nav-btn-colour text-left block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">News</a>
                     <a href="{{ route('milk-banks') }}"
@@ -260,9 +256,11 @@
                     <a href="{{ route('why-the-cost') }}"
                         class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">Why The
                         Cost?</a>
-                    <a href="{{ route('safe-user-of-dbm') }}"
+                    <a href="{{ route('safe-use-of-dbm') }}"
                         class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">The Safe
                         Use of DBM</a>
+                        <a href="{{ route('toolkit-access-value') }}"
+                        class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">How to Access DBM / Value of DBM</a>
                         <a href="{{ route('news') }}"
                         class="block px-4 py-2 transition ease-in duration-[0.4s] hover:bg-white rounded-xl">News</a>
                         <a href="{{ route('milk-banks') }}"
@@ -335,7 +333,16 @@
             </div>
         </div>
     </div>
-    
+
+    <!-- Floating Milk Bank Button -->
+    <a href="{{ route('milk-banks') }}" 
+       class="floating-milk-bank-btn"
+       aria-label="Find a Milk Bank Near You">
+        <img src="{{ asset('images/milkbankbtn.gif') }}" 
+             alt="Find Milk Bank" 
+             class="floating-btn-image">
+    </a>
+
     <style>
         #search-modal.show {
             display: flex !important;
@@ -406,8 +413,156 @@
             border-radius: 3px;
             font-weight: 600;
         }
+
+        /* Floating Milk Bank Button Styles */
+        .floating-milk-bank-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 
+                        0 8px 24px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+        }
+
+        .floating-milk-bank-btn:hover {
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2), 
+                        0 12px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        .floating-milk-bank-btn:active {
+            transform: scale(1.05) translateY(-3px);
+        }
+
+        .floating-btn-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .floating-milk-bank-btn {
+                width: 70px;
+                height: 70px;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .floating-milk-bank-btn {
+                width: 60px;
+                height: 60px;
+                bottom: 15px;
+                right: 15px;
+            }
+        }
+
+        /* Pulse animation */
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 
+                            0 8px 24px rgba(0, 0, 0, 0.1),
+                            0 0 0 0 rgba(35, 180, 233, 0.4);
+            }
+            50% {
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 
+                            0 8px 24px rgba(0, 0, 0, 0.1),
+                            0 0 0 10px rgba(35, 180, 233, 0);
+            }
+        }
+
+        .floating-milk-bank-btn {
+            animation: pulse 2s infinite;
+        }
+
+        .floating-milk-bank-btn:hover {
+            animation: none;
+        }
     </style>
-    
+
+    <main>
+        @yield('content')
+    </main>
+
+    <footer class="pt-[80px] pb-[80px] md:pb-[80px] wrapper bg-[#905460]">
+
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center ">
+            <!-- Logo -->
+            <div class="flex flex-col md:flex-row gap-[80px] md:gap-[100px]">
+                <img class="w-[87.15px] h-[118.99px] bg-white rounded-[12px]" src="{{asset('images/logo.png')}}"
+                    alt="Logo" />
+
+                <!-- Navigation Links -->
+                <div class="flex flex-col md:flex-row items-start gap-6 mt-4 md:mt-0">
+                    <div class="flex flex-col items-start gap-3 md:gap-6 text-white text-[18px] font-inter">
+                        <a href="{{route('home')}}">Home</a>
+                        <a href="{{route('news')}}">Media</a>
+                    </div>
+                    <div class="flex flex-col items-start gap-3 md:gap-6 text-white text-[18px] font-inter">
+                        <a href="{{route('about-us')}}">About</a>
+                        <a href="{{route('feed-for-life')}}">Projects</a>
+                    </div>
+                    <div class="flex flex-col items-start gap-3 md:gap-6 text-white  text-[18px] font-inter">
+                        <a href="{{route('breast-is-best')}}">Breast is Best</a>
+                        <a href="{{route('financials')}}" class="items-start">Financials</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Newsletter Signup -->
+            <div
+                class="flex flex-col md:flex-row items-center gap-4 mt-4 md:mt-0 bg-[#834551] wifull border border-[#fff] rounded-[12px] p-3 mb-5">
+                <input type="text"
+                    class="text-[#e7f2f6] bg-[#834551] placeholder:text-[#fff]  placeholder:text-[18px] placeholder:font-inter outline-none w-[250px]"
+                    placeholder="Sign up for our Newsletter">
+                <button
+                    class="px-4 py-2 bg-[#68343e] rounded-[6px] text-[#e7f2f6] text-[18px] font-inter border border-white">
+                    Sign up
+                </button>
+            </div>
+
+
+        </div>
+        <div class="flex justify-start items-center md:justify-center md:mt-10 mt-5 ">
+            <div class=" gap-4 flex flex-row justify-center">
+                <a href="https://www.facebook.com/SABreastmilkReserve/" target="_blank"
+                    class="w-[32px] h-[32px] flex justify-center items-center border border-[#fff] rounded-lg">
+                    <img src="{{asset('images/favebook-icon.svg')}}" />
+                </a>
+                <a href="https://twitter.com/SABRMilk" target="_blank"
+                    class="w-[32px] h-[32px] flex justify-center items-center border border-[#fff]  rounded-lg">
+                    <img src="{{asset('images/twitter-icon.svg')}}" />
+                </a>
+            </div>
+        </div>
+
+
+        <div
+            class="flex justify-center text-start md:text-center items-center md:mt-10 mt-5 text-[#fff] text-[16px] font-open-sans font-normal leading-4 break-words">
+            <a href="{{asset('documents/SABR-Privacy-Policy.pdf')}}">Privacy Policy </a> <span class="m-2"> | </span> <a
+                href="{{asset('documents/SABR-Website-Terms-and-Conditions.pdf')}}">Terms & Conditions</a> <span
+                class="m-2"> | </span> <a href="{{asset('documents/Subject-Access-Request-Form1.pdf')}}">Subject Access
+                Request (SAR)</a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const searchBtn = document.getElementById('search-btn');
@@ -560,81 +715,6 @@
             }
         });
     </script>
-
-
-
-
-    <main>
-        @yield('content')
-    </main>
-
-    <footer class="pt-[80px] pb-[80px] md:pb-[80px] wrapper bg-[#905460]">
-
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-center ">
-            <!-- Logo -->
-            <div class="flex flex-col md:flex-row gap-[80px] md:gap-[100px]">
-                <img class="w-[87.15px] h-[118.99px] bg-white rounded-[12px]" src="{{asset('images/logo.png')}}"
-                    alt="Logo" />
-
-                <!-- Navigation Links -->
-                <div class="flex flex-col md:flex-row items-start gap-6 mt-4 md:mt-0">
-                    <div class="flex flex-col items-start gap-3 md:gap-6 text-white text-[18px] font-inter">
-                        <a href="{{route('home')}}">Home</a>
-                        <a href="{{route('news')}}">Media</a>
-                    </div>
-                    <div class="flex flex-col items-start gap-3 md:gap-6 text-white text-[18px] font-inter">
-                        <a href="{{route('about-us')}}">About</a>
-                        <a href="{{route('feed-for-life')}}">Projects</a>
-                    </div>
-                    <div class="flex flex-col items-start gap-3 md:gap-6 text-white  text-[18px] font-inter">
-                        <a href="{{route('breast-is-best')}}">Breast is Best</a>
-                        <a href="{{route('financials')}}" class="items-start">Financials</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Newsletter Signup -->
-            <div
-                class="flex flex-col md:flex-row items-center gap-4 mt-4 md:mt-0 bg-[#834551] wifull border border-[#fff] rounded-[12px] p-3 mb-5">
-                <input type="text"
-                    class="text-[#e7f2f6] bg-[#834551] placeholder:text-[#fff]  placeholder:text-[18px] placeholder:font-inter outline-none w-[250px]"
-                    placeholder="Sign up for our Newsletter">
-                <button
-                    class="px-4 py-2 bg-[#68343e] rounded-[6px] text-[#e7f2f6] text-[18px] font-inter border border-white">
-                    Sign up
-                </button>
-            </div>
-
-
-        </div>
-        <div class="flex justify-start items-center md:justify-center md:mt-10 mt-5 ">
-            <div class=" gap-4 flex flex-row justify-center">
-                <a href="https://www.facebook.com/SABreastmilkReserve/" target="_blank"
-                    class="w-[32px] h-[32px] flex justify-center items-center border border-[#fff] rounded-lg">
-                    <img src="{{asset('images/favebook-icon.svg')}}" />
-                </a>
-                <a href="https://twitter.com/SABRMilk" target="_blank"
-                    class="w-[32px] h-[32px] flex justify-center items-center border border-[#fff]  rounded-lg">
-                    <img src="{{asset('images/twitter-icon.svg')}}" />
-                </a>
-            </div>
-        </div>
-
-
-        <div
-            class="flex justify-center text-start md:text-center items-center md:mt-10 mt-5 text-[#fff] text-[16px] font-open-sans font-normal leading-4 break-words">
-            <a href="{{asset('documents/SABR-Privacy-Policy.pdf')}}">Privacy Policy </a> <span class="m-2"> | </span> <a
-                href="{{asset('documents/SABR-Website-Terms-and-Conditions.pdf')}}">Terms & Conditions</a> <span
-                class="m-2"> | </span> <a href="{{asset('documents/Subject-Access-Request-Form1.pdf')}}">Subject Access
-                Request (SAR)</a>
-        </div>
-        </div>
-    </footer>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
     @stack('scripts')
 </body>

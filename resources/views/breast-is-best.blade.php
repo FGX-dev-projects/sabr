@@ -49,6 +49,42 @@
 
     <section class="pt-[50px]">
         <div class="wrapper flex flex-col gap-6">
+          <img 
+          src="{{ asset('images/why-breast-is-best.png') }}" 
+          class="w-[250px] cursor-pointer" 
+          onclick="openImagePopup('{{ asset('/images/whybreastisbestbig.jpg') }}')"
+      />
+      
+      <script>
+      function openImagePopup(src) {
+          // Create overlay
+          const overlay = document.createElement('div');
+          overlay.style.position = 'fixed';
+          overlay.style.top = 0;
+          overlay.style.left = 0;
+          overlay.style.width = '100vw';
+          overlay.style.height = '100vh';
+          overlay.style.background = 'rgba(0,0,0,0.8)'; // dark background
+          overlay.style.display = 'flex';
+          overlay.style.alignItems = 'center';
+          overlay.style.justifyContent = 'center';
+          overlay.style.zIndex = 9999;
+          overlay.style.cursor = 'pointer';
+          overlay.onclick = () => document.body.removeChild(overlay);
+      
+          // Create image
+          const img = document.createElement('img');
+          img.src = src;
+          img.style.maxWidth = '90%';
+          img.style.maxHeight = '90%';
+          img.style.borderRadius = '8px'; // optional for nicer look
+      
+          overlay.appendChild(img);
+          document.body.appendChild(overlay);
+      }
+      </script>
+      
+      
             <p class="text-[#868480] text-[20px] font-bold font-inter">Understanding Breastmilk Banking</p>
             <div class="w-full flex flex-col md:flex-row justify-start items-stretch gap-6">
 
@@ -124,7 +160,7 @@
                     </div>
                 </div>
 
-                <img src="{{asset('images/bannerb.png')}}" class="w-full"/>
+                <img src="{{asset('images/whybreastisbestbig.jpg')}}" class="w-full rounded-md"/>
         </div>
 
     </section>

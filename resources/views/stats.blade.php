@@ -99,7 +99,7 @@
     }
 </style>
 
-<section class="relative w-full h-[350px] md:h-[450px] overflow-hidden">
+<section class="relative w-full h-[250px] md:h-[280px] overflow-hidden">
     <!-- Background Video -->
 
     <!-- Content Overlay -->

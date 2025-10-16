@@ -90,7 +90,7 @@ class SearchController extends Controller
             ],
             [
                 'title' => 'The Safe Use of DBM',
-                'url' => route('safe-user-of-dbm'),
+                'url' => route('safe-use-of-dbm'),
                 'keywords' => 'DBM donor breastmilk donated breastmilk safety guidelines usage instructions safe use hospitals homes handling storage thawing feeding premature babies',
                 'description' => 'Essential guidelines and instructions for the safe handling, storage, thawing and feeding of donor breastmilk (DBM) in hospitals and homes.'
             ],
