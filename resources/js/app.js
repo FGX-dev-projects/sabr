@@ -54,6 +54,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+
 // document.querySelectorAll(".question-wrapper").forEach((question) => {
 //     question.addEventListener("click", function () {
 //       let container = this.closest(".accordion");
