@@ -349,7 +349,7 @@
 <body class="py-[120px] md:py-[120px] !mt-6">
     <div class="wrapper ">
         <div class="header-section">
-            <h1>🍼 Find a Milk Bank Near You</h1>
+            <h1>Find a Milk Bank Near You</h1>
             <p>Click on any milk bank marker to discover breastmilk banking facilities across South Africa</p>
         </div>
         <div class="map-container">
@@ -358,7 +358,7 @@
                 <div class="legend">
                     
                     <div class="legend-item">
-                        <div class="legend-color" style="background: #c4df16;"></div>
+                        <img src="{{asset('images/bottle.png') }}" class=" w-3 mr-3"/>
                         <span>Milk bank locations</span>
                     </div>
                 </div>
@@ -783,13 +783,15 @@
                 if (data && data.milk_banks) {
                     data.milk_banks.forEach(bank => {
                         if (bank.coordinates) {
+                            const customIcon = L.icon({
+                                iconUrl: '/images/bottle.png',
+                                iconSize: [20, 40],
+                                iconAnchor: [20, 40],
+                                popupAnchor: [0, -40]
+                            });
+                            
                             const marker = L.marker([bank.coordinates[0], bank.coordinates[1]], {
-                                icon: L.divIcon({
-                                    className: 'milk-bank-marker',
-                                    html: '🍼',
-                                    iconSize: [30, 30],
-                                    iconAnchor: [15, 15]
-                                })
+                                icon: customIcon
                             });
                             
                             marker.on('click', () => {
