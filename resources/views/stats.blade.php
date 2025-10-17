@@ -119,7 +119,7 @@
 <!-- Historical Data Table Section -->
 <section class="py-[60px] bg-[#FCFAF8]">
     <div class="wrapper">
-        <img src="{{asset('images/baby-image-stats.jpg')}}" class="w-full rounded-md"/>
+        <img src="{{asset('images/baby-image-stats.jpg')}}" class="w-[500px] rounded-md"/>
         <div class="mb-8">
             <h2 class="text-[32px] md:text-[48px] text-[#107BA2] font-sans font-semibold mb-4">Historical Data</h2>
             <p class="text-[18px] text-[#666562] font-sans font-light">Recipients and donors supported over the years</p>
@@ -206,7 +206,7 @@
 
 <section class="pb-[100px]">
     <div class="wrapper">
-        <img src="{{asset('images/vision-and-mission-stats.jpg')}}" class="w-full rounded-md"/>
+        <img src="{{asset('images/vision-and-mission-stats.jpg')}}" class="w-[500px] rounded-md"/>
         <h2 class="text-[32px] font-sans md:text-[48px] text-[#107BA2] mb-4">MILK BY NUMBERS</h2>
         <div class="section-3 font-inter">
             <div class="flex flex-col gap-6">
