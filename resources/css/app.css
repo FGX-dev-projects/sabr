@@ -1521,7 +1521,7 @@ text-align: left !important;
 
     .sm-icon01-parent {
         position: absolute;
-        position: fixed;
+        /* position: fixed; */
         top: 40%;
         left: 40%;
         width: 100%;
