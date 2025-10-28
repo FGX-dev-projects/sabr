@@ -4,10 +4,17 @@
 @section('content')
     <section class="relative w-full h-[1500px] md:h-[950px] overflow-hidden">
         <!-- Background Video -->
-        <video class="absolute top-0 left-0 w-full h-full object-cover" playsinline autoplay muted loop preload="auto">
-            <source src="{{asset('images/hero-video.mp4')}}" type="video/mp4">
+        <video class="absolute top-0 left-0 w-full h-full object-cover" playsinline webkit-playsinline autoplay muted loop
+            preload="metadata">
+            <!-- WebM first for Chrome/Android -->
+            <source src="{{ asset('images/hero-video-andriod.webm') }}" type="video/webm">
+
+            <!-- MP4 fallback for Safari/iOS -->
+            <source src="{{ asset('images/hero-video.mp4') }}" type="video/mp4">
+
             Your browser does not support the video tag.
         </video>
+
 
         <!-- Dark Overlay -->
         <div class="absolute top-0 left-0 w-full h-full  "></div>
@@ -23,7 +30,9 @@
                                     <span>Saving Lives,</span>
                                     <span class="one-drop-at"> One Drop At A Time</span>
                                 </div>
-                                <div class="join-us-in">Join us in giving premature and fragile babies the best start in life. Every drop of donated breastmilk is a gift of nourishment, comfort, and hope.</div>
+                                <div class="join-us-in">Join us in giving premature and fragile babies the best start in
+                                    life. Every drop of donated breastmilk is a gift of nourishment, comfort, and hope.
+                                </div>
                             </div>
                             <div class="button-prim-wrapper !ml-0 !pl-0">
                                 <a href="https://payfast.co.za/donate/go/southafricanbreastmilkreserve" class="button-prim">
@@ -57,7 +66,9 @@
                                         </div>
                                         <div class="copy">
                                             <div class="saving-lives-one-container font-bold">I want to donate Milk</div>
-                                            <div class="help-save-lives ">Your milk can be a lifeline. By sharing your breastmilk, you give a vulnerable baby the strength to grow, to heal, and to thrive.</div>
+                                            <div class="help-save-lives ">Your milk can be a lifeline. By sharing your
+                                                breastmilk, you give a vulnerable baby the strength to grow, to heal, and to
+                                                thrive.</div>
                                         </div>
                                     </div>
                                 </a>
@@ -80,7 +91,9 @@
                                         </div>
                                         <div class="copy">
                                             <div class="saving-lives-one-container font-bold">I am a Parent</div>
-                                            <div class="help-save-lives">Your milk can be a lifeline. By sharing your breastmilk, you give a vulnerable baby the strength to grow, to heal, and to thrive.</div>
+                                            <div class="help-save-lives">Your milk can be a lifeline. By sharing your
+                                                breastmilk, you give a vulnerable baby the strength to grow, to heal, and to
+                                                thrive.</div>
                                         </div>
                                     </div>
                                 </a>
@@ -101,7 +114,8 @@
                                         </div>
                                         <div class="copy">
                                             <div class="saving-lives-one-container font-bold">I am a Clinician</div>
-                                            <div class="help-save-lives">Help save lives by donating your excess breastmilk to babies in need. Your gift can make all the difference.</div>
+                                            <div class="help-save-lives">Help save lives by donating your excess breastmilk
+                                                to babies in need. Your gift can make all the difference.</div>
                                         </div>
                                     </div>
                                 </a>
@@ -119,8 +133,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-[68px] items-center">
                 <!-- Left Container (Image) -->
                 <div class="image">
-                    <img src="{{asset('images/sec2-img.png')}}" alt="Placeholder Image"
-                        class="w-full h-auto rounded-2xl ">
+                    <img src="{{asset('images/sec2-img.png')}}" alt="Placeholder Image" class="w-full h-auto rounded-2xl ">
                 </div>
 
                 <!-- Right Container (Text) -->
@@ -131,52 +144,61 @@
                     </div>
                     <div class="home-sec-1">
                         <div class="for-18-years-the-south-afric-wrapper">
-                            <div class="we-are-more-container text-[#905460]">For 18+ years, the South African Breastmilk Reserve (SABR) has been weaving together stories of resilience, hope, and unconditional love. Every drop we collect carries with it a mother's devotion and a community's embrace around our most vulnerable little ones.</div>
+                            <div class="we-are-more-container text-[#905460]">For 18+ years, the South African Breastmilk
+                                Reserve (SABR) has been weaving together stories of resilience, hope, and unconditional
+                                love. Every drop we collect carries with it a mother's devotion and a community's embrace
+                                around our most vulnerable little ones.</div>
                         </div>
                         <div class="milk-banking-facilities-nation-parent !text-[#6d5d43]">
                             <b class="our-heart-in text-[24px] font-sans text-[#6d5d43] font-bold">Our Heart in Numbers</b>
                             <div class="we-are-more-container">
                                 <ul class="milk-banking-facilities-nation" style="list-style: disc;">
                                     <li>
-                                        <span class="font-inter font-bold">30 sanctuaries of nourishment</span><br> Our milk banking facilities across the nation, each one a beacon of hope for families when they need it most. 
-                                       </li>
+                                        <span class="font-inter font-bold">30 sanctuaries of nourishment</span><br> Our milk
+                                        banking facilities across the nation, each one a beacon of hope for families when
+                                        they need it most.
+                                    </li>
                                 </ul>
                             </div>
                             <div class="we-are-more-container">
                                 <ul class="milk-banking-facilities-nation">
                                     <li>
-                                        <span class="font-inter font-bold">31,367 precious lives touched</span><br> Every premature baby we've helped represents a family's prayers answered, a future brightened, and dreams kept alive since 2003.
-                                       </li>
+                                        <span class="font-inter font-bold">31,367 precious lives touched</span><br> Every
+                                        premature baby we've helped represents a family's prayers answered, a future
+                                        brightened, and dreams kept alive since 2003.
+                                    </li>
                                 </ul>
                             </div>
                             <div class="we-are-more-container">
                                 <ul class="milk-banking-facilities-nation">
                                     <li>
-                                        <span class="font-inter font-bold">Over 5,700 tiny hearts fed</span><br> Each year, thousands of infants receive milk mothers who understand that love multiplies when shared.
-                                       </li>
+                                        <span class="font-inter font-bold">Over 5,700 tiny hearts fed</span><br> Each year,
+                                        thousands of infants receive milk mothers who understand that love multiplies when
+                                        shared.
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="flex flex-row items-start justify-start gap-6 text-[18px] font-inter">
                             <!-- Donate Milk -->
-                            <a href="{{route('donate')}}" 
-                               class="rounded-[32px] bg-[#e26654] flex flex-row items-center justify-center p-4 text-white font-bold hover:bg-[#c24f40] text-[18px] transition">
-                              Donate Milk
+                            <a href="{{route('donate')}}"
+                                class="rounded-[32px] bg-[#e26654] flex flex-row items-center justify-center p-4 text-white font-bold hover:bg-[#c24f40] text-[18px] transition">
+                                Donate Milk
                             </a>
-                          
+
                             <!-- Support Us -->
-                            <a href="https://payfast.co.za/donate/go/southafricanbreastmilkreserve" 
-                               class="rounded-[32px] border border-[#503325] flex flex-row items-center justify-center p-4 text-[#503325] text-[18px] font-bold hover:bg-[#503325] hover:text-white transition">
-                              Support Us 
+                            <a href="https://payfast.co.za/donate/go/southafricanbreastmilkreserve"
+                                class="rounded-[32px] border border-[#503325] flex flex-row items-center justify-center p-4 text-[#503325] text-[18px] font-bold hover:bg-[#503325] hover:text-white transition">
+                                Support Us
                             </a>
-                          
+
                             <!-- Learn More -->
-                            <a href="{{route('about-us')}}" 
-                               class="rounded-[32px] flex flex-row items-center justify-start text-[18px] px-6 py-4 text-[#503325] font-bold hover:bg-gray-100 transition">
-                              Learn More
+                            <a href="{{route('about-us')}}"
+                                class="rounded-[32px] flex flex-row items-center justify-start text-[18px] px-6 py-4 text-[#503325] font-bold hover:bg-gray-100 transition">
+                                Learn More
                             </a>
-                          </div>
-                          
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -198,7 +220,10 @@
                     </div>
                     <div class="home-sec-2">
                         <div class="for-18-years-the-south-afric-wrapper">
-                            <div class="paragraph font-inter text-[24px] font-[300]">We are excited to announce the launch of SoSAFE, our state-of-the-art breastmilk pasteuriser designed to ensure the highest safety standards. The SoSAFE pasteuriser is IEC certified for laboratory equipment safety, making it a reliable choice for hospitals and milk banks globally.</div>
+                            <div class="paragraph font-inter text-[24px] font-[300]">We are excited to announce the launch
+                                of SoSAFE, our state-of-the-art breastmilk pasteuriser designed to ensure the highest safety
+                                standards. The SoSAFE pasteuriser is IEC certified for laboratory equipment safety, making
+                                it a reliable choice for hospitals and milk banks globally.</div>
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-3">
                             <div
@@ -232,23 +257,24 @@
                             </div>
                         </div>
                         <div class="flex items-center gap-6 ">
-                            <a href="{{route('sosafe')}}" 
-                               class="rounded-[32px] bg-[#e26654] flex flex-row items-center justify-center p-4 text-white font-bold hover:bg-[#c24f40] text-[18px] transition">
-                               Learn Our Safety Standards
+                            <a href="{{route('sosafe')}}"
+                                class="rounded-[32px] bg-[#e26654] flex flex-row items-center justify-center p-4 text-white font-bold hover:bg-[#c24f40] text-[18px] transition">
+                                Learn Our Safety Standards
                             </a>
-                            <a href="{{route('stats')}}" 
-                            class="rounded-[32px] border border-[#503325] flex flex-row items-center justify-center p-4 text-[#503325] text-[18px] font-bold hover:bg-[#503325] hover:text-white transition">
-                            See Quality Protocols
-                         </a>
+                            <a href="{{route('stats')}}"
+                                class="rounded-[32px] border border-[#503325] flex flex-row items-center justify-center p-4 text-[#503325] text-[18px] font-bold hover:bg-[#503325] hover:text-white transition">
+                                See Quality Protocols
+                            </a>
                         </div>
                         <div class="gap-0 items-center text-[24px] font-inter text-[#6d5d43] font-[300]">
-                            <p class="p-0 m-0 items-center text-start md:text-center">Interested in implementing SoSAFE in your facility?
+                            <p class="p-0 m-0 items-center text-start md:text-center">Interested in implementing SoSAFE in
+                                your facility?
                             </p>
                             <p class="p-0 items-center text-start md:text-center ">
-                                Contact us at <a href="mailto:SoSafe@sabr.org.za" target="_blank"
-                                    class="text-[#23B4E9]"> SoSafe@sabr.org.za </a>for more information on how to get
+                                Contact us at <a href="mailto:SoSafe@sabr.org.za" target="_blank" class="text-[#23B4E9]">
+                                    SoSafe@sabr.org.za </a>for more information on how to get
                                 started.</p><br>
-                                <p>Discover how we maintain the highest standards for every precious drop</p>
+                            <p>Discover how we maintain the highest standards for every precious drop</p>
                         </div>
 
                     </div>
@@ -258,7 +284,8 @@
     </section>
 
     <section class="">
-        <div class="w-full relative section-bg rounded-[32px] min-h-[1022px] lg:h-[1022px] overflow-hidden flex flex-row items-start justify-center px-4 py-8 sm:px-8 sm:py-16 lg:pl-[353px] lg:pr-32 lg:py-32 box-border gap-6 text-left text-lg sm:text-xl lg:text-2xl section-text work-sans">
+        <div
+            class="w-full relative section-bg rounded-[32px] min-h-[1022px] lg:h-[1022px] overflow-hidden flex flex-row items-start justify-center px-4 py-8 sm:px-8 sm:py-16 lg:pl-[353px] lg:pr-32 lg:py-32 box-border gap-6 text-left text-lg sm:text-xl lg:text-2xl section-text work-sans">
             <div class="self-stretch w-full max-w-[915px] flex flex-col items-center justify-center z-0">
                 <div class="self-stretch flex flex-col items-start justify-start gap-8 lg:gap-16">
                     <div class="self-stretch flex flex-col items-start justify-start gap-6 lg:gap-[46px]">
@@ -266,66 +293,77 @@
                             <span>Make Your Hospital </span>
                             <span class="font-bold">Breastmilk Smart</span>
                         </div>
-                        
+
                         <div class="self-stretch flex flex-col items-start justify-start inter">
                             <div class="self-stretch relative text-[24px] font-inter font-[300]">
-                                We establish and support in-hospital human milk banks, ensuring compliance with national health standards while expanding access to donor breastmilk.
+                                We establish and support in-hospital human milk banks, ensuring compliance with national
+                                health standards while expanding access to donor breastmilk.
                             </div>
                         </div>
-                        
-                        <div class="self-stretch flex flex-col lg:flex-row items-start justify-start gap-4 lg:gap-8 text-xl sm:text-2xl lg:text-[32px]">
+
+                        <div
+                            class="self-stretch flex flex-col lg:flex-row items-start justify-start gap-4 lg:gap-8 text-xl sm:text-2xl lg:text-[32px]">
                             <div class="flex-1 w-full flex flex-col items-start justify-start gap-4 lg:gap-6">
                                 <div class="font-bold self-stretch relative">Cutting-Edge Solutions</div>
                                 <div class="self-stretch relative text-[24px] font-inter font-[300]">
-                                    Featuring SoSAFE's innovative "Breastmilk-in-a-Box" with affordable pasteurisers and rapid testing technology.
+                                    Featuring SoSAFE's innovative "Breastmilk-in-a-Box" with affordable pasteurisers and
+                                    rapid testing technology.
                                 </div>
                             </div>
-                            
+
                             <div class="flex-1 w-full flex flex-col items-start justify-start gap-4 lg:gap-6">
                                 <div class="font-bold self-stretch relative">Comprehensive Care</div>
                                 <div class="self-stretch relative text-[24px] font-inter font-[300]">
-                                    From milk processing to maternal health services, we equip hospitals to meet critical neonatal care needs.
+                                    From milk processing to maternal health services, we equip hospitals to meet critical
+                                    neonatal care needs.
                                 </div>
                             </div>
-                            
+
                             <div class="flex-1 w-full flex flex-col items-start justify-start gap-4 lg:gap-6">
                                 <div class="font-bold self-stretch relative">Expanding Access</div>
                                 <div class="self-stretch relative text-[24px] font-inter font-[300]">
-                                    44 human milk banks established nationwide, bridging the gap for underserved communities.
+                                    44 human milk banks established nationwide, bridging the gap for underserved
+                                    communities.
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="w-full lg:w-[484px] relative font-bold flex items-end min-h-[63px] flex-shrink-0">
                             Let's transform infant care together.
                         </div>
                     </div>
-                    
-                    <div class="flex flex-col sm:flex-row items-start justify-start gap-4 lg:gap-6 text-sm sm:text-base lg:text-lg inter">
-                        <a href="{{route('donate')}}" class="w-full sm:w-auto rounded-[32px] btn-primary flex flex-row items-center justify-center p-3 lg:p-4">
+
+                    <div
+                        class="flex flex-col sm:flex-row items-start justify-start gap-4 lg:gap-6 text-sm sm:text-base lg:text-lg inter">
+                        <a href="{{route('donate')}}"
+                            class="w-full sm:w-auto rounded-[32px] btn-primary flex flex-row items-center justify-center p-3 lg:p-4">
                             <div class="relative font-bold">Donate Milk</div>
                         </a>
-                        
-                        <a href="https://payfast.co.za/donate/go/southafricanbreastmilkreserve" class="w-full sm:w-auto rounded-[32px] btn-outline flex flex-row items-center justify-center p-3 lg:p-4">
+
+                        <a href="https://payfast.co.za/donate/go/southafricanbreastmilkreserve"
+                            class="w-full sm:w-auto rounded-[32px] btn-outline flex flex-row items-center justify-center p-3 lg:p-4">
                             <div class="relative font-bold">Support Us</div>
                         </a>
-                        
-                        <a href="{{route('about-us')}}" class="w-full sm:w-auto rounded-[32px] flex flex-row items-center justify-center p-3 lg:p-4">
+
+                        <a href="{{route('about-us')}}"
+                            class="w-full sm:w-auto rounded-[32px] flex flex-row items-center justify-center p-3 lg:p-4">
                             <div class="relative font-bold">Learn More</div>
                         </a>
                     </div>
                 </div>
             </div>
-            
+
             <!-- Images positioned absolutely - hidden on mobile and tablet -->
-            <img class="hidden xl:block absolute rounded-2xl object-contain img-frame-96" alt="milks" src="{{asset('images/milks2.png')}}">
-            <img class="hidden xl:block absolute rounded-2xl object-contain img-frame-97" alt="" src="{{asset('images/hom-sosafe.png')}}">
+            <img class="hidden xl:block absolute rounded-2xl object-contain img-frame-96" alt="milks"
+                src="{{asset('images/milks2.png')}}">
+            <img class="hidden xl:block absolute rounded-2xl object-contain img-frame-97" alt=""
+                src="{{asset('images/hom-sosafe.png')}}">
         </div>
     </section>
 
     <section>
         <div class="testimonials-container">
-    
+
             <!-- Header Section -->
             <div class="testimonials-header">
                 <div class="testimonials-title">
@@ -338,7 +376,7 @@
                     Donor moms, recipient families, and healthcare workers share how every drop truly counts.
                 </p>
             </div>
-    
+
             <!-- Masonry Grid -->
             <div class="masonry-grid" id="masonryGrid">
                 <!-- Column 1 -->
@@ -350,22 +388,30 @@
                             <h3 class="card-name">Baby Ngobeni</h3>
                             <p class="card-subtitle">Life Daleview Hospital</p>
                             <blockquote class="card-quote">
-                                "As a new mom struggling with breastfeeding, I just want to say thank you for the milk you've been providing me. My baby is healthy and getting stronger every day. What a beautiful testimony — my baby is growing so nicely with your donor milk. Thank you so much, team. Keep it up!"
+                                "As a new mom struggling with breastfeeding, I just want to say thank you for the milk
+                                you've been providing me. My baby is healthy and getting stronger every day. What a
+                                beautiful testimony — my baby is growing so nicely with your donor milk. Thank you so much,
+                                team. Keep it up!"
                             </blockquote>
                         </div>
                     </div>
-    
+
                     <!-- Card 2 - Hidden -->
                     <div class="testimonial-card card-text-only hidden-card" data-visible="false">
                         <div class="card-content">
                             <h3 class="card-name">Tracy Ann Swanepoel</h3>
                             <p class="card-subtitle">Breastmilk Donor</p>
                             <blockquote class="card-quote">
-                                "My baby didn't take a bottle, and because I worked until 12h00, I ended up throwing away one feed every day. One night, I saw a post on Facebook about the Milkbank and immediately registered — it was super easy. Donating meant so much to me because I knew my milk wasn't going to waste. I felt complete and expressed with a smile. I wish more moms would donate and save more babies — they are our future. Thank you, Milkbank, for making donating so easy and comfortable."
+                                "My baby didn't take a bottle, and because I worked until 12h00, I ended up throwing away
+                                one feed every day. One night, I saw a post on Facebook about the Milkbank and immediately
+                                registered — it was super easy. Donating meant so much to me because I knew my milk wasn't
+                                going to waste. I felt complete and expressed with a smile. I wish more moms would donate
+                                and save more babies — they are our future. Thank you, Milkbank, for making donating so easy
+                                and comfortable."
                             </blockquote>
                         </div>
                     </div>
-    
+
                     <!-- Card 3 - Hidden -->
                     <div class="testimonial-card card-text-only hidden-card" data-visible="false">
                         <img src="{{asset('images/Testimonial9.jpeg')}}" alt="testimonial" class="card-image">
@@ -373,11 +419,14 @@
                             <h3 class="card-name">Annarie Theron</h3>
                             <p class="card-subtitle">Breastmilk Donor</p>
                             <blockquote class="card-quote">
-                                "Being a donor mom has been such a privilege. Since the beginning of 2025, I have donated 443 units of breastmilk, helping to feed 53 babies in the NICU — and my journey is still continuing. Each drop feels like a small gift of strength and love for a baby in need. It's humbling to know that something so natural can make such a difference."
+                                "Being a donor mom has been such a privilege. Since the beginning of 2025, I have donated
+                                443 units of breastmilk, helping to feed 53 babies in the NICU — and my journey is still
+                                continuing. Each drop feels like a small gift of strength and love for a baby in need. It's
+                                humbling to know that something so natural can make such a difference."
                             </blockquote>
                         </div>
                     </div>
-    
+
                     <!-- Card 4 - Hidden -->
                     <div class="testimonial-card card-text-only hidden-card" data-visible="false">
                         <img src="{{asset('images/Testimonial12.jpeg')}}" alt="testimonial" class="card-image">
@@ -385,11 +434,15 @@
                             <h3 class="card-name">Pepita Emeyene</h3>
                             <p class="card-subtitle">Breastmilk Donor</p>
                             <blockquote class="card-quote">
-                                "We lost our first child due to health complications, and one of the hardest parts was that she could not be fed properly. Sometimes we could only express a few millilitres of milk for her, and the formula available was too harsh. By God's grace, we have had more babies since. I now donate as much milk as I can, hoping another mother will have the help she needs to keep her baby strong in a natural way during hospital care."
+                                "We lost our first child due to health complications, and one of the hardest parts was that
+                                she could not be fed properly. Sometimes we could only express a few millilitres of milk for
+                                her, and the formula available was too harsh. By God's grace, we have had more babies since.
+                                I now donate as much milk as I can, hoping another mother will have the help she needs to
+                                keep her baby strong in a natural way during hospital care."
                             </blockquote>
                         </div>
                     </div>
-    
+
                     <!-- Card 5 - Hidden -->
                     <div class="testimonial-card card-text-only hidden-card" data-visible="false">
                         <img src="{{asset('images/Testimonial16.jpeg')}}" alt="testimonial" class="card-image">
@@ -397,11 +450,15 @@
                             <h3 class="card-name">Kaylin Wilson</h3>
                             <p class="card-subtitle">Breastmilk Donor</p>
                             <blockquote class="card-quote">
-                                "As a mom, breastfeeding has been one of the most beautiful and fulfilling journeys of my life. Being able to nourish my own children and still have enough to donate 868 units of milk — feeding 63 precious little ones — has been such a blessing. I want to encourage every mother: your milk is powerful, your body is amazing, and every drop truly makes a difference."
+                                "As a mom, breastfeeding has been one of the most beautiful and fulfilling journeys of my
+                                life. Being able to nourish my own children and still have enough to donate 868 units of
+                                milk — feeding 63 precious little ones — has been such a blessing. I want to encourage every
+                                mother: your milk is powerful, your body is amazing, and every drop truly makes a
+                                difference."
                             </blockquote>
                         </div>
                     </div>
-    
+
                     <!-- Card 6 - Hidden -->
                     <div class="testimonial-card card-text-only hidden-card" data-visible="false">
                         <img src="{{asset('images/Testimonial14.jpeg')}}" alt="testimonial" class="card-image">
@@ -409,12 +466,17 @@
                             <h3 class="card-name">Nthabiseng Qhesi</h3>
                             <p class="card-subtitle">Breastmilk Donor</p>
                             <blockquote class="card-quote">
-                                "As an African mother, I grew up in a culture where I never knew a programme like this even existed. We were never exposed to the idea of donating breastmilk. When I discovered that it was possible, I was overjoyed. I started donating in January 2024 and, as someone who produces more milk than my baby needs, I have felt blessed to share the extra. So far, I have donated around 289 units of breastmilk, and I am very proud knowing that my milk has helped save the lives of other babies."
+                                "As an African mother, I grew up in a culture where I never knew a programme like this even
+                                existed. We were never exposed to the idea of donating breastmilk. When I discovered that it
+                                was possible, I was overjoyed. I started donating in January 2024 and, as someone who
+                                produces more milk than my baby needs, I have felt blessed to share the extra. So far, I
+                                have donated around 289 units of breastmilk, and I am very proud knowing that my milk has
+                                helped save the lives of other babies."
                             </blockquote>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Column 2 -->
                 <div class="masonry-column">
                     <!-- Card 7 - Initial -->
@@ -424,11 +486,14 @@
                             <h3 class="card-name">Gomotseng Ndlovu Mannya</h3>
                             <p class="card-subtitle">Breastmilk Donor</p>
                             <blockquote class="card-quote">
-                                "My baby and I were proud breastmilk donors in 2024. Together, we donated 205 units of breastmilk, feeding 14 premature babies. To upcoming new moms, I would like to say: Breastmilk gives life to our children. As mothers, it is our duty, where possible, to share our breastmilk to give life and spread love to as many children as we can."
+                                "My baby and I were proud breastmilk donors in 2024. Together, we donated 205 units of
+                                breastmilk, feeding 14 premature babies. To upcoming new moms, I would like to say:
+                                Breastmilk gives life to our children. As mothers, it is our duty, where possible, to share
+                                our breastmilk to give life and spread love to as many children as we can."
                             </blockquote>
                         </div>
                     </div>
-    
+
                     <!-- Card 8 - Initial -->
                     <div class="testimonial-card card-with-image" data-visible="true">
                         <img src="{{asset('images/review-2.png')}}" alt="testimonial" class="card-image">
@@ -436,11 +501,15 @@
                             <h3 class="card-name">Dr Harri Surti</h3>
                             <p class="card-subtitle">Neonatologist</p>
                             <blockquote class="card-quote">
-                                "This little girl was born at just 28 weeks in October 2016, weighing only 1.18kg. In her first few days in the NICU, she received donor expressed breastmilk from the South African Breastmilk Reserve, giving her the vital start she needed until her mother's own milk supply came in. She went on to be exclusively breastfed until one year of age — and today, she's a healthy, thriving 8-year-old. A true testament to the life-saving power of breastmilk."
+                                "This little girl was born at just 28 weeks in October 2016, weighing only 1.18kg. In her
+                                first few days in the NICU, she received donor expressed breastmilk from the South African
+                                Breastmilk Reserve, giving her the vital start she needed until her mother's own milk supply
+                                came in. She went on to be exclusively breastfed until one year of age — and today, she's a
+                                healthy, thriving 8-year-old. A true testament to the life-saving power of breastmilk."
                             </blockquote>
                         </div>
                     </div>
-    
+
                     <!-- Card 9 - Hidden -->
                     <div class="testimonial-card card-text-only hidden-card" data-visible="false">
                         <img src="{{asset('images/Testimonial10.jpeg')}}" alt="testimonial" class="card-image">
@@ -448,11 +517,15 @@
                             <h3 class="card-name">Barbra Van den Merwe</h3>
                             <p class="card-subtitle">Breastmilk Donor</p>
                             <blockquote class="card-quote">
-                                "The surprise diagnosis of Down Syndrome meant my breastfeeding journey looked a little different than I had envisioned. Little Stella-Marie's AVSD meant she would be receiving expressed milk. As an oversupplier, I need SABR just as much as they need me! It's a blessing to be able to bless other mommies and babies — all because of this little extra chromosome."
+                                "The surprise diagnosis of Down Syndrome meant my breastfeeding journey looked a little
+                                different than I had envisioned. Little Stella-Marie's AVSD meant she would be receiving
+                                expressed milk. As an oversupplier, I need SABR just as much as they need me! It's a
+                                blessing to be able to bless other mommies and babies — all because of this little extra
+                                chromosome."
                             </blockquote>
                         </div>
                     </div>
-    
+
                     <!-- Card 10 - Hidden -->
                     <div class="testimonial-card card-text-only hidden-card" data-visible="false">
                         <img src="{{asset('images/Testimonial13.jpeg')}}" alt="testimonial" class="card-image">
@@ -460,11 +533,16 @@
                             <h3 class="card-name">Linda-Ann Swart</h3>
                             <p class="card-subtitle">Breastmilk Donor</p>
                             <blockquote class="card-quote">
-                                "Donating breastmilk has been one of the most rewarding experiences of my motherhood journey. When I discovered in 2018 — and again in 2023 — that my milk could help nourish and care for babies in need, I felt a deep sense of purpose and decided to continue for as long as possible. The process was straightforward, and I often imagined tiny hands holding the bottles, tiny bodies growing stronger with each feeding. It's my way of showing love and care for children beyond my own."
+                                "Donating breastmilk has been one of the most rewarding experiences of my motherhood
+                                journey. When I discovered in 2018 — and again in 2023 — that my milk could help nourish and
+                                care for babies in need, I felt a deep sense of purpose and decided to continue for as long
+                                as possible. The process was straightforward, and I often imagined tiny hands holding the
+                                bottles, tiny bodies growing stronger with each feeding. It's my way of showing love and
+                                care for children beyond my own."
                             </blockquote>
                         </div>
                     </div>
-    
+
                     <!-- Card 11 - Hidden -->
                     <div class="testimonial-card card-text-only hidden-card" data-visible="false">
                         <img src="{{asset('images/Testimonial17.jpeg')}}" alt="testimonial" class="card-image">
@@ -472,11 +550,12 @@
                             <h3 class="card-name">Lihlethu Mhlongo</h3>
                             <p class="card-subtitle">Born at Nelspruit Mediclinic</p>
                             <blockquote class="card-quote">
-                                "Lihlethu was born on 12 March 2025 at Nelspruit Mediclinic, weighing just 1.39 kg. Today, she is thriving at 5.7 kg — a beautiful reminder of how far our tiniest fighters can come."
+                                "Lihlethu was born on 12 March 2025 at Nelspruit Mediclinic, weighing just 1.39 kg. Today,
+                                she is thriving at 5.7 kg — a beautiful reminder of how far our tiniest fighters can come."
                             </blockquote>
                         </div>
                     </div>
-    
+
                     <!-- Card 12 - Hidden -->
                     <div class="testimonial-card card-text-only hidden-card" data-visible="false">
                         <img src="{{asset('images/Testimonial15.jpeg')}}" alt="testimonial" class="card-image">
@@ -484,12 +563,17 @@
                             <h3 class="card-name">Shanta Bosman</h3>
                             <p class="card-subtitle">Breastmilk Donor</p>
                             <blockquote class="card-quote">
-                                "Breastmilk donation, to me, is an act of connection — a way of giving life, health, and hope from one mother to another. It's more than just milk; it's hours of nourishment, antibodies, comfort, and care packaged into every drop. Knowing that my milk can help a baby thrive when their own mother's supply is limited fills my heart with gratitude and joy. It's a quiet reminder that we are part of a wider community, lifting each other up in the most fundamental way possible — by helping the tiniest among us have a stronger start."
+                                "Breastmilk donation, to me, is an act of connection — a way of giving life, health, and
+                                hope from one mother to another. It's more than just milk; it's hours of nourishment,
+                                antibodies, comfort, and care packaged into every drop. Knowing that my milk can help a baby
+                                thrive when their own mother's supply is limited fills my heart with gratitude and joy. It's
+                                a quiet reminder that we are part of a wider community, lifting each other up in the most
+                                fundamental way possible — by helping the tiniest among us have a stronger start."
                             </blockquote>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Column 3 -->
                 <div class="masonry-column">
                     <!-- Card 13 - Initial -->
@@ -499,11 +583,15 @@
                             <h3 class="card-name">Kyle Schenck</h3>
                             <p class="card-subtitle">Parent, Wilgers Hospital</p>
                             <blockquote class="card-quote">
-                                "Liebe Hunter Schenck was born at just 31 weeks. With her mom in ICU and unable to produce milk, we were desperate for help. The South African Breastmilk Reserve stepped in, and I was able to purchase donor milk for our little miracle. I placed the order in the afternoon, and by the next morning, the hospital had received the milk. The service was top-notch — friendly, professional, and deeply caring. I can't recommend them enough."
+                                "Liebe Hunter Schenck was born at just 31 weeks. With her mom in ICU and unable to produce
+                                milk, we were desperate for help. The South African Breastmilk Reserve stepped in, and I was
+                                able to purchase donor milk for our little miracle. I placed the order in the afternoon, and
+                                by the next morning, the hospital had received the milk. The service was top-notch —
+                                friendly, professional, and deeply caring. I can't recommend them enough."
                             </blockquote>
                         </div>
                     </div>
-    
+
                     <!-- Card 14 - Initial -->
                     <div class="testimonial-card card-text-only" data-visible="true">
                         <img src="{{asset('images/Testimonial60.jpg')}}" alt="testimonial" class="card-image">
@@ -511,22 +599,31 @@
                             <h3 class="card-name">Sr Monageng</h3>
                             <p class="card-subtitle">Unit Manager, Joe Morolong Memorial Hospital</p>
                             <blockquote class="card-quote">
-                                "Donating breastmilk gives small, vulnerable babies a fighting chance — boosting their immunity to help defend against harmful pathogens. At Joe Morolong Memorial Hospital, most of our recipients are babies weighing under 1 kilogram. Thanks to access to donor breastmilk, we've seen a significant improvement in survival rates. Attached is a photo of one of our mothers breastfeeding her baby (not premature), and our dedicated milk bank champion, Sister Topp — both proudly part of this life-saving journey."
+                                "Donating breastmilk gives small, vulnerable babies a fighting chance — boosting their
+                                immunity to help defend against harmful pathogens. At Joe Morolong Memorial Hospital, most
+                                of our recipients are babies weighing under 1 kilogram. Thanks to access to donor
+                                breastmilk, we've seen a significant improvement in survival rates. Attached is a photo of
+                                one of our mothers breastfeeding her baby (not premature), and our dedicated milk bank
+                                champion, Sister Topp — both proudly part of this life-saving journey."
                             </blockquote>
                         </div>
                     </div>
-    
+
                     <!-- Card 15 - Hidden -->
                     <div class="testimonial-card card-text-only hidden-card" data-visible="false">
                         <div class="card-content">
                             <h3 class="card-name">Yamini</h3>
                             <p class="card-subtitle">Sandton Mediclinic NICU Team</p>
                             <blockquote class="card-quote">
-                                "To the South African Breastmilk Reserve team, we extend our heartfelt gratitude for your life-changing work. Your dedication to providing breastmilk for vulnerable neonatal babies is truly appreciated. And to the amazing donor moms — thank you for your selflessness and generosity in sharing your precious milk. Your contributions are making a real difference in the lives of these tiny humans."
+                                "To the South African Breastmilk Reserve team, we extend our heartfelt gratitude for your
+                                life-changing work. Your dedication to providing breastmilk for vulnerable neonatal babies
+                                is truly appreciated. And to the amazing donor moms — thank you for your selflessness and
+                                generosity in sharing your precious milk. Your contributions are making a real difference in
+                                the lives of these tiny humans."
                             </blockquote>
                         </div>
                     </div>
-    
+
                     <!-- Card 16 - Hidden -->
                     <div class="testimonial-card card-text-only hidden-card" data-visible="false">
                         <img src="{{asset('images/Testimonial11.jpeg')}}" alt="testimonial" class="card-image">
@@ -534,11 +631,14 @@
                             <h3 class="card-name">Stefanie Botha</h3>
                             <p class="card-subtitle">Breastmilk Donor</p>
                             <blockquote class="card-quote">
-                                "Being able to donate is my way of giving something to the ones who will change the world. Children are our future, and every single one — no matter the world they are born into — deserves the best. And as we know, breast is best. With every drop of donated milk, I pray for success and growth for those who drink it."
+                                "Being able to donate is my way of giving something to the ones who will change the world.
+                                Children are our future, and every single one — no matter the world they are born into —
+                                deserves the best. And as we know, breast is best. With every drop of donated milk, I pray
+                                for success and growth for those who drink it."
                             </blockquote>
                         </div>
                     </div>
-    
+
                     <!-- Card 17 - Hidden -->
                     <div class="testimonial-card card-text-only hidden-card" data-visible="false">
                         <img src="{{asset('images/Testimonial18.jpeg')}}" alt="testimonial" class="card-image">
@@ -546,13 +646,19 @@
                             <h3 class="card-name">Nikita & Jeremy Foord</h3>
                             <p class="card-subtitle">Parents</p>
                             <blockquote class="card-quote">
-                                "Our baby girl was born prematurely at just 27 weeks and 5 days, and my milk supply had not yet come in. The doctors needed to start feeding her immediately so she could gain weight, as she was extremely underweight. That's when one of the front desk nurses quietly handed me a small note with a number on it. Through that number, I was connected to the South African Breastmilk Reserve and received the most incredible service and support. I want to express my deepest gratitude — not only to SABR for their assistance, but also to every mother selfless enough to donate."
+                                "Our baby girl was born prematurely at just 27 weeks and 5 days, and my milk supply had not
+                                yet come in. The doctors needed to start feeding her immediately so she could gain weight,
+                                as she was extremely underweight. That's when one of the front desk nurses quietly handed me
+                                a small note with a number on it. Through that number, I was connected to the South African
+                                Breastmilk Reserve and received the most incredible service and support. I want to express
+                                my deepest gratitude — not only to SABR for their assistance, but also to every mother
+                                selfless enough to donate."
                             </blockquote>
                         </div>
                     </div>
                 </div>
             </div>
-    
+
             <!-- Load More Button -->
             <div class="load-more-container" id="loadMoreContainer">
                 <button class="load-more-btn" id="loadMoreBtn">
@@ -560,7 +666,7 @@
                 </button>
             </div>
         </div>
-    
+
         <style>
             .testimonials-container {
                 position: relative;
@@ -574,7 +680,7 @@
                 text-align: left;
                 font-family: 'Work Sans', sans-serif;
             }
-    
+
             .testimonials-header {
                 align-self: stretch;
                 display: flex;
@@ -582,31 +688,31 @@
                 align-items: flex-start;
                 gap: 24px;
             }
-    
+
             .testimonials-title {
                 align-self: stretch;
                 color: #905460;
                 font-size: 64px;
                 line-height: 1.2;
             }
-    
+
             .testimonials-title h1 {
                 margin: 0;
                 font-size: 64px;
                 line-height: 1.2;
             }
-    
+
             .title-bold {
                 font-weight: 700;
             }
-    
+
             .title-subtitle {
                 margin: 0;
                 font-weight: 300;
                 font-size: 64px;
                 line-height: 1.2;
             }
-    
+
             .testimonials-description {
                 align-self: stretch;
                 position: relative;
@@ -616,21 +722,21 @@
                 color: #535353;
                 margin: 0;
             }
-    
+
             .masonry-grid {
                 width: 100%;
                 display: flex;
                 align-items: flex-start;
                 gap: 24px;
             }
-    
+
             .masonry-column {
                 flex: 1;
                 display: flex;
                 flex-direction: column;
                 gap: 24px;
             }
-    
+
             .testimonial-card {
                 align-self: stretch;
                 border-radius: 32px;
@@ -641,43 +747,44 @@
                 align-items: flex-start;
                 transition: opacity 0.5s ease, transform 0.5s ease;
             }
-    
+
             .testimonial-card.hidden-card {
                 display: none;
                 opacity: 0;
             }
-    
+
             .testimonial-card.show-card {
                 display: flex;
                 animation: fadeInUp 0.6s ease forwards;
             }
-    
+
             @keyframes fadeInUp {
                 from {
                     opacity: 0;
                     transform: translateY(30px);
                 }
+
                 to {
                     opacity: 1;
                     transform: translateY(0);
                 }
             }
-    
+
             .card-with-image {
                 box-shadow: 0px 12px 24px rgba(80, 51, 37, 0.25);
             }
-    
+
             .card-text-only {
                 border: 1px solid rgba(226, 102, 84, 0.25);
             }
-    
+
             .card-image {
                 align-self: stretch;
                 width: 100%;
                 height: 400px;
                 object-fit: cover;
             }
-    
+
             .card-content {
                 align-self: stretch;
                 display: flex;
@@ -686,7 +793,7 @@
                 padding: 32px;
                 gap: 17px;
             }
-    
+
             .card-name {
                 align-self: stretch;
                 position: relative;
@@ -695,7 +802,7 @@
                 color: #000;
                 margin: 0;
             }
-    
+
             .card-subtitle {
                 align-self: stretch;
                 position: relative;
@@ -703,7 +810,7 @@
                 color: rgba(80, 51, 37, 0.25);
                 margin: 0;
             }
-    
+
             .card-quote {
                 align-self: stretch;
                 position: relative;
@@ -713,7 +820,7 @@
                 line-height: 1.6;
                 margin: 0;
             }
-    
+
             /* Load More Button */
             .load-more-container {
                 width: 100%;
@@ -721,7 +828,7 @@
                 justify-content: center;
                 align-items: center;
             }
-    
+
             .load-more-btn {
                 padding: 16px 48px;
                 background-color: #23B4E9;
@@ -735,78 +842,78 @@
                 transition: all 0.3s ease;
                 box-shadow: 0px 8px 16px rgba(35, 180, 233, 0.3);
             }
-    
+
             .load-more-btn:hover {
                 background-color: #1a94c4;
                 transform: translateY(-2px);
                 box-shadow: 0px 12px 24px rgba(35, 180, 233, 0.4);
             }
-    
+
             .load-more-btn:active {
                 transform: translateY(0);
             }
-    
+
             .load-more-container.hidden {
                 display: none;
             }
-    
+
             /* Responsive Design */
             @media (max-width: 1024px) {
                 .testimonials-container {
                     padding: 64px 32px;
                 }
-    
+
                 .testimonials-title h1,
                 .title-subtitle {
                     font-size: 48px;
                 }
-    
+
                 .masonry-grid {
                     flex-direction: column;
                 }
-    
+
                 .masonry-column {
                     width: 100%;
                 }
             }
-    
+
             @media (max-width: 768px) {
                 .testimonials-container {
                     padding: 32px 16px;
                     gap: 32px;
                 }
-    
+
                 .testimonials-title h1,
                 .title-subtitle {
                     font-size: 36px;
                 }
-    
+
                 .testimonials-description {
                     font-size: 18px;
                 }
-    
+
                 .card-content {
                     padding: 24px;
                 }
-    
+
                 .card-image {
                     height: 300px;
                 }
-    
+
                 .load-more-btn {
                     padding: 14px 36px;
                     font-size: 16px;
                 }
             }
         </style>
-    
+
         <script>
-            document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('DOMContentLoaded', function () {
                 const loadMoreBtn = document.getElementById('loadMoreBtn');
                 const loadMoreContainer = document.getElementById('loadMoreContainer');
                 const hiddenCards = document.querySelectorAll('.hidden-card');
-    
-                loadMoreBtn.addEventListener('click', function() {
+
+                loadMoreBtn.addEventListener('click', function () {
                     // Show all hidden cards with staggered animation
                     hiddenCards.forEach((card, index) => {
                         setTimeout(() => {
@@ -814,7 +921,7 @@
                             card.classList.add('show-card');
                         }, index * 100); // Stagger by 100ms
                     });
-    
+
                     // Hide the load more button
                     setTimeout(() => {
                         loadMoreContainer.classList.add('hidden');
@@ -825,67 +932,67 @@
     </section>
 
     <script>
-    let currentSlide = 0;
-    const track = document.getElementById('testimonialTrack');
-    const cards = track.children;
-    const totalCards = cards.length;
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    const dots = document.querySelectorAll('.dot');
-    
-    function updateCarousel() {
-        const cardWidth = cards[0].offsetWidth;
-        track.style.transform = `translateX(-${currentSlide * cardWidth}px)`;
-    
-        // Update dots
-        dots.forEach((dot, index) => {
-            dot.classList.toggle('bg-primary-blue', index === currentSlide);
-            dot.classList.toggle('bg-primary-blue/30', index !== currentSlide);
+        let currentSlide = 0;
+        const track = document.getElementById('testimonialTrack');
+        const cards = track.children;
+        const totalCards = cards.length;
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const dots = document.querySelectorAll('.dot');
+
+        function updateCarousel() {
+            const cardWidth = cards[0].offsetWidth;
+            track.style.transform = `translateX(-${currentSlide * cardWidth}px)`;
+
+            // Update dots
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('bg-primary-blue', index === currentSlide);
+                dot.classList.toggle('bg-primary-blue/30', index !== currentSlide);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalCards;
+            updateCarousel();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalCards) % totalCards;
+            updateCarousel();
+        }
+
+        function goToSlide(slideIndex) {
+            currentSlide = slideIndex;
+            updateCarousel();
+        }
+
+        // Event listeners
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+        dots.forEach((dot, index) => dot.addEventListener('click', () => goToSlide(index)));
+
+        // Auto-play
+        let autoPlay = setInterval(nextSlide, 5000);
+        track.parentElement.addEventListener('mouseenter', () => clearInterval(autoPlay));
+        track.parentElement.addEventListener('mouseleave', () => autoPlay = setInterval(nextSlide, 5000));
+
+        // Swipe functionality
+        let startX = 0;
+        let isDragging = false;
+
+        track.addEventListener('touchstart', e => {
+            startX = e.touches[0].clientX;
+            isDragging = true;
         });
-    }
-    
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % totalCards;
+
+        track.addEventListener('touchend', e => {
+            if (!isDragging) return;
+            const diffX = startX - e.changedTouches[0].clientX;
+            if (Math.abs(diffX) > 50) diffX > 0 ? nextSlide() : prevSlide();
+            isDragging = false;
+        });
+
         updateCarousel();
-    }
-    
-    function prevSlide() {
-        currentSlide = (currentSlide - 1 + totalCards) % totalCards;
-        updateCarousel();
-    }
-    
-    function goToSlide(slideIndex) {
-        currentSlide = slideIndex;
-        updateCarousel();
-    }
-    
-    // Event listeners
-    nextBtn.addEventListener('click', nextSlide);
-    prevBtn.addEventListener('click', prevSlide);
-    dots.forEach((dot, index) => dot.addEventListener('click', () => goToSlide(index)));
-    
-    // Auto-play
-    let autoPlay = setInterval(nextSlide, 5000);
-    track.parentElement.addEventListener('mouseenter', () => clearInterval(autoPlay));
-    track.parentElement.addEventListener('mouseleave', () => autoPlay = setInterval(nextSlide, 5000));
-    
-    // Swipe functionality
-    let startX = 0;
-    let isDragging = false;
-    
-    track.addEventListener('touchstart', e => {
-        startX = e.touches[0].clientX;
-        isDragging = true;
-    });
-    
-    track.addEventListener('touchend', e => {
-        if (!isDragging) return;
-        const diffX = startX - e.changedTouches[0].clientX;
-        if (Math.abs(diffX) > 50) diffX > 0 ? nextSlide() : prevSlide();
-        isDragging = false;
-    });
-    
-    updateCarousel();
     </script>
 
     <section
@@ -919,14 +1026,15 @@
 
             <div class="mt-4">
                 <div class="button-prim green-btn">
-                    <a href="https://payfast.co.za/donate/go/southafricanbreastmilkreserve" target="_blank" class="nav-button7 green-btn cursor-pointer">
+                    <a href="https://payfast.co.za/donate/go/southafricanbreastmilkreserve" target="_blank"
+                        class="nav-button7 green-btn cursor-pointer">
                         <div class="button7 px-[10px] text-[18px]">Yes, I want to contribute</div>
                         <div class="nav-button-child">
                         </div>
                     </a>
                 </div>
             </div>
-            
+
         </div>
 
         <!-- Image container -->
@@ -941,135 +1049,152 @@
 
 
     <section class="bg-[#e8d8c6] rounded-[32px]">
-        <div class="relative w-full  flex flex-col items-center justify-start px-4 sm:px-8 lg:px-32 py-16 sm:py-20 lg:py-32 gap-8 lg:gap-16 text-left font-work-sans">
-    
+        <div
+            class="relative w-full  flex flex-col items-center justify-start px-4 sm:px-8 lg:px-32 py-16 sm:py-20 lg:py-32 gap-8 lg:gap-16 text-left font-work-sans">
+
             <!-- Header Section -->
             <div class="w-full max-w-6xl flex flex-col items-center justify-start gap-4 lg:gap-6">
                 <div class="w-full text-[#905460]">
                     <h1 class=" text-[64px] text-center leading-tight m-0">
                         <span class="font-extrabold">Begin Helping Today</span>
                     </h1>
-                    
+
                 </div>
                 <p class="w-full font-inter font-light text-[24px] text-[#503325]">
-                    Human-centered programs bringing milk, care, and hope where it's needed most.  Help us fund a miracle.
+                    Human-centered programs bringing milk, care, and hope where it's needed most. Help us fund a miracle.
                 </p>
             </div>
-            
-                <div class="w-full relative section-bg rounded-[32px]  overflow-hidden pb-8 flex flex-row items-start justify-center px-4  sm:px-8  lg:pr-[353px] lg:pr-32  box-border gap-6 text-left  section-text work-sans">
-                    <div class="self-stretch w-full max-w-[915px] flex flex-col items-center  z-0">
+
+            <div
+                class="w-full relative section-bg rounded-[32px]  overflow-hidden pb-8 flex flex-row items-start justify-center px-4  sm:px-8  lg:pr-[353px] lg:pr-32  box-border gap-6 text-left  section-text work-sans">
+                <div class="self-stretch w-full max-w-[915px] flex flex-col items-center  z-0">
+                    <div class="self-stretch flex flex-col items-start justify-start gap-[24px]">
                         <div class="self-stretch flex flex-col items-start justify-start gap-[24px]">
-                            <div class="self-stretch flex flex-col items-start justify-start gap-[24px]">
-                                <div class="self-stretch relative text-[64px]">
-                                    <span class="font-bold">Feed for Life </span>
-                                    <span>Initiative </span>
+                            <div class="self-stretch relative text-[64px]">
+                                <span class="font-bold">Feed for Life </span>
+                                <span>Initiative </span>
+                            </div>
+
+                            <div class="self-stretch flex flex-col items-start justify-start inter">
+                                <div class="self-stretch relative text-[24px] font-inter font-[300]">
+                                    Our Feed for Life Initiative isn't just a program - it's a lifeline woven with love,
+                                    reaching into every corner of South Africa where tiny hearts beat with determination and
+                                    families hold onto hope.
                                 </div>
-                                
-                                <div class="self-stretch flex flex-col items-start justify-start inter">
+                            </div>
+
+                            <div
+                                class="self-stretch flex flex-col lg:flex-row items-start justify-start gap-4 lg:gap-8 text-xl sm:text-2xl lg:text-[32px]">
+                                <div class="flex-1 w-full flex flex-col items-start justify-start gap-3">
+                                    <div class="font-bold self-stretch relative text-[24px]">Where time<br> matters most
+                                    </div>
                                     <div class="self-stretch relative text-[24px] font-inter font-[300]">
-                                        Our Feed for Life Initiative isn't just a program - it's a lifeline woven with love, reaching into every corner of South Africa where tiny hearts beat with determination and families hold onto hope.
+                                        We focus our tender care on our earliest arrivals, wrapping them in nutrition that
+                                        speaks the language their tiny bodies understand.
                                     </div>
                                 </div>
-                                
-                                <div class="self-stretch flex flex-col lg:flex-row items-start justify-start gap-4 lg:gap-8 text-xl sm:text-2xl lg:text-[32px]">
-                                    <div class="flex-1 w-full flex flex-col items-start justify-start gap-3">
-                                        <div class="font-bold self-stretch relative text-[24px]">Where time<br> matters most</div>
-                                        <div class="self-stretch relative text-[24px] font-inter font-[300]">
-                                            We focus our tender care on our earliest arrivals, wrapping them in nutrition that speaks the language their tiny bodies understand.
-                                        </div>
+
+                                <div class="flex-1 w-full flex flex-col items-start justify-start gap-3">
+                                    <div class="font-bold self-stretch relative text-[24px] ">Our promise<br> travels far
                                     </div>
-                                    
-                                    <div class="flex-1 w-full flex flex-col items-start justify-start gap-3">
-                                        <div class="font-bold self-stretch relative text-[24px] ">Our promise<br> travels far</div>
-                                        <div class="self-stretch relative text-[24px] font-inter font-[300]">
-                                            pasteurised donor breastmilk like precious cargo to NICUs nationwide, because distance should never determine a baby's destiny.
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="flex-1 w-full flex flex-col items-start justify-start gap-3 ">
-                                        <div class="font-bold self-stretch relative text-[24px] font-sans">Sustainable Impact</div>
-                                        <div class="self-stretch relative text-[24px] font-inter font-[300]">
-                                            Strengthening neonatal care  in underserved rural areas through partnerships with Provincial Departments of Health.
-                                        </div>
+                                    <div class="self-stretch relative text-[24px] font-inter font-[300]">
+                                        pasteurised donor breastmilk like precious cargo to NICUs nationwide, because
+                                        distance should never determine a baby's destiny.
                                     </div>
                                 </div>
-                                
-                                <div class="w-full relative font-[300] text-[24px] font-inter flex items-end min-h-[63px] flex-shrink-0">
-                                    Together, we can provide a healthier start for every baby.
+
+                                <div class="flex-1 w-full flex flex-col items-start justify-start gap-3 ">
+                                    <div class="font-bold self-stretch relative text-[24px] font-sans">Sustainable Impact
+                                    </div>
+                                    <div class="self-stretch relative text-[24px] font-inter font-[300]">
+                                        Strengthening neonatal care in underserved rural areas through partnerships with
+                                        Provincial Departments of Health.
+                                    </div>
                                 </div>
                             </div>
-                            
-                            <div class="flex flex-col sm:flex-row items-start justify-start gap-4 lg:gap-6 text-sm sm:text-base lg:text-lg inter">
-                                <a href="{{route('feed-for-life')}}" class="w-full sm:w-auto rounded-[32px] btn-primary flex flex-row items-center justify-center p-3 lg:p-4">
-                                    <div class="relative font-bold">Support Feed for Life</div>
-                                </a>
-                                
-                               
+
+                            <div
+                                class="w-full relative font-[300] text-[24px] font-inter flex items-end min-h-[63px] flex-shrink-0">
+                                Together, we can provide a healthier start for every baby.
                             </div>
                         </div>
+
+                        <div
+                            class="flex flex-col sm:flex-row items-start justify-start gap-4 lg:gap-6 text-sm sm:text-base lg:text-lg inter">
+                            <a href="{{route('feed-for-life')}}"
+                                class="w-full sm:w-auto rounded-[32px] btn-primary flex flex-row items-center justify-center p-3 lg:p-4">
+                                <div class="relative font-bold">Support Feed for Life</div>
+                            </a>
+
+
+                        </div>
                     </div>
-                    
-                    <!-- Images positioned absolutely - hidden on mobile and tablet -->
-                    <img class="hidden xl:block absolute rounded-2xl object-contain img-frame-99" alt="milks" src="{{asset('images/img-sec3.png')}}">
-                    
                 </div>
-                <section class=" rounded-[32px] overflow-hidden">
-                    <div class="ellipse-div3">
-                        <div class="">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pl-8  ">
-                                <!-- Left Container -->
-                                <div class="make-your-hospital-container !text-[#fff]  font-bold !text-[64x] mt-20">
-                                    SOStainer: <span class="font-normal">Mobile Healthcare</span>
-                                </div>
-            
-            
-                                <!-- Right Container -->
-                                <div class="flex items-center justify-end h-full">
-                                    <img src="{{asset('images/sos-logo.png')}}" class=" h-[140px]" />
-                                </div>
+
+                <!-- Images positioned absolutely - hidden on mobile and tablet -->
+                <img class="hidden xl:block absolute rounded-2xl object-contain img-frame-99" alt="milks"
+                    src="{{asset('images/img-sec3.png')}}">
+
+            </div>
+            <section class=" rounded-[32px] overflow-hidden">
+                <div class="ellipse-div3">
+                    <div class="">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pl-8  ">
+                            <!-- Left Container -->
+                            <div class="make-your-hospital-container !text-[#fff]  font-bold !text-[64x] mt-20">
+                                SOStainer: <span class="font-normal">Mobile Healthcare</span>
                             </div>
-            
-                            <div class="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-4 pl-8 mt-6">
-                                <!-- Left Container (Smaller) -->
-                                <div>
-                                    <div class="text-white !font-[300] font-inter text-[24px] ">
-                                        The SOStainer Mobile Clinic delivers essential healthcare services, including breastfeeding
-                                        support, immunisations, and breastmilk pasteurisation, directly to underserved communities.
-                                        <br><br>
-                                        Solar-powered and versatile, it's a vital resource for supporting mothers and young children.
-                                    </div>
-                                    <a href="{{route('sostainer')}}" class="explore-sostainer-parent">
-                                        <b class="explore-sostainer">Explore SOStainer</b>
-                                    </a>
-                                </div>
-            
-            
-                                <!-- Right Container (Larger) -->
-                                <div class="flex items-start justify-end  w-full mt-[-30px] md:mt-[180px]">
-                                    <img src="{{ asset('images/new-container.png') }}"
-                                        class="object-cover w-full h-full" />
-                                </div>
-            
+
+
+                            <!-- Right Container -->
+                            <div class="flex items-center justify-end h-full">
+                                <img src="{{asset('images/sos-logo.png')}}" class=" h-[140px]" />
                             </div>
-            
-            
-            
-            
-            
                         </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-4 pl-8 mt-6">
+                            <!-- Left Container (Smaller) -->
+                            <div>
+                                <div class="text-white !font-[300] font-inter text-[24px] ">
+                                    The SOStainer Mobile Clinic delivers essential healthcare services, including
+                                    breastfeeding
+                                    support, immunisations, and breastmilk pasteurisation, directly to underserved
+                                    communities.
+                                    <br><br>
+                                    Solar-powered and versatile, it's a vital resource for supporting mothers and young
+                                    children.
+                                </div>
+                                <a href="{{route('sostainer')}}" class="explore-sostainer-parent">
+                                    <b class="explore-sostainer">Explore SOStainer</b>
+                                </a>
+                            </div>
+
+
+                            <!-- Right Container (Larger) -->
+                            <div class="flex items-start justify-end  w-full mt-[-30px] md:mt-[180px]">
+                                <img src="{{ asset('images/new-container.png') }}" class="object-cover w-full h-full" />
+                            </div>
+
+                        </div>
+
+
+
+
+
                     </div>
-                </section>
+                </div>
+            </section>
         </div>
     </section>
 
     <section class="py-20">
         <div class="wrapper">
-            <div class="!text-[#905460]  font-bold make-your-hospital-container text-center justify-center items-center !flex">
+            <div
+                class="!text-[#905460]  font-bold make-your-hospital-container text-center justify-center items-center !flex">
                 <span>Making it Possible </span>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 place-items-center mt-10 mb:mt-20">
-                <img src="{{asset('images/discovery_logo.png')}}" alt="Discovery logo"
-                    class="w-[298px] h-[60px]">
+                <img src="{{asset('images/discovery_logo.png')}}" alt="Discovery logo" class="w-[298px] h-[60px]">
 
                 <img src="{{asset('images/sosafe_logo.png')}}" alt="So safe" class="w-[192px] h-[111px]">
 
@@ -1082,44 +1207,51 @@
     </section>
 
     <section class=" bg-[#948ea7]">
-        <div class="w-full relative bg-primary-purple overflow-hidden flex flex-col items-end justify-start wrapper pt-[20px] md:pt-[120px] pb-20 box-border gap-16 text-right text-6xl text-cream font-work-sans">
+        <div
+            class="w-full relative bg-primary-purple overflow-hidden flex flex-col items-end justify-start wrapper pt-[20px] md:pt-[120px] pb-20 box-border gap-16 text-right text-6xl text-cream font-work-sans">
             <!-- Header Section -->
             <div class="w-full max-w-4xl flex flex-col items-end justify-start gap-3 z-10">
                 <h1 class="self-stretch text-6xl font-bold">Help Us, Or Let Us Help You</h1>
                 <h2 class="self-stretch text-[32px] text-cream font-inter font-bold">Get In Touch</h2>
             </div>
-            
+
             <!-- Cards Container -->
-            <div class="self-stretch flex flex-col items-center justify-start gap-6 z-20 text-left text-lg text-white font-inter">
+            <div
+                class="self-stretch flex flex-col items-center justify-start gap-6 z-20 text-left text-lg text-white font-inter">
                 <!-- Top Row - 3 Cards -->
                 <div class="self-stretch flex flex-row items-center justify-between gap-0 flex-wrap lg:flex-nowrap">
                     <!-- Donate Breastmilk Card -->
-                    <div class="w-full lg:w-96 rounded-3xl mt-5 bg-card-bg border border-card-border overflow-hidden flex-shrink-0 flex flex-row items-start justify-start relative  h-[320px] group hover:shadow-lg transition-all duration-300">
+                    <div
+                        class="w-full lg:w-96 rounded-3xl mt-5 bg-card-bg border border-card-border overflow-hidden flex-shrink-0 flex flex-row items-start justify-start relative  h-[320px] group hover:shadow-lg transition-all duration-300">
                         <!-- Background Effects -->
                         <div class="absolute -top-48 -left-96 w-full h-full backdrop-blur-2xl opacity-20"></div>
-                        
+
                         <!-- Card Content -->
-                        <div class="w-full bg-card-bg  border-white h-full flex flex-col items-start justify-center p-6 z-10 relative ">
+                        <div
+                            class="w-full bg-card-bg  border-white h-full flex flex-col items-start justify-center p-6 z-10 relative ">
                             <div class="self-stretch flex-1 relative">
                                 <!-- Tags -->
                                 <div class="absolute top-0 left-0 w-full flex flex-row items-center justify-between">
-                                    <a href="{{route('donate')}}" class="rounded-md bg-primary-purple flex flex-row items-center justify-center px-3 py-2">
+                                    <a href="{{route('donate')}}"
+                                        class="rounded-md bg-primary-purple flex flex-row items-center justify-center px-3 py-2">
                                         <span class="font-bold text-sm">Register</span>
                                     </a>
                                     <div class="w-8 h-8  rounded-full flex items-center justify-center">
-                                        <img class="w-8 h-8" alt="" src="{{asset('images/holding-hands-icon.svg')}}">    
+                                        <img class="w-8 h-8" alt="" src="{{asset('images/holding-hands-icon.svg')}}">
                                     </div>
                                 </div>
-                                
+
                                 <!-- Copy -->
                                 <div class="absolute top-12 left-0 w-full">
                                     <h3 class="text-2xl font-work-sans font-semibold mb-2 text-white">Donate Breastmilk</h3>
-                                    <p class="text-lg font-light font-inter text-white/90">Your milk can provide vital nourishment for babies in need.</p>
+                                    <p class="text-lg font-light font-inter text-white/90">Your milk can provide vital
+                                        nourishment for babies in need.</p>
                                 </div>
-                                
+
                                 <!-- Button -->
                                 <div class="absolute bottom-0  right-0 flex flex-row items-end justify-end">
-                                    <a href="{{route('donate')}}" class="flex flex-row items-center gap-2 group-hover:gap-3 transition-all duration-300">
+                                    <a href="{{route('donate')}}"
+                                        class="flex flex-row items-center gap-2 group-hover:gap-3 transition-all duration-300">
                                         <span class="text-lg font-[300]">Give Hope</span>
                                         <div class="w-5 h-5 flex items-center justify-center">
                                             <img class="" alt="" src="{{asset('images/right-arrwow.svg')}}">
@@ -1129,33 +1261,39 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Volunteer Card -->
-                    <div class="w-full lg:w-96 rounded-3xl mt-5 bg-card-bg border border-card-border overflow-hidden flex-shrink-0 flex flex-row items-start justify-start relative  h-[320px] group hover:shadow-lg transition-all duration-300">
+                    <div
+                        class="w-full lg:w-96 rounded-3xl mt-5 bg-card-bg border border-card-border overflow-hidden flex-shrink-0 flex flex-row items-start justify-start relative  h-[320px] group hover:shadow-lg transition-all duration-300">
                         <!-- Card Content -->
-                        <div class="w-full bg-card-bg border border-card-border h-full flex flex-col items-start justify-center p-6 z-10 relative">
+                        <div
+                            class="w-full bg-card-bg border border-card-border h-full flex flex-col items-start justify-center p-6 z-10 relative">
                             <a href={{route('volunteer')}} class="self-stretch flex-1 relative">
                                 <!-- Tags -->
                                 <div class="absolute top-0 left-0 w-full flex flex-row items-center justify-between">
-                                    <div class="rounded-md bg-primary-purple flex flex-row items-center justify-center px-3 py-2">
+                                    <div
+                                        class="rounded-md bg-primary-purple flex flex-row items-center justify-center px-3 py-2">
                                         <span class="font-bold text-sm">Register</span>
                                     </div>
                                     <div class="w-8 h-8  rounded-full flex items-center justify-center">
-                                        <img class="w-8 h-8" alt="" src="{{asset('images/Alarm.svg')}}">    
+                                        <img class="w-8 h-8" alt="" src="{{asset('images/Alarm.svg')}}">
                                     </div>
                                 </div>
-                                
+
                                 <!-- Copy -->
                                 <div class="absolute top-12 left-0 w-full">
-                                    <h3 class="text-2xl font-work-sans font-semibold mb-2 text-white">Volunteer Your Time</h3>
-                                    <p class="text-lg font-light font-inter text-white/90">From collections and deliveries to assisting the SABR team, volunteers help us make it all happen.</p>
+                                    <h3 class="text-2xl font-work-sans font-semibold mb-2 text-white">Volunteer Your Time
+                                    </h3>
+                                    <p class="text-lg font-light font-inter text-white/90">From collections and deliveries
+                                        to assisting the SABR team, volunteers help us make it all happen.</p>
                                 </div>
 
-                                
-                                
+
+
                                 <!-- Button -->
                                 <div class="absolute bottom-0 right-0 m-5 flex flex-row items-end justify-end">
-                                    <a href="{{route('volunteer')}}" class="flex flex-row items-center gap-2 group-hover:gap-3 transition-all duration-300">
+                                    <a href="{{route('volunteer')}}"
+                                        class="flex flex-row items-center gap-2 group-hover:gap-3 transition-all duration-300">
                                         <span class="text-lg font-[300]">Begin Helping Today</span>
                                         <div class="w-5 h-5 flex items-center justify-center">
                                             <div class="w-5 h-5 flex items-center justify-center">
@@ -1167,31 +1305,38 @@
                             </a>
                         </div>
                     </div>
-                    
+
                     <!-- Financial Donation Card -->
-                    <div class="w-full lg:w-96 rounded-3xl mt-5 bg-card-bg border border-white overflow-hidden flex-shrink-0 flex flex-row items-start justify-start relative h-[320px] group hover:shadow-lg transition-all duration-300">
+                    <div
+                        class="w-full lg:w-96 rounded-3xl mt-5 bg-card-bg border border-white overflow-hidden flex-shrink-0 flex flex-row items-start justify-start relative h-[320px] group hover:shadow-lg transition-all duration-300">
                         <!-- Card Content -->
-                        <div class="w-full bg-card-bg border border-card-border h-full flex flex-col items-start justify-center p-6 z-10 relative">
-                            <a href="https://payfast.co.za/donate/go/southafricanbreastmilkreserve" class="self-stretch flex-1 relative">
+                        <div
+                            class="w-full bg-card-bg border border-card-border h-full flex flex-col items-start justify-center p-6 z-10 relative">
+                            <a href="https://payfast.co.za/donate/go/southafricanbreastmilkreserve"
+                                class="self-stretch flex-1 relative">
                                 <!-- Tags -->
                                 <div class="absolute top-0 left-0 w-full flex flex-row items-center justify-between">
-                                    <div class="rounded-md bg-primary-purple flex flex-row items-center justify-center px-3 py-2">
+                                    <div
+                                        class="rounded-md bg-primary-purple flex flex-row items-center justify-center px-3 py-2">
                                         <span class="font-bold text-sm">Register</span>
                                     </div>
                                     <div class="w-9 h-9  rounded-full flex items-center justify-center">
-                                        <img class="w-8 h-8" src="{{asset('images/Heart_01.png')}}"/>
+                                        <img class="w-8 h-8" src="{{asset('images/Heart_01.png')}}" />
                                     </div>
                                 </div>
-                                
+
                                 <!-- Copy -->
                                 <div class="absolute top-12 left-0 w-full">
                                     <h3 class="text-2xl font-work-sans font-semibold mb-2 text-white">Donate</h3>
-                                    <p class="text-lg font-light font-inter text-white/90">Help us save lives. Your financial contribution supports SABR's programmes, bringing life-saving donor breastmilk and care to vulnerable infants across SA.</p>
+                                    <p class="text-lg font-light font-inter text-white/90">Help us save lives. Your
+                                        financial contribution supports SABR's programmes, bringing life-saving donor
+                                        breastmilk and care to vulnerable infants across SA.</p>
                                 </div>
-                                
+
                                 <!-- Button -->
                                 <div class="absolute bottom-0 right-0 m-5 flex flex-row items-end justify-end">
-                                    <a href="https://payfast.co.za/donate/go/southafricanbreastmilkreserve" class="flex flex-row items-center gap-2 group-hover:gap-3 transition-all duration-300">
+                                    <a href="https://payfast.co.za/donate/go/southafricanbreastmilkreserve"
+                                        class="flex flex-row items-center gap-2 group-hover:gap-3 transition-all duration-300">
                                         <span class="text-lg font-[300]">Fund a Miracle</span>
                                         <div class="w-5 h-5 flex items-center justify-center">
                                             <div class="w-5 h-5 flex items-center justify-center">
@@ -1204,41 +1349,48 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Bottom Row - 2 Cards -->
                 <div class="self-stretch flex flex-row items-start justify-center gap-11 flex-wrap lg:flex-nowrap">
                     <!-- Parent Card -->
-                    <div class="w-full lg:w-96 rounded-3xl bg-card-bg border border-card-border overflow-hidden flex-shrink-0 flex flex-row items-start justify-start relative h-[320px] group hover:shadow-lg transition-all duration-300">
+                    <div
+                        class="w-full lg:w-96 rounded-3xl bg-card-bg border border-card-border overflow-hidden flex-shrink-0 flex flex-row items-start justify-start relative h-[320px] group hover:shadow-lg transition-all duration-300">
                         <!-- Background -->
                         <div class="absolute inset-0 bg-card-bg backdrop-blur-2xl"></div>
-                        
+
                         <!-- Card Content -->
                         <div class="flex-1 flex flex-col items-start justify-start p-6 z-10 relative">
-                            <a href={{route('register')}} class="self-stretch flex flex-col items-start justify-start gap-4">
+                            <a href={{route('register')}}
+                                class="self-stretch flex flex-col items-start justify-start gap-4">
                                 <!-- Header -->
                                 <div class="self-stretch flex flex-row items-center justify-between">
-                                    <div class="rounded-md bg-primary-purple flex flex-row items-center justify-center px-3 py-2">
+                                    <div
+                                        class="rounded-md bg-primary-purple flex flex-row items-center justify-center px-3 py-2">
                                         <span class="font-bold text-sm text-white">Register</span>
                                     </div>
                                     <div class="w-8 h-8 rounded-full flex items-center justify-center">
-                                        <img class="w-8 h-8" src="{{asset('images/icon-child.svg')}}"/> 
+                                        <img class="w-8 h-8" src="{{asset('images/icon-child.svg')}}" />
                                     </div>
                                 </div>
-                                
+
                                 <!-- Content -->
                                 <div class="self-stretch flex flex-col items-start justify-start gap-3">
-                                    <h3 class="self-stretch text-2xl font-work-sans font-semibold text-white">I am a Parent</h3>
-                                    <p class="w-full text-lg font-light font-inter text-white/90">If your baby can't receive milk from you, we're here to help. Donated breastmilk is love in liquid form - giving your child the best possible start when they need it most.</p>
+                                    <h3 class="self-stretch text-2xl font-work-sans font-semibold text-white">I am a Parent
+                                    </h3>
+                                    <p class="w-full text-lg font-light font-inter text-white/90">If your baby can't receive
+                                        milk from you, we're here to help. Donated breastmilk is love in liquid form -
+                                        giving your child the best possible start when they need it most.</p>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    
+
                     <!-- Clinician Card -->
-                    <div class="w-full lg:w-96 bg-[#9f9ab1] shadow-[0px_0px_12px_rgba(0,0,0,0.45)] rounded-3xl border border-white overflow-hidden flex-shrink-0 flex flex-row items-center justify-center relative h-[320px] group hover:shadow-xl transition-all duration-300">
+                    <div
+                        class="w-full lg:w-96 bg-[#9f9ab1] shadow-[0px_0px_12px_rgba(0,0,0,0.45)] rounded-3xl border border-white overflow-hidden flex-shrink-0 flex flex-row items-center justify-center relative h-[320px] group hover:shadow-xl transition-all duration-300">
                         <!-- Background Effects -->
                         <div class="absolute inset-0 backdrop-blur-2xl"></div>
-                        
+
                         <!-- Card Content -->
                         <div class="self-stretch flex-1 flex flex-col items-start justify-start p-6 z-10 relative">
                             <div class="self-stretch flex-1 flex flex-col items-start justify-start gap-4">
@@ -1248,27 +1400,31 @@
                                         <span class="font-bold text-sm text-white">Coming Soon</span>
                                     </div>
                                     <div class="w-8 h-8 rounded-full flex items-center justify-center">
-                                        <img class="w-8 h-8" src="{{asset('images/doctor-icon.svg')}}"/>
+                                        <img class="w-8 h-8" src="{{asset('images/doctor-icon.svg')}}" />
                                     </div>
                                 </div>
-                                
+
                                 <!-- Content -->
                                 <div class="self-stretch flex flex-col items-start justify-start gap-3">
-                                    <h3 class="self-stretch text-2xl font-work-sans font-semibold text-white">I am a Clinician</h3>
-                                    <p class="self-stretch text-lg font-light font-inter text-white whitespace-pre-wrap">If your baby can't receive milk from you, we're here to help. Donated breastmilk is love in liquid form - giving your child the best possible start when they need it most.</p>
+                                    <h3 class="self-stretch text-2xl font-work-sans font-semibold text-white">I am a
+                                        Clinician</h3>
+                                    <p class="self-stretch text-lg font-light font-inter text-white whitespace-pre-wrap">If
+                                        your baby can't receive milk from you, we're here to help. Donated breastmilk is
+                                        love in liquid form - giving your child the best possible start when they need it
+                                        most.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <!-- Background Images (Placeholder areas) -->
             <div class="absolute -top-4 left-14 w-96 h-96  z-[10] hidden md:block ">
-                <img src="{{asset('images/babyhands.png')}}" alt=""/>
+                <img src="{{asset('images/babyhands.png')}}" alt="" />
             </div>
             <div class="absolute top-9 -left-8 w-64 h-72  z-40 hidden md:block">
-                <img src="{{asset('images/baby-sec4.png')}}" alt=""/>
+                <img src="{{asset('images/baby-sec4.png')}}" alt="" />
             </div>
         </div>
     </section>
@@ -1313,12 +1469,8 @@
     </section>
 
     <!-- Floating Milk Bank Button -->
-    <a href="{{ route('milk-banks') }}" 
-       class="floating-milk-bank-btn"
-       aria-label="Find a Milk Bank Near You">
-        <img src="{{ asset('images/milkbankbtn.gif') }}" 
-             alt="Find Milk Bank" 
-             class="floating-btn-image">
+    <a href="{{ route('milk-banks') }}" class="floating-milk-bank-btn" aria-label="Find a Milk Bank Near You">
+        <img src="{{ asset('images/milkbankbtn.gif') }}" alt="Find Milk Bank" class="floating-btn-image">
     </a>
 
     <style>
@@ -1331,8 +1483,8 @@
             height: 80px;
             border-radius: 50%;
             overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 
-                        0 8px 24px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15),
+                0 8px 24px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             cursor: pointer;
             display: flex;
@@ -1343,8 +1495,8 @@
 
         .floating-milk-bank-btn:hover {
             transform: scale(1.1) translateY(-5px);
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2), 
-                        0 12px 32px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2),
+                0 12px 32px rgba(0, 0, 0, 0.15);
         }
 
         .floating-milk-bank-btn:active {
@@ -1378,15 +1530,18 @@
 
         /* Optional: Add a subtle pulse animation */
         @keyframes pulse {
-            0%, 100% {
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 
-                            0 8px 24px rgba(0, 0, 0, 0.1),
-                            0 0 0 0 rgba(35, 180, 233, 0.4);
+
+            0%,
+            100% {
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15),
+                    0 8px 24px rgba(0, 0, 0, 0.1),
+                    0 0 0 0 rgba(35, 180, 233, 0.4);
             }
+
             50% {
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 
-                            0 8px 24px rgba(0, 0, 0, 0.1),
-                            0 0 0 10px rgba(35, 180, 233, 0);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15),
+                    0 8px 24px rgba(0, 0, 0, 0.1),
+                    0 0 0 10px rgba(35, 180, 233, 0);
             }
         }
 
