@@ -140,7 +140,7 @@ class RegisterController extends Controller
                 'nurse_name' => ['memberDefaultID' => 0, 'memberCustomID' => 405],
                 'unit_email' => ['memberDefaultID' => 0, 'memberCustomID' => 406],
                 'quantity_ordered' => ['memberDefaultID' => 0, 'memberCustomID' => 407],
-                'amount_due' => ['memberDefaultID' => 0, 'memberCustomID' => 408],
+                //clientasked to remove'amount_due' => ['memberDefaultID' => 0, 'memberCustomID' => 408],
                 'sa_citizen' => ['memberDefaultID' => 0, 'memberCustomID' => 409],
                 'account_responsible' => ['memberDefaultID' => 0, 'memberCustomID' => 410],
                 'maternal_lactation_status' => ['memberDefaultID' => 0, 'memberCustomID' => 411],

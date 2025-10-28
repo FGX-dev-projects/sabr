@@ -235,9 +235,6 @@
                         <b class="text-[64px] text-[#23b4e9]">25</b>
                         <b class="text-xl text-black">Situated in public hospitals</b>
                     </div>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6">
                     <div class="flex flex-col border border-[#23b4e9] bg-[#f3fcff] rounded-2xl p-6 gap-3.5">
                         <b class="text-[64px] text-[#23b4e9]">2</b>
                         <b class="text-xl text-black">Additional collection centres</b>
@@ -247,6 +244,20 @@
                         <b class="text-xl text-black">Reserve bank</b>
                     </div>
                 </div>
+
+                <div class="grid grid-cols-1 md:grid-cols- lg:grid-cols-3 gap-6">
+                   
+                </div>
+                 {{-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="flex flex-col border border-[#23b4e9] bg-[#f3fcff] rounded-2xl p-6 gap-3.5">
+                        <b class="text-[64px] text-[#23b4e9]">2</b>
+                        <b class="text-xl text-black">Additional collection centres</b>
+                    </div>
+                    <div class="flex flex-col bg-[#f3fcff] border border-[#23b4e9] rounded-2xl p-6 gap-3.5">
+                        <b class="text-[64px] text-[#23b4e9]">1</b>
+                        <b class="text-xl text-black">Reserve bank</b>
+                    </div>
+                </div> --}}
             </div>
         </div>
     </div>

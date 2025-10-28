@@ -889,13 +889,13 @@
     </script>
 
     <section
-        class="pt-[2px] md:pt-[120px] wrapper flex flex-col items-center justify-center text-center lg:min-h-screen py-20 md:py-0  relative overflow-hidden">
+        class="pt-[2px] md:pt-[120px] md:h-screen wrapper flex flex-col items-center justify-center text-center lg:min-h-screen py-20 md:py-0  relative overflow-hidden">
         <div class="sec3-title text-start md:text-center">
             Join Us In Our Mission To Provide Life-Saving <br> Breastmilk To Premature Babies Worldwide
         </div>
 
-        <div class="stats-container text-start md:text-center">
-            <div class="stats3">28 229+</div>
+        <div class="stats-container text-start md:text-center lg:text-center">
+            <div class="stats3 ">28 229+</div>
             <p class="stat-desc">Units of breastmilk distributed country-wide</p>
         </div>
 

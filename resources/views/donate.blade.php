@@ -43,10 +43,10 @@
                             const requiredFields = [
                                 // Personal Details (essential)
                                 'mother_name', 'mother_surname', 'mother_email', 'mother_cell',
-                                'mother_dob_day', 'mother_dob_month', 'mother_dob_year',
+                                'mother_dob_day', 'mother_dob_month', 'mother_dob_year','mother_id_number', 'mother_race', 'citizen', 'nationality','suburb', 'postal_code', 'city', 'province',
                                 
                                 // Address (essential for contact)
-                                'addres_1', 'suburb',
+                                'addres_1', 
                                 
                                 // All consent fields from Declarations & Consent section
                                 'collect_info', 'share_info', 'truth_info', 'keep_records',
@@ -216,20 +216,20 @@
 
                     <!-- ID Number -->
                     <div>
-                        <label for="mother_id_number" class="block text-gray-600">ID Number</label>
+                        <label for="mother_id_number" class="block text-gray-600">ID Number <span class="text-red-500">*</span></label>
                         <input name="mother_id_number" type="text"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
 
                     <div>
-                        <label for="mother_passport_number" class="block text-gray-600">Passport Number</label>
+                        <label for="mother_passport_number" class="block text-gray-600">Passport Number <span class="text-red-500">*</span></label>
                         <input name="mother_passport_number" type="text"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
 
                     <!-- Race Selection -->
                     <div class="flex flex-col gap-3">
-                        <label class="block text-gray-600">Mother's Race</label>
+                        <label class="block text-gray-600">Mother's Race <span class="text-red-500">*</span></label>
                         <div class="grid grid-cols-2 md:grid-cols-5 gap-1">
                             <label for="mother_race_black" class="flex items-center gap-2">
                                 <input type="radio" id="mother_race_black" name="mother_race" value="Black"
@@ -258,7 +258,7 @@
 
                     <!-- South African Citizen -->
                     <div class="flex flex-col gap-3">
-                        <label class="block text-gray-600">Are you a South African citizen?</label>
+                        <label class="block text-gray-600">Are you a South African citizen? <span class="text-red-500">*</span></label>
                         <div class="flex gap-4">
                             <label for="citizen_yes" class="flex items-center gap-2">
                                 <input type="radio" id="citizen_yes" name="citizen" value="Yes"
@@ -273,7 +273,7 @@
 
                     <!-- Other Nationality -->
                     <div>
-                        <label for="nationality" class="block text-gray-600">Other Nationality</label>
+                        <label for="nationality" class="block text-gray-600">Nationality  <span class="text-red-500">*</span></label>
                         <input name="nationality" type="text"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
@@ -296,18 +296,18 @@
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
                     <div>
-                        <label for="postal_code" class="block text-gray-600">Postal Code</label>
+                        <label for="postal_code" class="block text-gray-600">Postal Code  <span class="text-red-500">*</span></label>
                         <input name="postal_code" type="text"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
 
                     <div>
-                        <label for="city" class="block text-gray-600">City</label>
+                        <label for="city" class="block text-gray-600">City  <span class="text-red-500">*</span></label>
                         <input name="city" type="text"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
                     <div>
-                        <label for="province" class="block text-gray-600">Province</label>
+                        <label for="province" class="block text-gray-600">Province  <span class="text-red-500">*</span></label>
                         <input type="text" name="province"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>

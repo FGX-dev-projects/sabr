@@ -4,7 +4,7 @@
 @section('content')
 
 
-    <section class="relative w-full h-[350px] md:h-[350px]  overflow-hidden">
+    <section class="relative w-full  mb-10 overflow-hidden">
         <!-- Content Overlay -->
         <div class="relative z-10 flex flex-col  h-full   pt-[10px] md:pt-[186px]">
             <div class="wrapper">

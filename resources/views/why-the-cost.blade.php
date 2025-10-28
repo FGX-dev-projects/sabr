@@ -2,7 +2,7 @@
 @section('title', 'SABR: South African Breastmilk Reserve - Why the Cost')
 @section('meta-description', 'South African Breastmilk Reserve - Bringing milk to babies, safely.')
 @section('content')
-    <section class="relative w-full h-[350px] md:h-[390px]  overflow-hidden !bg-white">
+    <section class="relative w-full   overflow-hidden !bg-white">
         <!-- Background Video -->
 
 
@@ -22,6 +22,16 @@
     </section>
 
     <section class="pb-20 !bg-white">
+        <div class="wrapper bg-white">
+            <img src="{{asset('images/SABR_WhatsTheBuzz_page-0001.jpg')}}" class="w-full h-full pt-[0px]  bg-white"/>
+            <p class="text-center text-[24px] font-[300] font-inter my-6"><a class="underline cursor-pointer text-blue-600 " target="_blank" href="{{ asset('documents/SABR_WhatsTheBuzz.pdf') }}">Download</a> What's the buzz document</p>
+        </div>
+    
+        
+        </div>
+    </section>
+
+    {{-- <section class="pb-20 !bg-white">
         <div class="wrapper ">
             <img src="{{asset('images/whycost.png')}}" class="w-full mb-6"/>
             <p class="text-[24px] font-inter font-[300] text-black">
@@ -43,8 +53,10 @@ At current capacity, the SABR is able to supply donor breastmilk to infants weig
                 We aim to continue providing the best quality product at the lowest price. Our new pricing structure (as per the most recent 'SABR Pricelist' and 'SABR Packages') for facilities that do not currently have service-level agreements will be implemented as of October 2016. 'Sister Joy' will regularly update you via our monthly 'What's the Buzz?' newsletter. Please feel free to contact us to discuss any questions or queries you might have.
 <br><br>We trust that you understand that this change is necessary, in order for the SABR to keep providing safe and sustainable donor breastmilk that is equally accessible to all babies in need. We look forward to many more years of contributing this life-saving service!
             </p>
+
+            <p class="text-center text-[24px] font-[300] font-inter"><a class="underline cursor-pointer text-blue-600 py-6" target="_blank" href="{{ asset('documents/SABR_WhatsTheBuzz.pdf') }}">Download</a> What's the buzz document</p>
         </div>
-    </section>
+    </section> --}}
     {{-- <section class="pt-[50px] pb-[128px]">
         <div class="wrapper">
             <img src="{{asset('images/why-the cost.png')}}" class="w-full h-full"/>

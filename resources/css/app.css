@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --anthracite-grey: #3d3d3d;
+    --anthracite-grey-light: #5a5a5a;
+    --anthracite-grey-dark: #2b2b2b;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
 
 body {
@@ -183,11 +189,12 @@ background-color: #e5d2b8;
 
 .nav-btn-colour{
     /* color: rgba(0, 0, 0, 0.25);  */
-    color: #000 !important;
+    color: var(--anthracite-grey) !important;
 }
 
 .nav-btn-colour:hover{
-    color: #adaaa5;
+    /* color: #adaaa5; */
+    color: var(--anthracite-grey-light);
 }
 
 .nav-button {
@@ -198,19 +205,37 @@ background-color: #e5d2b8;
     align-items: center;
     justify-content: center;
     padding: 12px 16px;
-    /* color: rgba(0, 0, 0, 0.25); */
+    color: var(--anthracite-grey);
+    transition: background-color 0.5s ease-in-out, color 0.3s ease-in-out;
+}
+
+
+/* .nav-button {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    background-color: #f8f5f0;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 16px;
     color:#000;
     transition: background-color 0.5s ease-in-out, color 0.3s ease-in-out;
+} */
+
+.nav-button:hover {
+    background-color: #fff;
+    /* color: #adaaa5; */
+    color: var(--anthracite-grey-light);
 }
 
 .nav-button:hover {
     background-color: #fff;
-    color: #adaaa5;
+    color: var(--anthracite-grey-light);
 }
 
-.nav-button:focus {
+/* .nav-button:focus {
     background-color: #dedad4;
-}
+} */
 
 .mingcuteright-line-icon {
     width: 18px;
@@ -608,7 +633,7 @@ mark {
     box-shadow: none;
     border: none;
     /* color: #868480 ; */
-    color:#000;
+    color: var(--anthracite-grey);
 }
 
 .mobile-menu .nav-button {
@@ -628,7 +653,7 @@ mark {
 
 .text-mobile {
     /* color: rgba(0, 0, 0, 0.5) !important; */
-    color: #000;
+    color: var(--anthracite-grey) !important;
 }
 
 
@@ -1636,3 +1661,159 @@ text-align: left !important;
 
 }
 
+/* Tablet-specific fixes - Add to your app.css */
+
+/* Update mobile menu display for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Show mobile menu for tablets */
+    .mobile-menu {
+        max-width: calc(100vw - 32px);
+    }
+
+    .image-container {
+        display: block;
+    }
+    
+    
+    
+    
+    /* Hide desktop nav on tablets */
+    
+    
+    /* Adjust wrapper padding for tablets */
+    .wrapper {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    /* Social icons positioning for tablets */
+    .sm-icon01-parent {
+        right: 2%;
+        width: 45px;
+    }
+}
+
+
+/* Extra large screens - normal spacing */
+@media only screen and (min-width: 1280px) {
+    .nav-button,
+    .nav-button7 {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+    
+    .buttons {
+        gap: 6px;
+    }
+}
+
+/* Update mobile menu positioning for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .mobile-menu {
+        top: 140px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .mobile-menu.active {
+        display: flex;
+    }
+}
+
+/* Mobile adjustments remain the same */
+@media only screen and (max-width: 767px) {
+    .mobile-menu {
+        width: 350px;
+        max-width: calc(100vw - 32px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+
+
+
+
+/*UPDTAED TABLET*/
+
+@media only screen and (max-width: 1279px) {
+    .buttons {
+        display: none !important;
+    }
+    
+    /* Show hamburger menu for all tablets */
+    .mobile-menu-button,
+    #tablet-menu-button,
+    #mobile-menu-button {
+        display: block;
+    }
+}
+
+/* Desktop Navigation - Only show on screens 1280px and above */
+@media only screen and (min-width: 1280px) {
+    .buttons {
+        display: flex !important;
+        gap: 6px;
+    }
+    
+    /* Hide hamburger on large screens */
+    .mobile-menu-button,
+    #tablet-menu-button,
+    #mobile-menu-button {
+        display: none;
+    }
+    
+    .nav-button,
+    .nav-button7 {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Extra large screens - more comfortable spacing */
+@media only screen and (min-width: 1440px) {
+    .buttons {
+        gap: 8px;
+    }
+    
+    .nav-button,
+    .nav-button7 {
+        padding: 12px 18px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile Menu Positioning - All tablets and mobile */
+@media only screen and (max-width: 1279px) {
+    .mobile-menu {
+        top: 140px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 400px;
+        max-width: calc(100vw - 32px);
+    }
+    
+    .mobile-menu.active {
+        display: flex;
+    }
+}
+
+/* Mobile specific - smaller screens */
+@media only screen and (max-width: 767px) {
+    .mobile-menu {
+        width: 350px;
+    }
+}
+
+/* Tablet Controls - Show for tablets including iPad Pro */
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    /* Ensure tablet controls are visible */
+    .md\:flex {
+        display: flex !important;
+    }
+    
+    .lg\:hidden {
+        display: flex !important;
+    }
+}

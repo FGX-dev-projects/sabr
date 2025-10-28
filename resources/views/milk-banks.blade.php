@@ -354,7 +354,7 @@
         </div>
         <div class="map-container">
             <div class="map-wrapper">
-                <div id="map"></div>
+                <div id="map" style="z-index: 1;"></div>
                 <div class="legend">
                     
                     <div class="legend-item">

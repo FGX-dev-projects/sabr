@@ -30,23 +30,44 @@
 
                     <script>
                         document.addEventListener('DOMContentLoaded', function () {
-                            // Essential recipient/order information that should be required (matching red asterisks)
+                            // Essential recipient/order information that should be required
                             const requiredFields = [
-                                // Order Details (essential - marked with red asterisks)
+                                // Order Details (essential)
                                 'order_date', 'order_time', 'hospital_type',
                                 
-                                // Contact Person (essential - marked with red asterisks)
-                                'name', 'surname', 'email', 'cell'
+                                // Parent/Guardian Details (essential)
+                                'sa_citizen', 'name', 'surname', 'email', 'cell','id_number',  'physical_address', 'parent_consent_name',
+                                
+                                // Infant Details (essential)
+                                'infant_name', 'infant_dob', 'birth_weight', 'gestational_age',
+                                'gender', 'race', 'medical_conditions', 'nec_case',
+                                'feeding_status', 'feeding_started', 'total_volume',
+                                'patient_file_no', 'prescribing_paediatrician'
                             ];
 
-                            requiredFields.forEach(field => {
-                                const el = document.querySelector(`[name="${field}"]`);
-                                if (el) {
-                                    el.setAttribute('required', 'required');
+                            requiredFields.forEach(fieldName => {
+                                const field = document.querySelector(`[name="${fieldName}"]`);
+                                if (field) {
+                                    field.required = true;
                                 }
                             });
                             
-                            // Handle conditional requirements for additional infants
+                            // Handle radio button groups - at least one must be selected
+                            const radioGroups = [
+                                'sa_citizen', 'gender', 'nec_case', 'parent_consent',
+                                'nurse_consent', 'healthcare_professional_consent',
+                                'healthcare_professional_trained', 'prescribing_doctor_consent',
+                                'prescribing_nurse_consent'
+                            ];
+                            
+                            radioGroups.forEach(groupName => {
+                                const radios = document.querySelectorAll(`[name="${groupName}"]`);
+                                if (radios.length > 0) {
+                                    radios.forEach(radio => radio.required = true);
+                                }
+                            });
+                            
+                            // Handle conditional requirements for additional infants (twins, triplets, quadruplets)
                             const additionalInfantNumbers = [2, 3, 4];
                             additionalInfantNumbers.forEach(num => {
                                 const nameField = document.querySelector(`[name="infant_name_${num}"]`);
@@ -74,8 +95,6 @@
                                     });
                                 }
                             });
-
-                            // ID and Passport are both optional - no conditional requirements needed
                         });
                     </script>
 
@@ -139,19 +158,19 @@
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
 
-                    <!-- Amount Due -->
+                    {{-- <!-- Amount Due -->
                     <div>
                         <label for="amount_due" class="block text-gray-600">Amount Due: (DBM + Courier)</label>
                         <input type="text" name="amount_due" id="amount_due"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    </div>
+                    </div> --}}
 
                     <h2 class="text-[32px] font-inter font-bold text-[#adaaa5] col-span-1 md:col-span-2">Parent / Guardian
                         Details</h2>
 
                     <!-- South African Citizen -->
                     <div class="flex flex-col gap-3">
-                        <label id="sa_citizen_label" class="block text-gray-600">Are you a South African citizen</label>
+                        <label id="sa_citizen_label" class="block text-gray-600">Are you a South African citizen <span class="text-red-500">*</span></label>
                         <div class="flex gap-4" role="radiogroup" aria-labelledby="sa_citizen_label">
                             <label for="sa_citizen_yes" class="flex items-center gap-2">
                                 <input type="radio" name="sa_citizen" id="sa_citizen_yes" value="Yes"
@@ -238,14 +257,14 @@
 
                     <!-- Infant Name -->
                     <div>
-                        <label for="infant_name" class="block text-gray-600">Infant Name</label>
+                        <label for="infant_name" class="block text-gray-600">Infant Name <span class="text-red-500">*</span></label>
                         <input type="text" name="infant_name" id="infant_name"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
 
                     <!-- Date of Birth -->
                     <div>
-                        <label for="infant_dob" class="block text-gray-600">Date of Birth</label>
+                        <label for="infant_dob" class="block text-gray-600">Date of Birth <span class="text-red-500">*</span></label>
                         <input type="date" name="infant_dob" id="infant_dob"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
@@ -253,7 +272,7 @@
                     <!-- Birth Weight -->
                     <div>
                         <label for="birth_weight" class="block text-gray-600">Birth Weight (In grams - enter a number
-                            between 200 - 3500)</label>
+                            between 200 - 3500) <span class="text-red-500">*</span></label>
                         <input type="number" name="birth_weight" id="birth_weight" min="200" max="3500"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
@@ -261,14 +280,14 @@
                     <!-- Gestational Age -->
                     <div>
                         <label for="gestational_age" class="block text-gray-600">Gestational Age (In weeks - enter a number
-                            between 20 - 40)</label>
+                            between 20 - 40) <span class="text-red-500">*</span></label>
                         <input type="number" name="gestational_age" id="gestational_age" min="20" max="40"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
 
                     <!-- Gender -->
                     <div class="flex flex-col gap-3">
-                        <label id="gender_label" class="block text-gray-600">Gender</label>
+                        <label id="gender_label" class="block text-gray-600">Gender <span class="text-red-500">*</span></label>
                         <div class="flex gap-4" role="radiogroup" aria-labelledby="gender_label">
                             <label for="gender_male" class="flex items-center gap-2">
                                 <input type="radio" name="gender" id="gender_male" value="Male"
@@ -285,7 +304,7 @@
 
                     <!-- Race -->
                     <div>
-                        <label for="race" class="block text-gray-600">Race</label>
+                        <label for="race" class="block text-gray-600">Race <span class="text-red-500">*</span></label>
                         <input type="text" name="race" id="race"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
@@ -293,14 +312,14 @@
                     <!-- Medical Conditions and Current Weight -->
                     <div>
                         <label for="medical_conditions" class="block text-gray-600">Medical Conditions and Current
-                            Weight</label>
+                            Weight <span class="text-red-500">*</span></label>
                         <textarea name="medical_conditions" id="medical_conditions"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
                     </div>
 
                     <!-- NEC Case -->
                     <div class="flex flex-col gap-3">
-                        <label id="nec_case_label" class="block text-gray-600">NEC Case</label>
+                        <label id="nec_case_label" class="block text-gray-600">NEC Case <span class="text-red-500">*</span></label>
                         <div class="flex gap-4" role="radiogroup" aria-labelledby="nec_case_label">
                             <label for="nec_case_yes" class="flex items-center gap-2">
                                 <input type="radio" name="nec_case" id="nec_case_yes" value="Yes"
@@ -317,7 +336,7 @@
 
                     <!-- Feeding Status -->
                     <div>
-                        <label for="feeding_status" class="block text-gray-600">Feeding Status</label>
+                        <label for="feeding_status" class="block text-gray-600">Feeding Status <span class="text-red-500">*</span></label>
                         <select name="feeding_status" id="feeding_status"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                             <option value="">Select Feeding Status</option>
@@ -338,7 +357,7 @@
 
                     <!-- Feeding Started -->
                     <div>
-                        <label for="feeding_started" class="block text-gray-600">Feeding Started (Date)</label>
+                        <label for="feeding_started" class="block text-gray-600">Feeding Started (Date) <span class="text-red-500">*</span></label>
                         <input type="date" name="feeding_started" id="feeding_started"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
@@ -346,21 +365,21 @@
                     <!-- Total Volume / Day -->
                     <div>
                         <label for="total_volume" class="block text-gray-600">Total Volume / Day (Estimated, In ml - enter a
-                            number between 0 - 150)</label>
+                            number between 0 - 300) <span class="text-red-500">*</span></label>
                         <input type="number" name="total_volume" id="total_volume" min="0" max="150"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
 
                     <!-- Patient File No. or Sticker -->
                     <div>
-                        <label for="patient_file_no" class="block text-gray-600">Patient File No. or Sticker</label>
+                        <label for="patient_file_no" class="block text-gray-600">Patient File No. or Sticker <span class="text-red-500">*</span></label>
                         <input type="text" name="patient_file_no" id="patient_file_no"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
 
                     <!-- Prescribing Paediatrician -->
                     <div>
-                        <label for="prescribing_paediatrician" class="block text-gray-600">Prescribing Paediatrician</label>
+                        <label for="prescribing_paediatrician" class="block text-gray-600">Prescribing Paediatrician <span class="text-red-500">*</span></label>
                         <input type="text" name="prescribing_paediatrician" id="prescribing_paediatrician"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
@@ -431,7 +450,7 @@
                     </div>
                     <div>
                         <label for="total_volume_2" class="block text-gray-600">Total Volume / Day (Child 2) (Estimated, In
-                            ml - enter a number between 0 - 150)</label>
+                            ml - enter a number between 0 - 300)</label>
                         <input type="number" name="total_volume_2" id="total_volume_2" min="0" max="150"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
@@ -511,7 +530,7 @@
                     </div>
                     <div>
                         <label for="total_volume_3" class="block text-gray-600">Total Volume / Day (Child 3) (Estimated, In
-                            ml - enter a number between 0 - 150)</label>
+                            ml - enter a number between 0 - 300)</label>
                         <input type="number" name="total_volume_3" id="total_volume_3" min="0" max="150"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
@@ -591,7 +610,7 @@
                     </div>
                     <div>
                         <label for="total_volume_4" class="block text-gray-600">Total Volume / Day (Child 4) (Estimated, In
-                            ml - enter a number between 0 - 150)</label>
+                            ml - enter a number between 0 - 300)</label>
                         <input type="number" name="total_volume_4" id="total_volume_4" min="0" max="150"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
@@ -674,7 +693,7 @@
 
                         <div class="flex flex-col gap-3">
                             <label id="parent_consent_label" class="block text-gray-600">I, the Parent / Guardian, agree and
-                                consent to the terms and conditions above</label>
+                                consent to the terms and conditions above <span class="text-red-500">*</span></label>
                             <div class="flex gap-4" role="radiogroup" aria-labelledby="parent_consent_label">
                                 <label for="parent_consent_yes" class="flex items-center gap-2">
                                     <input type="radio" name="parent_consent" id="parent_consent_yes" value="Yes"
@@ -691,7 +710,7 @@
 
                         <div class="flex flex-col gap-3">
                             <label id="nurse_consent_label" class="block text-gray-600">I, the Nurse, agree to the terms and
-                                conditions above</label>
+                                conditions above <span class="text-red-500">*</span></label>
                             <div class="flex gap-4" role="radiogroup" aria-labelledby="nurse_consent_label">
                                 <label for="nurse_consent_yes" class="flex items-center gap-2">
                                     <input type="radio" name="nurse_consent" id="nurse_consent_yes" value="Yes"
@@ -711,7 +730,7 @@
                         <div class="flex flex-col gap-3">
                             <label id="healthcare_professional_consent_label" class="block text-gray-600">I, as the
                                 Healthcare Professional acknowledge that I have read & understand the SABR Work Aid
-                                "Promoting The Safe Use Of Donor Breastmilk"</label>
+                                "Promoting The Safe Use Of Donor Breastmilk" <span class="text-red-500">*</span></label>
                             <div class="flex gap-4" role="radiogroup"
                                 aria-labelledby="healthcare_professional_consent_label">
                                 <label for="healthcare_professional_consent_yes" class="flex items-center gap-2">
@@ -732,7 +751,7 @@
                         <div class="flex flex-col gap-3">
                             <label id="healthcare_professional_trained_label" class="block text-gray-600">I, as the
                                 Healthcare Professional acknowledge that I have been trained in the safe use / application
-                                of donor breastmilk</label>
+                                of donor breastmilk <span class="text-red-500">*</span></label>
                             <div class="flex gap-4" role="radiogroup"
                                 aria-labelledby="healthcare_professional_trained_label">
                                 <label for="healthcare_professional_trained_yes" class="flex items-center gap-2">
@@ -752,7 +771,7 @@
 
                         <div class="flex flex-col gap-3">
                             <label id="prescribing_doctor_consent_label" class="block text-gray-600">I, the Prescribing
-                                Doctor, agree and consent to the terms and conditions above</label>
+                                Doctor, agree and consent to the terms and conditions above <span class="text-red-500">*</span></label>
                             <div class="flex gap-4" role="radiogroup" aria-labelledby="prescribing_doctor_consent_label">
                                 <label for="prescribing_doctor_consent_yes" class="flex items-center gap-2">
                                     <input type="radio" name="prescribing_doctor_consent"
@@ -770,7 +789,7 @@
 
                         <div class="flex flex-col gap-3">
                             <label id="prescribing_nurse_consent_label" class="block text-gray-600">I, the Prescribing
-                                Nurse, agree and consent to the terms and conditions above</label>
+                                Nurse, agree and consent to the terms and conditions above <span class="text-red-500">*</span></label>
                             <div class="flex gap-4" role="radiogroup" aria-labelledby="prescribing_nurse_consent_label">
                                 <label for="prescribing_nurse_consent_yes" class="flex items-center gap-2">
                                     <input type="radio" name="prescribing_nurse_consent" id="prescribing_nurse_consent_yes"
@@ -799,6 +818,7 @@
                                 <input type="radio" name="communication_consent" id="communication_consent_no" value="No"
                                     class="form-radio scale-150 text-blue-500">
                                 <span>No</span>
+                            </label>
                         </div>
                     </div>
 
@@ -871,12 +891,6 @@
                         </ul>
                     </div>
                 @endif
-
-                {{-- @if (isset($success))
-                <div class="mt-6 text-green-800 bg-green-100 border border-green-300 rounded-lg p-4">
-                    {{ $success }}
-                </div>
-                @endif --}}
                
             </div>
         </div>
