@@ -960,11 +960,11 @@ font-family: Work Sans, sans-serif;
 }
 
 .background2 {
-    width: 882px;
+    width: 100%;
     position: absolute;
     margin: 0 !important;
-    top: -136px;
-    left: -305px;
+    /* top: -136px;
+    left: -305px; */
     backdrop-filter: blur(32px);
     height: 519px;
     overflow: hidden;

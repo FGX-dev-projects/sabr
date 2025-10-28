@@ -500,7 +500,7 @@
 
     <footer class="pt-[80px] pb-[80px] md:pb-[80px] wrapper bg-[#905460]">
 
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-center ">
+        <div class="flex flex-col md:flex-col lg:flex-row justify-between items-start md:items-start ">
             <!-- Logo -->
             <div class="flex flex-col md:flex-row gap-[80px] md:gap-[100px]">
                 <img class="w-[87.15px] h-[118.99px] bg-white rounded-[12px]" src="{{asset('images/logo.png')}}"
@@ -526,7 +526,7 @@
 
             <!-- Newsletter Signup -->
             <div
-                class="flex flex-col md:flex-row items-center gap-4 mt-4 md:mt-0 bg-[#834551] wifull border border-[#fff] rounded-[12px] p-3 mb-5">
+                class="flex flex-col md:flex-row items-center gap-4 mt-4 md:mt-4 bg-[#834551] wifull border border-[#fff] rounded-[12px] p-3 mb-5">
                 <input type="text"
                     class="text-[#e7f2f6] bg-[#834551] placeholder:text-[#fff]  placeholder:text-[18px] placeholder:font-inter outline-none w-[250px]"
                     placeholder="Sign up for our Newsletter">
