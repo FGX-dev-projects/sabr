@@ -24,7 +24,7 @@
     <section class="pb-20 !bg-white">
         <div class="wrapper bg-white">
             <img src="{{asset('images/SABR_WhatsTheBuzz_page-0001.jpg')}}" class="w-full h-full pt-[0px]  bg-white"/>
-            <p class="text-center text-[24px] font-[300] font-inter my-6"><a class="underline cursor-pointer text-blue-600 " target="_blank" href="{{ asset('documents/SABR_WhatsTheBuzz.pdf') }}">Download</a> What's the buzz document</p>
+            <p class="text-center  font-[300] font-inter my-6"><a class="underline cursor-pointer text-blue-600 " target="_blank" href="{{ asset('documents/SABR_WhatsTheBuzz.pdf') }}">Download</a> "What's the buzz" PDF document</p>
         </div>
     
         
