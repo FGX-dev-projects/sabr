@@ -995,57 +995,121 @@
         updateCarousel();
     </script>
 
-    <section
-        class="pt-[2px] md:pt-[120px] md:h-screen wrapper flex flex-col items-center justify-center text-center lg:min-h-screen py-20 md:py-0  relative overflow-hidden">
-        <div class="sec3-title text-start md:text-center">
-            Join Us In Our Mission To Provide Life-Saving <br> Breastmilk To Premature Babies Worldwide
-        </div>
+<section
+class="pt-[2px] md:pt-[120px] md:h-screen wrapper flex flex-col items-center justify-center text-center lg:min-h-screen py-20 md:py-0  relative overflow-hidden">
+<div class="sec3-title text-start md:text-center">
+    Join Us In Our Mission To Provide Life-Saving <br> Breastmilk To Premature Babies Worldwide
+</div>
 
-        <div class="stats-container text-start md:text-center lg:text-center">
-            <div class="stats3 ">28 229+</div>
-            <p class="stat-desc">Units of breastmilk distributed country-wide</p>
-        </div>
+<div class="stats-container text-start md:text-center lg:text-center">
+    <div class="stats3 ">156</div>
+    <p class="stat-desc">NICU supported with human milk banking service</p>
+</div>
 
 
-        </div>
+</div>
 
-        <div class="mt-6  gap-4">
+<div class="mt-6  gap-4">
 
-            <div class="button-prim-wrapper border-none cursor-pointer   relative z-50 ">
-                <a href="{{route('donate')}}" class="button-prim">
-                    <div class="nav-button7  text-[18px] !px-[30px] cursor-pointer">
-                        <div class="button7   text-[18px]">Start Donating</div>
-                        <div class="nav-button-child">
-                        </div>
-                    </div>
-                    <div class="pharrow-up-wrapper cursor-pointer">
-                        <img class="pharrow-up-icon" alt="" src="{{asset('images/new-arrow-up.svg')}}">
-                    </div>
-                </a>
-            </div>
-
-            <div class="mt-4">
-                <div class="button-prim green-btn">
-                    <a href="https://payfast.co.za/donate/go/southafricanbreastmilkreserve" target="_blank"
-                        class="nav-button7 green-btn cursor-pointer">
-                        <div class="button7 px-[10px] text-[18px]">Yes, I want to contribute</div>
-                        <div class="nav-button-child">
-                        </div>
-                    </a>
+    <div class="button-prim-wrapper border-none cursor-pointer   relative z-50 ">
+        <a href="{{route('donate')}}" class="button-prim">
+            <div class="nav-button7  text-[18px] !px-[30px] cursor-pointer">
+                <div class="button7   text-[18px]">Start Donating</div>
+                <div class="nav-button-child">
                 </div>
             </div>
+            <div class="pharrow-up-wrapper cursor-pointer">
+                <img class="pharrow-up-icon" alt="" src="{{asset('images/new-arrow-up.svg')}}">
+            </div>
+        </a>
+    </div>
 
+    <div class="mt-4">
+        <div class="button-prim green-btn">
+            <a href="https://payfast.co.za/donate/go/southafricanbreastmilkreserve" target="_blank"
+                class="nav-button7 green-btn cursor-pointer">
+                <div class="button7 px-[10px] text-[18px]">Yes, I want to contribute</div>
+                <div class="nav-button-child">
+                </div>
+            </a>
         </div>
+    </div>
 
-        <!-- Image container -->
-        <div class=" absolute z-[-99]  mt-12 w-full h-[300px] image-container">
-            <img src="{{asset('images/rec2.jpg')}}" class="image top-left">
-            <img src="{{asset('images/rec1.jpg')}}" class="image top-right">
-            <img src="{{asset('images/rec4.jpg')}}" class="image center">
-            <img src="{{asset('images/rec5.jpg')}}" class="image bottom-left">
-            <img src="{{asset('images/rec3.jpg')}}" class="image bottom-right">
-        </div>
-    </section>
+</div>
+
+<!-- Image container -->
+<div class=" absolute z-[-99]  mt-12 w-full h-[300px] image-container">
+    <img src="{{asset('images/rec2.jpg')}}" class="image top-left">
+    <img src="{{asset('images/rec1.jpg')}}" class="image top-right">
+    <img src="{{asset('images/rec4.jpg')}}" class="image center">
+    <img src="{{asset('images/rec5.jpg')}}" class="image bottom-left">
+    <img src="{{asset('images/rec3.jpg')}}" class="image bottom-right">
+</div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const numbers = [
+        "156",
+        "28229",
+        "4818",
+        "971",
+        "25",
+        "2",
+        "1",
+        "46544"
+    ];
+
+    const descriptions = [
+        "NICU supported with human milk banking service",
+        "Units of breastmilk distributed countrywide",
+        "Babies received donor breastmilk",
+        "Donors supplying breastmilk",
+        "Situated in public hospitals",
+        "Additional collection centres",
+        "Reserve bank",
+        "Total babies helped since 2003"
+    ];
+
+    let index = 0;
+    const statsNumber = document.querySelector(".stats3");
+    const statsDesc = document.querySelector(".stat-desc");
+
+    function animateNumber(target) {
+        let current = 0;
+        const increment = Math.ceil(target / 50); // Smooth step count
+
+        function update() {
+            if (current < target) {
+                current += increment;
+                if (current > target) current = target;
+                statsNumber.textContent = current.toLocaleString() + ""; // Format with commas
+                requestAnimationFrame(update);
+            }
+        }
+
+        update();
+    }
+
+    function updateStats() {
+        statsNumber.classList.remove("show");
+        statsDesc.classList.remove("show");
+
+        setTimeout(() => {
+            animateNumber(parseInt(numbers[index]));
+            statsDesc.textContent = descriptions[index];
+
+            statsNumber.classList.add("show");
+            statsDesc.classList.add("show");
+
+            index = (index + 1) % numbers.length; // Loop through both arrays
+        }, 300);
+    }
+
+    setInterval(updateStats, 3000); // Change every 3 seconds
+    updateStats(); // Start the animation immediately
+});
+</script>
 
 
     <section class="bg-[#e8d8c6] rounded-[32px]">
@@ -1573,7 +1637,7 @@
         });
     </script>
 
-    <script>
+    {{-- <script>
         document.addEventListener("DOMContentLoaded", function () {
             const numbers = [
                 "50726",
@@ -1635,7 +1699,7 @@
             setInterval(updateStats, 3000); // Change every 3 seconds
             updateStats(); // Start the animation immediately
         });
-    </script>
+    </script> --}}
 
     <script>
         const container = document.getElementById("scrollContainer");
