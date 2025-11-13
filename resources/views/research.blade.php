@@ -28,7 +28,7 @@
     <div class="wrapper flex flex-col gap-3">
         <div class="w-full h-full p-4 bg-[#FAF8F5] rounded-xl outline outline-1 outline-[#DEDAD4] flex flex-col md:flex-row justify-start  gap-3">
             <div class="w-full md:w-auto h-full  p-0">
-                <img src="{{asset('images/gray-box.png')}}" class="object-cover w-full h-full"/>
+                <img src="{{asset('images/virgo1.jpg')}}" class="object-cover w-full h-full"/>
             </div>
             <div class="flex-1 flex flex-col justify-between items-start gap-8">
                 <div class="flex flex-col items-start gap-2 self-stretch">
@@ -41,6 +41,8 @@
                         <div class="text-[#868480] text-2xl font-bold self-stretch">SABRViro1 – Virological Screening of Breastmilk for HIV-1</div>
                         <div class="text-[#868480] text-lg font-inter font-light self-stretch">
                             This pioneering study explores the effectiveness of direct HIV-1 screening in breastmilk using the Ultrio Elite assay, a technology traditionally used for blood. By identifying the minimum detectable viral load, this research provides critical insights into the sensitivity and specificity of the assay. These findings lay the groundwork for developing rapid testing tools that ensure safe and efficient breastmilk screening in human-milk banking.
+                            <br><br>
+                            Click <a class="underline text-blue-500" href="https://www.youtube.com/watch?v=8xnsfSJzGCY" target="_blank">here</a> to watch video.
                         </div>
                     </div>
                 </div>
@@ -54,7 +56,7 @@
 
         <div class="w-full h-full p-4 bg-[#FAF8F5] rounded-xl outline outline-1 outline-[#DEDAD4] flex flex-col md:flex-row justify-start  gap-3">
             <div class="w-full md:w-auto h-full  p-0">
-                <img src="{{asset('images/gray-box.png')}}" class="object-cover w-full h-full"/>
+                <img src="{{asset('images/phangisa1.jpg')}}" class="object-cover w-full h-full"/>
             </div>
             <div class="flex-1 flex flex-col justify-between items-start gap-8">
                 <div class="flex flex-col items-start gap-2 self-stretch">
@@ -78,7 +80,7 @@
 
         <div class="w-full h-full p-4 bg-[#FAF8F5] rounded-xl outline outline-1 outline-[#DEDAD4] flex flex-col md:flex-row justify-start  gap-3">
             <div class="w-full md:w-auto h-full  p-0">
-                <img src="{{asset('images/gray-box.png')}}" class="object-cover w-full h-full"/>
+                <img src="{{asset('images/siyakhu.jpg')}}" class="object-cover w-full h-full"/>
             </div>
             <div class="flex-1 flex flex-col justify-between items-start gap-8">
                 <div class="flex flex-col items-start gap-2 self-stretch">
@@ -89,7 +91,7 @@
                 <div class="flex flex-col items-start gap-3 self-stretch">
                     <div class="flex flex-col items-start gap-3 self-stretch">
                         <div class="text-[#868480] text-2xl font-bold self-stretch">Siyakhula Collaboration  </div>
-                        <div class="text-[#868480] text-lg font-inter font-light self-stretch">This project delves into the nutritional and safety parameters of donated breastmilk, supported by SABR through the sponsorship of a neonatal nurse for specimen collection. The Siyakhula Collaboration enhances our understanding of maternal health, infant growth, and breastmilk composition, contributing to improved neonatal health outcomes. </div>
+                        <div class="text-[#868480] text-lg font-inter font-light self-stretch">The Siyakhula study, led by the University of Pretoria and the SAMRC, investigates how maternal HIV status and early-life environments shape infant growth, immune development and neurodevelopment. SABR supports this work by providing a dedicated research nurse for blood collection and supplying the breastmilk analyser and consumables used to assess breastmilk composition. This contribution helps deepen understanding of how breastmilk bioactives and nutrition influence healthy infant development.</div>
                     </div>
                 </div>
                 <div class="flex flex-col items-end gap-2 self-stretch">
@@ -102,7 +104,7 @@
 
         <div class="w-full h-full p-4 bg-[#FAF8F5] rounded-xl outline outline-1 outline-[#DEDAD4] flex flex-col md:flex-row justify-start  gap-3">
             <div class="w-full md:w-auto h-full  p-0">
-                <img src="{{asset('images/gray-box.png')}}" class="object-cover w-full h-full"/>
+                <img src="{{asset('images/sul3.jpg')}}" class="object-cover w-full h-full"/>
             </div>
             <div class="flex-1 flex flex-col justify-between items-start gap-8">
                 <div class="flex flex-col items-start gap-2 self-stretch">
@@ -126,7 +128,7 @@
 
         <div class="w-full h-full p-4 bg-[#FAF8F5] rounded-xl outline outline-1 outline-[#DEDAD4] flex flex-col md:flex-row justify-start  gap-3">
             <div class="w-full md:w-auto h-full  p-0">
-                <img src="{{asset('images/gray-box.png')}}" class="object-cover w-full h-full"/>
+                <img src="{{asset('images/tdf2.jpg')}}" class="object-cover w-full h-full"/>
             </div>
             <div class="flex-1 flex flex-col justify-between items-start gap-8">
                 <div class="flex flex-col items-start gap-2 self-stretch">
@@ -137,7 +139,7 @@
                 <div class="flex flex-col items-start gap-3 self-stretch">
                     <div class="flex flex-col items-start gap-3 self-stretch">
                         <div class="text-[#868480] text-2xl font-bold self-stretch">Tenofovir Disoproxil Fumarate (TDF) Exposure in Breastfed Infants   </div>
-                        <div class="text-[#868480] text-lg font-inter font-light self-stretch">Conducted in collaboration with the University of Pretoria’s School of Pharmacology, this study quantifies TDF levels in the breastmilk of HIV-positive mothers. It also evaluates the growth and development of infants exposed to TDF compared to a control group, establishing clear guidelines for safe breastfeeding practices among HIV-positive mothers. </div>
+                        <div class="text-[#868480] text-lg font-inter font-light self-stretch">Conducted by the University of Pretoria’s School of Pharmacology, this study quantifies TDF levels in the breastmilk of HIV-positive mothers and evaluates the growth and development of exposed infants compared to a control group. The findings contribute to evidence-based guidelines for safe breastfeeding practices among HIV-positive mothers. SABR supported the study by providing the breastmilk analyser and related consumables. </div>
                     </div>
                 </div>
                 <div class="flex flex-col items-end gap-2 self-stretch">
@@ -150,7 +152,7 @@
 
         <div class="w-full h-full p-4 bg-[#FAF8F5] rounded-xl outline outline-1 outline-[#DEDAD4] flex flex-col md:flex-row justify-start  gap-3">
             <div class="w-full md:w-auto h-full  p-0">
-                <img src="{{asset('images/gray-box.png')}}" class="object-cover w-full h-full"/>
+                <img src="{{asset('images/toward.jpg')}}" class="object-cover w-full h-full"/>
             </div>
             <div class="flex-1 flex flex-col justify-between items-start gap-8">
                 <div class="flex flex-col items-start gap-2 self-stretch">
